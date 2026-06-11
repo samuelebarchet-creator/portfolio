@@ -44,7 +44,7 @@ export function ZoomParallax({ images }: ZoomParallaxProps) {
                 <img
                   src={src}
                   alt={alt ?? `Project image ${index + 1}`}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
             </motion.div>

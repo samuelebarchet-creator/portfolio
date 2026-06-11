@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
 import ClientsBar from '@/components/ClientsBar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Lavori — Samuele Barchet',
@@ -114,6 +115,7 @@ export default function LavoriPage() {
       </section>
 
       <ClientsBar />
+      <Footer />
     </main>
   );
 }
