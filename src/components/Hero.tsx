@@ -91,8 +91,8 @@ export default function Hero() {
         {/* Role label */}
         <p
           ref={labelRef}
-          className="font-condensed uppercase text-green-light text-xs tracking-[0.5em] mb-8 opacity-0"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          className="font-condensed uppercase text-xs tracking-[0.5em] mb-8 opacity-0"
+          style={{ color: '#E8703A', fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Brand &amp; Digital Strategist
         </p>

@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
-import { ZoomParallax } from '@/components/ui/zoom-parallax';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,9 +155,24 @@ export default function ProjectClient({ project }: { project: Project }) {
         </div>
       </div>
 
-      {/* ══ ZOOM PARALLAX GALLERY ═══════════════════════════════════════════ */}
+      {/* ══ IMAGE STRIP ═════════════════════════════════════════════════════ */}
       {project.images && project.images.length > 0 && (
-        <ZoomParallax images={project.images} />
+        <div
+          className="w-full overflow-x-auto"
+          style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
+        >
+          <div className="flex gap-3 px-8 md:px-20 py-12" style={{ width: 'max-content' }}>
+            {project.images.map(({ src, alt }, i) => (
+              <div key={i} className="relative shrink-0 overflow-hidden" style={{ height: '58vh' }}>
+                <img
+                  src={src}
+                  alt={alt ?? ''}
+                  style={{ height: '100%', width: 'auto', display: 'block', objectFit: 'cover' }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* ══ MAIN CONTENT ════════════════════════════════════════════════════ */}
