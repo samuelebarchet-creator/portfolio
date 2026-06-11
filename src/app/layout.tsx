@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -42,6 +43,7 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-bg text-ink antialiased">
         <CustomCursor />
+        <ScrollProgress />
         <SmoothScroll>
           <Nav />
           {children}

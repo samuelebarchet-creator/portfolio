@@ -4,6 +4,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 /* Register once at module level — safe to call multiple times */
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
+
+  /* Speed all animations to near-instant when user prefers reduced motion */
+  gsap.matchMedia().add('(prefers-reduced-motion: reduce)', () => {
+    gsap.globalTimeline.timeScale(100);
+  });
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    gsap.globalTimeline.timeScale(1);
+  });
 }
 
 export { gsap, ScrollTrigger };
