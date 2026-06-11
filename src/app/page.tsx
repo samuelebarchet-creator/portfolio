@@ -1,4 +1,3 @@
-import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import StatsBar from '@/components/StatsBar';
 import WorkMarquee from '@/components/WorkMarquee';
@@ -8,26 +7,19 @@ import ServicesSection from '@/components/ServicesSection';
 import About from '@/components/About';
 import ThinkingGrid from '@/components/ThinkingGrid';
 import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-import CustomCursor from '@/components/CustomCursor';
 
 export default function Page() {
   return (
-    <>
-      <CustomCursor />
-      <Nav />
-      <main>
-        <Hero />
-        <StatsBar />
-        <WorkMarquee />
-        <ClientsBar />
-        <CollabGrid />
-        <ServicesSection />
-        <About />
-        <ThinkingGrid />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <Hero />
+      <StatsBar />
+      <WorkMarquee />
+      <ClientsBar />
+      <CollabGrid />
+      <ServicesSection />
+      <About />
+      <ThinkingGrid />
+      <Contact />
+    </main>
   );
 }

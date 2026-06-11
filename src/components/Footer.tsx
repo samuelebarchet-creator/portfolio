@@ -4,11 +4,11 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 
 const navLinks = [
-  { label: 'Lavori',   href: '/#collaborazioni' },
-  { label: 'Servizi',  href: '/#servizi' },
-  { label: 'About',    href: '/#about' },
-  { label: 'Thinking', href: '/#thinking' },
-  { label: 'Contatti', href: '/#contact' },
+  { label: 'Lavori',   href: '/lavori' },
+  { label: 'Servizi',  href: '/servizi' },
+  { label: 'About',    href: '/about' },
+  { label: 'Thinking', href: '/thinking' },
+  { label: 'Contatti', href: '/contatti' },
 ];
 
 const socials = [

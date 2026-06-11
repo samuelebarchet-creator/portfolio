@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Playfair_Display, Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import CustomCursor from "@/components/CustomCursor";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -34,12 +37,15 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="it"
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
       <body className="min-h-full bg-bg text-ink antialiased">
+        <CustomCursor />
         <SmoothScroll>
+          <Nav />
           {children}
+          <Footer />
         </SmoothScroll>
       </body>
     </html>

@@ -5,11 +5,11 @@ import { gsap } from '@/lib/gsap';
 import { cn } from '@/lib/utils';
 
 const links = [
-  { label: 'Lavori',   href: '/#collaborazioni' },
-  { label: 'Servizi',  href: '/#servizi' },
-  { label: 'About',    href: '/#about' },
-  { label: 'Thinking', href: '/#thinking' },
-  { label: 'Contatti', href: '/#contact' },
+  { label: 'Lavori',   href: '/lavori' },
+  { label: 'Servizi',  href: '/servizi' },
+  { label: 'About',    href: '/about' },
+  { label: 'Thinking', href: '/thinking' },
+  { label: 'Contatti', href: '/contatti' },
 ];
 
 export default function Nav() {
@@ -89,7 +89,7 @@ export default function Nav() {
 
         {/* CTA desktop */}
         <a
-          href="/#contact"
+          href="/contatti"
           className="hidden md:inline-flex items-center gap-2 px-5 py-2 font-condensed text-xs uppercase tracking-[0.2em] text-green border border-green hover:bg-green hover:text-bg transition-all duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
