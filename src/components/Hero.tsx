@@ -74,12 +74,12 @@ export default function Hero() {
         </Suspense>
       </div>
 
-      {/* Gradient fade — dark top → cream bottom, blends into the sections below */}
+      {/* Gradient fade — stays dark until near the bottom, then fades to cream */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'linear-gradient(to bottom, transparent 0%, transparent 42%, rgba(245,240,232,0.45) 68%, rgba(245,240,232,0.85) 84%, #F5F0E8 100%)',
+            'linear-gradient(to bottom, transparent 0%, transparent 72%, rgba(245,240,232,0.35) 84%, rgba(245,240,232,0.82) 92%, #F5F0E8 100%)',
           zIndex: 5,
         }}
         aria-hidden
@@ -126,7 +126,8 @@ export default function Hero() {
               fontFamily: 'var(--font-barlow)',
               fontSize: 'clamp(1rem, 1.5vw, 1.2rem)',
               maxWidth: '36ch',
-              color: 'rgba(245,240,232,0.65)',
+              color: 'rgba(245,240,232,0.92)',
+              textShadow: '0 1px 12px rgba(0,0,0,0.8)',
             }}
           >
             Costruisco identità di marca e strategie digitali che generano risultati misurabili.
@@ -154,11 +155,12 @@ export default function Hero() {
               className="font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300 underline underline-offset-4"
               style={{
                 fontFamily: 'var(--font-barlow-condensed)',
-                color: 'rgba(245,240,232,0.45)',
-                textDecorationColor: 'rgba(143,184,122,0.4)',
+                color: 'rgba(245,240,232,0.78)',
+                textDecorationColor: 'rgba(143,184,122,0.6)',
+                textShadow: '0 1px 8px rgba(0,0,0,0.7)',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.85)')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.45)')}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#F5F0E8')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.78)')}
             >
               Scrivimi
             </a>
