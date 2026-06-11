@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
+import { ZoomParallax } from '@/components/ui/zoom-parallax';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -154,6 +155,11 @@ export default function ProjectClient({ project }: { project: Project }) {
           ))}
         </div>
       </div>
+
+      {/* ══ ZOOM PARALLAX GALLERY ═══════════════════════════════════════════ */}
+      {project.images && project.images.length > 0 && (
+        <ZoomParallax images={project.images} />
+      )}
 
       {/* ══ MAIN CONTENT ════════════════════════════════════════════════════ */}
       <div
