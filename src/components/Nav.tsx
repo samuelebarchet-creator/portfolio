@@ -127,7 +127,7 @@ export default function Nav() {
       {open && (
         <div
           ref={menuRef}
-          className="fixed inset-0 z-40 flex flex-col pt-20 px-6 pb-10 bg-bg md:hidden"
+          className="fixed inset-0 z-40 flex flex-col pt-20 px-8 pb-10 bg-bg md:hidden"
         >
           <ul className="flex flex-col gap-6 mt-8">
             {links.map(({ label, href }) => (
