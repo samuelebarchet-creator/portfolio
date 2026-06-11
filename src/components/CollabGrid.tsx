@@ -80,7 +80,7 @@ export default function CollabGrid() {
               className="font-display font-black italic text-parchment leading-none"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}
             >
-              <DrawOnClick><ScrambleText text="Collaborations" /></DrawOnClick>
+              <DrawOnClick>Collaborations</DrawOnClick>
             </h2>
           </div>
           <p

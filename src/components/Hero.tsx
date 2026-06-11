@@ -26,25 +26,23 @@ export default function Hero() {
       clearColor={[0.04, 0.04, 0.03, 1]}
       ariaLabel="Animated shader background"
     >
-      {/* Content sovrapposto al canvas WebGL */}
-      <div className="flex flex-col items-center justify-center h-full w-full text-center px-6">
+      <div className="flex flex-col items-center justify-center h-full w-full text-center px-6 gap-6">
         <p
-          className="text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed mb-2"
+          className="text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Creative Developer
         </p>
 
-        {/* Titolo con oval animato gold */}
         <HandWrittenTitle
-          title="Samuele Barchet"
-          subtitle="Brand identity · Digital experience · Interactive worlds"
+          title="S.B."
+          subtitle="Soluzioni per la tua comunicazione digitale"
         />
 
         <a
           ref={ctaRef}
           href="#collaborazioni"
-          className="mt-4 inline-block px-8 py-3 border border-gold text-gold font-condensed uppercase text-sm tracking-[0.25em] hover:bg-gold hover:text-bg transition-colors duration-300"
+          className="mt-6 inline-block px-8 py-3 border border-gold text-gold font-condensed uppercase text-sm tracking-[0.25em] hover:bg-gold hover:text-bg transition-colors duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           View Work

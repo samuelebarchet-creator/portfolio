@@ -167,7 +167,7 @@ export default function About() {
                 fontSize: 'clamp(2rem, 4vw, 3.5rem)',
               }}
             >
-              <DrawOnClick><ScrambleText text="Shaping brands at the edge of art and code" /></DrawOnClick>
+              <DrawOnClick>Shaping brands at the edge of art and code</DrawOnClick>
             </h2>
           </div>
 
