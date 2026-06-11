@@ -37,11 +37,11 @@ export default function ClientsBar() {
       ref={sectionRef}
       id="clients"
       className="w-full py-12 px-8 md:px-14"
-      style={{ borderBottom: '1px solid rgba(110,158,82,0.1)' }}
+      style={{ borderBottom: '1px solid rgba(61,92,53,0.12)' }}
     >
       <div className="max-w-6xl mx-auto">
         <p
-          className="text-center font-condensed uppercase text-text-dim text-xs tracking-[0.4em] mb-8"
+          className="text-center font-condensed uppercase text-ink-faint text-xs tracking-[0.4em] mb-8"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Hanno lavorato con noi

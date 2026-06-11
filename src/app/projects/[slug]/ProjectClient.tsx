@@ -43,7 +43,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           {/* Back link */}
           <Link
             href="/#collaborazioni"
-            className="flex items-center gap-2 text-gold-dim hover:text-gold transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-8 w-fit"
+            className="flex items-center gap-2 text-green-mid hover:text-green transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-8 w-fit"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
@@ -53,14 +53,14 @@ export default function ProjectClient({ project }: { project: Project }) {
           </Link>
 
           <p
-            className="font-condensed uppercase text-gold-dim text-xs tracking-[0.4em] mb-3"
+            className="font-condensed uppercase text-green-mid text-xs tracking-[0.4em] mb-3"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             {project.year} · {project.tag}
           </p>
 
           <h1
-            className="font-display font-black italic text-parchment leading-none"
+            className="font-display font-black italic text-bg leading-none"
             style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(3rem, 7vw, 7rem)',
@@ -71,7 +71,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           </h1>
 
           <p
-            className="mt-3 font-condensed text-gold uppercase tracking-[0.25em] text-sm"
+            className="mt-3 font-condensed text-green uppercase tracking-[0.25em] text-sm"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             {project.role}
@@ -88,13 +88,13 @@ export default function ProjectClient({ project }: { project: Project }) {
         <div className="lg:col-span-2 flex flex-col gap-8">
           <div className="reveal">
             <p
-              className="font-condensed uppercase text-gold-dim text-xs tracking-[0.35em] mb-4"
+              className="font-condensed uppercase text-green-mid text-xs tracking-[0.35em] mb-4"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Overview
             </p>
             <p
-              className="text-text leading-relaxed text-lg"
+              className="text-ink leading-relaxed text-lg"
               style={{ fontFamily: 'var(--font-barlow)' }}
             >
               {project.fullDescription}
@@ -109,11 +109,11 @@ export default function ProjectClient({ project }: { project: Project }) {
 
           {/* Short description callout */}
           <blockquote
-            className="reveal border-l-2 border-gold pl-6"
+            className="reveal border-l-2 border-green pl-6"
             style={{ borderColor: project.color }}
           >
             <p
-              className="font-display font-black italic text-parchment text-xl leading-snug"
+              className="font-display font-black italic text-bg text-xl leading-snug"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               "{project.description}"
@@ -126,7 +126,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           {/* Deliverables */}
           <div className="reveal">
             <p
-              className="font-condensed uppercase text-gold-dim text-xs tracking-[0.35em] mb-5"
+              className="font-condensed uppercase text-green-mid text-xs tracking-[0.35em] mb-5"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Deliverables
@@ -135,7 +135,7 @@ export default function ProjectClient({ project }: { project: Project }) {
               {project.deliverables.map((d) => (
                 <li
                   key={d}
-                  className="flex items-start gap-3 font-condensed text-text-dim text-sm tracking-wide"
+                  className="flex items-start gap-3 font-condensed text-ink-dim text-sm tracking-wide"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   <span
@@ -160,13 +160,13 @@ export default function ProjectClient({ project }: { project: Project }) {
             ].map(({ label, value }) => (
               <div key={label}>
                 <p
-                  className="font-condensed uppercase text-gold-dim text-xs tracking-[0.3em] mb-1"
+                  className="font-condensed uppercase text-green-mid text-xs tracking-[0.3em] mb-1"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {label}
                 </p>
                 <p
-                  className="font-condensed text-text text-sm tracking-wide"
+                  className="font-condensed text-ink text-sm tracking-wide"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {value}
@@ -187,13 +187,13 @@ export default function ProjectClient({ project }: { project: Project }) {
           className="group flex items-center justify-between hover:opacity-80 transition-opacity duration-300"
         >
           <span
-            className="font-condensed uppercase text-gold-dim text-xs tracking-[0.4em]"
+            className="font-condensed uppercase text-green-mid text-xs tracking-[0.4em]"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Back to all work
           </span>
           <span
-            className="font-display font-black italic text-parchment group-hover:text-gold transition-colors duration-300"
+            className="font-display font-black italic text-bg group-hover:text-green transition-colors duration-300"
             style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(1.8rem, 4vw, 3.5rem)',

@@ -86,13 +86,13 @@ export default function Footer() {
           {/* Logo + tagline */}
           <div className="flex flex-col gap-3 max-w-xs">
             <span
-              className="font-display font-black italic text-gold text-3xl leading-none"
+              className="font-display font-black italic text-green text-3xl leading-none"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               SB
             </span>
             <p
-              className="font-condensed text-text-dim text-xs uppercase tracking-[0.3em] leading-relaxed"
+              className="font-condensed text-ink-dim text-xs uppercase tracking-[0.3em] leading-relaxed"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Creative Developer<br />& Art Director
@@ -102,7 +102,7 @@ export default function Footer() {
           {/* Nav links */}
           <div className="flex flex-col gap-3">
             <p
-              className="font-condensed text-gold-dim uppercase text-xs tracking-[0.35em] mb-1"
+              className="font-condensed text-green-mid uppercase text-xs tracking-[0.35em] mb-1"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Navigation
@@ -111,7 +111,7 @@ export default function Footer() {
               <a
                 key={label}
                 href={href}
-                className="font-condensed text-text-dim text-sm uppercase tracking-[0.2em] hover:text-gold transition-colors duration-300"
+                className="font-condensed text-ink-dim text-sm uppercase tracking-[0.2em] hover:text-green transition-colors duration-300"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {label}
@@ -122,7 +122,7 @@ export default function Footer() {
           {/* Socials */}
           <div className="flex flex-col gap-3">
             <p
-              className="font-condensed text-gold-dim uppercase text-xs tracking-[0.35em] mb-1"
+              className="font-condensed text-green-mid uppercase text-xs tracking-[0.35em] mb-1"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Follow
@@ -133,9 +133,9 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 text-text-dim hover:text-gold transition-colors duration-300 group"
+                className="flex items-center gap-2.5 text-ink-dim hover:text-green transition-colors duration-300 group"
               >
-                <span className="text-gold-dim group-hover:text-gold transition-colors duration-300">
+                <span className="text-green-mid group-hover:text-green transition-colors duration-300">
                   {icon}
                 </span>
                 <span
@@ -152,16 +152,16 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
           <p
-            className="font-condensed text-text-dim text-xs uppercase tracking-[0.25em]"
+            className="font-condensed text-ink-dim text-xs uppercase tracking-[0.25em]"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             © 2026 Samuele Barchet. All rights reserved.
           </p>
 
           <div className="flex items-center gap-2">
-            <div className="w-1 h-1 bg-gold-dim rounded-full" />
+            <div className="w-1 h-1 bg-green-dim rounded-full" />
             <p
-              className="font-condensed text-text-dim text-xs uppercase tracking-[0.25em]"
+              className="font-condensed text-ink-dim text-xs uppercase tracking-[0.25em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Designed & built with obsession ✦

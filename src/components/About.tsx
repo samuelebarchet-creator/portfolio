@@ -101,7 +101,7 @@ export default function About() {
             {[0, 90, 180, 270].map((deg) => (
               <div
                 key={deg}
-                className="absolute w-1.5 h-1.5 bg-gold-dim rounded-full"
+                className="absolute w-1.5 h-1.5 bg-green-dim rounded-full"
                 style={{
                   top: '50%',
                   left: '50%',
@@ -114,7 +114,7 @@ export default function About() {
           {/* Monogram "S" */}
           <div className="relative z-10 flex flex-col items-center gap-3">
             <span
-              className="font-display font-black italic text-gold select-none"
+              className="font-display font-black italic text-green select-none"
               style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(6rem, 12vw, 10rem)',
@@ -129,7 +129,7 @@ export default function About() {
               style={{ background: 'linear-gradient(90deg, transparent, #C8A96E, transparent)' }}
             />
             <span
-              className="font-condensed uppercase text-gold-dim text-xs tracking-[0.45em]"
+              className="font-condensed uppercase text-green-mid text-xs tracking-[0.45em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Barchet
@@ -155,13 +155,13 @@ export default function About() {
         <div ref={rightRef} className="flex flex-col gap-7">
           <div>
             <p
-              className="text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed mb-3"
+              className="text-green-mid uppercase tracking-[0.4em] text-xs font-condensed mb-3"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               About me
             </p>
             <h2
-              className="font-display font-black italic text-parchment leading-tight cursor-default"
+              className="font-display font-black italic text-bg leading-tight cursor-default"
               style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(2rem, 4vw, 3.5rem)',
@@ -172,7 +172,7 @@ export default function About() {
           </div>
 
           <p
-            className="text-text-dim leading-relaxed text-base"
+            className="text-ink-dim leading-relaxed text-base"
             style={{ fontFamily: 'var(--font-barlow)' }}
           >
             I'm Samuele — a creative developer and art director based between Milan and the digital void.
@@ -182,7 +182,7 @@ export default function About() {
           </p>
 
           <p
-            className="text-text-dim leading-relaxed text-base"
+            className="text-ink-dim leading-relaxed text-base"
             style={{ fontFamily: 'var(--font-barlow)' }}
           >
             My approach is rooted in storytelling — every pixel carries intent. Whether I'm crafting a
@@ -199,7 +199,7 @@ export default function About() {
           {/* Skill tags */}
           <div>
             <p
-              className="font-condensed uppercase text-gold-dim text-xs tracking-[0.3em] mb-4"
+              className="font-condensed uppercase text-green-mid text-xs tracking-[0.3em] mb-4"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Disciplines
@@ -208,7 +208,7 @@ export default function About() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 text-xs font-condensed uppercase tracking-[0.15em] text-text-dim"
+                  className="px-3 py-1 text-xs font-condensed uppercase tracking-[0.15em] text-ink-dim"
                   style={{
                     fontFamily: 'var(--font-barlow-condensed)',
                     border: '1px solid rgba(200,169,110,0.25)',

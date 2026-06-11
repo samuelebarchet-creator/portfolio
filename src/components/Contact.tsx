@@ -85,7 +85,7 @@ export default function Contact() {
 
       <div className="relative z-10 flex flex-col items-center max-w-3xl">
         <p
-          className="contact-label font-condensed uppercase text-gold-dim text-xs tracking-[0.45em] mb-5"
+          className="contact-label font-condensed uppercase text-green-mid text-xs tracking-[0.45em] mb-5"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Get in touch
@@ -93,7 +93,7 @@ export default function Contact() {
 
         <h2
           ref={titleRef}
-          className="font-display font-black italic text-parchment leading-tight"
+          className="font-display font-black italic text-bg leading-tight"
           style={{
             fontFamily: 'var(--font-playfair)',
             fontSize: 'clamp(2.8rem, 7vw, 7rem)',
@@ -104,7 +104,7 @@ export default function Contact() {
         </h2>
 
         <p
-          className="contact-sub mt-6 max-w-md font-condensed text-text-dim text-base tracking-wide leading-relaxed"
+          className="contact-sub mt-6 max-w-md font-condensed text-ink-dim text-base tracking-wide leading-relaxed"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Open to brand projects, creative direction, interactive experiences,
@@ -115,7 +115,7 @@ export default function Contact() {
         <div className="flex items-center gap-4 my-10">
           <div className="w-16 h-px" style={{ background: 'rgba(200,169,110,0.3)' }} />
           <div
-            className="w-1.5 h-1.5 bg-gold rotate-45"
+            className="w-1.5 h-1.5 bg-green rotate-45"
             style={{ boxShadow: '0 0 8px rgba(200,169,110,0.6)' }}
           />
           <div className="w-16 h-px" style={{ background: 'rgba(200,169,110,0.3)' }} />
@@ -125,7 +125,7 @@ export default function Contact() {
         <a
           ref={ctaRef}
           href="mailto:samuele.barchet@gmail.com"
-          className="group inline-flex items-center gap-4 px-10 py-4 font-condensed uppercase tracking-[0.3em] text-sm text-bg bg-gold hover:bg-parchment transition-colors duration-300"
+          className="group inline-flex items-center gap-4 px-10 py-4 font-condensed uppercase tracking-[0.3em] text-sm text-bg bg-green hover:bg-parchment transition-colors duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           samuele.barchet@gmail.com
@@ -148,7 +148,7 @@ export default function Contact() {
 
         {/* Secondary note */}
         <p
-          className="mt-6 font-condensed text-text-dim text-xs tracking-[0.2em] uppercase"
+          className="mt-6 font-condensed text-ink-dim text-xs tracking-[0.2em] uppercase"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Response within 24 hours

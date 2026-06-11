@@ -22,27 +22,27 @@ export default function Hero() {
   return (
     <AetherHero
       height="100vh"
-      overlayGradient="linear-gradient(180deg, rgba(10,10,8,0.72) 0%, rgba(10,10,8,0.32) 50%, rgba(10,10,8,0.84) 100%)"
-      clearColor={[0.04, 0.04, 0.03, 1]}
+      overlayGradient="linear-gradient(180deg, rgba(245,240,232,0.55) 0%, rgba(245,240,232,0.15) 50%, rgba(245,240,232,0.70) 100%)"
+      clearColor={[0.96, 0.94, 0.91, 1]}
       ariaLabel="Animated shader background"
     >
       <div className="flex flex-col items-center justify-center h-full w-full text-center px-6 gap-6">
         <p
-          className="text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed"
+          className="text-ink-dim uppercase tracking-[0.4em] text-xs font-condensed"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          Creative Developer
+          Brand &amp; Digital Strategist
         </p>
 
         <HandWrittenTitle
           title="S.B."
-          subtitle="Soluzioni per la tua comunicazione digitale"
+          subtitle="Costruisco identità di marca e strategie digitali"
         />
 
         <a
           ref={ctaRef}
           href="#collaborazioni"
-          className="mt-6 inline-block px-8 py-3 border border-gold text-gold font-condensed uppercase text-sm tracking-[0.25em] hover:bg-gold hover:text-bg transition-colors duration-300"
+          className="mt-6 inline-block px-8 py-3 border border-green text-green font-condensed uppercase text-sm tracking-[0.25em] hover:bg-green hover:text-bg transition-colors duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           View Work
@@ -51,12 +51,12 @@ export default function Hero() {
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
           <span
-            className="text-gold font-condensed uppercase text-xs tracking-[0.3em]"
+            className="text-green font-condensed uppercase text-xs tracking-[0.3em]"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Scroll
           </span>
-          <div className="w-px h-12 bg-gold origin-top animate-[scaleY_1.6s_ease-in-out_infinite_alternate]" />
+          <div className="w-px h-12 bg-green origin-top animate-[scaleY_1.6s_ease-in-out_infinite_alternate]" />
         </div>
       </div>
     </AetherHero>

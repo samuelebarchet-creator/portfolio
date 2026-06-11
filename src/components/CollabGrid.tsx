@@ -71,20 +71,20 @@ export default function CollabGrid() {
         <div className="section-header mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <p
-              className="text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed mb-3"
+              className="text-green-mid uppercase tracking-[0.4em] text-xs font-condensed mb-3"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Selected work
             </p>
             <h2
-              className="font-display font-black italic text-parchment leading-none"
+              className="font-display font-black italic text-bg leading-none"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}
             >
               <DrawOnClick>Collaborations</DrawOnClick>
             </h2>
           </div>
           <p
-            className="max-w-xs text-text-dim font-condensed text-sm leading-relaxed tracking-wide"
+            className="max-w-xs text-ink-dim font-condensed text-sm leading-relaxed tracking-wide"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             A selection of brands and studios I've shaped — from identity systems to interactive experiences.
@@ -92,7 +92,7 @@ export default function CollabGrid() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gold/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-green/10">
           {projects.map((p, i) => (
             <Link
               key={p.slug}
@@ -105,31 +105,31 @@ export default function CollabGrid() {
                 onMouseEnter={(e) => onEnter(e.currentTarget)}
                 onMouseLeave={(e) => onLeave(e.currentTarget)}
               >
-                <div className="card-border absolute inset-0 border border-gold pointer-events-none opacity-0" />
+                <div className="card-border absolute inset-0 border border-green pointer-events-none opacity-0" />
 
                 <span
-                  className="block font-condensed text-gold-dim text-xs uppercase tracking-[0.3em] mb-6"
+                  className="block font-condensed text-green-mid text-xs uppercase tracking-[0.3em] mb-6"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {p.year}
                 </span>
 
                 <h3
-                  className="company-name font-display font-black italic text-parchment leading-tight mb-1"
+                  className="company-name font-display font-black italic text-bg leading-tight mb-1"
                   style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.6rem, 2.5vw, 2.2rem)' }}
                 >
                   {p.company}
                 </h3>
 
                 <p
-                  className="font-condensed text-gold-dim uppercase text-xs tracking-[0.2em] mb-5"
+                  className="font-condensed text-green-mid uppercase text-xs tracking-[0.2em] mb-5"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {p.role}
                 </p>
 
                 <p
-                  className="font-body text-text-dim text-sm leading-relaxed"
+                  className="font-body text-ink-dim text-sm leading-relaxed"
                   style={{ fontFamily: 'var(--font-barlow)' }}
                 >
                   {p.description}
@@ -137,7 +137,7 @@ export default function CollabGrid() {
 
                 {/* Tag */}
                 <span
-                  className="card-tag absolute bottom-6 right-6 font-condensed text-gold text-xs uppercase tracking-[0.25em] opacity-0 -translate-x-2"
+                  className="card-tag absolute bottom-6 right-6 font-condensed text-green text-xs uppercase tracking-[0.25em] opacity-0 -translate-x-2"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {p.tag}
@@ -145,7 +145,7 @@ export default function CollabGrid() {
 
                 {/* View label */}
                 <span
-                  className="view-label absolute bottom-6 left-8 font-condensed text-gold-dim text-xs uppercase tracking-[0.25em] opacity-0 translate-y-1.5"
+                  className="view-label absolute bottom-6 left-8 font-condensed text-green-mid text-xs uppercase tracking-[0.25em] opacity-0 translate-y-1.5"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   View project →

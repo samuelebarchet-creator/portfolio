@@ -1,20 +1,54 @@
 @import "tailwindcss";
 
+/* ─── Tailwind v4 design tokens ─────────────────────────────────────────── */
 @theme {
-  --color-bg: #0A0A08;
-  --color-surface: #0D110A;
-  --color-gold: #6E9E52;
-  --color-gold-dim: #4A6E38;
-  --color-parchment: #F2EBD9;
-  --color-crimson: #6B3A1A;
-  --color-text: #EDE6D0;
-  --color-text-dim: #8A9280;
+  /* Backgrounds — carta crema */
+  --color-bg:       #F5F0E8;
+  --color-bg-alt:   #EDE8DC;
+  --color-surface:  #E8E2D4;
+  --color-surface2: #E2DDD0;
 
-  --font-display: var(--font-playfair);
-  --font-body: var(--font-barlow);
+  /* Botanical greens */
+  --color-green:       #3D5C35;
+  --color-green-mid:   #6A8A5E;
+  --color-green-light: #8FB87A;
+
+  /* Ink */
+  --color-ink:       #1A1A16;
+  --color-ink-dim:   #5A5A52;
+  --color-ink-faint: #9A9A8E;
+
+  /* Terracotta / accento */
+  --color-orange:       #D4713A;
+  --color-orange-light: #E09060;
+  --color-brown:        #6B4226;
+  --color-brown-light:  #9A6B48;
+
+  /* Typography */
+  --font-display:   var(--font-playfair);
+  --font-body:      var(--font-barlow);
   --font-condensed: var(--font-barlow-condensed);
 }
 
+/* ─── CSS custom properties for inline styles ───────────────────────────── */
+:root {
+  --bg:           #F5F0E8;
+  --bg-alt:       #EDE8DC;
+  --surface:      #E8E2D4;
+  --surface2:     #E2DDD0;
+  --green:        #3D5C35;
+  --green-mid:    #6A8A5E;
+  --green-light:  #8FB87A;
+  --ink:          #1A1A16;
+  --ink-dim:      #5A5A52;
+  --ink-faint:    #9A9A8E;
+  --orange:       #D4713A;
+  --orange-light: #E09060;
+  --brown:        #6B4226;
+  --brown-light:  #9A6B48;
+}
+
+/* ─── Reset ──────────────────────────────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -24,40 +58,50 @@
 }
 
 html {
-  background-color: #0A0A08;
-  color: #EDE6D0;
+  background-color: var(--bg);
+  color: var(--ink);
   height: 100%;
 }
 
 body {
-  background-color: #0A0A08;
-  color: #EDE6D0;
+  background-color: var(--bg);
+  color: var(--ink);
   font-family: var(--font-barlow), "Barlow", sans-serif;
   min-height: 100%;
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--green); }
+
+/* ─── Selection ──────────────────────────────────────────────────────────── */
+::selection        { background: var(--green); color: var(--bg); }
+::-moz-selection   { background: var(--green); color: var(--bg); }
+
+/* ─── Marquee keyframes (WorkMarquee) ────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
-::-webkit-scrollbar-track {
-  background: #0A0A08;
-}
-::-webkit-scrollbar-thumb {
-  background: #4A6E38;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #6E9E52;
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
 
-/* Text selection */
-::selection {
-  background: #6E9E52;
-  color: #0A0A08;
+/* ─── Ornament utility ───────────────────────────────────────────────────── */
+.ornament-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-::-moz-selection {
-  background: #6E9E52;
-  color: #0A0A08;
+.ornament-line::before,
+.ornament-line::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--green-mid);
+  opacity: 0.3;
 }

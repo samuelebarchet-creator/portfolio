@@ -39,8 +39,8 @@ export default function StatsBar() {
       id="stats"
       className="w-full py-16 px-8 md:px-14"
       style={{
-        borderTop: '1px solid rgba(110,158,82,0.15)',
-        borderBottom: '1px solid rgba(110,158,82,0.15)',
+        borderTop: '1px solid rgba(61,92,53,0.12)',
+        borderBottom: '1px solid rgba(61,92,53,0.12)',
       }}
     >
       <div className="max-w-6xl mx-auto grid grid-cols-3 gap-0">
@@ -50,12 +50,12 @@ export default function StatsBar() {
             className="stat-item flex flex-col items-center md:items-start md:px-10 gap-1"
             style={
               i < stats.length - 1
-                ? { borderRight: '1px solid rgba(110,158,82,0.12)' }
+                ? { borderRight: '1px solid rgba(61,92,53,0.12)' }
                 : undefined
             }
           >
             <div
-              className="font-display font-black italic text-gold leading-none"
+              className="font-display font-black italic text-green leading-none"
               style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(3rem, 5vw, 5rem)',
@@ -64,7 +64,7 @@ export default function StatsBar() {
               {stat.value}{stat.suffix}
             </div>
             <p
-              className="font-condensed uppercase text-text-dim text-xs tracking-[0.2em] mt-1"
+              className="font-condensed uppercase text-ink-dim text-xs tracking-[0.2em] mt-1"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {stat.label}

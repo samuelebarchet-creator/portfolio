@@ -31,9 +31,9 @@ export default function Nav() {
       ref={navRef}
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-14 h-16 transition-colors duration-500"
       style={{
-        borderBottom: '1px solid rgba(200,169,110,0.25)',
+        borderBottom: scrolled ? '1px solid rgba(61,92,53,0.12)' : '1px solid transparent',
         background: scrolled
-          ? 'rgba(10,10,8,0.92)'
+          ? 'rgba(245,240,232,0.92)'
           : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
       }}
@@ -41,7 +41,7 @@ export default function Nav() {
       {/* Logo */}
       <a
         href="#"
-        className="font-display font-black italic text-gold text-xl tracking-wide select-none"
+        className="font-display font-black italic text-green text-xl tracking-wide select-none"
         style={{ fontFamily: 'var(--font-playfair)' }}
       >
         SB
@@ -53,11 +53,11 @@ export default function Nav() {
           <li key={label}>
             <a
               href={href}
-              className="relative font-condensed text-sm uppercase tracking-[0.18em] text-text-dim hover:text-gold transition-colors duration-300 group"
+              className="relative font-condensed text-sm uppercase tracking-[0.18em] text-ink-dim hover:text-green transition-colors duration-300 group"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {label}
-              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-green transition-all duration-300 group-hover:w-full" />
             </a>
           </li>
         ))}

@@ -100,7 +100,7 @@ export default function CustomCursor() {
       {/* Dot */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 z-[9999] pointer-events-none rounded-full bg-gold"
+        className="fixed top-0 left-0 z-[9999] pointer-events-none rounded-full bg-green"
         style={{ width: 8, height: 8 }}
       />
 
@@ -121,7 +121,7 @@ export default function CustomCursor() {
         <div
           key={i}
           ref={(el) => { trailRefs.current[i] = el; }}
-          className="fixed top-0 left-0 z-[9997] pointer-events-none rounded-full bg-gold"
+          className="fixed top-0 left-0 z-[9997] pointer-events-none rounded-full bg-green"
           style={{ width: 6, height: 6 }}
         />
       ))}

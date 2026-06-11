@@ -23,8 +23,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Samuele Barchet — Portfolio",
-  description: "Creative developer. Brand, digital, and interactive experiences.",
+  title: "Samuele Barchet — Brand & Digital Strategist",
+  description: "Brand & Digital Strategist. Costruisco identità di marca e strategie digitali che generano risultati misurabili.",
 };
 
 export default function RootLayout({
@@ -37,8 +37,10 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
-      <body className="min-h-full bg-bg text-text antialiased">
-        <SmoothScroll>{children}</SmoothScroll>
+      <body className="min-h-full bg-bg text-ink antialiased">
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
