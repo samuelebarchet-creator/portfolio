@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrambleText } from '@/components/ui/scramble-text';
+import { DrawOnClick } from '@/components/ui/draw-on-click';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -166,7 +167,7 @@ export default function About() {
                 fontSize: 'clamp(2rem, 4vw, 3.5rem)',
               }}
             >
-              <ScrambleText text="Shaping brands at the edge of art and code" />
+              <DrawOnClick><ScrambleText text="Shaping brands at the edge of art and code" /></DrawOnClick>
             </h2>
           </div>
 

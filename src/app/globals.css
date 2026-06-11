@@ -2,13 +2,13 @@
 
 @theme {
   --color-bg: #0A0A08;
-  --color-surface: #111008;
-  --color-gold: #C8A96E;
-  --color-gold-dim: #8C7140;
+  --color-surface: #0D110A;
+  --color-gold: #6E9E52;
+  --color-gold-dim: #4A6E38;
   --color-parchment: #F2EBD9;
-  --color-crimson: #7A1515;
+  --color-crimson: #6B3A1A;
   --color-text: #EDE6D0;
-  --color-text-dim: #9C8F72;
+  --color-text-dim: #8A9280;
 
   --font-display: var(--font-playfair);
   --font-body: var(--font-barlow);
@@ -45,19 +45,19 @@ body {
   background: #0A0A08;
 }
 ::-webkit-scrollbar-thumb {
-  background: #8C7140;
+  background: #4A6E38;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C8A96E;
+  background: #6E9E52;
 }
 
 /* Text selection */
 ::selection {
-  background: #C8A96E;
+  background: #6E9E52;
   color: #0A0A08;
 }
 ::-moz-selection {
-  background: #C8A96E;
+  background: #6E9E52;
   color: #0A0A08;
 }

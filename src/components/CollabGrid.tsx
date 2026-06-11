@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 import { ScrambleText } from '@/components/ui/scramble-text';
+import { DrawOnClick } from '@/components/ui/draw-on-click';
 import { projects } from '@/lib/projects';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -79,7 +80,7 @@ export default function CollabGrid() {
               className="font-display font-black italic text-parchment leading-none"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}
             >
-              <ScrambleText text="Collaborations" />
+              <DrawOnClick><ScrambleText text="Collaborations" /></DrawOnClick>
             </h2>
           </div>
           <p

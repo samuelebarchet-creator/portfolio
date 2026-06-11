@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <AetherHero
       height="100vh"
-      overlayGradient="linear-gradient(180deg, rgba(10,10,8,0.55) 0%, rgba(10,10,8,0.15) 50%, rgba(10,10,8,0.7) 100%)"
+      overlayGradient="linear-gradient(180deg, rgba(10,10,8,0.72) 0%, rgba(10,10,8,0.32) 50%, rgba(10,10,8,0.84) 100%)"
       clearColor={[0.04, 0.04, 0.03, 1]}
       ariaLabel="Animated shader background"
     >
