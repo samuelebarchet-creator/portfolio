@@ -131,8 +131,7 @@ export default function Contact() {
         {/* Socials inline */}
         <div className="flex items-center gap-6 mt-10">
           {[
-            { label: 'Instagram', href: 'https://www.instagram.com/samuele.barchet/' },
-            { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/samuelebarchet/' },
+            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/' },
           ].map(({ label, href }) => (
             <a
               key={label}
