@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { GradientBackground } from '@/components/ui/paper-design-shader-background';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,21 +74,14 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="w-full py-36 px-8 md:px-14 flex flex-col items-center text-center"
+      className="relative w-full py-36 px-8 md:px-14 flex flex-col items-center text-center overflow-hidden"
       style={{ borderTop: '1px solid rgba(200,169,110,0.12)' }}
     >
-      {/* Background glow */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          width: '600px',
-          height: '600px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(200,169,110,0.04) 0%, transparent 70%)',
-          transform: 'translateX(-50%)',
-          left: '50%',
-        }}
-      />
+      {/* Shader gradient background */}
+      <GradientBackground />
+
+      {/* Dark overlay to keep text readable */}
+      <div className="absolute inset-0 -z-[5] bg-bg/70 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-center max-w-3xl">
         <p
