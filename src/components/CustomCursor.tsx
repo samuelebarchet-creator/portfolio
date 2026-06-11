@@ -67,11 +67,11 @@ export default function CustomCursor() {
 
     /* Scale ring on clickable elements */
     const onEnterLink = () => {
-      gsap.to(ring, { scale: 1.8, borderColor: '#C8A96E', opacity: 0.9, duration: 0.3 });
+      gsap.to(ring, { scale: 1.8, borderColor: '#3D5C35', opacity: 0.9, duration: 0.3 });
       gsap.to(dot, { scale: 0, duration: 0.2 });
     };
     const onLeaveLink = () => {
-      gsap.to(ring, { scale: 1, borderColor: 'rgba(200,169,110,0.6)', opacity: 0.7, duration: 0.3 });
+      gsap.to(ring, { scale: 1, borderColor: 'rgba(61,92,53,0.5)', opacity: 0.7, duration: 0.3 });
       gsap.to(dot, { scale: 1, duration: 0.2 });
     };
 
@@ -111,7 +111,7 @@ export default function CustomCursor() {
         style={{
           width: 40,
           height: 40,
-          border: '1px solid rgba(200,169,110,0.6)',
+          border: '1px solid rgba(61,92,53,0.5)',
           opacity: 0.7,
         }}
       />
