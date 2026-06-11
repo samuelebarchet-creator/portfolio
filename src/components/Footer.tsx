@@ -164,7 +164,7 @@ export default function Footer() {
               className="font-condensed text-text-dim text-xs uppercase tracking-[0.25em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
-              Designed & built with obsession
+              Designed & built with obsession ✦
             </p>
           </div>
         </div>
