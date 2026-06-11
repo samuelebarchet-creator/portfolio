@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrambleText } from '@/components/ui/scramble-text';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -159,13 +160,13 @@ export default function About() {
               About me
             </p>
             <h2
-              className="font-display font-black italic text-parchment leading-tight"
+              className="font-display font-black italic text-parchment leading-tight cursor-default"
               style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(2rem, 4vw, 3.5rem)',
               }}
             >
-              Shaping brands at the edge of art and code
+              <ScrambleText text="Shaping brands at the edge of art and code" />
             </h2>
           </div>
 

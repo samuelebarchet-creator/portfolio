@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrambleText } from '@/components/ui/scramble-text';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,7 +157,7 @@ export default function CollabGrid() {
                 fontSize: 'clamp(2.4rem, 5vw, 4.5rem)',
               }}
             >
-              Collaborations
+              <ScrambleText text="Collaborations" />
             </h2>
           </div>
           <p

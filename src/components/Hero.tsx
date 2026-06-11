@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
+import { HandWrittenTitle } from '@/components/ui/hand-writing-text';
 
 const PARTICLE_COUNT = 2200;
 const SPREAD = 18;
@@ -10,7 +11,6 @@ const SPREAD = 18;
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
   const mouse = useRef({ x: 0, y: 0 });
@@ -28,7 +28,6 @@ export default function Hero() {
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
     camera.position.z = 10;
 
-    /* Particles */
     const positions = new Float32Array(PARTICLE_COUNT * 3);
     const sizes = new Float32Array(PARTICLE_COUNT);
 
@@ -56,28 +55,22 @@ export default function Hero() {
         uniform float uTime;
         uniform vec2 uMouse;
         varying float vAlpha;
-
         void main() {
           vec3 pos = position;
-
           float dist = length(pos.xy - uMouse * 8.0);
           float repulse = smoothstep(3.0, 0.0, dist) * 0.6;
           pos.z += repulse;
-
           pos.x += sin(uTime * 0.3 + position.y * 0.5) * 0.08;
           pos.y += cos(uTime * 0.25 + position.x * 0.5) * 0.08;
-
           vec4 mvPos = modelViewMatrix * vec4(pos, 1.0);
           gl_PointSize = size * (14.0 / -mvPos.z);
           gl_Position = projectionMatrix * mvPos;
-
           vAlpha = 0.35 + 0.3 * sin(uTime * 0.5 + position.z);
         }
       `,
       fragmentShader: `
         uniform vec3 uColor;
         varying float vAlpha;
-
         void main() {
           float d = length(gl_PointCoord - vec2(0.5));
           if (d > 0.5) discard;
@@ -90,14 +83,12 @@ export default function Hero() {
     const points = new THREE.Points(geo, mat);
     scene.add(points);
 
-    /* Mouse */
     const onMouseMove = (e: MouseEvent) => {
       mouse.current.x = (e.clientX / window.innerWidth) * 2 - 1;
       mouse.current.y = -(e.clientY / window.innerHeight) * 2 + 1;
     };
     window.addEventListener('mousemove', onMouseMove);
 
-    /* Resize */
     const onResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -105,7 +96,6 @@ export default function Hero() {
     };
     window.addEventListener('resize', onResize);
 
-    /* Render loop */
     let raf: number;
     const clock = new THREE.Clock();
 
@@ -132,43 +122,17 @@ export default function Hero() {
     };
   }, []);
 
-  /* ── Text animations ── */
+  /* ── Subtitle + CTA fade-in ── */
   useEffect(() => {
-    const run = async () => {
-      const SplitType = (await import('split-type')).default;
-
-      if (!titleRef.current || !subtitleRef.current || !ctaRef.current) return;
-
-      const splitTitle = new SplitType(titleRef.current, { types: 'chars' });
-
-      gsap.set(splitTitle.chars, { y: 60, opacity: 0 });
-      gsap.set(subtitleRef.current, { y: 20, opacity: 0 });
-      gsap.set(ctaRef.current, { y: 20, opacity: 0 });
-
-      const tl = gsap.timeline({ delay: 0.3 });
-
-      tl.to(splitTitle.chars, {
-        y: 0,
-        opacity: 1,
-        duration: 0.9,
-        stagger: 0.05,
-        ease: 'power4.out',
-      })
-        .to(
-          subtitleRef.current,
-          { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' },
-          '-=0.4'
-        )
-        .to(
-          ctaRef.current,
-          { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out' },
-          '-=0.5'
-        );
-
-      return () => splitTitle.revert();
-    };
-
-    run();
+    gsap.set([subtitleRef.current, ctaRef.current], { y: 20, opacity: 0 });
+    gsap.to([subtitleRef.current, ctaRef.current], {
+      y: 0,
+      opacity: 1,
+      duration: 0.9,
+      stagger: 0.15,
+      ease: 'power3.out',
+      delay: 2.2,
+    });
   }, []);
 
   return (
@@ -187,45 +151,29 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background:
-            'radial-gradient(ellipse 70% 70% at 50% 50%, transparent 30%, #0A0A08 100%)',
+          background: 'radial-gradient(ellipse 70% 70% at 50% 50%, transparent 30%, #0A0A08 100%)',
         }}
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6">
+      <div className="relative z-10 flex flex-col items-center text-center px-6 w-full">
         <p
-          className="mb-4 text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed"
+          className="mb-2 text-gold-dim uppercase tracking-[0.4em] text-xs font-condensed"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Creative Developer
         </p>
 
-        <h1
-          ref={titleRef}
-          className="font-display font-black italic text-parchment overflow-hidden"
-          style={{
-            fontFamily: 'var(--font-playfair)',
-            fontSize: 'clamp(3.2rem, 9vw, 9rem)',
-            lineHeight: 1,
-            letterSpacing: '-0.02em',
-          }}
-        >
-          Samuele Barchet
-        </h1>
-
-        <p
-          ref={subtitleRef}
-          className="mt-6 max-w-md font-condensed text-text-dim text-lg tracking-wide"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Brand identity · Digital experience · Interactive worlds
-        </p>
+        {/* HandWrittenTitle — draws gold oval + animates name */}
+        <HandWrittenTitle
+          title="Samuele Barchet"
+          subtitle="Brand identity · Digital experience · Interactive worlds"
+        />
 
         <a
           ref={ctaRef}
           href="#collaborazioni"
-          className="mt-10 inline-block px-8 py-3 border border-gold text-gold font-condensed uppercase text-sm tracking-[0.25em] hover:bg-gold hover:text-bg transition-colors duration-300"
+          className="mt-4 inline-block px-8 py-3 border border-gold text-gold font-condensed uppercase text-sm tracking-[0.25em] hover:bg-gold hover:text-bg transition-colors duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           View Work
