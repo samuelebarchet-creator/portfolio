@@ -85,17 +85,22 @@ export default function Hero() {
         aria-hidden
       />
 
+      {/* Role label — floats above the portrait, top of section */}
+      <p
+        ref={labelRef}
+        className="absolute font-condensed uppercase text-xs tracking-[0.5em] opacity-0 px-8 md:px-20"
+        style={{
+          top: 'calc(var(--nav-h, 64px) + 28px)',
+          color: '#8FB87A',
+          fontFamily: 'var(--font-barlow-condensed)',
+          zIndex: 10,
+        }}
+      >
+        Brand &amp; Digital Strategist
+      </p>
+
       {/* Content */}
       <div className="relative flex flex-col justify-center h-full min-h-[100svh] px-8 md:px-20 pt-24 pb-16 max-w-6xl mx-auto" style={{ zIndex: 10 }}>
-
-        {/* Role label */}
-        <p
-          ref={labelRef}
-          className="font-condensed uppercase text-xs tracking-[0.5em] mb-8 opacity-0"
-          style={{ color: '#E8703A', fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Brand &amp; Digital Strategist
-        </p>
 
         {/* Name */}
         <h1
