@@ -1,131 +1,16 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import * as THREE from 'three';
 import { gsap } from '@/lib/gsap';
-
-const COUNT = 600;
-
-/* Botanical green palette — visible on cream background */
-const COLORS = [
-  new THREE.Color('#3D5C35'),
-  new THREE.Color('#6A8A5E'),
-  new THREE.Color('#8FB87A'),
-  new THREE.Color('#4A7040'),
-  new THREE.Color('#5C7E50'),
-];
+import { FloatingPaths } from '@/components/ui/background-paths';
 
 export default function Hero() {
   const sectionRef  = useRef<HTMLElement>(null);
-  const canvasRef   = useRef<HTMLCanvasElement>(null);
   const nameRef     = useRef<HTMLHeadingElement>(null);
   const labelRef    = useRef<HTMLParagraphElement>(null);
   const subRef      = useRef<HTMLParagraphElement>(null);
   const ctaRef      = useRef<HTMLDivElement>(null);
-  const rafRef      = useRef<number>(0);
 
-  /* ── Three.js particles ── */
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const section = sectionRef.current;
-    if (!canvas || !section) return;
-
-    const W = section.offsetWidth;
-    const H = section.offsetHeight;
-
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-    renderer.setSize(W, H);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-
-    const scene  = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera(-W / 2, W / 2, H / 2, -H / 2, 0.1, 100);
-    camera.position.z = 10;
-
-    /* Geometry */
-    const positions  = new Float32Array(COUNT * 3);
-    const colors     = new Float32Array(COUNT * 3);
-    const phases     = new Float32Array(COUNT);
-    const speeds     = new Float32Array(COUNT);
-    const amplitudes = new Float32Array(COUNT);
-    const baseY      = new Float32Array(COUNT);
-
-    for (let i = 0; i < COUNT; i++) {
-      const x = (Math.random() - 0.5) * W * 1.1;
-      const y = (Math.random() - 0.5) * H * 1.1;
-
-      positions[i * 3]     = x;
-      positions[i * 3 + 1] = y;
-      positions[i * 3 + 2] = 0;
-
-      baseY[i]      = y;
-      phases[i]     = Math.random() * Math.PI * 2;
-      speeds[i]     = 0.15 + Math.random() * 0.35;
-      amplitudes[i] = 8 + Math.random() * 24;
-
-      const c = COLORS[Math.floor(Math.random() * COLORS.length)];
-      colors[i * 3]     = c.r;
-      colors[i * 3 + 1] = c.g;
-      colors[i * 3 + 2] = c.b;
-    }
-
-    const geometry = new THREE.BufferGeometry();
-    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geometry.setAttribute('color',    new THREE.BufferAttribute(colors,    3));
-
-    const material = new THREE.PointsMaterial({
-      size: 2.2,
-      vertexColors: true,
-      transparent: true,
-      opacity: 0.55,
-      sizeAttenuation: false,
-    });
-
-    const points = new THREE.Points(geometry, material);
-    scene.add(points);
-
-    /* Resize */
-    const onResize = () => {
-      const w = section.offsetWidth;
-      const h = section.offsetHeight;
-      renderer.setSize(w, h);
-      camera.left   = -w / 2;
-      camera.right  =  w / 2;
-      camera.top    =  h / 2;
-      camera.bottom = -h / 2;
-      camera.updateProjectionMatrix();
-    };
-    window.addEventListener('resize', onResize);
-
-    /* Render loop */
-    let t0 = 0;
-    const animate = (ts: number) => {
-      rafRef.current = requestAnimationFrame(animate);
-      const t = ts * 0.001;
-      if (t0 === 0) t0 = t;
-      const elapsed = t - t0;
-
-      const pos = geometry.attributes.position.array as Float32Array;
-      for (let i = 0; i < COUNT; i++) {
-        pos[i * 3 + 1] = baseY[i] + Math.sin(elapsed * speeds[i] + phases[i]) * amplitudes[i];
-        /* Slow horizontal drift */
-        pos[i * 3]    += Math.cos(elapsed * speeds[i] * 0.4 + phases[i]) * 0.04;
-      }
-      geometry.attributes.position.needsUpdate = true;
-
-      renderer.render(scene, camera);
-    };
-    rafRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      cancelAnimationFrame(rafRef.current);
-      window.removeEventListener('resize', onResize);
-      geometry.dispose();
-      material.dispose();
-      renderer.dispose();
-    };
-  }, []);
-
-  /* ── Text animations ── */
   useEffect(() => {
     const label    = labelRef.current;
     const name     = nameRef.current;
@@ -135,10 +20,8 @@ export default function Hero() {
 
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-    /* Label slides down */
     tl.fromTo(label, { y: -16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 0.2);
 
-    /* Name: character-by-character reveal via SplitType */
     import('split-type').then(({ default: SplitType }) => {
       const split = new SplitType(name, { types: 'chars' });
 
@@ -158,7 +41,6 @@ export default function Hero() {
       );
     });
 
-    /* Subtitle + CTA */
     tl.fromTo(subtitle, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.1);
     tl.fromTo(cta,      { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.35);
   }, []);
@@ -169,19 +51,16 @@ export default function Hero() {
       className="relative w-full overflow-hidden bg-bg"
       style={{ minHeight: '100svh' }}
     >
-      {/* Particles canvas */}
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        aria-hidden
-      />
+      {/* Animated botanical paths — two mirrored layers for depth */}
+      <FloatingPaths position={1} />
+      <FloatingPaths position={-1} />
 
-      {/* Subtle vignette — fades out particles near edges */}
+      {/* Vignette — softens path edges near the content */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, rgba(245,240,232,0.7) 100%)',
+            'radial-gradient(ellipse 75% 75% at 50% 50%, transparent 35%, rgba(245,240,232,0.75) 100%)',
         }}
         aria-hidden
       />
@@ -198,7 +77,7 @@ export default function Hero() {
           Brand &amp; Digital Strategist
         </p>
 
-        {/* Name — full heading, large */}
+        {/* Name */}
         <h1
           ref={nameRef}
           className="font-display font-black italic text-ink leading-[0.88] overflow-hidden"
@@ -211,13 +90,13 @@ export default function Hero() {
           Samuele<br />Barchet
         </h1>
 
-        {/* Divider line */}
+        {/* Divider */}
         <div
           className="my-8 h-px w-24"
           style={{ background: 'rgba(61,92,53,0.3)' }}
         />
 
-        {/* Subtitle + CTA row */}
+        {/* Subtitle + CTA */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 max-w-4xl">
           <p
             ref={subRef}
