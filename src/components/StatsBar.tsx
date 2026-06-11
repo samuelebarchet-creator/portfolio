@@ -1,15 +1,13 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import { gsap, ScrollTrigger } from '@/lib/gsap';
 
 const stats = [
-  { value: '4', suffix: '', label: 'Anni di esperienza' },
-  { value: '4', suffix: 'M+', label: 'Visualizzazioni generate' },
-  { value: '7', suffix: '', label: 'Brand collaborati' },
+  { value: '5+',  label: 'Anni di esperienza' },
+  { value: '20+', label: 'Progetti realizzati' },
+  { value: '5',   label: 'Brand seguiti dal lancio' },
+  { value: '∞',   label: 'Caffè bevuti' },
 ];
 
 export default function StatsBar() {
@@ -19,16 +17,17 @@ export default function StatsBar() {
     const section = sectionRef.current;
     if (!section) return;
 
+    gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
       section.querySelectorAll('.stat-item'),
-      { y: 30, opacity: 0 },
+      { y: 28, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 0.8,
-        stagger: 0.15,
+        duration: 0.75,
+        stagger: 0.12,
         ease: 'power3.out',
-        scrollTrigger: { trigger: section, start: 'top 80%', once: true },
+        scrollTrigger: { trigger: section, start: 'top 82%', once: true },
       }
     );
   }, []);
@@ -37,20 +36,17 @@ export default function StatsBar() {
     <section
       ref={sectionRef}
       id="stats"
-      className="w-full py-16 px-8 md:px-14"
-      style={{
-        borderTop: '1px solid rgba(61,92,53,0.12)',
-        borderBottom: '1px solid rgba(61,92,53,0.12)',
-      }}
+      className="w-full py-14 px-6 md:px-14 bg-bg-alt"
+      style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-3 gap-0">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0">
         {stats.map((stat, i) => (
           <div
             key={stat.label}
-            className="stat-item flex flex-col items-center md:items-start md:px-10 gap-1"
+            className="stat-item flex flex-col items-center py-6 px-4 gap-1"
             style={
               i < stats.length - 1
-                ? { borderRight: '1px solid rgba(61,92,53,0.12)' }
+                ? { borderRight: '1px solid rgba(61,92,53,0.1)' }
                 : undefined
             }
           >
@@ -58,13 +54,13 @@ export default function StatsBar() {
               className="font-display font-black italic text-green leading-none"
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(3rem, 5vw, 5rem)',
+                fontSize: 'clamp(2.8rem, 4.5vw, 4.5rem)',
               }}
             >
-              {stat.value}{stat.suffix}
+              {stat.value}
             </div>
             <p
-              className="font-condensed uppercase text-ink-dim text-xs tracking-[0.2em] mt-1"
+              className="font-condensed uppercase text-ink-faint text-xs tracking-[0.25em] mt-1 text-center"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {stat.label}

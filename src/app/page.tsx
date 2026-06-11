@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import StatsBar from '@/components/StatsBar';
+import WorkMarquee from '@/components/WorkMarquee';
 import ClientsBar from '@/components/ClientsBar';
 import CollabGrid from '@/components/CollabGrid';
 import About from '@/components/About';
@@ -16,6 +17,7 @@ export default function Page() {
       <main>
         <Hero />
         <StatsBar />
+        <WorkMarquee />
         <ClientsBar />
         <CollabGrid />
         <About />
