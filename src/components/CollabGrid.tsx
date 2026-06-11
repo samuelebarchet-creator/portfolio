@@ -4,9 +4,8 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
-import { ScrambleText } from '@/components/ui/scramble-text';
-import { DrawOnClick } from '@/components/ui/draw-on-click';
 import { projects } from '@/lib/projects';
+import Ornament from '@/components/Ornament';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,27 +67,22 @@ export default function CollabGrid() {
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="section-header mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-          <div>
-            <p
-              className="text-green-mid uppercase tracking-[0.4em] text-xs font-condensed mb-3"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-            >
-              Selected work
-            </p>
+        <div className="section-header mb-16">
+          <Ornament index="01" label="Lavori selezionati" className="mb-6" />
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <h2
-              className="font-display font-black italic text-ink leading-none"
+              className="font-display font-black italic text-ink leading-tight"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}
             >
-              <DrawOnClick>Collaborations</DrawOnClick>
+              Collaborazioni
             </h2>
+            <p
+              className="max-w-xs text-ink-dim font-condensed text-sm leading-relaxed tracking-wide"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              Una selezione di brand seguiti dalla strategia alla comunicazione digitale.
+            </p>
           </div>
-          <p
-            className="max-w-xs text-ink-dim font-condensed text-sm leading-relaxed tracking-wide"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Una selezione di brand seguiti dalla strategia alla comunicazione digitale.
-          </p>
         </div>
 
         {/* Grid */}

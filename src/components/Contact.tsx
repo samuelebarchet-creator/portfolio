@@ -1,65 +1,42 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { GradientBackground } from '@/components/ui/paper-design-shader-background';
-
-gsap.registerPlugin(ScrollTrigger);
+import { gsap, ScrollTrigger } from '@/lib/gsap';
+import { about } from '@/lib/about';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const ctaRef = useRef<HTMLAnchorElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const ctaRef     = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
 
+    gsap.registerPlugin(ScrollTrigger);
+
     const tl = gsap.timeline({
-      scrollTrigger: { trigger: section, start: 'top 70%', once: true },
+      scrollTrigger: { trigger: section, start: 'top 72%', once: true },
+      defaults: { ease: 'power3.out' },
     });
 
-    tl.fromTo(
-      section.querySelector('.contact-label'),
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out' }
-    )
-      .fromTo(
-        titleRef.current,
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
-        '-=0.3'
-      )
-      .fromTo(
-        section.querySelector('.contact-sub'),
-        { y: 25, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' },
-        '-=0.5'
-      )
-      .fromTo(
-        ctaRef.current,
-        { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: 'power3.out' },
-        '-=0.4'
-      );
+    tl.fromTo(section.querySelector('.c-label'), { y: -14, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, 0)
+      .fromTo(headingRef.current,               { y: 50,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.9 }, 0.2)
+      .fromTo(section.querySelector('.c-sub'),  { y: 20,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 0.55)
+      .fromTo(ctaRef.current,                   { y: 18,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 0.75);
 
-    /* Magnetic CTA effect */
+    /* Magnetic CTA */
     const cta = ctaRef.current;
     if (!cta) return;
 
     const onMove = (e: MouseEvent) => {
       const rect = cta.getBoundingClientRect();
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-      const dx = (e.clientX - cx) * 0.3;
-      const dy = (e.clientY - cy) * 0.3;
+      const dx = (e.clientX - (rect.left + rect.width  / 2)) * 0.28;
+      const dy = (e.clientY - (rect.top  + rect.height / 2)) * 0.28;
       gsap.to(cta, { x: dx, y: dy, duration: 0.4, ease: 'power2.out' });
     };
-
-    const onLeave = () => {
-      gsap.to(cta, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1, 0.5)' });
-    };
+    const onLeave = () =>
+      gsap.to(cta, { x: 0, y: 0, duration: 0.65, ease: 'elastic.out(1, 0.5)' });
 
     cta.addEventListener('mousemove', onMove);
     cta.addEventListener('mouseleave', onLeave);
@@ -74,25 +51,32 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative w-full py-36 px-8 md:px-14 flex flex-col items-center text-center overflow-hidden"
-      style={{ borderTop: '1px solid rgba(200,169,110,0.12)' }}
+      className="relative w-full py-36 px-6 md:px-14 overflow-hidden"
+      style={{
+        background: 'var(--ink)',
+        borderTop: '1px solid rgba(61,92,53,0.1)',
+      }}
     >
-      {/* Shader gradient background */}
-      <GradientBackground />
+      {/* Subtle botanical texture blob */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[60vw] h-[60vw] max-w-3xl rounded-full blur-[160px] opacity-[0.07] pointer-events-none"
+        style={{ background: 'var(--green)' }}
+        aria-hidden
+      />
 
-      {/* Dark overlay to keep text readable */}
-      <div className="absolute inset-0 -z-[5] bg-bg/40 pointer-events-none" />
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
 
-      <div className="relative z-10 flex flex-col items-center max-w-3xl">
+        {/* Label */}
         <p
-          className="contact-label font-condensed uppercase text-green-mid text-xs tracking-[0.45em] mb-5"
+          className="c-label font-condensed uppercase text-green text-xs tracking-[0.5em] mb-8"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          Get in touch
+          Parliamoci
         </p>
 
+        {/* Heading */}
         <h2
-          ref={titleRef}
+          ref={headingRef}
           className="font-display font-black italic text-bg leading-tight"
           style={{
             fontFamily: 'var(--font-playfair)',
@@ -100,59 +84,68 @@ export default function Contact() {
             letterSpacing: '-0.02em',
           }}
         >
-          Let's build something remarkable
+          Hai un progetto<br />in mente?
         </h2>
 
+        {/* Subtitle */}
         <p
-          className="contact-sub mt-6 max-w-md font-condensed text-ink-dim text-base tracking-wide leading-relaxed"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          className="c-sub mt-7 max-w-md font-body text-bg/55 leading-relaxed"
+          style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
         >
-          Open to brand projects, creative direction, interactive experiences,
-          and collaborations worth obsessing over.
+          Che si tratti di costruire un brand da zero, riposizionarlo o far crescere la sua presenza digitale — sono qui.
         </p>
 
-        {/* Divider ornament */}
+        {/* Ornament */}
         <div className="flex items-center gap-4 my-10">
-          <div className="w-16 h-px" style={{ background: 'rgba(200,169,110,0.3)' }} />
-          <div
-            className="w-1.5 h-1.5 bg-green rotate-45"
-            style={{ boxShadow: '0 0 8px rgba(200,169,110,0.6)' }}
+          <span className="w-14 h-px" style={{ background: 'rgba(61,92,53,0.4)' }} />
+          <span
+            className="w-1.5 h-1.5 bg-green rotate-45 block"
+            aria-hidden
           />
-          <div className="w-16 h-px" style={{ background: 'rgba(200,169,110,0.3)' }} />
+          <span className="w-14 h-px" style={{ background: 'rgba(61,92,53,0.4)' }} />
         </div>
 
-        {/* CTA */}
+        {/* CTA email — magnetic */}
         <a
           ref={ctaRef}
-          href="mailto:samuele.barchet@gmail.com"
-          className="group inline-flex items-center gap-4 px-10 py-4 font-condensed uppercase tracking-[0.3em] text-sm text-bg bg-green hover:bg-parchment transition-colors duration-300"
+          href={`mailto:${about.email}`}
+          className="group inline-flex items-center gap-4 px-10 py-4 bg-green text-bg font-condensed uppercase tracking-[0.28em] text-sm hover:bg-green-mid transition-colors duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          samuele.barchet@gmail.com
+          {about.email}
           <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
+            width="15" height="15" viewBox="0 0 16 16" fill="none"
             className="transition-transform duration-300 group-hover:translate-x-1"
           >
-            <path
-              d="M3 8h10M9 4l4 4-4 4"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
 
-        {/* Secondary note */}
         <p
-          className="mt-6 font-condensed text-ink-dim text-xs tracking-[0.2em] uppercase"
+          className="mt-5 font-condensed text-bg/30 text-xs tracking-[0.25em] uppercase"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          Response within 24 hours
+          Rispondo entro 24 ore
         </p>
+
+        {/* Socials inline */}
+        <div className="flex items-center gap-6 mt-10">
+          {[
+            { label: 'Instagram', href: 'https://www.instagram.com/samuele.barchet/' },
+            { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/samuelebarchet/' },
+          ].map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-condensed text-bg/40 text-xs uppercase tracking-[0.3em] hover:text-bg/80 transition-colors duration-300"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              {label}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );
