@@ -50,7 +50,7 @@ export default function CollabGrid() {
   const onEnter = (el: HTMLDivElement) => {
     gsap.to(el, { y: -6, duration: 0.35, ease: 'power2.out' });
     gsap.to(el.querySelector('.card-border'), { opacity: 1, duration: 0.35 });
-    gsap.to(el.querySelector('.company-name'), { color: '#C8A96E', duration: 0.3 });
+    gsap.to(el.querySelector('.company-name'), { color: '#3D5C35', duration: 0.3 });
     gsap.to(el.querySelector('.card-tag'), { opacity: 1, x: 0, duration: 0.3, ease: 'power2.out' });
     gsap.to(el.querySelector('.view-label'), { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' });
   };
@@ -58,7 +58,7 @@ export default function CollabGrid() {
   const onLeave = (el: HTMLDivElement) => {
     gsap.to(el, { y: 0, duration: 0.4, ease: 'power2.inOut' });
     gsap.to(el.querySelector('.card-border'), { opacity: 0, duration: 0.4 });
-    gsap.to(el.querySelector('.company-name'), { color: '#F2EBD9', duration: 0.35 });
+    gsap.to(el.querySelector('.company-name'), { color: '#1A1A16', duration: 0.35 });
     gsap.to(el.querySelector('.card-tag'), { opacity: 0, x: -8, duration: 0.25 });
     gsap.to(el.querySelector('.view-label'), { opacity: 0, y: 6, duration: 0.2 });
   };
@@ -77,7 +77,7 @@ export default function CollabGrid() {
               Selected work
             </p>
             <h2
-              className="font-display font-black italic text-bg leading-none"
+              className="font-display font-black italic text-ink leading-none"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 5vw, 4.5rem)' }}
             >
               <DrawOnClick>Collaborations</DrawOnClick>
@@ -87,7 +87,7 @@ export default function CollabGrid() {
             className="max-w-xs text-ink-dim font-condensed text-sm leading-relaxed tracking-wide"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            A selection of brands and studios I've shaped — from identity systems to interactive experiences.
+            Una selezione di brand seguiti dalla strategia alla comunicazione digitale.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export default function CollabGrid() {
                 </span>
 
                 <h3
-                  className="company-name font-display font-black italic text-bg leading-tight mb-1"
+                  className="company-name font-display font-black italic text-ink leading-tight mb-1"
                   style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.6rem, 2.5vw, 2.2rem)' }}
                 >
                   {p.company}

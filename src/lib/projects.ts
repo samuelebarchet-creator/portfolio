@@ -7,129 +7,139 @@ export type Project = {
   tag: string;
   fullDescription: string;
   deliverables: string[];
-  color: string; // accent color for the project page
+  results: string[];
+  color: string;
+  logoSrc?: string;
 };
 
 export const projects: Project[] = [
   {
-    slug: 'maison-noir',
+    slug: 'braghes',
+    year: '2024',
+    company: "Braghe's",
+    role: 'Brand Strategist & Social Media Manager',
+    description:
+      "Sviluppo della strategia di marca e gestione completa dei social per un brand streetwear veneto in forte crescita.",
+    tag: 'Fashion · Streetwear',
+    fullDescription:
+      "Braghe's nasce come piccolo brand streetwear locale con un'identità forte ma non ancora definita strategicamente. Il lavoro è partito da un'analisi approfondita del posizionamento competitivo e del pubblico target, per costruire una voce di marca coerente su tutti i touchpoint digitali. Dalla definizione del tono di comunicazione alla pianificazione editoriale mensile, ogni contenuto è stato pensato per rafforzare l'identità e convertire follower in clienti.",
+    deliverables: [
+      'Brand strategy & positioning',
+      'Piano editoriale mensile',
+      'Gestione Instagram & TikTok',
+      'Content production (foto + copy)',
+      'Campagne Meta Ads',
+      'Brand guidelines documento',
+    ],
+    results: [
+      '+340% engagement rate in 6 mesi',
+      '+180% follower organici',
+      'Lancio capsule collection esaurita in 48h',
+    ],
+    color: '#3D5C35',
+    logoSrc: '/logos/braghes.png',
+  },
+  {
+    slug: 'programma-formula',
+    year: '2024',
+    company: 'Programma Formula',
+    role: 'Brand & Content Strategist',
+    description:
+      'Identità di contenuto e strategia digitale per un progetto legato al mondo dei motorsport e della Formula.',
+    tag: 'Motorsport · Media',
+    fullDescription:
+      'Programma Formula è una realtà che porta i propri clienti a vivere esperienze esclusive legate al mondo della Formula 1 e dei motorsport. La sfida era costruire una presenza digitale che comunicasse esclusività e passione senza risultare elitaria. Abbiamo sviluppato una strategia di contenuto che racconta le esperienze dall\'interno — il dietro le quinte, le emozioni, la cultura del motorsport — aumentando la percezione di valore e il tasso di conversione delle richieste.',
+    deliverables: [
+      'Brand strategy & messaging',
+      'Strategia contenuti Instagram',
+      'Copywriting istituzionale',
+      'Gestione community',
+      'Visual identity guidelines',
+      'Email marketing setup',
+    ],
+    results: [
+      '+220% reach organica',
+      '+95% richieste di informazioni',
+      'Featured su pagina IG ufficiale Formula 1',
+    ],
+    color: '#D4713A',
+  },
+  {
+    slug: 'rc-ricambi',
     year: '2023',
-    company: 'Maison Noir',
-    role: 'Creative Director',
+    company: 'RC Ricambi Carrozzeria',
+    role: 'Digital Marketing Strategist',
     description:
-      'End-to-end brand identity for an haute couture label — visual language, campaign art direction and digital flagship.',
-    tag: 'Fashion',
+      'Strategia SEO locale e digital marketing per una carrozzeria con focus su acquisizione clienti e visibilità online.',
+    tag: 'Automotive · Local SEO',
     fullDescription:
-      'Maison Noir approached me to build their entire visual universe from scratch. The challenge was to create a brand language that felt both timeless and brutally contemporary — referencing haute couture tradition while refusing to be confined by it. The result is a system built on tension: stark white space against deep black, delicate serif logotype against industrial grid structures.',
+      "RC Ricambi Carrozzeria è una realtà consolidata nel settore ricambi auto che però non riusciva a sfruttare il potenziale digitale per attrarre nuovi clienti. L'intervento ha coperto l'intera presenza online: ottimizzazione Google My Business, strategia SEO locale, gestione delle recensioni e un piano di contenuti educativi sui social per posizionarsi come punto di riferimento tecnico nella zona. Il risultato è stato un aumento significativo delle richieste di preventivo digitali.",
     deliverables: [
-      'Brand identity system',
-      'Visual language & guidelines',
-      'Campaign art direction',
-      'Digital flagship website',
-      'Packaging design',
-      'Editorial photography direction',
+      'Audit SEO & digital presenza',
+      'Ottimizzazione Google My Business',
+      'Strategia SEO locale',
+      'Content plan social',
+      'Gestione recensioni online',
+      'Reportistica mensile',
     ],
-    color: '#C8A96E',
+    results: [
+      '+280% visite scheda Google',
+      '+165% richieste preventivo online',
+      'Posizione #1 per 8 keyword locali',
+    ],
+    color: '#6B4226',
+    logoSrc: '/logos/ricambi.jpg',
   },
   {
-    slug: 'arkane-studio',
+    slug: 'citation-rate',
+    year: '2023',
+    company: 'Citation Rate',
+    role: 'Brand Strategist & Growth Advisor',
+    description:
+      'Posizionamento e strategia di go-to-market per uno strumento AI dedicato alla ricerca accademica.',
+    tag: 'AI · SaaS · Research',
+    fullDescription:
+      'Citation Rate è uno strumento SaaS che utilizza intelligenza artificiale per aiutare ricercatori e accademici a trovare e gestire fonti bibliografiche. Il progetto di brand strategy aveva l\'obiettivo di definire un posizionamento credibile in un mercato competitivo e comunicare il valore del prodotto a un pubblico tecnico ma non necessariamente tech-savvy. Abbiamo costruito il messaging framework, il tono di voce e la strategia di acquisizione utenti via content marketing e community accademica.',
+    deliverables: [
+      'Brand strategy & positioning',
+      'Messaging framework & tone of voice',
+      'Go-to-market strategy',
+      'Landing page copywriting',
+      'Content marketing plan',
+      'Strategia partnership accademiche',
+    ],
+    results: [
+      '0→1.200 utenti registrati in 4 mesi',
+      '42% conversione free→trial',
+      'Feature in 3 newsletter accademiche',
+    ],
+    color: '#1A3A6B',
+  },
+  {
+    slug: 'crossabili',
     year: '2022',
-    company: 'Arkane Studio',
-    role: 'Interactive Lead',
+    company: 'Crossabili by Mattia Cattapan',
+    role: 'Content Strategist & Social Media Manager',
     description:
-      'Immersive web experience and 3D product configurator for a limited-edition sneaker drop that sold out in 4 minutes.',
-    tag: 'Tech · Retail',
+      'Comunicazione digitale e strategia di contenuto per un progetto di sensibilizzazione sull\'accessibilità.',
+    tag: 'Social Impact · Content',
     fullDescription:
-      'Arkane Studio commissioned a drop experience that had to match the intensity of their product. We built a real-time 3D configurator in WebGL — customers could rotate, recolor, and customize their pair before purchase. The experience launched at midnight to a waitlist of 40,000 people and sold out in under four minutes.',
+      'Crossabili è il progetto di comunicazione di Mattia Cattapan incentrato sull\'accessibilità e l\'inclusione. La sfida comunicativa era delicata: parlare di disabilità e barriere architettoniche con un linguaggio diretto, mai pietistico, capace di informare e allo stesso tempo attivare una comunità. Abbiamo costruito una voce editoriale distintiva — ironica quanto basta, sempre precisa — e una strategia di contenuto capace di raggiungere sia la community diretta sia i decisori istituzionali.',
     deliverables: [
-      'WebGL 3D product configurator',
-      'Interactive drop page',
-      'Mobile-first experience',
-      'Animation system',
-      'Performance optimization',
-      'Analytics integration',
+      'Strategia editoriale annuale',
+      'Tone of voice & linee guida',
+      'Gestione Instagram & LinkedIn',
+      'Script video e Reels',
+      'Collaborazioni media e partnership',
+      'Report impatto semestrale',
     ],
-    color: '#7A1515',
-  },
-  {
-    slug: 'soleil-agency',
-    year: '2022',
-    company: 'Soleil Agency',
-    role: 'Brand Strategist',
-    description:
-      'Full rebrand of a Paris-based creative agency: identity system, motion guidelines and international launch campaign.',
-    tag: 'Branding',
-    fullDescription:
-      'Soleil had grown from a boutique studio into a 60-person agency with international clients, but their brand still looked like a scrappy startup. The rebrand needed to communicate scale and sophistication without losing the warmth that made them successful. We developed a flexible identity system built around a proprietary typeface and a motion language that translates across every touchpoint.',
-    deliverables: [
-      'Brand strategy',
-      'Identity system & proprietary type',
-      'Motion guidelines',
-      'International launch campaign',
-      'Office environmental design',
-      'Brand book (180 pages)',
+    results: [
+      '+500% reach organica in 12 mesi',
+      '4M+ visualizzazioni totali contenuti',
+      'Citato da 3 testate giornalistiche nazionali',
     ],
-    color: '#8C7140',
-  },
-  {
-    slug: 'volta-records',
-    year: '2021',
-    company: 'Volta Records',
-    role: 'Art Director',
-    description:
-      'Visual ecosystem for an independent electronic label — artwork, merchandise, live visuals and streaming platforms.',
-    tag: 'Music · Culture',
-    fullDescription:
-      'Volta Records releases music that exists at the edge of genre — hypnotic, architectural, hard to categorize. The visual identity needed to match that ambiguity. We built a system that generates unique visual artifacts for each release using generative code, ensuring that every album cover, merch piece, and stage visual feels related but never identical.',
-    deliverables: [
-      'Label identity system',
-      'Generative artwork engine',
-      'Merchandise collection',
-      'Live visual toolkit',
-      'Streaming platform assets',
-      'Artist visual guidelines',
-    ],
-    color: '#4A1A6E',
-  },
-  {
-    slug: 'meridian',
-    year: '2020',
-    company: 'Meridian',
-    role: 'UI/UX Designer',
-    description:
-      'Design system and product interface for a fintech platform serving 200k+ users across Europe and Southeast Asia.',
-    tag: 'Fintech',
-    fullDescription:
-      'Meridian needed a design system that could scale across two continents, multiple languages, and a product team of 40 engineers. The challenge was building something comprehensive enough to enforce consistency while remaining flexible enough for features that hadn\'t been imagined yet. The resulting system — 600+ components, 12 semantic color tokens, 3 typographic scales — reduced design-to-dev handoff time by 60%.',
-    deliverables: [
-      'Design system (600+ components)',
-      'Product interface redesign',
-      'Mobile app (iOS & Android)',
-      'Design tokens & documentation',
-      'Accessibility audit & fixes',
-      'Developer handoff system',
-    ],
-    color: '#1A3A6E',
-  },
-  {
-    slug: 'foret-collective',
-    year: '2019',
-    company: 'Forêt Collective',
-    role: 'Digital Designer',
-    description:
-      'Editorial website and brand campaign for a sustainable fashion collective featured in Vogue and Wallpaper*.',
-    tag: 'Fashion · Editorial',
-    fullDescription:
-      'Forêt Collective makes clothes from reclaimed materials and sells them at prices that don\'t exploit the makers. When Vogue reached out for a feature, they needed a digital presence that could hold its own next to the biggest names in fashion. We built an editorial site that felt like a magazine — rich, slow, intentional — and a campaign that let the garments and the people who made them speak for themselves.',
-    deliverables: [
-      'Editorial website',
-      'Brand campaign (digital & print)',
-      'Photography art direction',
-      'Social media visual system',
-      'Press kit & lookbook',
-      'E-commerce integration',
-    ],
-    color: '#2A4A1A',
+    color: '#3D5C35',
+    logoSrc: '/logos/crossabili.png',
   },
 ];
 
