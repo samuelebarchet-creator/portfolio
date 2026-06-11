@@ -55,7 +55,7 @@ export default function Nav() {
     <>
       <nav
         ref={navRef}
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-14 h-16 transition-all duration-500"
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 h-16 transition-all duration-500"
         style={{
           background: scrolled ? 'rgba(245,240,232,0.94)' : 'transparent',
           borderBottom: scrolled ? '1px solid rgba(61,92,53,0.1)' : '1px solid transparent',

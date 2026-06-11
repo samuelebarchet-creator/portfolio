@@ -12,7 +12,7 @@ export default function LavoriPage() {
   return (
     <main className="pt-28 pb-0">
       {/* Header */}
-      <section className="px-6 md:px-14 pb-16 max-w-6xl mx-auto">
+      <section className="px-8 md:px-20 pb-16 max-w-6xl mx-auto">
         <p
           className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -33,12 +33,12 @@ export default function LavoriPage() {
 
       {/* Divider */}
       <div
-        className="mx-6 md:mx-14 max-w-6xl"
+        className="mx-8 md:mx-20 max-w-6xl"
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       />
 
       {/* Projects grid */}
-      <section className="px-6 md:px-14 py-16 max-w-6xl mx-auto">
+      <section className="px-8 md:px-20 py-16 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10">
           {projects.map((p) => (
             <Link

@@ -65,7 +65,7 @@ export default function ProjectClient({ project }: { project: Project }) {
       {/* ══ HERO — dark, editorial ══════════════════════════════════════════ */}
       <div
         ref={heroRef}
-        className="relative w-full pt-28 pb-20 px-6 md:px-14 overflow-hidden"
+        className="relative w-full pt-28 pb-20 px-8 md:px-20 overflow-hidden"
         style={{ background: 'var(--ink)' }}
       >
         {/* Accent blob */}
@@ -127,7 +127,7 @@ export default function ProjectClient({ project }: { project: Project }) {
 
       {/* ══ CONTEXT STRIP ═══════════════════════════════════════════════════ */}
       <div
-        className="w-full px-6 md:px-14 py-5 bg-bg-alt"
+        className="w-full px-8 md:px-20 py-5 bg-bg-alt"
         style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
       >
         <div className="max-w-6xl mx-auto flex flex-wrap gap-x-10 gap-y-3">
@@ -158,7 +158,7 @@ export default function ProjectClient({ project }: { project: Project }) {
       {/* ══ MAIN CONTENT ════════════════════════════════════════════════════ */}
       <div
         ref={contentRef}
-        className="max-w-6xl mx-auto px-6 md:px-14 py-20 grid grid-cols-1 lg:grid-cols-3 gap-16"
+        className="max-w-6xl mx-auto px-8 md:px-20 py-20 grid grid-cols-1 lg:grid-cols-3 gap-16"
       >
         {/* Left — overview */}
         <div className="lg:col-span-2 flex flex-col gap-10">
@@ -226,7 +226,7 @@ export default function ProjectClient({ project }: { project: Project }) {
       {/* ══ RESULTS ═════════════════════════════════════════════════════════ */}
       {project.results && project.results.length > 0 && (
         <div
-          className="w-full px-6 md:px-14 py-20"
+          className="w-full px-8 md:px-20 py-20"
           style={{ background: 'var(--bg-alt)', borderTop: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="max-w-6xl mx-auto">
@@ -270,7 +270,7 @@ export default function ProjectClient({ project }: { project: Project }) {
 
       {/* ══ BOTTOM NAV ══════════════════════════════════════════════════════ */}
       <div
-        className="px-6 md:px-14 py-16 max-w-6xl mx-auto"
+        className="px-8 md:px-20 py-16 max-w-6xl mx-auto"
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       >
         <Link

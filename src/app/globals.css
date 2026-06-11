@@ -48,27 +48,29 @@
   --brown-light:  #9A6B48;
 }
 
-/* ─── Reset ──────────────────────────────────────────────────────────────── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ─── Reset — must be in @layer base so utilities can override padding/margin */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-html {
-  background-color: var(--bg);
-  color: var(--ink);
-  height: 100%;
-}
+  html {
+    background-color: var(--bg);
+    color: var(--ink);
+    height: 100%;
+  }
 
-body {
-  background-color: var(--bg);
-  color: var(--ink);
-  font-family: var(--font-barlow), "Barlow", sans-serif;
-  min-height: 100%;
-  overflow-x: hidden;
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-barlow), "Barlow", sans-serif;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
 }
 
 /* ─── Scrollbar ──────────────────────────────────────────────────────────── */

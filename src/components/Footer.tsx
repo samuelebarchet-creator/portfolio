@@ -56,7 +56,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="w-full px-6 md:px-14 pt-16 pb-10 bg-bg-alt"
+      className="w-full px-8 md:px-20 pt-16 pb-10 bg-bg-alt"
       style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}
     >
       <div className="max-w-6xl mx-auto">

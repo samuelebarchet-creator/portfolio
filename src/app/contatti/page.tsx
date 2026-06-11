@@ -11,7 +11,7 @@ export default function ContattiPage() {
   return (
     <main className="pt-16">
       {/* Page intro */}
-      <section className="px-6 md:px-14 pt-20 pb-4 max-w-6xl mx-auto">
+      <section className="px-8 md:px-20 pt-20 pb-4 max-w-6xl mx-auto">
         <p
           className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}

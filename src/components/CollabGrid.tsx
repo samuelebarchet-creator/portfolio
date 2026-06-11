@@ -63,7 +63,7 @@ export default function CollabGrid() {
   };
 
   return (
-    <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-14">
+    <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-20">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}

@@ -187,7 +187,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full min-h-[100svh] px-6 md:px-14 pt-24 pb-16 max-w-6xl mx-auto">
+      <div className="relative z-10 flex flex-col justify-center h-full min-h-[100svh] px-8 md:px-20 pt-24 pb-16 max-w-6xl mx-auto">
 
         {/* Role label */}
         <p

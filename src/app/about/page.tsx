@@ -14,7 +14,7 @@ export default function AboutPage() {
     <main className="pt-16">
       {/* Page intro */}
       <section
-        className="px-6 md:px-14 pt-20 pb-12 max-w-6xl mx-auto"
+        className="px-8 md:px-20 pt-20 pb-12 max-w-6xl mx-auto"
       >
         <p
           className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
@@ -45,7 +45,7 @@ export default function AboutPage() {
 
       {/* Tools section */}
       <section
-        className="px-6 md:px-14 py-20 max-w-6xl mx-auto"
+        className="px-8 md:px-20 py-20 max-w-6xl mx-auto"
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       >
         <p

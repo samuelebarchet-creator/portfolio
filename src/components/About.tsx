@@ -50,7 +50,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="w-full py-28 px-6 md:px-14"
+      className="w-full py-28 px-8 md:px-20"
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
       <div className="max-w-6xl mx-auto">

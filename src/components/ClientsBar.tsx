@@ -36,7 +36,7 @@ export default function ClientsBar() {
     <section
       ref={sectionRef}
       id="clients"
-      className="w-full py-12 px-8 md:px-14"
+      className="w-full py-12 px-8 md:px-20"
       style={{ borderBottom: '1px solid rgba(61,92,53,0.12)' }}
     >
       <div className="max-w-6xl mx-auto">

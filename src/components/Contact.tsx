@@ -51,7 +51,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative w-full py-36 px-6 md:px-14 overflow-hidden"
+      className="relative w-full py-36 px-8 md:px-20 overflow-hidden"
       style={{
         background: 'var(--ink)',
         borderTop: '1px solid rgba(61,92,53,0.1)',
