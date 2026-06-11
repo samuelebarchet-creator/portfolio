@@ -10,6 +10,8 @@ const WebGPUBackground = dynamic(
   { ssr: false }
 );
 
+const PORTRAIT_URL = 'https://i.postimg.cc/XYwvXN8D/img-4.png';
+
 export default function Hero() {
   const nameRef  = useRef<HTMLHeadingElement>(null);
   const labelRef = useRef<HTMLParagraphElement>(null);
@@ -47,25 +49,44 @@ export default function Hero() {
       className="relative w-full overflow-hidden"
       style={{ minHeight: '100svh', background: '#080D08' }}
     >
-      {/* WebGPU depth-parallax canvas — fills the section */}
-      <div className="absolute inset-0">
+      {/* Portrait — clearly visible, 20% transparent to favour text readability */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: `url(${PORTRAIT_URL})`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.8,
+          zIndex: 1,
+        }}
+        aria-hidden
+      />
+
+      {/* WebGPU green dot field — screen blend makes black areas transparent,
+          revealing the portrait below while green glow spans full width */}
+      <div
+        className="absolute inset-0"
+        style={{ mixBlendMode: 'screen', zIndex: 2 }}
+      >
         <Suspense fallback={null}>
           <WebGPUBackground />
         </Suspense>
       </div>
 
-      {/* Vignette — pulls edges to dark, frames the portrait */}
+      {/* Gradient fade — dark top → cream bottom, blends into the sections below */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 70% 70% at 50% 50%, transparent 30%, rgba(8,13,8,0.82) 100%)',
+            'linear-gradient(to bottom, transparent 0%, transparent 42%, rgba(245,240,232,0.45) 68%, rgba(245,240,232,0.85) 84%, #F5F0E8 100%)',
+          zIndex: 5,
         }}
         aria-hidden
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full min-h-[100svh] px-8 md:px-20 pt-24 pb-16 max-w-6xl mx-auto">
+      <div className="relative flex flex-col justify-center h-full min-h-[100svh] px-8 md:px-20 pt-24 pb-16 max-w-6xl mx-auto" style={{ zIndex: 10 }}>
 
         {/* Role label */}
         <p
@@ -146,7 +167,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ opacity: 0.3 }}>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ opacity: 0.3, zIndex: 10 }}>
         <div
           className="w-px origin-top"
           style={{
