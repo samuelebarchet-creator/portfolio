@@ -7,17 +7,17 @@ export function GradientBackground() {
     <div className="absolute inset-0 -z-10">
       <GrainGradient
         style={{ height: "100%", width: "100%" }}
-        colorBack="hsl(0, 0%, 0%)"
-        softness={0.76}
-        intensity={0.45}
-        noise={0}
+        colorBack="hsl(0, 0%, 2%)"
+        softness={0.5}
+        intensity={0.9}
+        noise={0.08}
         shape="corners"
         offsetX={0}
         offsetY={0}
-        scale={1}
+        scale={1.2}
         rotation={0}
-        speed={1}
-        colors={["hsl(350, 85%, 38%)", "hsl(300, 60%, 22%)", "hsl(325, 75%, 30%)"]}
+        speed={0.8}
+        colors={["hsl(355, 90%, 50%)", "hsl(290, 70%, 35%)", "hsl(320, 85%, 45%)"]}
       />
     </div>
   )

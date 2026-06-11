@@ -81,7 +81,7 @@ export default function Contact() {
       <GradientBackground />
 
       {/* Dark overlay to keep text readable */}
-      <div className="absolute inset-0 -z-[5] bg-bg/70 pointer-events-none" />
+      <div className="absolute inset-0 -z-[5] bg-bg/40 pointer-events-none" />
 
       <div className="relative z-10 flex flex-col items-center max-w-3xl">
         <p
