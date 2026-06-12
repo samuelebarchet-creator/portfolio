@@ -44,21 +44,25 @@ float clouds(vec2 p){
 void main(void){
   vec2 uv=(FC-.5*R)/MN,st=uv*vec2(2,1);
   vec3 col=vec3(0);
-  float bg=clouds(vec2(st.x+T*.4,-st.y));
-  uv*=1.-.3*(sin(T*.2)*.5+.5);
+  // faster cloud movement
+  float bg=clouds(vec2(st.x+T*.6,-st.y));
+  // more swirl amplitude
+  uv*=1.-.38*(sin(T*.28)*.5+.5);
   for(float i=1.;i<12.;i++){
-    uv+=.1*cos(i*vec2(.1+.01*i,.8)+i*i+T*.5+.1*uv.x);
+    // larger displacement + faster time factor
+    uv+=.14*cos(i*vec2(.1+.01*i,.8)+i*i+T*.75+.13*uv.x);
     vec2 p=uv;
     float d=length(p);
-    // vec3(2.8,1.0,1.8) shifts nebula palette toward green
-    col+=.0013/d*(cos(sin(i)*vec3(2.8,1.0,1.8))+1.);
+    // brighter glow spots
+    col+=.002/d*(cos(sin(i)*vec3(2.8,1.0,1.8))+1.);
     float b=noise(i+p+bg*1.731);
-    col+=.0018*b/length(max(p,vec2(b*p.x*.02,p.y)));
-    // dark forest-green background
-    col=mix(col,vec3(bg*.03,bg*.18,bg*.05),d);
+    // brighter nebula wisps
+    col+=.003*b/length(max(p,vec2(b*p.x*.02,p.y)));
+    // richer green background
+    col=mix(col,vec3(bg*.04,bg*.22,bg*.07),d);
   }
-  // final tint: cap R/B, keep G at full → site green
-  col*=vec3(0.3,1.0,0.42);
+  // final tint: boost green channel past 1 (clamped by WebGL output)
+  col*=vec3(0.38,1.18,0.5);
   O=vec4(col,1);
 }`;
 
@@ -134,20 +138,23 @@ export default function Hero() {
       raf = requestAnimationFrame(render);
     };
 
+    // Use ResizeObserver so canvas tracks section height, not window height
     const resize = () => {
       const dpr = Math.max(1, 0.5 * devicePixelRatio);
-      canvas.width  = window.innerWidth  * dpr;
-      canvas.height = window.innerHeight * dpr;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width  = rect.width  * dpr;
+      canvas.height = rect.height * dpr;
       gl.viewport(0, 0, canvas.width, canvas.height);
     };
 
+    const ro = new ResizeObserver(resize);
+    ro.observe(canvas);
     resize();
-    window.addEventListener('resize', resize);
     raf = requestAnimationFrame(render);
 
     return () => {
       cancelAnimationFrame(raf);
-      window.removeEventListener('resize', resize);
+      ro.disconnect();
       gl.deleteBuffer(buf);
       gl.deleteShader(vs);
       gl.deleteShader(fs);
@@ -173,30 +180,29 @@ export default function Hero() {
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ minHeight: '100svh', background: '#080D08' }}
+      style={{ background: '#080D08' }}
     >
-      {/* WebGL shader canvas */}
+      {/* WebGL shader canvas — fills section height set by content */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full touch-none pointer-events-none"
-        style={{ opacity: 0.9 }}
       />
 
-      {/* Gradient fade — dark to cream so sections below connect cleanly */}
+      {/* Thin gradient only at the very bottom edge — no empty space */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 pointer-events-none"
         style={{
-          background:
-            'linear-gradient(to bottom, transparent 0%, transparent 68%, rgba(245,240,232,0.35) 82%, rgba(245,240,232,0.82) 92%, #F5F0E8 100%)',
+          height: '5rem',
+          background: 'linear-gradient(to bottom, transparent, #F5F0E8)',
           zIndex: 5,
         }}
         aria-hidden
       />
 
-      {/* Content */}
+      {/* Content — padding-top clears fixed nav, padding-bottom closes section */}
       <div
-        className="relative flex flex-col items-center justify-center h-full min-h-[100svh] px-8 md:px-20 text-center"
-        style={{ zIndex: 10 }}
+        className="relative flex flex-col items-center text-center px-8 md:px-20"
+        style={{ zIndex: 10, paddingTop: 'calc(var(--nav-h, 64px) + 5rem)', paddingBottom: '5rem' }}
       >
         {/* Role label */}
         <p
@@ -272,21 +278,6 @@ export default function Hero() {
             Scrivimi
           </a>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        style={{ opacity: 0.3, zIndex: 10 }}
-      >
-        <div
-          className="w-px origin-top"
-          style={{
-            height: 48,
-            background: 'var(--green-light)',
-            animation: 'scaleY 1.8s ease-in-out infinite alternate',
-          }}
-        />
       </div>
     </section>
   );
