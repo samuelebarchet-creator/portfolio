@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import StatsBar from '@/components/StatsBar';
 import Contact from '@/components/Contact';
@@ -9,34 +10,38 @@ export const metadata: Metadata = {
   description: 'Brand & Digital Strategist. La mia storia, dalle Dolomiti al digitale.',
 };
 
-const bioChapters = [
+const B = ({ children }: { children: ReactNode }) => (
+  <strong className="font-semibold text-ink">{children}</strong>
+);
+
+const bioChapters: { label: string; paragraphs: ReactNode[] }[] = [
   {
     label: 'Le origini',
     paragraphs: [
-      "Sono nato a Belluno nel 2001 in una famiglia molto numerosa, composta da otto persone. Crescere in un contesto dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto una cosa: comunicare non significa parlare, significa farsi capire.",
-      "Probabilmente è da lì che nasce il mio interesse per la comunicazione. Dalla curiosità di capire cosa spinge le persone a scegliere, fidarsi, cambiare idea o sentirsi parte di qualcosa.",
+      <><B>Sono nato a Belluno nel 2001</B> in una famiglia molto numerosa, composta da otto persone. Crescere in un contesto dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto una cosa: <B>comunicare non significa parlare, significa farsi capire.</B></>,
+      <>Probabilmente è da lì che nasce il mio interesse per la comunicazione. Dalla curiosità di capire cosa spinge le persone a <B>scegliere, fidarsi, cambiare idea</B> o sentirsi parte di qualcosa.</>,
     ],
   },
   {
     label: 'Il percorso',
     paragraphs: [
-      "Dopo il liceo ho scelto di dedicare un anno al servizio civile, lavorando a stretto contatto con persone con disabilità. È stata un'esperienza che mi ha permesso di avvicinarmi al mondo delle associazioni, dell'organizzazione di eventi e della comunicazione sociale, scoprendo quanto le parole e le storie possano avere un impatto concreto sulla vita delle persone.",
-      "Per dare una base più solida a questa passione mi sono iscritto all'Università di Padova, dove mi sono laureato in Comunicazione con una tesi dedicata alla gestione del brand. Parallelamente ho iniziato a lavorare come freelance, trasformando ogni progetto in un'occasione per mettere in pratica ciò che studiavo.",
-      "Successivamente mi sono trasferito a Milano per frequentare la laurea magistrale in Digital Marketing presso l'Università IULM. Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell'intelligenza artificiale applicata al marketing.",
+      <>Dopo il liceo ho scelto di dedicare un anno al <B>servizio civile</B>, lavorando a stretto contatto con <B>persone con disabilità</B>. È stata un&apos;esperienza che mi ha permesso di avvicinarmi al mondo delle associazioni, dell&apos;organizzazione di eventi e della <B>comunicazione sociale</B>, scoprendo quanto le parole e le storie possano avere un impatto concreto sulla vita delle persone.</>,
+      <>Per dare una base più solida a questa passione mi sono iscritto all&apos;<B>Università di Padova</B>, dove mi sono laureato in <B>Comunicazione</B> con una tesi dedicata alla gestione del brand. Parallelamente ho iniziato a lavorare come <B>freelance</B>, trasformando ogni progetto in un&apos;occasione per mettere in pratica ciò che studiavo.</>,
+      <>Successivamente mi sono trasferito a <B>Milano</B> per frequentare la laurea magistrale in <B>Digital Marketing</B> presso l&apos;<B>Università IULM</B>. Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell&apos;<B>intelligenza artificiale</B> applicata al marketing.</>,
     ],
   },
   {
     label: 'Oggi',
     paragraphs: [
-      "Negli anni ho collaborato con startup, e-commerce, organizzazioni no-profit, progetti sociali e aziende digitali. Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore.",
-      "Oggi aiuto brand e organizzazioni a costruire una presenza digitale più chiara, coerente e strategica. Il mio lavoro parte sempre da una domanda semplice: perché qualcuno dovrebbe scegliere proprio voi?",
+      <>Negli anni ho collaborato con <B>startup</B>, <B>e-commerce</B>, <B>organizzazioni no-profit</B>, progetti sociali e aziende digitali. Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore.</>,
+      <>Oggi aiuto brand e organizzazioni a costruire una <B>presenza digitale più chiara, coerente e strategica</B>. Il mio lavoro parte sempre da una domanda semplice: <B>perché qualcuno dovrebbe scegliere proprio voi?</B></>,
     ],
   },
 ];
 
 const philosophy = [
-  "La strategia viene prima degli strumenti. Prima di parlare di social, advertising o contenuti, serve capire chi si è, a chi si parla e quale spazio si vuole occupare nella mente delle persone.",
-  "Per questo il mio approccio unisce analisi, creatività e pragmatismo: trasformare idee complesse in messaggi chiari e obiettivi concreti.",
+  <>La <B>strategia</B> viene prima degli strumenti. Prima di parlare di social, advertising o contenuti, serve capire chi si è, a chi si parla e quale spazio si vuole occupare nella mente delle persone.</>,
+  <>Per questo il mio approccio unisce <B>analisi, creatività e pragmatismo</B>: trasformare idee complesse in messaggi chiari e obiettivi concreti.</>,
 ];
 
 export default function AboutPage() {
@@ -49,7 +54,32 @@ export default function AboutPage() {
         mobileImage="/about/mountains.jpg"
         initialClipPercentage={18}
         finalClipPercentage={82}
-      />
+      >
+        <div
+          className="w-full px-8 md:px-20 pb-14 md:pb-20"
+          style={{
+            background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%)',
+          }}
+        >
+          <p
+            className="font-condensed uppercase text-white/70 text-xs tracking-[0.5em] mb-4"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            About
+          </p>
+          <h1
+            className="font-display font-black italic text-white leading-[0.9]"
+            style={{
+              fontFamily: 'var(--font-playfair)',
+              fontSize: 'clamp(2.8rem, 7vw, 6.5rem)',
+              letterSpacing: '-0.02em',
+              textShadow: '0 2px 24px rgba(0,0,0,0.3)',
+            }}
+          >
+            Dalle montagne<br />al mondo del digital
+          </h1>
+        </div>
+      </SmoothScrollHero>
 
       {/* ── Portrait + identity ────────────────────────────────────────────── */}
       <section

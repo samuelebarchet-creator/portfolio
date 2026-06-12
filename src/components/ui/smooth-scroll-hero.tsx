@@ -9,6 +9,7 @@ interface SmoothScrollHeroProps {
   mobileImage: string;
   initialClipPercentage?: number;
   finalClipPercentage?: number;
+  children?: React.ReactNode;
 }
 
 const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
@@ -17,6 +18,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   mobileImage,
   initialClipPercentage = 25,
   finalClipPercentage = 75,
+  children,
 }) => {
   const { scrollY } = useScroll();
 
@@ -56,6 +58,12 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
           backgroundRepeat: 'no-repeat',
         }}
       />
+      {/* Overlay */}
+      {children && (
+        <div className="absolute inset-0 flex items-end" style={{ zIndex: 10 }}>
+          {children}
+        </div>
+      )}
     </motion.div>
   );
 };
@@ -66,6 +74,7 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   mobileImage,
   initialClipPercentage = 25,
   finalClipPercentage = 75,
+  children,
 }) => (
   <div style={{ height: `calc(${scrollHeight}px + 100vh)` }} className="relative w-full">
     <SmoothScrollHeroBackground
@@ -74,7 +83,9 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
       mobileImage={mobileImage}
       initialClipPercentage={initialClipPercentage}
       finalClipPercentage={finalClipPercentage}
-    />
+    >
+      {children}
+    </SmoothScrollHeroBackground>
   </div>
 );
 
