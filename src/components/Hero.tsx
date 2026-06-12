@@ -214,8 +214,9 @@ export default function Hero() {
             textShadow: '0 2px 40px rgba(0,0,0,0.6)',
           }}
         >
-          Lancia il tuo<br />brand in orbita
+          Ciao regina<br />galattica sei<br />molto bella 👑
         </h1>
+        <img src="/regina.jpg" alt="regina galattica" style={{ marginTop: '2rem', width: 'clamp(200px, 40vw, 420px)', borderRadius: '1rem', boxShadow: '0 8px 40px rgba(0,0,0,0.5)' }} />
 
         {/* Divider */}
         <div
