@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ThinkingGrid from '@/components/ThinkingGrid';
+import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
   title: 'Thinking — Samuele Barchet',
@@ -30,6 +31,7 @@ export default function ThinkingPage() {
       </section>
 
       <ThinkingGrid />
+      <Contact />
     </main>
   );
 }

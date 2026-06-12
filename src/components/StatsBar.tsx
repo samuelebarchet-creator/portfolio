@@ -2,13 +2,9 @@
 
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
+import { about } from '@/lib/about';
 
-const stats = [
-  { value: '5+',  label: 'Anni di esperienza' },
-  { value: '20+', label: 'Progetti realizzati' },
-  { value: '5',   label: 'Brand seguiti dal lancio' },
-  { value: '∞',   label: 'Caffè bevuti' },
-];
+const stats = about.stats;
 
 export default function StatsBar() {
   const sectionRef = useRef<HTMLDivElement>(null);

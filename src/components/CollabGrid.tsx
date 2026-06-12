@@ -142,7 +142,7 @@ export default function CollabGrid() {
                   className="view-label absolute bottom-6 left-8 font-condensed text-green-mid text-xs uppercase tracking-[0.25em] opacity-0 translate-y-1.5"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
-                  View project →
+                  Vedi progetto →
                 </span>
               </div>
             </Link>
