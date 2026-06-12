@@ -7,10 +7,9 @@ import Ornament from '@/components/Ornament';
 import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export default function About() {
-  const sectionRef  = useRef<HTMLDivElement>(null);
-  const leftRef     = useRef<HTMLDivElement>(null);
-  const rightRef    = useRef<HTMLDivElement>(null);
-  const monogramRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const photoRef   = useRef<HTMLDivElement>(null);
+  const rightRef   = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -18,17 +17,8 @@ export default function About() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    /* Slow monogram rotation */
-    gsap.to(monogramRef.current, {
-      rotation: 360,
-      duration: 40,
-      ease: 'none',
-      repeat: -1,
-    });
-
-    /* Left slide in */
     gsap.fromTo(
-      leftRef.current,
+      photoRef.current,
       { x: -48, opacity: 0 },
       {
         x: 0, opacity: 1, duration: 1, ease: 'power3.out',
@@ -36,12 +26,11 @@ export default function About() {
       }
     );
 
-    /* Right stagger */
     gsap.fromTo(
       rightRef.current!.children,
       { y: 32, opacity: 0 },
       {
-        y: 0, opacity: 1, duration: 0.75, stagger: 0.1, ease: 'power3.out',
+        y: 0, opacity: 1, duration: 0.75, stagger: 0.12, ease: 'power3.out',
         scrollTrigger: { trigger: section, start: 'top 72%', once: true },
       }
     );
@@ -62,146 +51,95 @@ export default function About() {
           sizing="fill"
         />
       </div>
+
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="03" label="Chi sono" className="mb-16" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-          {/* ── Left: decorative monogram ── */}
-          <div
-            ref={leftRef}
-            className="relative flex items-center justify-center min-h-[400px]"
-          >
-            {/* Static rings */}
+          {/* ── Left: photo ── */}
+          <div ref={photoRef}>
             <div
-              className="absolute w-72 h-72 md:w-[22rem] md:h-[22rem] rounded-full"
-              style={{ border: '1px solid rgba(61,92,53,0.1)' }}
-            />
-            <div
-              className="absolute w-52 h-52 md:w-64 md:h-64 rounded-full"
-              style={{ border: '1px solid rgba(61,92,53,0.07)' }}
-            />
-
-            {/* Rotating dashed ring */}
-            <div
-              ref={monogramRef}
-              className="absolute w-60 h-60 md:w-72 md:h-72 rounded-full"
-              style={{ border: '1px dashed rgba(61,92,53,0.18)' }}
+              className="overflow-hidden"
+              style={{ aspectRatio: '3/4' }}
             >
-              {[0, 90, 180, 270].map((deg) => (
-                <span
-                  key={deg}
-                  className="absolute w-1.5 h-1.5 rounded-full bg-green-mid"
-                  style={{
-                    top: '50%',
-                    left: '50%',
-                    transform: `rotate(${deg}deg) translateX(calc(160% - 3px)) translateY(-50%)`,
-                  }}
-                />
-              ))}
-            </div>
-
-            {/* Monogram */}
-            <div className="relative z-10 flex flex-col items-center gap-2 select-none">
-              <span
-                className="font-display font-black italic text-green"
-                style={{
-                  fontFamily: 'var(--font-playfair)',
-                  fontSize: 'clamp(7rem, 14vw, 11rem)',
-                  lineHeight: 1,
-                }}
-              >
-                S
-              </span>
-              <span
-                className="w-10 h-px block"
-                style={{ background: 'rgba(61,92,53,0.3)' }}
+              <img
+                src="/about/servizio-civile.jpg"
+                alt="Samuele durante il servizio civile"
+                className="w-full h-full object-cover object-top grayscale"
               />
-              <span
-                className="font-condensed uppercase text-ink-faint text-xs tracking-[0.5em]"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-              >
-                Barchet
-              </span>
             </div>
-
-            {/* Corner brackets */}
-            {['top-4 left-4 border-t border-l', 'top-4 right-4 border-t border-r',
-              'bottom-4 left-4 border-b border-l', 'bottom-4 right-4 border-b border-r'].map((cls) => (
-              <div
-                key={cls}
-                className={`absolute w-5 h-5 ${cls}`}
-                style={{ borderColor: 'rgba(61,92,53,0.2)' }}
-              />
-            ))}
+            <p
+              className="mt-3 font-condensed text-ink-faint text-xs uppercase tracking-[0.3em]"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              Servizio civile · 2020
+            </p>
           </div>
 
-          {/* ── Right: bio + values + skills ── */}
-          <div ref={rightRef} className="flex flex-col gap-7">
-            <div>
-              <h2
-                className="font-display font-black italic text-ink leading-tight"
-                style={{
-                  fontFamily: 'var(--font-playfair)',
-                  fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
-                }}
-              >
-                {about.headline}
-              </h2>
-            </div>
+          {/* ── Right: claim + bio ── */}
+          <div ref={rightRef} className="flex flex-col gap-7 lg:pt-4">
 
-            {about.bio.map((paragraph, i) => (
-              <p
-                key={i}
-                className="text-ink-dim leading-relaxed"
-                style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
-              >
-                {paragraph}
-              </p>
-            ))}
-
-            {/* Values */}
-            <div
-              className="flex flex-col gap-4 pt-2 mt-2"
-              style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
+            {/* Claim */}
+            <h2
+              className="font-display font-black italic text-ink leading-tight"
+              style={{
+                fontFamily: 'var(--font-playfair)',
+                fontSize: 'clamp(1.9rem, 3.5vw, 3.2rem)',
+                letterSpacing: '-0.02em',
+              }}
             >
-              {about.values.map((v) => (
-                <div key={v.label} className="flex gap-4">
-                  <span
-                    className="mt-1 w-1 h-1 rounded-full bg-green shrink-0"
-                    aria-hidden
-                  />
-                  <div>
-                    <p
-                      className="font-condensed uppercase text-green text-xs tracking-[0.3em] mb-1"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-                    >
-                      {v.label}
-                    </p>
-                    <p
-                      className="text-ink-dim text-sm leading-relaxed"
-                      style={{ fontFamily: 'var(--font-barlow)' }}
-                    >
-                      {v.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+              Prima dei brand sono arrivate le persone.
+            </h2>
 
-            {/* Skill tags */}
-            <div>
-              <p
-                className="font-condensed uppercase text-ink-faint text-xs tracking-[0.35em] mb-3"
+            <div
+              className="h-px w-12"
+              style={{ background: 'var(--green)' }}
+            />
+
+            {/* Opening paragraph */}
+            <p
+              className="text-ink-dim leading-relaxed"
+              style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
+            >
+              Sono nato a <strong className="font-semibold text-ink">Belluno nel 2001</strong> in una famiglia di otto persone.
+              Crescere in un ambiente dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto
+              che comunicare non significa parlare, ma <strong className="font-semibold text-ink">farsi capire.</strong>
+            </p>
+
+            {/* Summary */}
+            <p
+              className="text-ink-dim leading-relaxed"
+              style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
+            >
+              Ho trascorso un anno in <strong className="font-semibold text-ink">servizio civile</strong> a stretto contatto
+              con persone con disabilità, poi mi sono laureato a <strong className="font-semibold text-ink">Padova in Comunicazione</strong>{' '}
+              e ho conseguito la magistrale in <strong className="font-semibold text-ink">Digital Marketing allo IULM di Milano</strong>.
+            </p>
+
+            <p
+              className="text-ink-dim leading-relaxed"
+              style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
+            >
+              Oggi aiuto brand e organizzazioni a costruire una{' '}
+              <strong className="font-semibold text-ink">presenza digitale chiara, coerente e strategica</strong>.
+              Il mio lavoro parte sempre da una domanda semplice: perché qualcuno dovrebbe scegliere proprio voi?
+            </p>
+
+            {/* CTA */}
+            <div className="pt-2 flex items-center gap-6">
+              <a
+                href="/about"
+                className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
-                Competenze
-              </p>
+                La mia storia →
+              </a>
               <div className="flex flex-wrap gap-2">
-                {about.skills.map((skill) => (
+                {about.skills.slice(0, 4).map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 font-condensed text-xs uppercase tracking-[0.15em] text-ink-dim"
+                    className="px-3 py-1 font-condensed text-xs uppercase tracking-[0.12em] text-ink-dim"
                     style={{
                       fontFamily: 'var(--font-barlow-condensed)',
                       border: '1px solid rgba(61,92,53,0.18)',

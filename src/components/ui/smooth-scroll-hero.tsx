@@ -96,7 +96,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
             style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(2.2rem, 6vw, 5.5rem)',
-              lineHeight: 0.95,
+              lineHeight: 1.1,
               letterSpacing,
               textShadow: '0 4px 32px rgba(0,0,0,0.4)',
             }}
