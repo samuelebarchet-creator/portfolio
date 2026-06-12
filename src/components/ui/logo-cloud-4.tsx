@@ -1,4 +1,3 @@
-import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 
 type Logo = {
@@ -13,24 +12,33 @@ type LogoCloudProps = React.ComponentProps<'div'> & {
 };
 
 export function LogoCloud({ logos }: LogoCloudProps) {
+  const doubled = [...logos, ...logos];
+
   return (
     <div className="relative w-full py-6 overflow-hidden">
-      <InfiniteSlider gap={64} speed={60} speedOnHover={20}>
-        {logos.map((logo) => (
+      <div
+        className="flex items-center w-max"
+        style={{
+          animation: 'marquee 30s linear infinite',
+          willChange: 'transform',
+          gap: '4rem',
+        }}
+      >
+        {doubled.map((logo, i) => (
           <div
-            key={logo.alt}
-            className="flex items-center justify-center h-10 md:h-12"
+            key={i}
+            className="flex items-center justify-center h-10 md:h-12 shrink-0"
           >
             <img
               alt={logo.alt}
-              className="pointer-events-none select-none h-full w-auto object-contain opacity-85 hover:opacity-100 transition-opacity duration-300"
+              className="pointer-events-none select-none h-full w-auto object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
               style={{ mixBlendMode: 'multiply' }}
               loading="lazy"
               src={logo.src}
             />
           </div>
         ))}
-      </InfiniteSlider>
+      </div>
 
       <ProgressiveBlur
         blurIntensity={0.8}

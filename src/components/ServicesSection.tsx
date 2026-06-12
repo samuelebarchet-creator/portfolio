@@ -53,7 +53,7 @@ export default function ServicesSection() {
         className="w-full px-8 md:px-20 bg-bg-alt relative overflow-hidden"
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       >
-        <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
           <EtherealShadow
             color="rgba(61, 92, 53, 0.30)"
             animation={{ scale: 45, speed: 55 }}

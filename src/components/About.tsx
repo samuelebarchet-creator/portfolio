@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
 import Ornament from '@/components/Ornament';
@@ -43,7 +44,7 @@ export default function About() {
       className="w-full py-28 px-8 md:px-20 relative overflow-hidden"
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+      <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
         <EtherealShadow
           color="rgba(143, 184, 122, 0.28)"
           animation={{ scale: 35, speed: 45 }}
@@ -60,13 +61,15 @@ export default function About() {
           {/* ── Left: photo ── */}
           <div ref={photoRef}>
             <div
-              className="overflow-hidden"
+              className="overflow-hidden relative"
               style={{ aspectRatio: '3/4' }}
             >
-              <img
+              <Image
                 src="/about/servizio-civile.jpg"
                 alt="Samuele durante il servizio civile"
-                className="w-full h-full object-cover object-top grayscale"
+                fill
+                className="object-cover object-top grayscale"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <p

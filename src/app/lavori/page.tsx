@@ -13,7 +13,7 @@ export default function LavoriPage() {
   return (
     <main className="pt-28 pb-0 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+      <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
         <EtherealShadow
           color="rgba(61, 92, 53, 0.22)"
           animation={{ scale: 55, speed: 40 }}
