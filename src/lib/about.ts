@@ -8,9 +8,9 @@ export const about = {
     'Aiuto brand ambiziosi a costruire una presenza digitale che vale qualcosa.',
 
   bio: [
-    "Sono Samuele, Brand & Digital Strategist con base a Treviso. Lavoro con brand che hanno qualcosa di interessante da dire ma non ancora il modo giusto per dirlo.",
-    "Il mio approccio parte sempre dalla strategia: capire chi sei, per chi parli e perché qualcuno dovrebbe sceglierti. Solo dopo si lavora sui contenuti, i social, il marketing. Nell'ordine giusto.",
-    "Ho seguito progetti che vanno dal brand locale che vuole uscire dal proprio quartiere fino allo strumento SaaS che deve conquistare un mercato internazionale. La differenza di scala cambia i dettagli, non il metodo.",
+    "Sono nato a Belluno nel 2001 in una famiglia numerosa. Crescere in un contesto dove ognuno aveva idee e punti di vista diversi mi ha insegnato una cosa: comunicare non significa parlare, significa farsi capire.",
+    "Il mio approccio parte sempre dalla strategia: capire chi sei, per chi parli e quale spazio vuoi occupare nella mente delle persone. Solo dopo si lavora su social, advertising e contenuti. Nell'ordine giusto.",
+    "Ho collaborato con startup, e-commerce, organizzazioni no-profit e aziende digitali. Ambiti diversi, stessa sfida: trovare il modo giusto di comunicare il proprio valore.",
   ],
 
   values: [
