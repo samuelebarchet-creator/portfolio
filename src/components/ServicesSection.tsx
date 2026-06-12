@@ -34,9 +34,9 @@ export default function ServicesSection() {
     >
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <EtherealShadow
-          color="rgba(61, 92, 53, 0.13)"
+          color="rgba(61, 92, 53, 0.30)"
           animation={{ scale: 45, speed: 55 }}
-          noise={{ opacity: 0.08, scale: 1.2 }}
+          noise={{ opacity: 0.14, scale: 1.2 }}
           sizing="fill"
         />
       </div>

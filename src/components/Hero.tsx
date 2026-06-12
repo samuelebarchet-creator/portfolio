@@ -188,16 +188,6 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full touch-none pointer-events-none"
       />
 
-      {/* Thin gradient only at the very bottom edge — no empty space */}
-      <div
-        className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{
-          height: '5rem',
-          background: 'linear-gradient(to bottom, transparent, #F5F0E8)',
-          zIndex: 5,
-        }}
-        aria-hidden
-      />
 
       {/* Content — padding-top clears fixed nav, padding-bottom closes section */}
       <div

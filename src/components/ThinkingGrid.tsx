@@ -35,9 +35,9 @@ export default function ThinkingGrid() {
     >
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <EtherealShadow
-          color="rgba(61, 92, 53, 0.11)"
+          color="rgba(61, 92, 53, 0.26)"
           animation={{ scale: 38, speed: 50 }}
-          noise={{ opacity: 0.07, scale: 1.1 }}
+          noise={{ opacity: 0.13, scale: 1.1 }}
           sizing="fill"
         />
       </div>

@@ -56,9 +56,9 @@ export default function About() {
     >
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <EtherealShadow
-          color="rgba(143, 184, 122, 0.1)"
+          color="rgba(143, 184, 122, 0.28)"
           animation={{ scale: 35, speed: 45 }}
-          noise={{ opacity: 0.06, scale: 1 }}
+          noise={{ opacity: 0.13, scale: 1 }}
           sizing="fill"
         />
       </div>

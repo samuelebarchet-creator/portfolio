@@ -67,9 +67,9 @@ export default function CollabGrid() {
     <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-20 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
         <EtherealShadow
-          color="rgba(61, 92, 53, 0.09)"
+          color="rgba(61, 92, 53, 0.28)"
           animation={{ scale: 50, speed: 40 }}
-          noise={{ opacity: 0.05, scale: 1.5 }}
+          noise={{ opacity: 0.12, scale: 1.5 }}
           sizing="fill"
         />
       </div>
