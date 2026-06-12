@@ -52,8 +52,8 @@ export default function AboutPage() {
         scrollHeight={1400}
         desktopImage="/about/mountains.jpg"
         mobileImage="/about/mountains.jpg"
-        initialClipPercentage={18}
-        finalClipPercentage={82}
+        initialClipPercentage={0}
+        finalClipPercentage={100}
         heroLabel="About"
         heroTitle="Dalle montagne al mondo del digital"
       />
