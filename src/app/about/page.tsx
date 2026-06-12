@@ -7,7 +7,14 @@ import { about } from '@/lib/about';
 
 export const metadata: Metadata = {
   title: 'About — Samuele Barchet',
-  description: 'Brand & Digital Strategist. La mia storia, dalle Dolomiti al digitale.',
+  description: 'Brand & Digital Strategist freelance. Dalla provincia di Belluno al mondo del marketing digitale: la mia storia, i miei valori e il mio approccio.',
+  alternates: { canonical: 'https://www.samuelebarchet.com/about' },
+  openGraph: {
+    title: 'About — Samuele Barchet',
+    description: 'Brand & Digital Strategist freelance. Dalla provincia di Belluno al mondo del marketing digitale.',
+    url: 'https://www.samuelebarchet.com/about',
+    images: [{ url: '/about/samuele.jpg', width: 1200, height: 630, alt: 'Samuele Barchet' }],
+  },
 };
 
 const B = ({ children }: { children: ReactNode }) => (

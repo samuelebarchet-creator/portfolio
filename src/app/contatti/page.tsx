@@ -4,7 +4,13 @@ import { about } from '@/lib/about';
 
 export const metadata: Metadata = {
   title: 'Contatti — Samuele Barchet',
-  description: `Scrivimi a ${about.email}. Rispondo entro 24 ore.`,
+  description: `Contatta Samuele Barchet, Brand & Digital Strategist freelance. Email: ${about.email} — Rispondo entro 24 ore.`,
+  alternates: { canonical: 'https://www.samuelebarchet.com/contatti' },
+  openGraph: {
+    title: 'Contatti — Samuele Barchet',
+    description: 'Contatta Samuele Barchet, Brand & Digital Strategist freelance.',
+    url: 'https://www.samuelebarchet.com/contatti',
+  },
 };
 
 export default function ContattiPage() {

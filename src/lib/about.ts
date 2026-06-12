@@ -57,9 +57,9 @@ export const about = {
   ],
 
   stats: [
-    { value: '5+', label: 'Anni di esperienza' },
+    { value: '7+', label: 'Anni nel settore' },
     { value: '20+', label: 'Progetti realizzati' },
-    { value: '5', label: 'Brand seguiti dal lancio' },
+    { value: '8', label: 'Brand seguiti attivamente' },
     { value: '4M+', label: 'Visualizzazioni generate' },
   ],
 };

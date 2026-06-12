@@ -4,7 +4,13 @@ import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
   title: 'Thinking — Samuele Barchet',
-  description: 'Brand, digital, strategia. Quello che penso quando smetto di lavorare.',
+  description: 'Brand, digital, strategia. Articoli e riflessioni di Samuele Barchet su comunicazione, marketing e costruzione dei brand.',
+  alternates: { canonical: 'https://www.samuelebarchet.com/thinking' },
+  openGraph: {
+    title: 'Thinking — Samuele Barchet',
+    description: 'Articoli e riflessioni su brand, digital e strategia.',
+    url: 'https://www.samuelebarchet.com/thinking',
+  },
 };
 
 export default function ThinkingPage() {

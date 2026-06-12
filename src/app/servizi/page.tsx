@@ -4,7 +4,13 @@ import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
   title: 'Servizi — Samuele Barchet',
-  description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand ambiziosi.',
+  description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni in Italia.',
+  alternates: { canonical: 'https://www.samuelebarchet.com/servizi' },
+  openGraph: {
+    title: 'Servizi — Samuele Barchet',
+    description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni.',
+    url: 'https://www.samuelebarchet.com/servizi',
+  },
 };
 
 export default function ServiziPage() {

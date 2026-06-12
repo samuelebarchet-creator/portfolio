@@ -6,7 +6,13 @@ import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export const metadata: Metadata = {
   title: 'Lavori — Samuele Barchet',
-  description: 'Progetti di brand strategy e comunicazione digitale: Braghe\'s, Programma Formula, RC Ricambi, Citation Rate, Crossabili.',
+  description: "Progetti di brand strategy e comunicazione digitale: Braghe's, Programma Formula, RC Ricambi, Citation Rate, Crossabili, Vyst.",
+  alternates: { canonical: 'https://www.samuelebarchet.com/lavori' },
+  openGraph: {
+    title: 'Lavori — Samuele Barchet',
+    description: "Progetti di brand strategy e comunicazione digitale seguiti da Samuele Barchet.",
+    url: 'https://www.samuelebarchet.com/lavori',
+  },
 };
 
 export default function LavoriPage() {

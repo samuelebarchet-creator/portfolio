@@ -10,9 +10,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
+  const url = `https://www.samuelebarchet.com/projects/${slug}`;
   return {
     title: `${project.company} — Samuele Barchet`,
     description: project.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: `${project.company} — Samuele Barchet`,
+      description: project.description,
+      url,
+    },
   };
 }
 
