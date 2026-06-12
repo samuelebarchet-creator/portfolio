@@ -107,7 +107,7 @@ export default function ProjectClient({ project }: { project: Project }) {
         <div className="max-w-6xl mx-auto">
           {/* Back */}
           <Link
-            href="/#collaborazioni"
+            href="/lavori"
             className="hero-tag inline-flex items-center gap-2 text-bg/50 hover:text-bg transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-12 opacity-0"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
@@ -257,8 +257,8 @@ export default function ProjectClient({ project }: { project: Project }) {
               {project.deliverables.map((d) => (
                 <li
                   key={d}
-                  className="flex items-start gap-3 font-condensed text-ink-dim text-sm tracking-wide leading-snug"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  className="flex items-start gap-3 font-condensed text-ink-dim tracking-wide leading-snug"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                 >
                   <span
                     className="mt-[5px] w-1 h-1 rounded-full shrink-0"
@@ -288,8 +288,8 @@ export default function ProjectClient({ project }: { project: Project }) {
                     href={project.links.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="flex items-center gap-3 font-condensed text-ink-dim tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                   >
                     <span style={{ color: project.color }}><IconWeb /></span>
                     Sito web
@@ -300,8 +300,8 @@ export default function ProjectClient({ project }: { project: Project }) {
                     href={project.links.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="flex items-center gap-3 font-condensed text-ink-dim tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                   >
                     <span style={{ color: project.color }}><IconIG /></span>
                     Instagram
@@ -312,8 +312,8 @@ export default function ProjectClient({ project }: { project: Project }) {
                     href={project.links.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="flex items-center gap-3 font-condensed text-ink-dim tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                   >
                     <span style={{ color: project.color }}><IconFB /></span>
                     Facebook
@@ -325,8 +325,8 @@ export default function ProjectClient({ project }: { project: Project }) {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="flex items-center gap-3 font-condensed text-ink-dim tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                   >
                     <span style={{ color: project.color }}><IconWeb /></span>
                     {label}
@@ -389,7 +389,7 @@ export default function ProjectClient({ project }: { project: Project }) {
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       >
         <Link
-          href="/#collaborazioni"
+          href="/lavori"
           className="group flex items-center justify-between hover:opacity-70 transition-opacity duration-300"
         >
           <span
