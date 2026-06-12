@@ -130,8 +130,21 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Legal / fiscal info */}
+        <div
+          className="py-6 mb-2"
+          style={{ borderTop: '1px solid rgba(61,92,53,0.08)' }}
+        >
+          <p
+            className="font-condensed text-ink-faint text-xs tracking-[0.15em] leading-relaxed"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            Barchet Samuele — C.F. BRCSML01P16D530G — P.IVA 01275710257 (IT) — Regime forfettario (art. 1, c. 54‑89, L. 190/2014) — Sede legale: Via Giuseppe Mazzini 6, 32036 Sedico (BL)
+          </p>
+        </div>
+
         {/* Bottom row */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-4">
           <p
             className="font-condensed text-ink-faint text-xs uppercase tracking-[0.25em]"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
