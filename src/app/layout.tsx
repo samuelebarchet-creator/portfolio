@@ -55,13 +55,7 @@ export default function RootLayout({
           src="https://cdn.iubenda.com/iubenda.js"
           strategy="lazyOnload"
         />
-        {/* MEME BANNER — rimuovere dopo screenshot */}
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 9999, background: '#b39ddb', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', padding: '8px 20px' }}>
-          <img src="/regina.jpg" alt="regina" style={{ height: '48px', width: '48px', objectFit: 'cover', borderRadius: '50%', border: '2px solid white' }} />
-          <span style={{ fontFamily: 'sans-serif', fontWeight: 'bold', fontSize: '1.1rem', color: 'white', letterSpacing: '0.02em' }}>Ciao regina galattica sei molto bella 👑</span>
-          <img src="/regina.jpg" alt="regina" style={{ height: '48px', width: '48px', objectFit: 'cover', borderRadius: '50%', border: '2px solid white' }} />
-        </div>
-        <CustomCursor />
+<CustomCursor />
         <ScrollProgress />
         <SmoothScroll>
           <Nav />
