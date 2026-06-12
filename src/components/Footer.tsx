@@ -131,18 +131,34 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pt-8">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
           <p
             className="font-condensed text-ink-faint text-xs uppercase tracking-[0.25em]"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             © 2026 Samuele Barchet. Tutti i diritti riservati.
           </p>
+
+          {/* Iubenda policy links */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.iubenda.com/privacy-policy/60384143"
+              className="iubenda-white iubenda-noiframe iubenda-embed"
+              title="Privacy Policy"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/60384143/cookie-policy"
+              className="iubenda-white iubenda-noiframe iubenda-embed"
+              title="Cookie Policy"
+            >
+              Cookie Policy
+            </a>
+          </div>
+
           <div className="flex items-center gap-2">
-            <span
-              className="w-1 h-1 rounded-full bg-green-mid"
-              aria-hidden
-            />
+            <span className="w-1 h-1 rounded-full bg-green-mid" aria-hidden />
             <p
               className="font-condensed text-ink-faint text-xs uppercase tracking-[0.25em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}

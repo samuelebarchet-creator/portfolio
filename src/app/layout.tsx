@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Barlow, Barlow_Condensed } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Nav from "@/components/Nav";
@@ -42,6 +43,16 @@ export default function RootLayout({
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
       <body className="min-h-full bg-bg text-ink antialiased">
+        {/* Iubenda — cookie banner */}
+        <Script
+          src="https://embeds.iubenda.com/widgets/32af739a-b291-4656-b010-4a02716ea05b.js"
+          strategy="afterInteractive"
+        />
+        {/* Iubenda — policy link styling */}
+        <Script
+          src="https://cdn.iubenda.com/iubenda.js"
+          strategy="lazyOnload"
+        />
         <CustomCursor />
         <ScrollProgress />
         <SmoothScroll>
