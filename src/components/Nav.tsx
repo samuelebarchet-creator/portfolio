@@ -149,11 +149,11 @@ export default function Nav() {
             style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}
           >
             <a
-              href="mailto:samuele.barchet@gmail.com"
+              href="mailto:info@samuelebarchet.com"
               className="font-condensed text-ink-dim text-sm uppercase tracking-[0.2em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
-              samuele.barchet@gmail.com
+              info@samuelebarchet.com
             </a>
           </div>
         </div>

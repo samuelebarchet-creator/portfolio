@@ -72,11 +72,11 @@ export default function Footer() {
               Treviso, Italia
             </p>
             <a
-              href="mailto:samuele.barchet@gmail.com"
+              href="mailto:info@samuelebarchet.com"
               className="font-condensed text-green text-xs tracking-[0.15em] hover:text-green-mid transition-colors duration-300 w-fit"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
-              samuele.barchet@gmail.com
+              info@samuelebarchet.com
             </a>
           </div>
 

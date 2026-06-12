@@ -2,7 +2,7 @@ export const about = {
   name: 'Samuele Barchet',
   role: 'Brand & Digital Strategist',
   location: 'Treviso, Italia',
-  email: 'samuele.barchet@gmail.com',
+  email: 'info@samuelebarchet.com',
 
   headline:
     'Aiuto brand ambiziosi a costruire una presenza digitale che vale qualcosa.',
