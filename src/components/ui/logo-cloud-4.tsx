@@ -23,8 +23,8 @@ export function LogoCloud({ logos }: LogoCloudProps) {
           >
             <img
               alt={logo.alt}
-              className="pointer-events-none select-none h-full w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-300"
-              style={{ filter: 'grayscale(1)' }}
+              className="pointer-events-none select-none h-full w-auto object-contain opacity-85 hover:opacity-100 transition-opacity duration-300"
+              style={{ mixBlendMode: 'multiply' }}
               loading="lazy"
               src={logo.src}
             />
