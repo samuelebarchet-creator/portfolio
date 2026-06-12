@@ -5,6 +5,35 @@ import Link from 'next/link';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 
+/* Parse **bold** markers into <strong> elements */
+function renderBold(text: string) {
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return parts.map((part, i) =>
+    i % 2 === 1
+      ? <strong key={i} className="font-semibold text-ink">{part}</strong>
+      : part
+  );
+}
+
+const IconWeb = () => (
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+    <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M8 1.5C8 1.5 10.5 4.5 10.5 8s-2.5 6.5-2.5 6.5M8 1.5C8 1.5 5.5 4.5 5.5 8s2.5 6.5 2.5 6.5M1.5 8h13" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+  </svg>
+);
+const IconIG = () => (
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+    <rect x="1.5" y="1.5" width="13" height="13" rx="3.5" stroke="currentColor" strokeWidth="1.3"/>
+    <circle cx="8" cy="8" r="2.8" stroke="currentColor" strokeWidth="1.3"/>
+    <circle cx="11.8" cy="4.2" r="0.7" fill="currentColor"/>
+  </svg>
+);
+const IconFB = () => (
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+    <path d="M13.5 8a5.5 5.5 0 1 0-6.375 5.438V10H5.5V8h1.625V6.625C7.125 5.012 8.075 4.125 9.538 4.125c.7 0 1.462.125 1.462.125V5.75h-.825c-.813 0-1.05.503-1.05 1.019V8H11l-.281 2H9.125v3.438A5.502 5.502 0 0 0 13.5 8Z" stroke="currentColor" strokeWidth="1.1" strokeLinejoin="round"/>
+  </svg>
+);
+
 gsap.registerPlugin(ScrollTrigger);
 
 /* Arrow left icon */
@@ -193,7 +222,7 @@ export default function ProjectClient({ project }: { project: Project }) {
               className="text-ink leading-relaxed"
               style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.2vw, 1.15rem)' }}
             >
-              {project.fullDescription}
+              {renderBold(project.fullDescription)}
             </p>
           </div>
 
@@ -240,6 +269,72 @@ export default function ProjectClient({ project }: { project: Project }) {
               ))}
             </ul>
           </div>
+
+          {/* Links */}
+          {project.links && (
+            <div
+              className="reveal p-6"
+              style={{ background: 'var(--bg-alt)', border: '1px solid rgba(61,92,53,0.1)' }}
+            >
+              <p
+                className="font-condensed uppercase text-green text-xs tracking-[0.4em] mb-5"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                Visita il progetto
+              </p>
+              <div className="flex flex-col gap-3">
+                {project.links.website && (
+                  <a
+                    href={project.links.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  >
+                    <span style={{ color: project.color }}><IconWeb /></span>
+                    Sito web
+                  </a>
+                )}
+                {project.links.instagram && (
+                  <a
+                    href={project.links.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  >
+                    <span style={{ color: project.color }}><IconIG /></span>
+                    Instagram
+                  </a>
+                )}
+                {project.links.facebook && (
+                  <a
+                    href={project.links.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  >
+                    <span style={{ color: project.color }}><IconFB /></span>
+                    Facebook
+                  </a>
+                )}
+                {project.links.extra?.map(({ label, url }) => (
+                  <a
+                    key={url}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 font-condensed text-ink-dim text-sm tracking-wide hover:text-ink transition-colors duration-200"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  >
+                    <span style={{ color: project.color }}><IconWeb /></span>
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
