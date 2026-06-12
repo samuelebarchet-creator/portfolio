@@ -24,16 +24,18 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
 }) => {
   const { scrollY } = useScroll();
 
-  const clipStart = useTransform(scrollY, [0, scrollHeight], [initialClipPercentage, 0]);
-  const clipEnd   = useTransform(scrollY, [0, scrollHeight], [finalClipPercentage, 100]);
+  // Full screen → clips inward as you scroll
+  const clipStart = useTransform(scrollY, [0, scrollHeight], [0, initialClipPercentage]);
+  const clipEnd   = useTransform(scrollY, [0, scrollHeight], [100, finalClipPercentage]);
   const clipPath  = useMotionTemplate`polygon(${clipStart}% ${clipStart}%, ${clipEnd}% ${clipStart}%, ${clipEnd}% ${clipEnd}%, ${clipStart}% ${clipEnd}%)`;
 
-  const backgroundSize = useTransform(scrollY, [0, scrollHeight + 500], ['170%', '100%']);
+  // Slight zoom-in as image clips
+  const backgroundSize = useTransform(scrollY, [0, scrollHeight], ['100%', '118%']);
 
-  // Text: letter-spacing expands as image opens, then fades out
-  const letterSpacing = useTransform(scrollY, [0, scrollHeight * 0.75], ['0.02em', '0.28em']);
-  const textOpacity   = useTransform(scrollY, [scrollHeight * 0.6, scrollHeight * 0.85], [1, 0]);
-  const textY         = useTransform(scrollY, [0, scrollHeight * 0.75], ['0px', '-18px']);
+  // Text fades out and rises in the first quarter of scroll
+  const letterSpacing = useTransform(scrollY, [0, scrollHeight * 0.2], ['0.02em', '0.18em']);
+  const textOpacity   = useTransform(scrollY, [0, scrollHeight * 0.28], [1, 0]);
+  const textY         = useTransform(scrollY, [0, scrollHeight * 0.28], ['0px', '-40px']);
 
   return (
     <motion.div
