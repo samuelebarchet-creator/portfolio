@@ -43,13 +43,15 @@ export default function RootLayout({
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
       <body className="min-h-full bg-bg text-ink antialiased">
-        {/* Iubenda — cookie banner */}
+        {/* Iubenda — cookie banner (id keeps it from re-running on SPA navigation) */}
         <Script
+          id="iubenda-cs"
           src="https://embeds.iubenda.com/widgets/32af739a-b291-4656-b010-4a02716ea05b.js"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
         {/* Iubenda — policy link styling */}
         <Script
+          id="iubenda-js"
           src="https://cdn.iubenda.com/iubenda.js"
           strategy="lazyOnload"
         />
