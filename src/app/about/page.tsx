@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Link from 'next/link';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import StatsBar from '@/components/StatsBar';
 import Contact from '@/components/Contact';
@@ -40,8 +41,8 @@ const bioChapters: { label: string; paragraphs: ReactNode[] }[] = [
   {
     label: 'Oggi',
     paragraphs: [
-      <>Negli anni ho collaborato con <B>startup</B>, <B>e-commerce</B>, <B>organizzazioni no-profit</B>, progetti sociali e aziende digitali. Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore.</>,
-      <>Oggi aiuto brand e organizzazioni a costruire una <B>presenza digitale più chiara, coerente e strategica</B>. Il mio lavoro parte sempre da una domanda semplice: <B>perché qualcuno dovrebbe scegliere proprio voi?</B></>,
+      <>Negli anni ho collaborato con <B>startup</B>, <B>e-commerce</B>, <B>organizzazioni no-profit</B>, progetti sociali e aziende digitali. Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore. Puoi vedere alcuni <Link href="/lavori" className="text-green underline underline-offset-2 hover:no-underline">lavori realizzati</Link>.</>,
+      <>Oggi aiuto brand e organizzazioni a costruire una <B>presenza digitale più chiara, coerente e strategica</B>. Il mio lavoro parte sempre da una domanda semplice: <B>perché qualcuno dovrebbe scegliere proprio voi?</B> Scopri come attraverso i <Link href="/servizi" className="text-green underline underline-offset-2 hover:no-underline">servizi che offro</Link>.</>,
     ],
   },
 ];
@@ -264,6 +265,36 @@ export default function AboutPage() {
               </span>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Internal navigation */}
+      <section
+        className="px-8 md:px-20 py-12"
+        style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
+      >
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-8">
+          <Link
+            href="/servizi"
+            className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            I miei servizi →
+          </Link>
+          <Link
+            href="/lavori"
+            className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            I miei lavori →
+          </Link>
+          <Link
+            href="/contatti"
+            className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            Inizia una collaborazione →
+          </Link>
         </div>
       </section>
 

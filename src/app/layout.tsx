@@ -95,7 +95,8 @@ export default function RootLayout({
                     "occupationalCategory": "Marketing e Comunicazione",
                     "skills": "Brand Strategy, Digital Marketing, Social Media, Meta Advertising, Content Strategy, Email Marketing"
                   },
-                  "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"]
+                  "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
+                  "dateModified": "2026-06-12"
                 },
                 {
                   "@type": "ProfessionalService",
@@ -129,7 +130,24 @@ export default function RootLayout({
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategic Partnership", "description": "Collaborazioni strategiche, partnership con creator e organizzazioni, sviluppo di network.", "areaServed": "Italia" } }
                     ]
                   },
-                  "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"]
+                  "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
+                  "dateModified": "2026-06-12",
+                  "about": [
+                    {"@type": "Thing", "name": "Brand Strategy"},
+                    {"@type": "Thing", "name": "Digital Marketing"},
+                    {"@type": "Thing", "name": "Social Media Marketing"},
+                    {"@type": "Thing", "name": "Meta Advertising"},
+                    {"@type": "Thing", "name": "Content Marketing"}
+                  ],
+                  "mentions": [
+                    {"@type": "Thing", "name": "Meta Ads"},
+                    {"@type": "Thing", "name": "Google Analytics 4"},
+                    {"@type": "Thing", "name": "LinkedIn"},
+                    {"@type": "Thing", "name": "Instagram"},
+                    {"@type": "Thing", "name": "Email Marketing"},
+                    {"@type": "Thing", "name": "Mailchimp"},
+                    {"@type": "Thing", "name": "Semrush"}
+                  ]
                 }
               ]
             })

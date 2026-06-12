@@ -16,8 +16,50 @@ export const metadata: Metadata = {
 };
 
 export default function LavoriPage() {
+  const ldJson = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.samuelebarchet.com/lavori",
+        "name": "Lavori — Samuele Barchet",
+        "url": "https://www.samuelebarchet.com/lavori",
+        "description": "Progetti di brand strategy e comunicazione digitale: Braghe's, Programma Formula, RC Ricambi, Citation Rate, Crossabili, Vyst.",
+        "dateModified": "2026-06-12",
+        "about": { "@type": "Thing", "name": "Brand Strategy e Digital Marketing" },
+        "mentions": [
+          { "@type": "Thing", "name": "Meta Ads" },
+          { "@type": "Thing", "name": "Brand Identity" },
+          { "@type": "Thing", "name": "Social Media Marketing" },
+          { "@type": "Thing", "name": "Content Strategy" }
+        ],
+        "author": { "@id": "https://www.samuelebarchet.com/#person" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.samuelebarchet.com" },
+            { "@type": "ListItem", "position": 2, "name": "Lavori", "item": "https://www.samuelebarchet.com/lavori" }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Portfolio di Samuele Barchet",
+          "numberOfItems": projects.length,
+          "itemListElement": projects.map((p, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": `https://www.samuelebarchet.com/projects/${p.slug}`,
+            "name": p.company,
+          })),
+        },
+      }
+    ],
+  };
+
   return (
-    <main className="pt-28 pb-0 relative overflow-hidden">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
+      <main className="pt-28 pb-0 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
         <EtherealShadow
@@ -132,5 +174,6 @@ export default function LavoriPage() {
 
       <ClientsBar />
     </main>
+    </>
   );
 }
