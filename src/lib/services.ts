@@ -13,7 +13,7 @@ export const services: Service[] = [
     title: 'Brand Strategy',
     subtitle: 'Costruire una direzione prima di fare marketing',
     description:
-      'Prima di parlare di contenuti, social o campagne, serve capire **chi sei, cosa ti rende diverso** e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il **posizionamento del brand**, il messaggio chiave e la strategia che guiderà tutte le attività future.',
+      'Prima di parlare di contenuti, social o campagne, serve capire **chi sei, cosa ti rende diverso** e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il **posizionamento del brand**, il messaggio chiave e la strategia che guiderà tutte le attività future. Ho seguito **8 brand in settori diversi** — dall\'e-commerce all\'inclusione sociale, dal no-profit al B2B — e ogni progetto inizia da qui.',
     deliverables: [
       'Analisi competitiva e di mercato',
       'Brand positioning',
@@ -29,7 +29,7 @@ export const services: Service[] = [
     title: 'Communication Strategy',
     subtitle: 'Trasformare la strategia in comunicazione',
     description:
-      'Una volta definita la direzione, costruiamo un **sistema di comunicazione coerente** su tutti i canali.\n\nL\'obiettivo non è pubblicare di più, ma **comunicare meglio**.',
+      'Una volta definita la direzione, costruiamo un **sistema di comunicazione coerente** su tutti i canali.\n\nL\'obiettivo non è pubblicare di più, ma **comunicare meglio**. Contenuti gestiti con questa logica hanno raggiunto **fino a 120.000 persone in modo organico** su un singolo post.',
     deliverables: [
       'Content strategy',
       'Content pillars',
@@ -45,7 +45,7 @@ export const services: Service[] = [
     title: 'Digital Growth',
     subtitle: 'Rendere la presenza digitale un asset',
     description:
-      'Advertising, email marketing, **funnel di acquisizione** e analytics devono lavorare insieme.\n\nOgni attività viene progettata per supportare **obiettivi concreti e misurabili**, trasformando la visibilità in opportunità di business reale.',
+      'Advertising, email marketing, **funnel di acquisizione** e analytics devono lavorare insieme.\n\nOgni attività viene progettata per supportare **obiettivi concreti e misurabili**. Nelle campagne di acquisizione gestite, il costo per lead si è attestato fino al **-73% rispetto al benchmark medio di settore** su Meta Ads.',
     deliverables: [
       'Audit della presenza digitale',
       'Funnel di acquisizione',

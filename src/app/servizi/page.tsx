@@ -49,6 +49,34 @@ export default function ServiziPage() {
             Lavoro con aziende, professionisti e organizzazioni che hanno qualcosa di importante da offrire ma hanno bisogno di una strategia più chiara per comunicarlo.
           </p>
         </div>
+
+        {/* KPI row */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-0 max-w-2xl" style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}>
+          {[
+            { value: '8', label: 'Brand seguiti attivamente in settori diversi' },
+            { value: '120k+', label: 'Copertura organica su singolo contenuto' },
+            { value: '−73%', label: 'CPL vs benchmark su campagne di acquisizione' },
+          ].map(({ value, label }, i) => (
+            <div
+              key={value}
+              className="pt-6 pr-8"
+              style={i < 2 ? { borderRight: '1px solid rgba(61,92,53,0.12)' } : undefined}
+            >
+              <p
+                className="font-display font-black italic text-green leading-none mb-2"
+                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}
+              >
+                {value}
+              </p>
+              <p
+                className="font-condensed text-ink-faint uppercase tracking-[0.18em] leading-snug"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.72rem' }}
+              >
+                {label}
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <ServicesSection />

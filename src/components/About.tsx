@@ -129,6 +129,33 @@ export default function About() {
               Il mio lavoro parte sempre da una domanda semplice: perché qualcuno dovrebbe scegliere proprio voi?
             </p>
 
+            {/* Data proof */}
+            <div
+              className="grid grid-cols-3 gap-4 py-5"
+              style={{ borderTop: '1px solid rgba(61,92,53,0.1)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
+            >
+              {[
+                { value: '7+', label: 'anni nel settore' },
+                { value: '120k+', label: 'copertura organica' },
+                { value: '−73%', label: 'CPL vs benchmark' },
+              ].map(({ value, label }) => (
+                <div key={value} className="flex flex-col gap-1">
+                  <span
+                    className="font-display font-black italic text-green leading-none"
+                    style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)' }}
+                  >
+                    {value}
+                  </span>
+                  <span
+                    className="font-condensed uppercase text-ink-faint tracking-[0.15em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.65rem' }}
+                  >
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
             {/* CTA */}
             <div className="pt-2 flex items-center gap-6">
               <a
