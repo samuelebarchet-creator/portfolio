@@ -49,7 +49,7 @@ export default function AboutPage() {
     <main>
       {/* ── Smooth scroll reveal — Dolomites ───────────────────────────────── */}
       <SmoothScrollHero
-        scrollHeight={1400}
+        scrollHeight={1120}
         desktopImage="/about/mountains.jpg"
         mobileImage="/about/mountains.jpg"
         initialClipPercentage={0}
