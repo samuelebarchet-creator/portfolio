@@ -3,6 +3,7 @@ export const about = {
   role: 'Brand & Digital Strategist',
   location: 'Treviso, Italia',
   email: 'info@samuelebarchet.com',
+  phone: '+39 342 026 9217',
 
   headline:
     'Aiuto brand ambiziosi a costruire una presenza digitale che vale qualcosa.',

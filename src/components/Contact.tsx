@@ -130,8 +130,17 @@ export default function Contact() {
           </svg>
         </a>
 
+        {/* Phone */}
+        <a
+          href={`tel:+393420269217`}
+          className="mt-4 font-condensed text-bg/60 text-sm tracking-[0.25em] uppercase hover:text-bg/90 transition-colors duration-300"
+          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+        >
+          {about.phone}
+        </a>
+
         <p
-          className="mt-5 font-condensed text-bg/30 text-xs tracking-[0.25em] uppercase"
+          className="mt-4 font-condensed text-bg/30 text-xs tracking-[0.25em] uppercase"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Rispondo entro 24 ore
