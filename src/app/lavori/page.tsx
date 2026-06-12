@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
 import ClientsBar from '@/components/ClientsBar';
+import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export const metadata: Metadata = {
   title: 'Lavori — Samuele Barchet',
@@ -10,9 +11,19 @@ export const metadata: Metadata = {
 
 export default function LavoriPage() {
   return (
-    <main className="pt-28 pb-0">
+    <main className="pt-28 pb-0 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <EtherealShadow
+          color="rgba(61, 92, 53, 0.22)"
+          animation={{ scale: 55, speed: 40 }}
+          noise={{ opacity: 0.10, scale: 1.4 }}
+          sizing="fill"
+        />
+      </div>
+
       {/* Header */}
-      <section className="px-8 md:px-20 pb-16 max-w-6xl mx-auto">
+      <section className="px-8 md:px-20 pb-16 max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <p
           className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -33,12 +44,12 @@ export default function LavoriPage() {
 
       {/* Divider */}
       <div
-        className="mx-8 md:mx-20 max-w-6xl"
-        style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
+        className="mx-8 md:mx-20 max-w-6xl relative"
+        style={{ borderTop: '1px solid rgba(61,92,53,0.1)', zIndex: 1 }}
       />
 
       {/* Projects grid */}
-      <section className="px-8 md:px-20 py-16 max-w-6xl mx-auto">
+      <section className="px-8 md:px-20 py-16 max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10">
           {projects.map((p) => (
             <Link
