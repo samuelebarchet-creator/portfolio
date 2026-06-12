@@ -54,32 +54,9 @@ export default function AboutPage() {
         mobileImage="/about/mountains.jpg"
         initialClipPercentage={18}
         finalClipPercentage={82}
-      >
-        <div
-          className="w-full px-8 md:px-20 pb-14 md:pb-20"
-          style={{
-            background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%)',
-          }}
-        >
-          <p
-            className="font-condensed uppercase text-white/70 text-xs tracking-[0.5em] mb-4"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            About
-          </p>
-          <h1
-            className="font-display font-black italic text-white leading-[0.9]"
-            style={{
-              fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(2.8rem, 7vw, 6.5rem)',
-              letterSpacing: '-0.02em',
-              textShadow: '0 2px 24px rgba(0,0,0,0.3)',
-            }}
-          >
-            Dalle montagne<br />al mondo del digital
-          </h1>
-        </div>
-      </SmoothScrollHero>
+        heroLabel="About"
+        heroTitle="Dalle montagne al mondo del digital"
+      />
 
       {/* ── Portrait + identity ────────────────────────────────────────────── */}
       <section
