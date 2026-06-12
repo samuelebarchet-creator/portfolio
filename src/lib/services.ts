@@ -13,7 +13,7 @@ export const services: Service[] = [
     title: 'Brand Strategy',
     subtitle: 'Costruire una direzione prima di fare marketing',
     description:
-      'Prima di parlare di contenuti, social o campagne, serve capire chi sei, cosa ti rende diverso e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il posizionamento del brand, il messaggio chiave e la strategia che guiderà tutte le attività future.',
+      'Prima di parlare di contenuti, social o campagne, serve capire **chi sei, cosa ti rende diverso** e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il **posizionamento del brand**, il messaggio chiave e la strategia che guiderà tutte le attività future.',
     deliverables: [
       'Analisi competitiva e di mercato',
       'Brand positioning',
@@ -29,7 +29,7 @@ export const services: Service[] = [
     title: 'Communication Strategy',
     subtitle: 'Trasformare la strategia in comunicazione',
     description:
-      'Una volta definita la direzione, costruiamo un sistema di comunicazione coerente su tutti i canali.\n\nL\'obiettivo non è pubblicare di più, ma comunicare meglio.',
+      'Una volta definita la direzione, costruiamo un **sistema di comunicazione coerente** su tutti i canali.\n\nL\'obiettivo non è pubblicare di più, ma **comunicare meglio**.',
     deliverables: [
       'Content strategy',
       'Content pillars',
@@ -45,14 +45,14 @@ export const services: Service[] = [
     title: 'Digital Growth',
     subtitle: 'Rendere la presenza digitale un asset',
     description:
-      'Sito web, SEO, advertising, email marketing e acquisizione clienti devono lavorare insieme.\n\nOgni attività viene progettata per supportare obiettivi concreti e misurabili.',
+      'Advertising, email marketing, **funnel di acquisizione** e analytics devono lavorare insieme.\n\nOgni attività viene progettata per supportare **obiettivi concreti e misurabili**, trasformando la visibilità in opportunità di business reale.',
     deliverables: [
       'Audit della presenza digitale',
-      'SEO e Local SEO',
       'Funnel di acquisizione',
-      'Email marketing',
+      'Email marketing e automazioni',
       'Meta Ads',
       'Analytics e reporting',
+      'Dashboard mensile',
     ],
     forWho: 'PMI, attività locali e brand che vogliono trasformare la visibilità in opportunità di business.',
   },
@@ -61,7 +61,7 @@ export const services: Service[] = [
     title: 'Strategic Partnership',
     subtitle: 'Un supporto continuativo per le decisioni importanti',
     description:
-      'Alcuni progetti hanno bisogno di qualcuno che aiuti a mantenere la direzione nel tempo.\n\nIn questo caso lavoro come partner esterno, affiancando il team nella definizione delle priorità, delle attività e delle strategie di crescita.',
+      'Alcuni progetti hanno bisogno di qualcuno che aiuti a **mantenere la direzione nel tempo**.\n\nIn questo caso lavoro come **partner esterno**, affiancando il team nella definizione delle priorità, delle attività e delle strategie di crescita.',
     deliverables: [
       'Consulenza continuativa',
       'Revisione delle attività marketing',

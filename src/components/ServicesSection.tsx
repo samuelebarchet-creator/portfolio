@@ -5,6 +5,15 @@ import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { services, approachValues } from '@/lib/services';
 import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
+function renderBold(text: string) {
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return parts.map((part, i) =>
+    i % 2 === 1
+      ? <strong key={i} className="font-semibold text-ink">{part}</strong>
+      : part
+  );
+}
+
 export default function ServicesSection() {
   const sectionRef   = useRef<HTMLDivElement>(null);
   const approachRef  = useRef<HTMLDivElement>(null);
@@ -72,14 +81,14 @@ export default function ServicesSection() {
                   className="font-display font-black italic text-ink leading-tight"
                   style={{
                     fontFamily: 'var(--font-playfair)',
-                    fontSize: 'clamp(1.6rem, 2.5vw, 2.2rem)',
+                    fontSize: 'clamp(1.8rem, 2.8vw, 2.6rem)',
                   }}
                 >
                   {service.title}
                 </h2>
                 <p
-                  className="font-condensed text-green text-xs uppercase tracking-[0.25em] leading-snug"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  className="font-condensed text-green uppercase tracking-[0.22em] leading-snug"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem' }}
                 >
                   {service.subtitle}
                 </p>
@@ -95,7 +104,7 @@ export default function ServicesSection() {
                   </p>
                   <p
                     className="text-ink-dim leading-relaxed"
-                    style={{ fontFamily: 'var(--font-barlow)', fontSize: '0.9rem' }}
+                    style={{ fontFamily: 'var(--font-barlow)', fontSize: '0.95rem' }}
                   >
                     {service.forWho}
                   </p>
@@ -103,14 +112,14 @@ export default function ServicesSection() {
               </div>
 
               {/* Center — description */}
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-5">
                 {service.description.split('\n\n').map((para, j) => (
                   <p
                     key={j}
-                    className="text-ink leading-relaxed"
-                    style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(0.98rem, 1.2vw, 1.08rem)' }}
+                    className="text-ink leading-[1.75]"
+                    style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1.05rem, 1.3vw, 1.15rem)' }}
                   >
-                    {para}
+                    {renderBold(para)}
                   </p>
                 ))}
               </div>
@@ -128,7 +137,7 @@ export default function ServicesSection() {
                     <li
                       key={d}
                       className="flex items-start gap-3 text-ink-dim leading-snug"
-                      style={{ fontFamily: 'var(--font-barlow)', fontSize: '0.95rem' }}
+                      style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}
                     >
                       <span
                         className="mt-[6px] w-1 h-1 rounded-full bg-green shrink-0"
@@ -167,13 +176,13 @@ export default function ServicesSection() {
                 />
                 <h3
                   className="font-display font-black italic text-ink leading-tight"
-                  style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.15rem' }}
+                  style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem' }}
                 >
                   {v.label}
                 </h3>
                 <p
                   className="text-ink-dim leading-relaxed"
-                  style={{ fontFamily: 'var(--font-barlow)', fontSize: '0.95rem' }}
+                  style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}
                 >
                   {v.description}
                 </p>
