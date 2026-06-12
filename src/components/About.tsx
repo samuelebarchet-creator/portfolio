@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
 import Ornament from '@/components/Ornament';
+import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export default function About() {
   const sectionRef  = useRef<HTMLDivElement>(null);
@@ -50,10 +51,18 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="w-full py-28 px-8 md:px-20"
+      className="w-full py-28 px-8 md:px-20 relative overflow-hidden"
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <EtherealShadow
+          color="rgba(143, 184, 122, 0.1)"
+          animation={{ scale: 35, speed: 45 }}
+          noise={{ opacity: 0.06, scale: 1 }}
+          sizing="fill"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="03" label="Chi sono" className="mb-16" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">

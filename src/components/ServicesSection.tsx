@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { services } from '@/lib/services';
 import Ornament from '@/components/Ornament';
+import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export default function ServicesSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -28,10 +29,18 @@ export default function ServicesSection() {
     <section
       ref={sectionRef}
       id="servizi"
-      className="w-full py-28 px-8 md:px-20 bg-bg-alt"
+      className="w-full py-28 px-8 md:px-20 bg-bg-alt relative overflow-hidden"
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <EtherealShadow
+          color="rgba(61, 92, 53, 0.13)"
+          animation={{ scale: 45, speed: 55 }}
+          noise={{ opacity: 0.08, scale: 1.2 }}
+          sizing="fill"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="02" label="Servizi" className="mb-6" />
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">

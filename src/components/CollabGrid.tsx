@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
 import Ornament from '@/components/Ornament';
+import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,8 +64,16 @@ export default function CollabGrid() {
   };
 
   return (
-    <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-20">
-      <div className="max-w-6xl mx-auto">
+    <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-20 relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <EtherealShadow
+          color="rgba(61, 92, 53, 0.09)"
+          animation={{ scale: 50, speed: 40 }}
+          noise={{ opacity: 0.05, scale: 1.5 }}
+          sizing="fill"
+        />
+      </div>
+      <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
 
         {/* Header */}
         <div className="section-header mb-16">
