@@ -89,7 +89,7 @@ export default function About() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Prima dei brand sono arrivate le persone.
+              Le persone mi hanno insegnato la comunicazione prima dell&apos;università.
             </h2>
 
             <div
