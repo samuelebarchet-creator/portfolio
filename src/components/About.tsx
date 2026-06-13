@@ -105,7 +105,7 @@ export default function About() {
               className="text-ink-dim leading-relaxed"
               style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
             >
-              Sono nato a <strong className="font-semibold text-ink">Belluno nel 2001</strong> in una famiglia di otto persone.
+              Sono nato a <strong className="font-semibold text-ink">Belluno nel 2001</strong> in una famiglia di otto persone.<br />
               Crescere in un ambiente dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto
               che comunicare non significa parlare, ma <strong className="font-semibold text-ink">farsi capire.</strong>
             </p>
@@ -125,7 +125,7 @@ export default function About() {
               style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
             >
               Oggi aiuto brand e organizzazioni a costruire una{' '}
-              <strong className="font-semibold text-ink">presenza digitale chiara, coerente e strategica</strong>.
+              <strong className="font-semibold text-ink">presenza digitale chiara, coerente e strategica</strong>.<br />
               Il mio lavoro parte sempre da una domanda semplice: perché qualcuno dovrebbe scegliere proprio voi?
             </p>
 

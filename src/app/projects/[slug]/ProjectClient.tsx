@@ -6,14 +6,16 @@ import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Contact from '@/components/Contact';
 
-/* Parse **bold** markers into <strong> elements */
-function renderBold(text: string) {
-  const parts = text.split(/\*\*(.*?)\*\*/g);
-  return parts.map((part, i) =>
-    i % 2 === 1
-      ? <strong key={i} className="font-semibold text-ink">{part}</strong>
-      : part
-  );
+/* Parse **bold** markers and break at sentence boundaries */
+function renderText(text: string) {
+  return text.split(/(?<=\.)\s+/).flatMap((sentence, si, arr) => {
+    const parts = sentence.split(/\*\*(.*?)\*\*/g).map((part, pi) =>
+      pi % 2 === 1
+        ? <strong key={`${si}-${pi}`} className="font-semibold text-ink">{part}</strong>
+        : part
+    );
+    return si < arr.length - 1 ? [...parts, <br key={`br-${si}`} />] : parts;
+  });
 }
 
 const IconWeb = () => (
@@ -223,7 +225,7 @@ export default function ProjectClient({ project }: { project: Project }) {
               className="text-ink leading-relaxed"
               style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.2vw, 1.15rem)' }}
             >
-              {renderBold(project.fullDescription)}
+              {renderText(project.fullDescription)}
             </p>
           </div>
 

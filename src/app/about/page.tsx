@@ -26,23 +26,23 @@ const bioChapters: { label: string; paragraphs: ReactNode[] }[] = [
   {
     label: 'Le origini',
     paragraphs: [
-      <><B>Sono nato a Belluno nel 2001</B> in una famiglia molto numerosa, composta da otto persone. Crescere in un contesto dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto una cosa: <B>comunicare non significa parlare, significa farsi capire.</B></>,
-      <>Probabilmente è da lì che nasce il mio interesse per la comunicazione. Dalla curiosità di capire cosa spinge le persone a <B>scegliere, fidarsi, cambiare idea</B> o sentirsi parte di qualcosa.</>,
+      <><B>Sono nato a Belluno nel 2001</B> in una famiglia molto numerosa, composta da otto persone.<br />Crescere in un contesto dove ognuno aveva idee, valori e punti di vista diversi mi ha insegnato presto una cosa: <B>comunicare non significa parlare, significa farsi capire.</B></>,
+      <>Probabilmente è da lì che nasce il mio interesse per la comunicazione.<br />Dalla curiosità di capire cosa spinge le persone a <B>scegliere, fidarsi, cambiare idea</B> o sentirsi parte di qualcosa.</>,
     ],
   },
   {
     label: 'Il percorso',
     paragraphs: [
-      <>Dopo il liceo ho scelto di dedicare un anno al <B>servizio civile</B>, lavorando a stretto contatto con <B>persone con disabilità</B>. È stata un&apos;esperienza che mi ha permesso di avvicinarmi al mondo delle associazioni, dell&apos;organizzazione di eventi e della <B>comunicazione sociale</B>, scoprendo quanto le parole e le storie possano avere un impatto concreto sulla vita delle persone.</>,
-      <>Per dare una base più solida a questa passione mi sono iscritto all&apos;<B>Università di Padova</B>, dove mi sono laureato in <B>Comunicazione</B> con una tesi dedicata alla gestione del brand. Parallelamente ho iniziato a lavorare come <B>freelance</B>, trasformando ogni progetto in un&apos;occasione per mettere in pratica ciò che studiavo.</>,
-      <>Successivamente mi sono trasferito a <B>Milano</B> per frequentare la laurea magistrale in <B>Digital Marketing</B> presso l&apos;<B>Università IULM</B>. Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell&apos;<B>intelligenza artificiale</B> applicata al marketing.</>,
+      <>Dopo il liceo ho scelto di dedicare un anno al <B>servizio civile</B>, lavorando a stretto contatto con <B>persone con disabilità</B>.<br />È stata un&apos;esperienza che mi ha permesso di avvicinarmi al mondo delle associazioni, dell&apos;organizzazione di eventi e della <B>comunicazione sociale</B>, scoprendo quanto le parole e le storie possano avere un impatto concreto sulla vita delle persone.</>,
+      <>Per dare una base più solida a questa passione mi sono iscritto all&apos;<B>Università di Padova</B>, dove mi sono laureato in <B>Comunicazione</B> con una tesi dedicata alla gestione del brand.<br />Parallelamente ho iniziato a lavorare come <B>freelance</B>, trasformando ogni progetto in un&apos;occasione per mettere in pratica ciò che studiavo.</>,
+      <>Successivamente mi sono trasferito a <B>Milano</B> per frequentare la laurea magistrale in <B>Digital Marketing</B> presso l&apos;<B>Università IULM</B>.<br />Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell&apos;<B>intelligenza artificiale</B> applicata al marketing.</>,
     ],
   },
   {
     label: 'Oggi',
     paragraphs: [
-      <>Negli anni ho collaborato con <B>startup</B>, <B>e-commerce</B>, <B>organizzazioni no-profit</B>, progetti sociali e aziende digitali. Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore. Puoi vedere alcuni <Link href="/lavori" className="text-green underline underline-offset-2 hover:no-underline">lavori realizzati</Link>.</>,
-      <>Oggi aiuto brand e organizzazioni a costruire una <B>presenza digitale più chiara, coerente e strategica</B>. Il mio lavoro parte sempre da una domanda semplice: <B>perché qualcuno dovrebbe scegliere proprio voi?</B> Scopri come attraverso i <Link href="/servizi" className="text-green underline underline-offset-2 hover:no-underline">servizi che offro</Link>.</>,
+      <>Negli anni ho collaborato con <B>startup</B>, <B>e-commerce</B>, <B>organizzazioni no-profit</B>, progetti sociali e aziende digitali.<br />Ambiti molto diversi tra loro, ma accomunati dalla stessa sfida: trovare il modo giusto di comunicare il proprio valore.<br />Puoi vedere alcuni <Link href="/lavori" className="text-green underline underline-offset-2 hover:no-underline">lavori realizzati</Link>.</>,
+      <>Oggi aiuto brand e organizzazioni a costruire una <B>presenza digitale più chiara, coerente e strategica</B>.<br />Il mio lavoro parte sempre da una domanda semplice: <B>perché qualcuno dovrebbe scegliere proprio voi?</B><br />Scopri come attraverso i <Link href="/servizi" className="text-green underline underline-offset-2 hover:no-underline">servizi che offro</Link>.</>,
     ],
   },
 ];
