@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
+import Contact from '@/components/Contact';
 
 /* Parse **bold** markers into <strong> elements */
 function renderBold(text: string) {
@@ -383,32 +384,8 @@ export default function ProjectClient({ project }: { project: Project }) {
         </div>
       )}
 
-      {/* ══ BOTTOM NAV ══════════════════════════════════════════════════════ */}
-      <div
-        className="px-8 md:px-20 py-16 max-w-6xl mx-auto"
-        style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
-      >
-        <Link
-          href="/lavori"
-          className="group flex items-center justify-between hover:opacity-70 transition-opacity duration-300"
-        >
-          <span
-            className="font-condensed uppercase text-ink-faint text-xs tracking-[0.4em]"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Torna ai progetti
-          </span>
-          <span
-            className="font-display font-black italic text-ink group-hover:text-green transition-colors duration-300"
-            style={{
-              fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-            }}
-          >
-            Vedi tutti →
-          </span>
-        </Link>
-      </div>
+      {/* ══ CONTACT ═════════════════════════════════════════════════════════ */}
+      <Contact />
     </>
   );
 }
