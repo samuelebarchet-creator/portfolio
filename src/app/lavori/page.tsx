@@ -71,7 +71,7 @@ export default function LavoriPage() {
         finalClipPercentage={100}
         heroLabel="Lavori"
         heroTitle="Il valore si costruisce a mano"
-        desktopPosition="center 80%"
+        desktopPosition="center 96px"
       />
 
       <main className="pb-0 relative overflow-hidden">
