@@ -24,7 +24,6 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   heroTitle,
 }) => {
   const stickyRef = useRef<HTMLDivElement>(null);
-  const bgMobileRef = useRef<HTMLDivElement>(null);
   const bgDesktopRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -41,8 +40,9 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
       const clipEnd = 100 + p * (finalClipPercentage - 100);  // 100 → 75
       sticky.style.clipPath = `polygon(${clipStart}% ${clipStart}%, ${clipEnd}% ${clipStart}%, ${clipEnd}% ${clipEnd}%, ${clipStart}% ${clipEnd}%)`;
 
-      const bgSize = `${100 + p * 18}%`; // 100% → 118%
-      if (bgMobileRef.current) bgMobileRef.current.style.backgroundSize = bgSize;
+      // Desktop bg zooms with scroll (100% → 118%). Mobile bg stays `cover`
+      // (set in markup) so a wide image fills the tall screen without black bars.
+      const bgSize = `${100 + p * 18}%`;
       if (bgDesktopRef.current) bgDesktopRef.current.style.backgroundSize = bgSize;
 
       const txt = Math.min(p / 0.28, 1);
@@ -87,13 +87,12 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
         background: '#080D08',
       }}
     >
-      {/* Mobile bg */}
+      {/* Mobile bg — `cover` fills the tall screen (no black bars) */}
       <div
-        ref={bgMobileRef}
         className="absolute inset-0 md:hidden"
         style={{
           backgroundImage: `url(${mobileImage})`,
-          backgroundSize: '100%',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
