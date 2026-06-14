@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import PageHero from '@/components/PageHero';
 import ServicesSection from '@/components/ServicesSection';
 import Contact from '@/components/Contact';
 
@@ -55,7 +56,7 @@ const ldJson = {
         {
           "@type": "Question",
           "name": "Con che tipo di aziende lavori?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Lavoro con PMI, startup, e-commerce e organizzazioni no-profit. Ho seguito 8 brand in settori diversi — dall'inclusione sociale all'e-commerce, dal B2B ai servizi digitali." },
+          "acceptedAnswer": { "@type": "Answer", "text": "Lavoro con PMI, startup, e-commerce e organizzazioni no-profit. Ho seguito 8 brand in settori diversi: dall'inclusione sociale all'e-commerce, dal B2B ai servizi digitali." },
         },
         {
           "@type": "Question",
@@ -81,26 +82,18 @@ export default function ServiziPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
-      <main className="pt-16">
+      <main>
+      {/* Hero — editorial */}
+      <PageHero
+        label="Servizi"
+        title={'Dove la strategia\nmette radici'}
+        image="/servizi/hero.jpg"
+        imageAlt="Una postazione di lavoro immersa nella natura"
+        caption="Brand · Comunicazione · Crescita"
+      />
+
       {/* Intro */}
       <section className="px-8 md:px-20 pt-20 pb-16 max-w-6xl mx-auto">
-        <p
-          className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Cosa faccio
-        </p>
-        <h1
-          className="font-display font-black italic text-ink leading-[0.9] mb-10"
-          style={{
-            fontFamily: 'var(--font-playfair)',
-            fontSize: 'clamp(3rem, 8vw, 8rem)',
-            letterSpacing: '-0.03em',
-          }}
-        >
-          Come posso<br />aiutarti
-        </h1>
-
         <div className="max-w-2xl flex flex-col gap-5">
           <p
             className="text-ink leading-relaxed"

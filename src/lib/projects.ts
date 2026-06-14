@@ -89,7 +89,7 @@ export const projects: Project[] = [
     year: '2024',
     company: 'Programma Formula',
     role: 'Content Strategist',
-    description: "Campagna di raccolta fondi per l'Unità Spinale — CROSSabili × CESVI.",
+    description: "Campagna di raccolta fondi per l'Unità Spinale, CROSSabili × CESVI.",
     tag: 'Social Campaign · Non-profit',
     fullDescription:
       "Formula è una **campagna di comunicazione sociale** dedicata al sostegno delle unità spinali e ai percorsi di autonomia per persone con disabilità. Il lavoro si è concentrato sulla costruzione narrativa della campagna: sviluppo del **concept comunicativo**, scrittura degli **script video ufficiali**, definizione del **tono emotivo** coerente tra tutti i contenuti, progettazione del flusso comunicativo multicanale. Un progetto orientato alla **sensibilizzazione e alla raccolta fondi** attraverso uno storytelling strutturato e autentico.",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     description: 'Piattaforma SaaS per AI visibility e digital presence.',
     tag: 'AI · SaaS · B2B',
     fullDescription:
-      "Citation Rate è una **piattaforma digitale focalizzata sulla visibilità dei brand nei sistemi di intelligenza artificiale** e nei nuovi ecosistemi di ricerca. Il lavoro ha riguardato la definizione del **posizionamento del prodotto**, la semplificazione del messaggio chiave e del valore offerto, il supporto alla **comunicazione B2B** e all'onboarding concettuale, e la traduzione di un tema complesso — la **AI visibility** — in un linguaggio accessibile e convincente per il mercato. Un progetto all'intersezione tra **AI, marketing e strategia di crescita digitale**.",
+      "Citation Rate è una **piattaforma digitale focalizzata sulla visibilità dei brand nei sistemi di intelligenza artificiale** e nei nuovi ecosistemi di ricerca. Il lavoro ha riguardato la definizione del **posizionamento del prodotto**, la semplificazione del messaggio chiave e del valore offerto, il supporto alla **comunicazione B2B** e all'onboarding concettuale, e la traduzione di un tema complesso, la **AI visibility**, in un linguaggio accessibile e convincente per il mercato. Un progetto all'intersezione tra **AI, marketing e strategia di crescita digitale**.",
     deliverables: [
       'Definizione del posizionamento prodotto',
       'Semplificazione messaggio chiave',

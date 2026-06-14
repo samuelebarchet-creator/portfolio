@@ -101,7 +101,7 @@ export default function Contact() {
           className="c-sub mt-7 max-w-md font-body text-bg/55 leading-relaxed"
           style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
         >
-          Che si tratti di costruire un brand da zero, riposizionarlo o far crescere la sua presenza digitale — sono qui.
+          Che si tratti di costruire un brand da zero, riposizionarlo o far crescere la sua presenza digitale, sono qui.
         </p>
 
         {/* Ornament */}

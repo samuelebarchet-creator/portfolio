@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
+import PageHero from '@/components/PageHero';
+import ScrollReveal from '@/components/ScrollReveal';
 import ClientsBar from '@/components/ClientsBar';
 import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
@@ -59,7 +61,17 @@ export default function LavoriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
-      <main className="pt-28 pb-0 relative overflow-hidden">
+
+      {/* Hero — editorial */}
+      <PageHero
+        label="Lavori"
+        title={'Il valore si\ncostruisce a mano'}
+        image="/lavori/hero.jpg"
+        imageAlt="Lavoro artigianale, fatto a mano"
+        caption="Una selezione di progetti"
+      />
+
+      <main className="pb-0 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
         <EtherealShadow
@@ -70,35 +82,9 @@ export default function LavoriPage() {
         />
       </div>
 
-      {/* Header */}
-      <section className="px-8 md:px-20 pb-16 max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
-        <p
-          className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Tutti i lavori
-        </p>
-        <h1
-          className="font-display font-black italic text-ink leading-[0.88]"
-          style={{
-            fontFamily: 'var(--font-playfair)',
-            fontSize: 'clamp(3.5rem, 9vw, 9rem)',
-            letterSpacing: '-0.03em',
-          }}
-        >
-          Progetti
-        </h1>
-      </section>
-
-      {/* Divider */}
-      <div
-        className="mx-8 md:mx-20 max-w-6xl relative"
-        style={{ borderTop: '1px solid rgba(61,92,53,0.1)', zIndex: 1 }}
-      />
-
       {/* Projects grid */}
       <section className="px-8 md:px-20 py-16 max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10">
+        <ScrollReveal staggerChildren stagger={0.08} className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10">
           {projects.map((p) => (
             <Link
               key={p.slug}
@@ -169,7 +155,7 @@ export default function LavoriPage() {
               </div>
             </Link>
           ))}
-        </div>
+        </ScrollReveal>
       </section>
 
       <ClientsBar />

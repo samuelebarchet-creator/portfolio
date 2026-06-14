@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import PageHero from '@/components/PageHero';
 import Contact from '@/components/Contact';
 import { about } from '@/lib/about';
 
@@ -56,26 +57,15 @@ export default function ContattiPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
-      <main className="pt-16">
-      {/* Page intro */}
-      <section className="px-8 md:px-20 pt-20 pb-4 max-w-6xl mx-auto">
-        <p
-          className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Parliamo
-        </p>
-        <h1
-          className="font-display font-black italic text-ink leading-[0.9]"
-          style={{
-            fontFamily: 'var(--font-playfair)',
-            fontSize: 'clamp(3rem, 8vw, 8rem)',
-            letterSpacing: '-0.03em',
-          }}
-        >
-          Contatti
-        </h1>
-      </section>
+      <main>
+      {/* Hero — editorial */}
+      <PageHero
+        label="Parliamone"
+        title={'A un solo squillo\ndi distanza'}
+        image="/contatti/hero.jpg"
+        imageAlt="Una cornetta del telefono"
+        caption="Rispondo entro 24 ore"
+      />
 
       <Contact />
     </main>

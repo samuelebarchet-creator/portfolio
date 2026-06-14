@@ -13,7 +13,7 @@ export const services: Service[] = [
     title: 'Brand Strategy',
     subtitle: 'Costruire una direzione prima di fare marketing',
     description:
-      'Prima di parlare di contenuti, social o campagne, serve capire **chi sei, cosa ti rende diverso** e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il **posizionamento del brand**, il messaggio chiave e la strategia che guiderà tutte le attività future. Ho seguito **8 brand in settori diversi** — dall\'e-commerce all\'inclusione sociale, dal no-profit al B2B — e ogni progetto inizia da qui.',
+      'Prima di parlare di contenuti, social o campagne, serve capire **chi sei, cosa ti rende diverso** e quale spazio vuoi occupare nella mente delle persone.\n\nInsieme definiamo il **posizionamento del brand**, il messaggio chiave e la strategia che guiderà tutte le attività future. Ho seguito **8 brand in settori diversi**: dall\'e-commerce all\'inclusione sociale, dal no-profit al B2B. E ogni progetto inizia da qui.',
     deliverables: [
       'Analisi competitiva e di mercato',
       'Brand positioning',
