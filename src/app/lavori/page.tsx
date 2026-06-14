@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
-import PageHero from '@/components/PageHero';
+import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ClientsBar from '@/components/ClientsBar';
 import { EtherealShadow } from '@/components/ui/etheral-shadow';
@@ -62,13 +62,15 @@ export default function LavoriPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
 
-      {/* Hero — editorial */}
-      <PageHero
-        label="Lavori"
-        title={'Il valore si\ncostruisce a mano'}
-        image="/lavori/hero.jpg"
-        imageAlt="Lavoro artigianale, fatto a mano"
-        caption="Una selezione di progetti"
+      {/* Hero — smooth scroll reveal (stesso pattern dell'About) */}
+      <SmoothScrollHero
+        scrollHeight={1120}
+        desktopImage="/lavori/hero.jpg"
+        mobileImage="/lavori/hero-mobile.jpg"
+        initialClipPercentage={0}
+        finalClipPercentage={100}
+        heroLabel="Lavori"
+        heroTitle="Il valore si costruisce a mano"
       />
 
       <main className="pb-0 relative overflow-hidden">

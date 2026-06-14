@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import PageHero from '@/components/PageHero';
+import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import ServicesSection from '@/components/ServicesSection';
 import Contact from '@/components/Contact';
 
@@ -83,13 +83,15 @@ export default function ServiziPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <main>
-      {/* Hero — editorial */}
-      <PageHero
-        label="Servizi"
-        title={'Dove la strategia\nmette radici'}
-        image="/servizi/hero.jpg"
-        imageAlt="Una postazione di lavoro immersa nella natura"
-        caption="Brand · Comunicazione · Crescita"
+      {/* Hero — smooth scroll reveal (stesso pattern dell'About) */}
+      <SmoothScrollHero
+        scrollHeight={1120}
+        desktopImage="/servizi/hero.jpg"
+        mobileImage="/servizi/hero-mobile.jpg"
+        initialClipPercentage={0}
+        finalClipPercentage={100}
+        heroLabel="Servizi"
+        heroTitle="Dove la strategia mette radici"
       />
 
       {/* Intro */}

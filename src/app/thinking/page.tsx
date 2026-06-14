@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import PageHero from '@/components/PageHero';
+import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import ThinkingGrid from '@/components/ThinkingGrid';
 import Contact from '@/components/Contact';
 
@@ -17,13 +17,15 @@ export const metadata: Metadata = {
 export default function ThinkingPage() {
   return (
     <main>
-      {/* Hero — editorial */}
-      <PageHero
-        label="Idee & riflessioni"
-        title={'Pensieri che\nvanno a fondo'}
-        image="/thinking/hero.jpg"
-        imageAlt="Connettersi in profondità"
-        caption="Brand · Digital · Strategia"
+      {/* Hero — smooth scroll reveal (stesso pattern dell'About) */}
+      <SmoothScrollHero
+        scrollHeight={1120}
+        desktopImage="/thinking/hero.jpg"
+        mobileImage="/thinking/hero-mobile.jpg"
+        initialClipPercentage={0}
+        finalClipPercentage={100}
+        heroLabel="Idee & riflessioni"
+        heroTitle="Pensieri che vanno a fondo"
       />
 
       <ThinkingGrid />

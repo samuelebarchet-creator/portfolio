@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import PageHero from '@/components/PageHero';
+import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import Contact from '@/components/Contact';
 import { about } from '@/lib/about';
 
@@ -58,13 +58,15 @@ export default function ContattiPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <main>
-      {/* Hero — editorial */}
-      <PageHero
-        label="Parliamone"
-        title={'A un solo squillo\ndi distanza'}
-        image="/contatti/hero.jpg"
-        imageAlt="Una cornetta del telefono"
-        caption="Rispondo entro 24 ore"
+      {/* Hero — smooth scroll reveal (stesso pattern dell'About) */}
+      <SmoothScrollHero
+        scrollHeight={1120}
+        desktopImage="/contatti/hero.jpg"
+        mobileImage="/contatti/hero-mobile.jpg"
+        initialClipPercentage={0}
+        finalClipPercentage={100}
+        heroLabel="Parliamone"
+        heroTitle="A un solo squillo di distanza"
       />
 
       <Contact />
