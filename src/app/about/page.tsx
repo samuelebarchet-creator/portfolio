@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import StatsBar from '@/components/StatsBar';
@@ -7,15 +8,40 @@ import Contact from '@/components/Contact';
 import { about } from '@/lib/about';
 
 export const metadata: Metadata = {
-  title: 'About — Samuele Barchet',
+  title: 'Samuele Barchet — Brand & Digital Strategist Freelance',
   description: 'Brand & Digital Strategist freelance. Dalla provincia di Belluno al mondo del marketing digitale: la mia storia, i miei valori e il mio approccio.',
   alternates: { canonical: 'https://www.samuelebarchet.com/about' },
   openGraph: {
-    title: 'About — Samuele Barchet',
+    title: 'Samuele Barchet — Brand & Digital Strategist Freelance',
     description: 'Brand & Digital Strategist freelance. Dalla provincia di Belluno al mondo del marketing digitale.',
     url: 'https://www.samuelebarchet.com/about',
     images: [{ url: '/about/samuele.jpg', width: 1200, height: 630, alt: 'Samuele Barchet' }],
   },
+};
+
+const ldJson = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://www.samuelebarchet.com/about",
+  "url": "https://www.samuelebarchet.com/about",
+  "name": "About — Samuele Barchet",
+  "dateModified": "2026-06-14",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://www.samuelebarchet.com/#person",
+    "name": "Samuele Barchet",
+    "jobTitle": "Brand & Digital Strategist",
+    "birthDate": "2001",
+    "birthPlace": { "@type": "Place", "name": "Belluno, Italia" },
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "Università di Padova", "description": "Laurea in Comunicazione" },
+      { "@type": "EducationalOrganization", "name": "Università IULM Milano", "description": "Laurea Magistrale in Digital Marketing" }
+    ],
+    "knowsAbout": ["Brand Strategy", "Digital Marketing", "Social Media", "Meta Ads", "Content Strategy", "Email Marketing", "Copywriting"],
+    "image": "https://www.samuelebarchet.com/about/samuele.jpg",
+    "url": "https://www.samuelebarchet.com",
+    "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"]
+  }
 };
 
 const B = ({ children }: { children: ReactNode }) => (
@@ -54,6 +80,8 @@ const philosophy = [
 
 export default function AboutPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
     <main>
       {/* ── Smooth scroll reveal — Dolomites ───────────────────────────────── */}
       <SmoothScrollHero
@@ -76,13 +104,15 @@ export default function AboutPage() {
           {/* Photo */}
           <div>
             <div
-              className="overflow-hidden"
+              className="relative overflow-hidden"
               style={{ aspectRatio: '3/4' }}
             >
-              <img
+              <Image
                 src="/about/samuele.jpg"
                 alt="Samuele Barchet a Padova"
-                className="w-full h-full object-cover object-top"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
             <p
@@ -102,7 +132,7 @@ export default function AboutPage() {
               >
                 Chi sono
               </p>
-              <h1
+              <h2
                 className="font-display font-black italic text-ink leading-[0.88]"
                 style={{
                   fontFamily: 'var(--font-playfair)',
@@ -111,7 +141,7 @@ export default function AboutPage() {
                 }}
               >
                 Samuele<br />Barchet
-              </h1>
+              </h2>
               <p
                 className="mt-3 font-condensed uppercase text-green text-sm tracking-[0.3em]"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -300,5 +330,6 @@ export default function AboutPage() {
 
       <Contact />
     </main>
+    </>
   );
 }

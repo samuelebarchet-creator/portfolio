@@ -81,7 +81,7 @@ export default function RootLayout({
                   "@id": "https://www.samuelebarchet.com/#person",
                   "name": "Samuele Barchet",
                   "jobTitle": "Brand & Digital Strategist",
-                  "description": "Brand & Digital Strategist freelance con base a Treviso. Attivo nel marketing dal 2019, lavora in proprio dal 2022. Segue 8 brand in settori diversi su brand strategy, digital marketing e comunicazione.",
+                  "description": "Brand & Digital Strategist freelance tra Milano e Belluno. Attivo nel marketing dal 2019, lavora in proprio dal 2022. Segue 8 brand in settori diversi su brand strategy, digital marketing e comunicazione.",
                   "url": "https://www.samuelebarchet.com",
                   "image": "https://www.samuelebarchet.com/about/samuele.jpg",
                   "email": "info@samuelebarchet.com",
@@ -103,7 +103,7 @@ export default function RootLayout({
                     "skills": "Brand Strategy, Digital Marketing, Social Media, Meta Advertising, Content Strategy, Email Marketing"
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-06-12"
+                  "dateModified": "2026-06-14"
                 },
                 {
                   "@type": "ProfessionalService",
@@ -138,7 +138,7 @@ export default function RootLayout({
                     ]
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-06-12",
+                  "dateModified": "2026-06-14",
                   "about": [
                     {"@type": "Thing", "name": "Brand Strategy"},
                     {"@type": "Thing", "name": "Digital Marketing"},

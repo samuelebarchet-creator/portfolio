@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { thinkingPosts } from '@/lib/thinking';
 import { formatDate } from '@/lib/utils';
@@ -67,9 +68,10 @@ export default function ThinkingGrid() {
           className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10"
         >
           {thinkingPosts.map((post, i) => (
-            <article
+            <Link
               key={post.slug}
-              className="group bg-bg p-8 md:p-10 flex flex-col gap-4 cursor-pointer hover:bg-bg-alt transition-colors duration-300 relative overflow-hidden"
+              href={`/thinking/${post.slug}`}
+              className="group bg-bg p-8 md:p-10 flex flex-col gap-4 hover:bg-bg-alt transition-colors duration-300 relative overflow-hidden"
             >
               {/* Category + meta */}
               <div className="flex items-center justify-between">
@@ -139,7 +141,7 @@ export default function ThinkingGrid() {
                   Leggi →
                 </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

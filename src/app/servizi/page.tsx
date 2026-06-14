@@ -5,11 +5,11 @@ import ServicesSection from '@/components/ServicesSection';
 import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
-  title: 'Servizi — Samuele Barchet',
+  title: 'Brand Strategy e Digital Marketing Freelance — Samuele Barchet',
   description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni in Italia.',
   alternates: { canonical: 'https://www.samuelebarchet.com/servizi' },
   openGraph: {
-    title: 'Servizi — Samuele Barchet',
+    title: 'Brand Strategy e Digital Marketing Freelance — Samuele Barchet',
     description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni.',
     url: 'https://www.samuelebarchet.com/servizi',
   },

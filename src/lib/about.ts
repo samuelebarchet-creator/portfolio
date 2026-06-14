@@ -1,7 +1,7 @@
 export const about = {
   name: 'Samuele Barchet',
   role: 'Brand & Digital Strategist',
-  location: 'Treviso, Italia',
+  location: 'Milano · Belluno, Italia',
   email: 'info@samuelebarchet.com',
   phone: '+39 342 026 9217',
 

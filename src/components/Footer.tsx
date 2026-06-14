@@ -69,7 +69,7 @@ export default function Footer() {
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Brand &amp; Digital Strategist<br />
-              Treviso, Italia
+              Milano · Belluno, Italia
             </p>
             <a
               href="mailto:info@samuelebarchet.com"
