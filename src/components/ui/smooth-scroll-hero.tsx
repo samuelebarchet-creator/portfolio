@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { motion, useMotionTemplate, useScroll, useTransform } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { gsap, ScrollTrigger } from '@/lib/gsap';
 
 interface SmoothScrollHeroProps {
   scrollHeight?: number;
@@ -22,42 +23,88 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   heroLabel,
   heroTitle,
 }) => {
-  const { scrollY } = useScroll();
+  const stickyRef = useRef<HTMLDivElement>(null);
+  const bgMobileRef = useRef<HTMLDivElement>(null);
+  const bgDesktopRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
 
-  // Full screen → clips inward as you scroll
-  const clipStart = useTransform(scrollY, [0, scrollHeight], [0, initialClipPercentage]);
-  const clipEnd   = useTransform(scrollY, [0, scrollHeight], [100, finalClipPercentage]);
-  const clipPath  = useMotionTemplate`polygon(${clipStart}% ${clipStart}%, ${clipEnd}% ${clipStart}%, ${clipEnd}% ${clipEnd}%, ${clipStart}% ${clipEnd}%)`;
+  useEffect(() => {
+    const sticky = stickyRef.current;
+    const root = sticky?.parentElement;
+    if (!sticky || !root) return;
 
-  // Slight zoom-in as image clips
-  const backgroundSize = useTransform(scrollY, [0, scrollHeight], ['100%', '118%']);
+    /* Scroll-linked transforms — replaces framer-motion useScroll/useTransform.
+       progress (0→1) maps to the same ranges the motion values used. */
+    const apply = (p: number) => {
+      const clipStart = p * initialClipPercentage;            // 0 → 25
+      const clipEnd = 100 + p * (finalClipPercentage - 100);  // 100 → 75
+      sticky.style.clipPath = `polygon(${clipStart}% ${clipStart}%, ${clipEnd}% ${clipStart}%, ${clipEnd}% ${clipEnd}%, ${clipStart}% ${clipEnd}%)`;
 
-  // Text fades out and rises in the first quarter of scroll
-  const letterSpacing = useTransform(scrollY, [0, scrollHeight * 0.2], ['0.02em', '0.18em']);
-  const textOpacity   = useTransform(scrollY, [0, scrollHeight * 0.28], [1, 0]);
-  const textY         = useTransform(scrollY, [0, scrollHeight * 0.28], ['0px', '-40px']);
+      const bgSize = `${100 + p * 18}%`; // 100% → 118%
+      if (bgMobileRef.current) bgMobileRef.current.style.backgroundSize = bgSize;
+      if (bgDesktopRef.current) bgDesktopRef.current.style.backgroundSize = bgSize;
+
+      const txt = Math.min(p / 0.28, 1);
+      if (textRef.current) {
+        textRef.current.style.opacity = String(1 - txt);
+        textRef.current.style.transform = `translateY(${-40 * txt}px)`;
+      }
+      const ls = Math.min(p / 0.2, 1);
+      if (titleRef.current) {
+        titleRef.current.style.letterSpacing = `${0.02 + ls * 0.16}em`; // 0.02 → 0.18em
+      }
+    };
+
+    /* Static initial state on all devices */
+    apply(0);
+
+    /* Scroll-driven clip/zoom only on desktop: on touch it stutters and the
+       tall pinned scroll area hurts UX. Mobile keeps a clean static hero. */
+    const desktop =
+      !!window.matchMedia &&
+      window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches;
+    if (!desktop) return;
+
+    const st = ScrollTrigger.create({
+      trigger: root,
+      start: 'top top',
+      end: `+=${scrollHeight}`,
+      scrub: true,
+      onUpdate: (self) => apply(self.progress),
+    });
+
+    return () => st.kill();
+  }, [scrollHeight, initialClipPercentage, finalClipPercentage]);
 
   return (
-    <motion.div
-      className="sticky top-0 h-screen w-full overflow-hidden"
-      style={{ clipPath, willChange: 'clip-path', background: '#080D08' }}
+    <div
+      ref={stickyRef}
+      className="sticky top-0 h-[100dvh] w-full overflow-hidden"
+      style={{
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        willChange: 'clip-path',
+        background: '#080D08',
+      }}
     >
       {/* Mobile bg */}
-      <motion.div
+      <div
+        ref={bgMobileRef}
         className="absolute inset-0 md:hidden"
         style={{
           backgroundImage: `url(${mobileImage})`,
-          backgroundSize,
+          backgroundSize: '100%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       />
       {/* Desktop bg */}
-      <motion.div
+      <div
+        ref={bgDesktopRef}
         className="absolute inset-0 hidden md:block"
         style={{
           backgroundImage: `url(${desktopImage})`,
-          backgroundSize,
+          backgroundSize: '100%',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
         }}
@@ -75,12 +122,13 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
 
       {/* Hero text — centered, letter-spacing expands with scroll */}
       {heroTitle && (
-        <motion.div
+        <div
+          ref={textRef}
           className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
-          style={{ zIndex: 10, opacity: textOpacity, y: textY }}
+          style={{ zIndex: 10, opacity: 1 }}
         >
           {heroLabel && (
-            <motion.p
+            <p
               className="font-condensed uppercase text-white/60 mb-5"
               style={{
                 fontFamily: 'var(--font-barlow-condensed)',
@@ -89,23 +137,24 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
               }}
             >
               {heroLabel}
-            </motion.p>
+            </p>
           )}
-          <motion.h1
+          <h1
+            ref={titleRef}
             className="font-display font-black italic text-white"
             style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(2.2rem, 6vw, 5.5rem)',
               lineHeight: 1.1,
-              letterSpacing,
+              letterSpacing: '0.02em',
               textShadow: '0 4px 32px rgba(0,0,0,0.4)',
             }}
           >
             {heroTitle}
-          </motion.h1>
-        </motion.div>
+          </h1>
+        </div>
       )}
-    </motion.div>
+    </div>
   );
 };
 
@@ -118,7 +167,10 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   heroLabel,
   heroTitle,
 }) => (
-  <div style={{ height: `calc(${scrollHeight}px + 100vh)` }} className="relative w-full">
+  <div
+    style={{ height: `calc(${scrollHeight}px + 100dvh)` }}
+    className="relative w-full max-md:!h-[100dvh]"
+  >
     <SmoothScrollHeroBackground
       scrollHeight={scrollHeight}
       desktopImage={desktopImage}

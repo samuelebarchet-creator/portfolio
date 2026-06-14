@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useRef, useId, useEffect, CSSProperties } from 'react';
-import { animate, useMotionValue, AnimationPlaybackControls } from 'framer-motion';
+import React, { useRef, useId, useEffect, useState, CSSProperties } from 'react';
+import { gsap } from '@/lib/gsap';
 
 interface AnimationConfig {
   scale: number;
@@ -37,10 +37,26 @@ export function EtherealShadow({
 }: EtherealShadowProps) {
   const rawId = useId().replace(/:/g, '');
   const id = `ethereal-${rawId}`;
-  const animationEnabled = !!(animation && animation.scale > 0);
+
+  /* Only run the expensive animated SVG filter on desktop, and never when the
+     user prefers reduced motion. Starts false (matches SSR) → flips on after
+     mount where appropriate, so mobile/reduced-motion users get a static, cheap
+     version with zero per-frame repaints. */
+  const [perfOk, setPerfOk] = useState(false);
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return;
+    const mql = window.matchMedia(
+      '(min-width: 768px) and (prefers-reduced-motion: no-preference)'
+    );
+    const update = () => setPerfOk(mql.matches);
+    update();
+    mql.addEventListener('change', update);
+    return () => mql.removeEventListener('change', update);
+  }, []);
+
+  const animationEnabled = !!(animation && animation.scale > 0) && perfOk;
   const feColorMatrixRef = useRef<SVGFEColorMatrixElement>(null);
-  const hueRotateMotionValue = useMotionValue(180);
-  const hueRotateAnimation = useRef<AnimationPlaybackControls | null>(null);
+  const hueRotateTween = useRef<gsap.core.Tween | null>(null);
 
   const displacementScale = animation ? mapRange(animation.scale, 1, 100, 20, 100) : 0;
   const animationDuration = animation ? mapRange(animation.speed, 1, 100, 1000, 50) : 1;
@@ -48,20 +64,19 @@ export function EtherealShadow({
   useEffect(() => {
     if (!feColorMatrixRef.current || !animationEnabled) return;
 
-    hueRotateAnimation.current?.stop();
-    hueRotateMotionValue.set(0);
-    hueRotateAnimation.current = animate(hueRotateMotionValue, 360, {
+    const proxy = { hue: 0 };
+    hueRotateTween.current = gsap.to(proxy, {
+      hue: 360,
       duration: animationDuration / 25,
-      repeat: Infinity,
-      repeatType: 'loop',
-      ease: 'linear',
-      onUpdate: (value) => {
-        feColorMatrixRef.current?.setAttribute('values', String(value));
+      repeat: -1,
+      ease: 'none',
+      onUpdate: () => {
+        feColorMatrixRef.current?.setAttribute('values', String(proxy.hue));
       },
     });
 
-    return () => { hueRotateAnimation.current?.stop(); };
-  }, [animationEnabled, animationDuration, hueRotateMotionValue]);
+    return () => { hueRotateTween.current?.kill(); };
+  }, [animationEnabled, animationDuration]);
 
   return (
     <div

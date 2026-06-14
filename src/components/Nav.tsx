@@ -99,7 +99,7 @@ export default function Nav() {
         {/* Hamburger */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col justify-center gap-1.5 w-8 h-8 focus:outline-none"
+          className="md:hidden flex flex-col justify-center items-end gap-1.5 w-11 h-11 -mr-2 focus:outline-none"
           aria-label={open ? 'Chiudi menu' : 'Apri menu'}
         >
           <span

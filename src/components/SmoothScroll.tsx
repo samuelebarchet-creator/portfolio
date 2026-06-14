@@ -9,6 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
+    /* Skip smooth-scroll on touch devices and for users who prefer reduced
+       motion: native scrolling is lighter and avoids the "chasing" feel on
+       low-power hardware. No one reads getLenis()/scrollTo() externally, so a
+       missing instance is safe. */
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      const allowed = window.matchMedia(
+        '(pointer: fine) and (prefers-reduced-motion: no-preference)'
+      ).matches;
+      if (!allowed) return;
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),

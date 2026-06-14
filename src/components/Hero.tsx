@@ -117,10 +117,19 @@ export default function Hero() {
   const nameRef    = useRef<HTMLParagraphElement>(null);
   const ctaRef     = useRef<HTMLDivElement>(null);
 
-  /* WebGL render loop */
+  /* WebGL render loop — desktop only. The fragment shader is a heavy per-frame
+     GPU load (12-iteration fbm/clouds); on phones it causes jank/freeze and
+     drains battery, so we skip it and fall back to the static gradient set on
+     the section. Also skipped for prefers-reduced-motion. */
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    const allowShader =
+      typeof window !== 'undefined' &&
+      !!window.matchMedia &&
+      window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches;
+    if (!allowShader) return;
 
     const ctx = initGL(canvas);
     if (!ctx) return;
@@ -180,7 +189,10 @@ export default function Hero() {
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ background: '#080D08' }}
+      style={{
+        background:
+          'radial-gradient(ellipse at 50% 32%, #16331a 0%, #0c1a0d 48%, #080D08 100%)',
+      }}
     >
       {/* WebGL shader canvas — fills section height set by content */}
       <canvas
@@ -209,7 +221,7 @@ export default function Hero() {
           className="font-display font-black italic text-bg leading-[0.9] opacity-0"
           style={{
             fontFamily: 'var(--font-playfair)',
-            fontSize: 'clamp(3.2rem, 9.5vw, 10.5rem)',
+            fontSize: 'clamp(2.2rem, 9.5vw, 10.5rem)',
             letterSpacing: '-0.03em',
             textShadow: '0 2px 40px rgba(0,0,0,0.6)',
           }}

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Barlow, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -37,6 +37,13 @@ export const metadata: Metadata = {
     siteName: "Samuele Barchet",
   },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#080D08",
 };
 
 export default function RootLayout({
