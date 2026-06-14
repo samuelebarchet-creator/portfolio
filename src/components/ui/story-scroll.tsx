@@ -43,6 +43,28 @@ export const StorySection: React.FC<StorySectionProps> = ({
   </section>
 );
 
+export interface StoryCardProps {
+  children: React.ReactNode;
+  className?: string;
+  /** Opaque background so the card covers the one beneath it while stacking */
+  background?: string;
+}
+
+/**
+ * Minimal stacking panel — wraps an *existing* section unchanged so it takes
+ * part in the stack/slide without imposing any layout. Use this on real page
+ * sections (vs <StorySection> which is the styled demo panel).
+ */
+export const StoryCard: React.FC<StoryCardProps> = ({
+  children,
+  className,
+  background = 'var(--bg)',
+}) => (
+  <div data-story-section className={cx('relative w-full', className)} style={{ background }}>
+    {children}
+  </div>
+);
+
 export interface StoryScrollProps {
   children: React.ReactNode;
   className?: string;
@@ -88,7 +110,7 @@ const StoryScroll: React.FC<StoryScrollProps> = ({
 
         const inner = section.querySelector<HTMLElement>('.story-inner');
 
-        if (i > 0 && inner) {
+        if (rotation > 0 && i > 0 && inner) {
           gsap.set(inner, { rotation, transformOrigin: 'bottom left' });
           const tween = gsap.to(inner, {
             rotation: 0,
