@@ -135,7 +135,7 @@ export default function Hero() {
     if (!ctx) return;
     const { gl, prog, uRes, uTime, vs, fs, buf } = ctx;
 
-    let raf: number;
+    let raf: number | null = null;
     let start: number | null = null;
 
     const render = (now: number) => {
@@ -146,6 +146,9 @@ export default function Hero() {
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       raf = requestAnimationFrame(render);
     };
+
+    const startLoop = () => { if (raf === null) raf = requestAnimationFrame(render); };
+    const stopLoop = () => { if (raf !== null) { cancelAnimationFrame(raf); raf = null; } };
 
     // Use ResizeObserver so canvas tracks section height, not window height
     const resize = () => {
@@ -159,10 +162,24 @@ export default function Hero() {
     const ro = new ResizeObserver(resize);
     ro.observe(canvas);
     resize();
-    raf = requestAnimationFrame(render);
+
+    /* The fragment shader is heavy; only render while the hero is on screen and
+       the tab is visible, otherwise it keeps burning GPU and stutters scrolling. */
+    let onScreen = true;
+    const sync = () => { if (onScreen && !document.hidden) startLoop(); else stopLoop(); };
+    const io = new IntersectionObserver(
+      ([entry]) => { onScreen = entry.isIntersecting; sync(); },
+      { rootMargin: '100px' },
+    );
+    io.observe(canvas);
+    const onVis = () => sync();
+    document.addEventListener('visibilitychange', onVis);
+    sync();
 
     return () => {
-      cancelAnimationFrame(raf);
+      stopLoop();
+      io.disconnect();
+      document.removeEventListener('visibilitychange', onVis);
       ro.disconnect();
       gl.deleteBuffer(buf);
       gl.deleteShader(vs);

@@ -55,6 +55,7 @@ export function EtherealShadow({
   }, []);
 
   const animationEnabled = !!(animation && animation.scale > 0) && perfOk;
+  const containerRef = useRef<HTMLDivElement>(null);
   const feColorMatrixRef = useRef<SVGFEColorMatrixElement>(null);
   const hueRotateTween = useRef<gsap.core.Tween | null>(null);
 
@@ -65,21 +66,50 @@ export function EtherealShadow({
     if (!feColorMatrixRef.current || !animationEnabled) return;
 
     const proxy = { hue: 0 };
-    hueRotateTween.current = gsap.to(proxy, {
+    const tween = gsap.to(proxy, {
       hue: 360,
       duration: animationDuration / 25,
       repeat: -1,
       ease: 'none',
+      paused: true,
       onUpdate: () => {
         feColorMatrixRef.current?.setAttribute('values', String(proxy.hue));
       },
     });
+    hueRotateTween.current = tween;
 
-    return () => { hueRotateTween.current?.kill(); };
+    /* The animated SVG filter forces a full repaint every frame, so only run it
+       while the element is on screen and the tab is visible. Otherwise four of
+       these animating off-screen stutter the smooth scroll. */
+    let onScreen = true;
+    const sync = () => {
+      if (onScreen && !document.hidden) tween.play();
+      else tween.pause();
+    };
+
+    const root = containerRef.current;
+    const io = root
+      ? new IntersectionObserver(
+          ([entry]) => { onScreen = entry.isIntersecting; sync(); },
+          { rootMargin: '200px' },
+        )
+      : null;
+    if (io && root) io.observe(root);
+    else tween.play();
+
+    const onVis = () => sync();
+    document.addEventListener('visibilitychange', onVis);
+
+    return () => {
+      tween.kill();
+      io?.disconnect();
+      document.removeEventListener('visibilitychange', onVis);
+    };
   }, [animationEnabled, animationDuration]);
 
   return (
     <div
+      ref={containerRef}
       className={className}
       style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100%', ...style }}
     >
