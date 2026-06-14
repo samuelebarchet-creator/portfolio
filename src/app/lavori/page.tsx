@@ -72,6 +72,7 @@ export default function LavoriPage() {
         heroLabel="Lavori"
         heroTitle="Il valore si costruisce a mano"
         desktopPosition="center 96px"
+        bgColor="#b1b1b2"
       />
 
       <main className="pb-0 relative overflow-hidden">

@@ -18,6 +18,8 @@ interface SmoothScrollHeroProps {
   mobilePosition?: string;
   /** On mobile, anchor the title to the lower third (avoids overlapping baked-in text) */
   mobileTitleLower?: boolean;
+  /** Background color behind the image (fills any offset gap above/below) */
+  bgColor?: string;
 }
 
 const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
@@ -31,6 +33,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   desktopPosition = 'center top',
   mobilePosition = 'center',
   mobileTitleLower = false,
+  bgColor = '#080D08',
 }) => {
   const stickyRef = useRef<HTMLDivElement>(null);
   const bgDesktopRef = useRef<HTMLDivElement>(null);
@@ -93,7 +96,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
       style={{
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
         willChange: 'clip-path',
-        background: '#080D08',
+        background: bgColor,
       }}
     >
       {/* Mobile bg — `cover` fills the tall screen (no black bars) */}
@@ -180,6 +183,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   heroTitle,
   desktopPosition,
   mobilePosition,
+  mobileTitleLower,
+  bgColor,
 }) => (
   <div
     style={{ height: `calc(${scrollHeight}px + 100dvh)` }}
@@ -195,6 +200,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
       heroTitle={heroTitle}
       desktopPosition={desktopPosition}
       mobilePosition={mobilePosition}
+      mobileTitleLower={mobileTitleLower}
+      bgColor={bgColor}
     />
   </div>
 );
