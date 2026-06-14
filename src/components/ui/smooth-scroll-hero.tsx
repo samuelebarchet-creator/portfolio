@@ -12,6 +12,12 @@ interface SmoothScrollHeroProps {
   finalClipPercentage?: number;
   heroLabel?: string;
   heroTitle?: string;
+  /** CSS background-position for the desktop image (focal point) */
+  desktopPosition?: string;
+  /** CSS background-position for the mobile image (focal point) */
+  mobilePosition?: string;
+  /** On mobile, anchor the title to the lower third (avoids overlapping baked-in text) */
+  mobileTitleLower?: boolean;
 }
 
 const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
@@ -22,6 +28,9 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   finalClipPercentage = 75,
   heroLabel,
   heroTitle,
+  desktopPosition = 'center top',
+  mobilePosition = 'center',
+  mobileTitleLower = false,
 }) => {
   const stickyRef = useRef<HTMLDivElement>(null);
   const bgDesktopRef = useRef<HTMLDivElement>(null);
@@ -93,7 +102,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
         style={{
           backgroundImage: `url(${mobileImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: mobilePosition,
           backgroundRepeat: 'no-repeat',
         }}
       />
@@ -104,7 +113,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
         style={{
           backgroundImage: `url(${desktopImage})`,
           backgroundSize: '100%',
-          backgroundPosition: 'center top',
+          backgroundPosition: desktopPosition,
           backgroundRepeat: 'no-repeat',
         }}
       />
@@ -123,7 +132,11 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
       {heroTitle && (
         <div
           ref={textRef}
-          className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
+          className={`absolute inset-0 flex flex-col items-center px-6 text-center ${
+            mobileTitleLower
+              ? 'justify-end pb-[15vh] md:justify-center md:pb-0'
+              : 'justify-center'
+          }`}
           style={{ zIndex: 10, opacity: 1 }}
         >
           {heroLabel && (
@@ -165,6 +178,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   finalClipPercentage = 75,
   heroLabel,
   heroTitle,
+  desktopPosition,
+  mobilePosition,
 }) => (
   <div
     style={{ height: `calc(${scrollHeight}px + 100dvh)` }}
@@ -178,6 +193,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
       finalClipPercentage={finalClipPercentage}
       heroLabel={heroLabel}
       heroTitle={heroTitle}
+      desktopPosition={desktopPosition}
+      mobilePosition={mobilePosition}
     />
   </div>
 );

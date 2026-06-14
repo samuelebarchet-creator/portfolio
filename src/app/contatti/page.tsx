@@ -67,6 +67,8 @@ export default function ContattiPage() {
         finalClipPercentage={100}
         heroLabel="Parliamone"
         heroTitle="A un solo squillo di distanza"
+        desktopPosition="center 40%"
+        mobileTitleLower
       />
 
       <Contact />
