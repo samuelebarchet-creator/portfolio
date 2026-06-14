@@ -79,7 +79,7 @@ Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cos
 
 ## Citationrate: lavorare su questo dall'interno
 
-Ho fondato **Citationrate** nel gennaio 2026 esattamente per questo motivo: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
+Ho fondato **[Citationrate](https://citationrate.com)** nel gennaio 2026 esattamente per questo motivo: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
 
 Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citation rate — la frequenza con cui un brand viene menzionato nelle risposte AI — è diventata una metrica che chi fa marketing non può più ignorare.
 
