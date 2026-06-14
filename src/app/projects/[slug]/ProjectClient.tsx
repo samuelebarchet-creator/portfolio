@@ -191,20 +191,25 @@ export default function ProjectClient({ project }: { project: Project }) {
       {/* ══ IMAGE STRIP ═════════════════════════════════════════════════════ */}
       {project.images && project.images.length > 0 && (
         <div
-          className="w-full overflow-x-auto"
+          className="w-full md:overflow-x-auto"
           style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
         >
-          <div className="flex gap-3 px-8 md:px-20 py-12" style={{ width: 'max-content' }}>
+          {/* Mobile: vertical stack of full-width images. Desktop: horizontal
+              58vh strip you scroll sideways. */}
+          <div className="flex flex-col md:flex-row gap-3 px-8 md:px-20 py-12 md:w-max">
             {project.images.map(({ src, alt, width, height }, i) => (
-              <div key={i} className="relative shrink-0 overflow-hidden" style={{ height: '58vh' }}>
+              <div
+                key={i}
+                className="relative w-full overflow-hidden md:w-auto md:h-[58vh] md:shrink-0"
+              >
                 <Image
                   src={src}
                   alt={alt ?? ''}
                   width={width}
                   height={height}
-                  sizes="(max-width: 768px) 90vw, 45vw"
+                  sizes="(max-width: 768px) 100vw, 45vw"
                   priority={i === 0}
-                  style={{ height: '100%', width: 'auto', display: 'block', objectFit: 'cover' }}
+                  className="block h-auto w-full object-cover md:h-full md:w-auto"
                 />
               </div>
             ))}

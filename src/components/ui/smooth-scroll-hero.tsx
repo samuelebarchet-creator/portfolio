@@ -56,7 +56,15 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
       }
     };
 
+    /* Static initial state on all devices */
     apply(0);
+
+    /* Scroll-driven clip/zoom only on desktop: on touch it stutters and the
+       tall pinned scroll area hurts UX. Mobile keeps a clean static hero. */
+    const desktop =
+      !!window.matchMedia &&
+      window.matchMedia('(min-width: 768px) and (prefers-reduced-motion: no-preference)').matches;
+    if (!desktop) return;
 
     const st = ScrollTrigger.create({
       trigger: root,
@@ -72,7 +80,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   return (
     <div
       ref={stickyRef}
-      className="sticky top-0 h-screen w-full overflow-hidden"
+      className="sticky top-0 h-[100dvh] w-full overflow-hidden"
       style={{
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
         willChange: 'clip-path',
@@ -159,7 +167,10 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   heroLabel,
   heroTitle,
 }) => (
-  <div style={{ height: `calc(${scrollHeight}px + 100vh)` }} className="relative w-full">
+  <div
+    style={{ height: `calc(${scrollHeight}px + 100dvh)` }}
+    className="relative w-full max-md:!h-[100dvh]"
+  >
     <SmoothScrollHeroBackground
       scrollHeight={scrollHeight}
       desktopImage={desktopImage}
