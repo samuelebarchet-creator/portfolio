@@ -10,6 +10,84 @@ export type ThinkingPost = {
 
 export const thinkingPosts: ThinkingPost[] = [
   {
+    slug: 'ai-comportamento-utenti-2026',
+    title: "Come l'AI sta cambiando il comportamento degli utenti nel 2026",
+    excerpt:
+      "Nel 2026 le persone non cercano più solo su Google. Cercano su ChatGPT, Perplexity, Gemini. Il modo in cui i brand vengono trovati — o ignorati — sta cambiando in modo strutturale. Ecco cosa sta succedendo e cosa fare.",
+    category: 'AI & Marketing',
+    readTime: '6 min',
+    date: '2026-06-14',
+    content: `Per anni il ragionamento era semplice: vuoi essere trovato online? Fai SEO. Ottimizza il sito, scala le SERP di Google, genera traffico organico.
+
+Quel modello non è morto. Ma non è più l'unico che conta.
+
+## Il cambiamento che pochi hanno capito
+
+Nel 2024 e 2025 una parte significativa delle ricerche si è spostata fuori da Google. ChatGPT ha superato 300 milioni di utenti attivi settimanali. Perplexity gestisce miliardi di query al mese. Gemini è integrato direttamente in Android e Chrome.
+
+**Le persone non cercano più solo su Google. Chiedono direttamente alle AI.**
+
+E le AI non restituiscono dieci link blu. Restituiscono una risposta. Un testo. Spesso senza link. Spesso senza citare fonti in modo esplicito.
+
+Questo cambia tutto per chi fa comunicazione e marketing.
+
+## Cosa sta cambiando nel comportamento di ricerca
+
+Il pattern classico era: digito una query → leggo i titoli → clicco il link più rilevante → arrivo sul sito → mi convinco → converto.
+
+Il nuovo pattern, per molte query, è: chiedo all'AI → ricevo una risposta sintetica → decido senza mai visitare un sito.
+
+**Il tuo sito potrebbe non essere mai visitato, anche se l'AI ti cita.**
+
+E se l'AI non ti cita? Non esisti. Non per quella persona, in quel momento, per quella domanda.
+
+Il problema è che la maggior parte dei brand sta ancora ottimizzando per il vecchio comportamento. Pensa a Google, pensa ai click, pensa al traffico organico. Mentre il comportamento reale degli utenti si è già spostato altrove.
+
+## GEO: il nuovo campo da gioco
+
+Si chiama **GEO — Generative Engine Optimization** — ed è la disciplina che si occupa di ottimizzare la presenza di un brand nelle risposte dei motori generativi: ChatGPT, Perplexity, Gemini, Claude, Copilot.
+
+Non è la morte della SEO. È il suo allargamento obbligatorio.
+
+La SEO tradizionale ottimizza per gli algoritmi di ranking di Google: link, autorità di dominio, keyword density, tempo sul sito, Core Web Vitals.
+
+La GEO ottimizza per il modo in cui i modelli linguistici selezionano, valutano e citano le fonti quando generano una risposta. Le logiche sono diverse — e spesso opposte.
+
+**Per la SEO conta avere tanti link in entrata. Per la GEO conta essere citato da fonti che i modelli considerano autorevoli.** Non basta un sito tecnicamente ottimizzato: serve una reputazione distribuita, coerente, citabile.
+
+## Il problema concreto delle PMI
+
+Le grandi aziende si stanno attrezzando. Hanno team dedicati, consulenti specializzati, budget per costruire autorevolezza su più canali.
+
+Le PMI, i freelance, i professionisti locali? La maggior parte non sa ancora che il problema esiste.
+
+Fai una prova concreta: vai su ChatGPT o Perplexity e cerca il tuo nome, il nome della tua azienda, oppure una domanda che i tuoi clienti potrebbero fare per trovarti. Cosa risponde?
+
+Se non compari — o se compari in modo inesatto — stai già perdendo visibilità su una quota crescente di ricerche.
+
+## Cosa fare adesso
+
+Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cosa manca.
+
+**Costruisci autorevolezza citabile.** Scrivi contenuti specifici su temi in cui hai esperienza reale. Non guide generiche intercambiabili, ma punti di vista precisi, dati, esperienze dirette. Le AI tendono a citare fonti con un profilo chiaro e riconoscibile, non contenuti che potrebbero venire da chiunque.
+
+**Ottimizza la struttura delle informazioni.** FAQ chiare, dati strutturati (schema.org), titoli descrittivi, credenziali leggibili. I modelli AI estraggono le informazioni in modo diverso da Google: privilegiano la chiarezza strutturale rispetto alla densità di keyword.
+
+**Cura la tua presenza esterna.** LinkedIn, menzioni su siti di settore, articoli guest, interviste. La GEO si costruisce anche — e soprattutto — fuori dal tuo sito. Un brand citato da altri è molto più credibile agli occhi dei modelli generativi rispetto a uno che parla solo di sé stesso.
+
+**Monitora come vieni percepito.** Questa è la parte che quasi nessuno fa: capire sistematicamente come i principali modelli AI descrivono il tuo brand, in quali contesti ti citano, con quale frequenza.
+
+## Citationrate: lavorare su questo dall'interno
+
+Ho fondato **Citationrate** nel gennaio 2026 esattamente per questo motivo: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
+
+Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citation rate — la frequenza con cui un brand viene menzionato nelle risposte AI — è diventata una metrica che chi fa marketing non può più ignorare.
+
+Il mercato della GEO è ancora agli inizi in Italia. Chi costruisce autorevolezza citabile adesso ha un vantaggio reale su chi aspetta che il tema diventi mainstream.
+
+Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi) — o dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).`,
+  },
+  {
     slug: 'brand-prima-dei-contenuti',
     title: "Perché costruisci contenuti prima di avere un brand",
     excerpt:
