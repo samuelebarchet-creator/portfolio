@@ -57,6 +57,22 @@ export const services: Service[] = [
     forWho: 'PMI, attività locali e brand che vogliono trasformare la visibilità in opportunità di business.',
   },
   {
+    id: 'web-ai-geo',
+    title: 'Siti Web & Prodotti Digitali AI',
+    subtitle: 'Siti e strumenti costruiti per essere trovati, da Google e dalle AI',
+    description:
+      'Progetto e sviluppo **siti web e prodotti digitali**, integrando l\'**AI** dove crea valore reale (automazioni, contenuti, strumenti interni) e costruendo tutto in **ottica GEO e SEO** fin dalle fondamenta.\n\n**Cos\'è la GEO?** È la Generative Engine Optimization: l\'ottimizzazione della presenza di un brand dentro le risposte degli strumenti di AI generativa come **ChatGPT, Perplexity, Gemini e Google AI Overview**. Se la SEO ti fa trovare su Google, la GEO ti fa **citare e consigliare dalle AI**, dove sempre più persone cercano informazioni e scelgono i brand.',
+    deliverables: [
+      'Siti web e landing performanti',
+      'Prodotti digitali e strumenti su misura',
+      'Integrazioni AI (automazioni, contenuti)',
+      'Struttura SEO-ready',
+      'Ottimizzazione GEO (citabilità nelle AI)',
+      'Dati strutturati e contenuti machine-readable',
+    ],
+    forWho: 'Brand e aziende che vogliono un sito o un prodotto digitale pronto per Google e per le AI generative.',
+  },
+  {
     id: 'strategic-partnership',
     title: 'Strategic Partnership',
     subtitle: 'Un supporto continuativo per le decisioni importanti',

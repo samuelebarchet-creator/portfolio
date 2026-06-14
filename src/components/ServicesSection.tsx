@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
+import Link from 'next/link';
 import { services, approachValues } from '@/lib/services';
 import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
@@ -16,9 +17,12 @@ function renderText(text: string) {
   });
 }
 
-export default function ServicesSection() {
+export default function ServicesSection({ preview = false }: { preview?: boolean } = {}) {
   const sectionRef   = useRef<HTMLDivElement>(null);
   const approachRef  = useRef<HTMLDivElement>(null);
+
+  /* Home shows a teaser (title + first 2 services + CTA); /servizi shows all. */
+  const shown = preview ? services.slice(0, 2) : services;
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +69,27 @@ export default function ServicesSection() {
         </div>
 
         <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
-          {services.map((service, i) => (
+          {preview && (
+            <div className="pt-24 pb-2">
+              <p
+                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                Servizi
+              </p>
+              <h2
+                className="font-display font-black italic text-ink leading-[0.95]"
+                style={{
+                  fontFamily: 'var(--font-playfair)',
+                  fontSize: 'clamp(2.4rem, 6vw, 5rem)',
+                  letterSpacing: '-0.03em',
+                }}
+              >
+                Come posso aiutarti
+              </h2>
+            </div>
+          )}
+          {shown.map((service, i) => (
             <div
               key={service.id}
               className="service-row grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 py-16"
@@ -193,6 +217,32 @@ export default function ServicesSection() {
           </div>
         </div>
       </section>
+
+      {/* ── CTA: tutti i servizi (solo home/teaser) ─────────────────────────── */}
+      {preview && (
+        <section className="w-full px-8 md:px-20 pb-24">
+          <div className="max-w-6xl mx-auto">
+            <Link
+              href="/servizi"
+              className="group flex items-center justify-between gap-6 px-8 md:px-12 py-8 md:py-10 transition-colors duration-300 hover:bg-bg-alt"
+              style={{ border: '1px solid rgba(61,92,53,0.25)', background: 'var(--bg)' }}
+            >
+              <span
+                className="font-display font-black italic text-ink group-hover:text-green transition-colors duration-300"
+                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)' }}
+              >
+                Vedi tutti i servizi
+              </span>
+              <span
+                className="font-condensed uppercase text-green text-xs tracking-[0.3em] shrink-0"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                Scopri →
+              </span>
+            </Link>
+          </div>
+        </section>
+      )}
     </>
   );
 }

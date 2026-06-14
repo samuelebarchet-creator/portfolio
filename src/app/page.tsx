@@ -29,7 +29,7 @@ export default function Page() {
       <WorkMarquee />
       <ClientsBar />
       <CollabGrid />
-      <ServicesSection />
+      <ServicesSection preview />
       <About />
       <ThinkingGrid />
       <Contact />
