@@ -8,11 +8,11 @@ import { LogoCloud } from '@/components/ui/logo-cloud-4';
 gsap.registerPlugin(ScrollTrigger);
 
 const logos = [
-  { src: '/logos/ricambi.jpg', alt: 'Ricambi Carrozzine' },
-  { src: '/logos/braghes.png', alt: "Braghe's" },
-  { src: '/logos/vyst.png', alt: 'Vyst' },
-  { src: '/logos/axis.png', alt: 'Axis' },
-  { src: '/logos/crossabili.png', alt: 'Crossabili by Mattia Cattapan' },
+  { src: '/logos/ricambi.jpg', alt: 'Ricambi Carrozzine', width: 543, height: 566 },
+  { src: '/logos/braghes.png', alt: "Braghe's", width: 150, height: 143 },
+  { src: '/logos/vyst.png', alt: 'Vyst', width: 100, height: 28 },
+  { src: '/logos/axis.png', alt: 'Axis', width: 348, height: 144 },
+  { src: '/logos/crossabili.png', alt: 'Crossabili by Mattia Cattapan', width: 120, height: 150 },
 ];
 
 export default function ClientsBar() {

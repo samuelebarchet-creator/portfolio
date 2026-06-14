@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Contact from '@/components/Contact';
@@ -194,11 +195,15 @@ export default function ProjectClient({ project }: { project: Project }) {
           style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
         >
           <div className="flex gap-3 px-8 md:px-20 py-12" style={{ width: 'max-content' }}>
-            {project.images.map(({ src, alt }, i) => (
+            {project.images.map(({ src, alt, width, height }, i) => (
               <div key={i} className="relative shrink-0 overflow-hidden" style={{ height: '58vh' }}>
-                <img
+                <Image
                   src={src}
                   alt={alt ?? ''}
+                  width={width}
+                  height={height}
+                  sizes="(max-width: 768px) 90vw, 45vw"
+                  priority={i === 0}
                   style={{ height: '100%', width: 'auto', display: 'block', objectFit: 'cover' }}
                 />
               </div>

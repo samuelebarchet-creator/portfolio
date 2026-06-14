@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 
 type Logo = {
   src: string;
   alt: string;
-  width?: number;
-  height?: number;
+  width: number;
+  height: number;
 };
 
 type LogoCloudProps = React.ComponentProps<'div'> & {
@@ -29,12 +30,14 @@ export function LogoCloud({ logos }: LogoCloudProps) {
             key={i}
             className="flex items-center justify-center h-10 md:h-12 shrink-0"
           >
-            <img
+            <Image
               alt={logo.alt}
               className="pointer-events-none select-none h-full w-auto object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
               style={{ mixBlendMode: 'multiply' }}
-              loading="lazy"
               src={logo.src}
+              width={logo.width}
+              height={logo.height}
+              sizes="200px"
             />
           </div>
         ))}

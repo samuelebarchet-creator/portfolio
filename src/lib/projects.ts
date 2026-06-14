@@ -17,7 +17,7 @@ export type Project = {
   results: string[];
   color: string;
   logoSrc?: string;
-  images?: { src: string; alt?: string }[];
+  images?: { src: string; alt?: string; width: number; height: number }[];
   links?: ProjectLink;
 };
 
@@ -42,11 +42,11 @@ export const projects: Project[] = [
     color: '#C1392B',
     logoSrc: '/logos/braghes.png',
     images: [
-      { src: '/projects/braghes/braghes-1.jpg', alt: "Braghe's – lifestyle shot" },
-      { src: '/projects/braghes/braghes-2.jpg', alt: "Braghe's – dettaglio etichetta" },
-      { src: '/projects/braghes/braghes-3.jpg', alt: "Braghe's – team" },
-      { src: '/projects/braghes/braghes-4.jpg', alt: "Braghe's – modella" },
-      { src: '/projects/braghes/braghes-5.jpg', alt: "Braghe's – outdoor" },
+      { src: '/projects/braghes/braghes-1.jpg', alt: "Braghe's – lifestyle shot", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-2.jpg', alt: "Braghe's – dettaglio etichetta", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-3.jpg', alt: "Braghe's – team", width: 1600, height: 1066 },
+      { src: '/projects/braghes/braghes-4.jpg', alt: "Braghe's – modella", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-5.jpg', alt: "Braghe's – outdoor", width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://braghes.sedutosrl.com/',
@@ -73,10 +73,10 @@ export const projects: Project[] = [
     results: [],
     color: '#3D5C35',
     images: [
-      { src: '/projects/rc/rc-1.jpg', alt: 'RC – atleta in carrozzina' },
-      { src: '/projects/rc/rc-2.jpg', alt: 'RC – meccanico con ricambi' },
-      { src: '/projects/rc/rc-3.jpg', alt: 'RC – cerchi per carrozzina' },
-      { src: '/projects/rc/rc-4.jpg', alt: 'RC – community' },
+      { src: '/projects/rc/rc-1.jpg', alt: 'RC – atleta in carrozzina', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-2.jpg', alt: 'RC – meccanico con ricambi', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-3.jpg', alt: 'RC – cerchi per carrozzina', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-4.jpg', alt: 'RC – community', width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://ricambicarrozzine.it/',
@@ -154,11 +154,11 @@ export const projects: Project[] = [
     color: '#3D5C35',
     logoSrc: '/logos/crossabili.png',
     images: [
-      { src: '/projects/crossabili/crossabili-1.jpg', alt: 'CROSSabili – evento Mask to Ride' },
-      { src: '/projects/crossabili/crossabili-2.jpg', alt: 'CROSSabili – show' },
-      { src: '/projects/crossabili/crossabili-3.jpg', alt: 'CROSSabili – stunt' },
-      { src: '/projects/crossabili/crossabili-4.jpg', alt: 'CROSSabili – esperienza' },
-      { src: '/projects/crossabili/crossabili-5.jpg', alt: 'CROSSabili – action' },
+      { src: '/projects/crossabili/crossabili-1.jpg', alt: 'CROSSabili – evento Mask to Ride', width: 1600, height: 1066 },
+      { src: '/projects/crossabili/crossabili-2.jpg', alt: 'CROSSabili – show', width: 1600, height: 1067 },
+      { src: '/projects/crossabili/crossabili-3.jpg', alt: 'CROSSabili – stunt', width: 1600, height: 1066 },
+      { src: '/projects/crossabili/crossabili-4.jpg', alt: 'CROSSabili – esperienza', width: 1600, height: 1067 },
+      { src: '/projects/crossabili/crossabili-5.jpg', alt: 'CROSSabili – action', width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://www.crossabili.it/',
