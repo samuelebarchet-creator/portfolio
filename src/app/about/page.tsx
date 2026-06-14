@@ -59,7 +59,7 @@ export default function AboutPage() {
       <SmoothScrollHero
         scrollHeight={1120}
         desktopImage="/about/mountains.jpg"
-        mobileImage="/about/mountains.jpg"
+        mobileImage="/about/mountains-mobile.jpg"
         initialClipPercentage={0}
         finalClipPercentage={100}
         heroLabel="About"
