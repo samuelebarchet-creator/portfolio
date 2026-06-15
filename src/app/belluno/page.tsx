@@ -122,7 +122,8 @@ export default function BellunoPage() {
             alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority
-            className="object-cover object-center hidden md:block"
+            className="object-cover hidden md:block"
+            style={{ objectPosition: 'center 65%' }}
             sizes="100vw"
           />
           {/* Immagine mobile */}
