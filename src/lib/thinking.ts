@@ -6,12 +6,16 @@ export type ThinkingPost = {
   readTime: string;
   date: string;
   content: string;
+  heroImage?: string;
+  heroImageMobile?: string;
 };
 
 export const thinkingPosts: ThinkingPost[] = [
   {
     slug: 'ai-comportamento-utenti-2026',
     title: "Come l'AI sta cambiando il comportamento degli utenti nel 2026",
+    heroImage: '/thinking/ai-comportamento-utenti-2026.jpg',
+    heroImageMobile: '/thinking/ai-comportamento-utenti-2026-mobile.jpg',
     excerpt:
       "Nel 2026 le persone non cercano più solo su Google. Cercano su ChatGPT, Perplexity, Gemini. Il modo in cui i brand vengono trovati — o ignorati — sta cambiando in modo strutturale. Ecco cosa sta succedendo e cosa fare.",
     category: 'AI & Marketing',

@@ -117,10 +117,33 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
 
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <div
-        className="w-full pt-28 pb-20 px-8 md:px-20"
+        className="w-full pt-28 pb-20 px-8 md:px-20 relative overflow-hidden"
         style={{ background: 'var(--ink)' }}
       >
-        <div className="max-w-3xl mx-auto">
+        {post.heroImage && (
+          <>
+            <Image
+              src={post.heroImageMobile ?? post.heroImage}
+              alt=""
+              fill
+              aria-hidden
+              className="object-cover object-center md:hidden"
+              sizes="100vw"
+              priority
+            />
+            <Image
+              src={post.heroImage}
+              alt=""
+              fill
+              aria-hidden
+              className="object-cover object-center hidden md:block"
+              sizes="100vw"
+              priority
+            />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(8,13,8,0.55) 0%, rgba(8,13,8,0.72) 100%)' }} />
+          </>
+        )}
+        <div className="max-w-3xl mx-auto relative z-10">
           <Link
             href="/thinking"
             className="inline-flex items-center gap-2 text-bg/50 hover:text-bg transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-12"
