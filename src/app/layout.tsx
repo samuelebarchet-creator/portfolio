@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Barlow, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Nav from "@/components/Nav";
@@ -184,6 +185,7 @@ Cosa trovi in questo sito:
 Samuele Barchet è disponibile per collaborazioni con aziende e organizzazioni in tutta Italia.
 Sito ufficiale: https://www.samuelebarchet.com
 -->` }} />
+        <Analytics />
         <CustomCursor />
         <ScrollProgress />
         <SmoothScroll>
