@@ -114,8 +114,8 @@ export default function BellunoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <main>
 
-        {/* ── Hero — immagine full screen ──────────────────────────────────── */}
-        <div className="relative w-full overflow-hidden" style={{ minHeight: '100svh' }}>
+        {/* ── Hero ─────────────────────────────────────────────────────────── */}
+        <div className="relative w-full overflow-hidden" style={{ height: '80vh' }}>
           {/* Immagine desktop */}
           <Image
             src="/belluno/hero.jpg"
@@ -123,7 +123,7 @@ export default function BellunoPage() {
             fill
             priority
             className="object-cover hidden md:block"
-            style={{ objectPosition: 'center 65%' }}
+            style={{ objectPosition: 'center 38%' }}
             sizes="100vw"
           />
           {/* Immagine mobile */}
@@ -135,47 +135,47 @@ export default function BellunoPage() {
             className="object-cover object-center md:hidden"
             sizes="100vw"
           />
-          {/* Overlay scuro progressivo */}
+          {/* Overlay — più leggero in alto per far respirare l'immagine */}
           <div
             className="absolute inset-0"
-            style={{ background: 'linear-gradient(to bottom, rgba(8,13,8,0.35) 0%, rgba(8,13,8,0.65) 60%, rgba(8,13,8,0.85) 100%)' }}
+            style={{ background: 'linear-gradient(to bottom, rgba(8,13,8,0.15) 0%, rgba(8,13,8,0.45) 55%, rgba(8,13,8,0.75) 100%)' }}
           />
-          {/* Onde animate — stesso effetto del resto del sito */}
+          {/* Onde animate */}
           <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
+            color="rgba(61, 92, 53, 0.18)"
             animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.10, scale: 1.2 }}
+            noise={{ opacity: 0.08, scale: 1.2 }}
             sizing="fill"
           />
 
           {/* Contenuto hero */}
-          <div className="relative z-10 flex flex-col justify-end h-full min-h-[100svh] px-8 md:px-20 pb-20 pt-32">
-            <div className="max-w-6xl mx-auto w-full">
+          <div className="relative z-10 flex flex-col justify-end h-full px-8 md:px-16 pb-12 md:pb-16 pt-32">
+            <div className="max-w-5xl w-full">
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
+                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 Belluno · Dolomiti · Italia
               </p>
               <h1
-                className="font-display font-black italic text-bg leading-[1.0]"
+                className="font-display font-black italic text-bg leading-[1.05]"
                 style={{
                   fontFamily: 'var(--font-playfair)',
-                  fontSize: 'clamp(3.2rem, 9vw, 8rem)',
-                  letterSpacing: '-0.03em',
-                  maxWidth: '13ch',
+                  fontSize: 'clamp(2rem, 4.5vw, 4rem)',
+                  letterSpacing: '-0.02em',
+                  maxWidth: '16ch',
                 }}
               >
                 Marketing Digitale e AI a Belluno
               </h1>
               <p
-                className="mt-8 text-bg/70 leading-relaxed max-w-xl"
-                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.1rem)' }}
+                className="mt-5 text-bg/70 leading-relaxed max-w-md"
+                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(0.9rem, 1.1vw, 1rem)' }}
               >
                 Aiuto aziende e professionisti del territorio bellunese a costruire una presenza digitale
                 più chiara, più efficace e pronta per l'era dell'AI.
               </p>
-              <div className="mt-10 flex flex-wrap gap-6">
+              <div className="mt-7 flex flex-wrap gap-6">
                 <Link
                   href="/contatti"
                   className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
