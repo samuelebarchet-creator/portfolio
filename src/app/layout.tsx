@@ -8,7 +8,6 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
-import ShaderBackground from "@/components/ShaderBackground";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -58,7 +57,7 @@ export default function RootLayout({
       lang="it"
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
-      <body className="min-h-full text-ink antialiased" style={{ background: 'transparent' }}>
+      <body className="min-h-full bg-bg text-ink antialiased">
         {/* Iubenda — cookie banner (id keeps it from re-running on SPA navigation) */}
         <Script
           id="iubenda-cs"
@@ -187,7 +186,6 @@ Samuele Barchet è disponibile per collaborazioni con aziende e organizzazioni i
 Sito ufficiale: https://www.samuelebarchet.com
 -->` }} />
         <Analytics />
-        <ShaderBackground />
         <CustomCursor />
         <ScrollProgress />
         <SmoothScroll>
