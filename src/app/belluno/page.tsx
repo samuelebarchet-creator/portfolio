@@ -139,14 +139,6 @@ export default function BellunoPage() {
             className="absolute inset-0"
             style={{ background: 'linear-gradient(to bottom, rgba(8,13,8,0.15) 0%, rgba(8,13,8,0.45) 55%, rgba(8,13,8,0.75) 100%)' }}
           />
-          {/* Onde animate */}
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.18)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.08, scale: 1.2 }}
-            sizing="fill"
-          />
-
           {/* Contenuto hero */}
           <div className="relative z-10 flex flex-col justify-end h-full min-h-[100svh] px-8 md:px-20 pb-20 pt-32">
             <div className="max-w-6xl mx-auto w-full">
@@ -196,9 +188,15 @@ export default function BellunoPage() {
 
         {/* ── Chi sono / territorio ─────────────────────────────────────────── */}
         <section
-          className="w-full px-8 md:px-20 py-24"
+          className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.12, scale: 1.2 }}
+            sizing="fill"
+          />
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
             <div>
               <p
@@ -354,9 +352,15 @@ export default function BellunoPage() {
 
         {/* ── Perché lavorare con me ────────────────────────────────────────── */}
         <section
-          className="w-full px-8 md:px-20 py-24"
+          className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.12, scale: 1.2 }}
+            sizing="fill"
+          />
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
