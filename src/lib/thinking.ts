@@ -92,6 +92,87 @@ Il mercato della GEO è ancora agli inizi in Italia. Chi costruisce autorevolezz
 Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi) — o dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).`,
   },
   {
+    slug: 'geo-vs-seo',
+    title: 'GEO vs SEO: differenze e opportunità',
+    excerpt:
+      'GEO e SEO non sono la stessa cosa. La SEO ti fa trovare su Google. La GEO ti fa citare da ChatGPT, Perplexity e Gemini. Nel 2026, hai bisogno di entrambe — ma non molti lo sanno ancora.',
+    category: 'AI & Marketing',
+    readTime: '5 min',
+    date: '2026-06-15',
+    content: `Negli ultimi due anni, una nuova sigla ha iniziato a circolare nel mondo del marketing digitale: GEO. Generative Engine Optimization.
+
+Se stai lavorando sulla visibilità online della tua azienda e non hai ancora sentito parlare di GEO, questo articolo è per te.
+
+## Cosa significa SEO (e cosa non è più sufficiente)
+
+La SEO — Search Engine Optimization — è la disciplina che ottimizza un sito per apparire nei risultati di Google e degli altri motori di ricerca tradizionali.
+
+Per trent'anni ha funzionato così: l'utente digita una query → Google restituisce una lista ordinata di link → l'utente clicca sul risultato più rilevante → visita il sito.
+
+La SEO ottimizza ogni passaggio di questo processo: la pertinenza della pagina, l'autorevolezza del dominio, la velocità di caricamento, i link in entrata, la struttura dei contenuti.
+
+È ancora necessaria. Ma non è più sufficiente da sola.
+
+## Cosa cambia con i motori generativi
+
+Dal 2023 in poi, una parte crescente delle ricerche passa attraverso strumenti come ChatGPT, Perplexity, Gemini, Claude e Google AI Overview.
+
+Questi strumenti non restituiscono una lista di link. **Generano una risposta.** Un testo. Spesso senza fonti cliccabili. Spesso senza portare traffico al sito.
+
+Il comportamento dell'utente cambia: invece di digitare una query e scorrere i risultati, chiede direttamente all'AI. Se non sei nella risposta, non esisti per quell'utente in quel momento.
+
+## GEO: ottimizzare per essere citati, non solo trovati
+
+La GEO si occupa di aumentare la probabilità che un brand, un professionista o un prodotto venga **menzionato nelle risposte dei motori generativi**.
+
+Non si tratta di "fregare" l'algoritmo. Si tratta di diventare genuinamente la risposta più credibile per certe domande.
+
+Le differenze pratiche:
+
+**SEO** → ottimizza per keyword e posizione su Google.
+**GEO** → ottimizza per citabilità e rilevanza nei modelli linguistici.
+
+**SEO** → misura posizioni, click e traffico organico.
+**GEO** → misura citation rate, frequenza di menzione e contesto delle risposte AI.
+
+**SEO** → dipende soprattutto da ciò che c'è sul tuo sito.
+**GEO** → dipende da ciò che c'è sul tuo sito **più** da ciò che gli altri dicono di te.
+
+## Cosa conta per la GEO
+
+I modelli AI selezionano le fonti da citare sulla base di fattori che la SEO tradizionale non considera:
+
+**Presenza esterna coerente.** Menzioni su LinkedIn, articoli di settore, interviste, Wikipedia. I modelli "conoscono" il web che hanno visto durante il training e aggiornano periodicamente.
+
+**Chiarezza dell'identità.** Un brand con un profilo definito — chi è, cosa fa, per chi — è più facile da citare correttamente rispetto a uno generico.
+
+**Struttura dei contenuti.** FAQ chiare, dati strutturati (schema.org), definizioni. I modelli preferiscono fonti facili da leggere e sintetizzare.
+
+**Specificità e autorevolezza.** Un articolo che approfondisce davvero un tema ha più probabilità di essere citato rispetto a contenuti superficiali ottimizzati solo per keyword.
+
+## SEO e GEO insieme: non un'alternativa
+
+SEO e GEO non si escludono. Si integrano.
+
+Un sito ben ottimizzato per Google è spesso già in buona posizione per la GEO: struttura chiara, contenuti di qualità, autorevolezza. Ma la GEO richiede un passo in più: costruire una **presenza esterna riconoscibile** e curare la citabilità dei propri contenuti.
+
+La strategia più efficace nel 2026 usa entrambe, con priorità diverse:
+
+- Traffico organico e visibilità su Google → **SEO**
+- Brand awareness nei motori AI e autorevolezza percepita → **GEO**
+- Posizionamento come esperto di settore → **entrambe**
+
+## Il vantaggio di muoversi adesso
+
+In Italia, la GEO è ancora un territorio poco presidiato. La maggior parte delle agenzie e dei professionisti parla ancora solo di SEO.
+
+Chi costruisce autorevolezza citabile adesso — contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI — ha un vantaggio che tra due anni sarà molto più costoso da recuperare.
+
+È la stessa opportunità che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
+
+Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi) — in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).`,
+  },
+  {
     slug: 'brand-prima-dei-contenuti',
     title: "Perché costruisci contenuti prima di avere un brand",
     excerpt:

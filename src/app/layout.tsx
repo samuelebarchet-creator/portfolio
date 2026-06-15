@@ -126,15 +126,15 @@ export default function RootLayout({
                     "addressCountry": "IT"
                   },
                   "areaServed": { "@type": "Country", "name": "Italy" },
-                  "serviceType": ["Brand Strategy","Digital Marketing","Social Media Management","Content Strategy","Meta Ads"],
+                  "serviceType": ["Strategia Digitale","AI Marketing","GEO Optimization","Formazione AI"],
                   "hasOfferCatalog": {
                     "@type": "OfferCatalog",
-                    "name": "Servizi di Brand & Digital Strategy",
+                    "name": "Servizi di Strategia Digitale e AI Marketing",
                     "itemListElement": [
-                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Strategy", "description": "Posizionamento, valori, tone of voice e piano di comunicazione strategico.", "areaServed": "Italia" } },
-                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Communication Strategy", "description": "Piano editoriale, gestione social, copywriting e storytelling di marca multi-canale.", "areaServed": "Italia" } },
-                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Growth", "description": "Campagne Meta Ads, email marketing, funnel di acquisizione e analisi dei dati.", "areaServed": "Italia" } },
-                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategic Partnership", "description": "Collaborazioni strategiche, partnership con creator e organizzazioni, sviluppo di network.", "areaServed": "Italia" } }
+                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategia Digitale", "description": "Brand positioning, messaging framework, tone of voice e piano di comunicazione strategico.", "areaServed": "Italia" } },
+                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Marketing", "description": "Content strategy AI-assisted, campagne Meta Ads, email marketing e automazioni.", "areaServed": "Italia" } },
+                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GEO Optimization", "description": "Generative Engine Optimization: ottimizzazione della citabilità del brand in ChatGPT, Perplexity, Gemini e Google AI Overview.", "areaServed": "Italia" } },
+                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formazione AI per aziende", "description": "Workshop pratici, formazione team e consulenza continuativa per adottare l'AI nei processi di marketing.", "areaServed": "Italia" } }
                     ]
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],

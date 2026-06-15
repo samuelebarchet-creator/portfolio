@@ -5,12 +5,12 @@ import ServicesSection from '@/components/ServicesSection';
 import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
-  title: 'Brand Strategy e Digital Marketing Freelance — Samuele Barchet',
-  description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni in Italia.',
+  title: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet',
+  description: 'Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI per aziende. Consulenza su misura per brand e organizzazioni in Italia.',
   alternates: { canonical: 'https://www.samuelebarchet.com/servizi' },
   openGraph: {
-    title: 'Brand Strategy e Digital Marketing Freelance — Samuele Barchet',
-    description: 'Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni.',
+    title: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet',
+    description: 'Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI. Consulenza su misura per brand e organizzazioni.',
     url: 'https://www.samuelebarchet.com/servizi',
   },
 };
@@ -23,18 +23,19 @@ const ldJson = {
       "@id": "https://www.samuelebarchet.com/servizi",
       "name": "Servizi — Samuele Barchet",
       "url": "https://www.samuelebarchet.com/servizi",
-      "description": "Brand Strategy, Communication Strategy, Digital Growth e Strategic Partnership. Strategie su misura per brand e organizzazioni in Italia.",
-      "dateModified": "2026-06-12",
+      "description": "Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI per aziende. Consulenza su misura per brand e organizzazioni in Italia.",
+      "dateModified": "2026-06-15",
       "about": [
-        { "@type": "Thing", "name": "Brand Strategy" },
-        { "@type": "Thing", "name": "Digital Marketing" },
-        { "@type": "Thing", "name": "Social Media Marketing" }
+        { "@type": "Thing", "name": "Strategia Digitale" },
+        { "@type": "Thing", "name": "AI Marketing" },
+        { "@type": "Thing", "name": "GEO Optimization" },
+        { "@type": "Thing", "name": "Formazione AI" }
       ],
       "mentions": [
+        { "@type": "Thing", "name": "Generative Engine Optimization" },
         { "@type": "Thing", "name": "Meta Ads" },
-        { "@type": "Thing", "name": "Google Analytics 4" },
-        { "@type": "Thing", "name": "Email Marketing" },
-        { "@type": "Thing", "name": "Mailchimp" }
+        { "@type": "Thing", "name": "ChatGPT" },
+        { "@type": "Thing", "name": "Perplexity" }
       ],
       "author": { "@id": "https://www.samuelebarchet.com/#person" },
       "breadcrumb": {

@@ -20,12 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
-    { url: BASE,                    lastModified: new Date('2026-06-12'), changeFrequency: 'monthly', priority: 1.0 },
-    { url: `${BASE}/about`,         lastModified: new Date('2026-06-12'), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/servizi`,       lastModified: new Date('2026-06-12'), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE}/lavori`,        lastModified: new Date('2026-06-12'), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/contatti`,      lastModified: new Date('2026-06-12'), changeFrequency: 'yearly',  priority: 0.7 },
-    { url: `${BASE}/thinking`,      lastModified: new Date('2026-06-12'), changeFrequency: 'weekly',  priority: 0.6 },
+    { url: BASE,                    lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 1.0 },
+    { url: `${BASE}/about`,         lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/servizi`,       lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/belluno`,       lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE}/lavori`,        lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE}/contatti`,      lastModified: new Date('2026-06-15'), changeFrequency: 'yearly',  priority: 0.7 },
+    { url: `${BASE}/thinking`,      lastModified: new Date('2026-06-15'), changeFrequency: 'weekly',  priority: 0.6 },
     ...projectUrls,
     ...thinkingUrls,
   ];
