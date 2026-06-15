@@ -119,20 +119,19 @@ export default function BellunoPage() {
           {/* Immagine desktop */}
           <Image
             src="/belluno/hero.jpg"
-            alt="Dolomiti bellunesi con overlay AI e reti neurali"
+            alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority
             className="object-cover object-center hidden md:block"
             sizes="100vw"
           />
-          {/* Immagine mobile — crop sulla parte destra con la figura */}
+          {/* Immagine mobile */}
           <Image
-            src="/belluno/hero.jpg"
-            alt="Dolomiti bellunesi con overlay AI"
+            src="/belluno/hero-mobile.png"
+            alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority
-            className="object-cover md:hidden"
-            style={{ objectPosition: '72% center' }}
+            className="object-cover object-center md:hidden"
             sizes="100vw"
           />
           {/* Overlay scuro progressivo */}
