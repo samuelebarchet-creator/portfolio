@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 
 type Logo = {
   src: string;
@@ -13,10 +12,17 @@ type LogoCloudProps = React.ComponentProps<'div'> & {
 };
 
 export function LogoCloud({ logos }: LogoCloudProps) {
-  const doubled = [...logos, ...logos];
+  /* 4× duplication = no visible seam even on wide screens */
+  const track = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <div className="relative w-full py-6 overflow-hidden">
+    <div
+      className="relative w-full py-6 overflow-hidden"
+      style={{
+        maskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
+        WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
+      }}
+    >
       <div
         className="flex items-center w-max"
         style={{
@@ -25,15 +31,15 @@ export function LogoCloud({ logos }: LogoCloudProps) {
           gap: '4rem',
         }}
       >
-        {doubled.map((logo, i) => (
+        {track.map((logo, i) => (
           <div
             key={i}
             className="flex items-center justify-center h-10 md:h-12 shrink-0"
           >
             <Image
               alt={logo.alt}
-              className="pointer-events-none select-none h-full w-auto object-contain opacity-75 hover:opacity-100 transition-opacity duration-300"
-              style={{ mixBlendMode: 'multiply' }}
+              className="pointer-events-none select-none h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+              style={{ mixBlendMode: 'darken' }}
               src={logo.src}
               width={logo.width}
               height={logo.height}
@@ -42,17 +48,6 @@ export function LogoCloud({ logos }: LogoCloudProps) {
           </div>
         ))}
       </div>
-
-      <ProgressiveBlur
-        blurIntensity={0.8}
-        className="pointer-events-none absolute top-0 left-0 h-full w-32 md:w-48"
-        direction="left"
-      />
-      <ProgressiveBlur
-        blurIntensity={0.8}
-        className="pointer-events-none absolute top-0 right-0 h-full w-32 md:w-48"
-        direction="right"
-      />
     </div>
   );
 }

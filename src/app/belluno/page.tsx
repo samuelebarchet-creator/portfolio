@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Contact from '@/components/Contact';
+import { EtherealShadow } from '@/components/ui/etheral-shadow';
 
 export const metadata: Metadata = {
   title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
@@ -139,6 +140,13 @@ export default function BellunoPage() {
             className="absolute inset-0"
             style={{ background: 'linear-gradient(to bottom, rgba(8,13,8,0.35) 0%, rgba(8,13,8,0.65) 60%, rgba(8,13,8,0.85) 100%)' }}
           />
+          {/* Onde animate — stesso effetto del resto del sito */}
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.10, scale: 1.2 }}
+            sizing="fill"
+          />
 
           {/* Contenuto hero */}
           <div className="relative z-10 flex flex-col justify-end h-full min-h-[100svh] px-8 md:px-20 pb-20 pt-32">
@@ -150,7 +158,7 @@ export default function BellunoPage() {
                 Belluno · Dolomiti · Italia
               </p>
               <h1
-                className="font-display font-black italic text-bg leading-[0.88]"
+                className="font-display font-black italic text-bg leading-[1.0]"
                 style={{
                   fontFamily: 'var(--font-playfair)',
                   fontSize: 'clamp(3.2rem, 9vw, 8rem)',
