@@ -293,9 +293,15 @@ export default function BellunoPage() {
 
         {/* ── Servizi ───────────────────────────────────────────────────────── */}
         <section
-          className="w-full px-8 md:px-20 py-24"
+          className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.12, scale: 1.2 }}
+            sizing="fill"
+          />
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
@@ -403,9 +409,15 @@ export default function BellunoPage() {
 
         {/* ── Progetti del territorio ───────────────────────────────────────── */}
         <section
-          className="w-full px-8 md:px-20 py-24"
+          className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.12, scale: 1.2 }}
+            sizing="fill"
+          />
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
@@ -490,9 +502,15 @@ export default function BellunoPage() {
 
         {/* ── Approfondimenti ───────────────────────────────────────────────── */}
         <section
-          className="w-full px-8 md:px-20 py-20"
+          className="relative w-full px-8 md:px-20 py-20 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
+          <EtherealShadow
+            color="rgba(61, 92, 53, 0.22)"
+            animation={{ scale: 45, speed: 55 }}
+            noise={{ opacity: 0.12, scale: 1.2 }}
+            sizing="fill"
+          />
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-8"
