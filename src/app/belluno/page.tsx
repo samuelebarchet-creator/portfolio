@@ -191,13 +191,15 @@ export default function BellunoPage() {
           className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.12, scale: 1.2 }}
-            sizing="fill"
-          />
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+          <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+            <EtherealShadow
+              color="rgba(61, 92, 53, 0.22)"
+              animation={{ scale: 45, speed: 55 }}
+              noise={{ opacity: 0.12, scale: 1.2 }}
+              sizing="fill"
+            />
+          </div>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 relative" style={{ zIndex: 1 }}>
             <div>
               <p
                 className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
@@ -296,13 +298,15 @@ export default function BellunoPage() {
           className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.12, scale: 1.2 }}
-            sizing="fill"
-          />
-          <div className="max-w-6xl mx-auto">
+          <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+            <EtherealShadow
+              color="rgba(61, 92, 53, 0.22)"
+              animation={{ scale: 45, speed: 55 }}
+              noise={{ opacity: 0.12, scale: 1.2 }}
+              sizing="fill"
+            />
+          </div>
+          <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -361,13 +365,15 @@ export default function BellunoPage() {
           className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.12, scale: 1.2 }}
-            sizing="fill"
-          />
-          <div className="max-w-6xl mx-auto">
+          <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+            <EtherealShadow
+              color="rgba(61, 92, 53, 0.22)"
+              animation={{ scale: 45, speed: 55 }}
+              noise={{ opacity: 0.12, scale: 1.2 }}
+              sizing="fill"
+            />
+          </div>
+          <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -412,13 +418,15 @@ export default function BellunoPage() {
           className="relative w-full px-8 md:px-20 py-24 overflow-hidden"
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.12, scale: 1.2 }}
-            sizing="fill"
-          />
-          <div className="max-w-6xl mx-auto">
+          <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+            <EtherealShadow
+              color="rgba(61, 92, 53, 0.22)"
+              animation={{ scale: 45, speed: 55 }}
+              noise={{ opacity: 0.12, scale: 1.2 }}
+              sizing="fill"
+            />
+          </div>
+          <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -505,13 +513,15 @@ export default function BellunoPage() {
           className="relative w-full px-8 md:px-20 py-20 overflow-hidden"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
-          <EtherealShadow
-            color="rgba(61, 92, 53, 0.22)"
-            animation={{ scale: 45, speed: 55 }}
-            noise={{ opacity: 0.12, scale: 1.2 }}
-            sizing="fill"
-          />
-          <div className="max-w-6xl mx-auto">
+          <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+            <EtherealShadow
+              color="rgba(61, 92, 53, 0.22)"
+              animation={{ scale: 45, speed: 55 }}
+              noise={{ opacity: 0.12, scale: 1.2 }}
+              sizing="fill"
+            />
+          </div>
+          <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-8"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
