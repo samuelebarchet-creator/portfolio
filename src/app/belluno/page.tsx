@@ -115,15 +115,14 @@ export default function BellunoPage() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
-        <div className="relative w-full overflow-hidden" style={{ height: '80vh' }}>
+        <div className="relative w-full overflow-hidden" style={{ minHeight: '100svh' }}>
           {/* Immagine desktop */}
           <Image
-            src="/belluno/hero.jpg"
+            src="/belluno/hero-desktop.png"
             alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority
-            className="object-cover hidden md:block"
-            style={{ objectPosition: 'center 38%' }}
+            className="object-cover object-center hidden md:block"
             sizes="100vw"
           />
           {/* Immagine mobile */}
@@ -149,33 +148,33 @@ export default function BellunoPage() {
           />
 
           {/* Contenuto hero */}
-          <div className="relative z-10 flex flex-col justify-end h-full px-8 md:px-16 pb-12 md:pb-16 pt-32">
-            <div className="max-w-5xl w-full">
+          <div className="relative z-10 flex flex-col justify-end h-full min-h-[100svh] px-8 md:px-20 pb-20 pt-32">
+            <div className="max-w-6xl mx-auto w-full">
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
+                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 Belluno · Dolomiti · Italia
               </p>
               <h1
-                className="font-display font-black italic text-bg leading-[1.05]"
+                className="font-display font-black italic text-bg leading-[1.0]"
                 style={{
                   fontFamily: 'var(--font-playfair)',
-                  fontSize: 'clamp(2rem, 4.5vw, 4rem)',
-                  letterSpacing: '-0.02em',
-                  maxWidth: '16ch',
+                  fontSize: 'clamp(3.2rem, 9vw, 8rem)',
+                  letterSpacing: '-0.03em',
+                  maxWidth: '13ch',
                 }}
               >
                 Marketing Digitale e AI a Belluno
               </h1>
               <p
-                className="mt-5 text-bg/70 leading-relaxed max-w-md"
-                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(0.9rem, 1.1vw, 1rem)' }}
+                className="mt-8 text-bg/70 leading-relaxed max-w-xl"
+                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.1rem)' }}
               >
                 Aiuto aziende e professionisti del territorio bellunese a costruire una presenza digitale
                 più chiara, più efficace e pronta per l'era dell'AI.
               </p>
-              <div className="mt-7 flex flex-wrap gap-6">
+              <div className="mt-10 flex flex-wrap gap-6">
                 <Link
                   href="/contatti"
                   className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
