@@ -78,7 +78,7 @@ export default function Contact() {
         {/* Label */}
         <p
           className="c-label font-condensed uppercase text-xs tracking-[0.5em] mb-8"
-          style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+          style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
         >
           Parliamoci
         </p>

@@ -73,7 +73,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
             <div className="pt-24 pb-2">
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Servizi
               </p>
@@ -99,7 +99,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               <div className="flex flex-col gap-3">
                 <span
                   className="font-condensed text-xs uppercase tracking-[0.45em]"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
@@ -114,7 +114,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                 </h2>
                 <p
                   className="font-condensed uppercase tracking-[0.22em] leading-snug"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem', color: 'var(--orange)' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem', color: 'var(--orange)', fontWeight: 'bold' }}
                 >
                   {service.subtitle}
                 </p>
@@ -154,7 +154,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               <div>
                 <p
                   className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                 >
                   Deliverable
                 </p>
@@ -189,7 +189,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
         <div className="max-w-6xl mx-auto">
           <p
             className="font-condensed uppercase text-xs tracking-[0.5em] mb-12"
-            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
           >
             Il mio approccio
           </p>
@@ -236,7 +236,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               </span>
               <span
                 className="font-condensed uppercase text-xs tracking-[0.3em] shrink-0"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Scopri →
               </span>

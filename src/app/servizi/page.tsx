@@ -152,8 +152,8 @@ export default function ServiziPage() {
       >
         <div className="max-w-6xl mx-auto">
           <p
-            className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
           >
             FAQ
           </p>

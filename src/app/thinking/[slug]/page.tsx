@@ -245,8 +245,8 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
         >
           <p
-            className="font-condensed uppercase text-green text-xs tracking-[0.45em] mb-8"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            className="font-condensed uppercase text-xs tracking-[0.45em] mb-8"
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
           >
             Altri articoli
           </p>
@@ -263,8 +263,8 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
                 >
                   <div>
                     <p
-                      className="font-condensed uppercase text-green text-xs tracking-[0.3em] mb-1"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                      className="font-condensed uppercase text-xs tracking-[0.3em] mb-1"
+                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                     >
                       {p.category}
                     </p>

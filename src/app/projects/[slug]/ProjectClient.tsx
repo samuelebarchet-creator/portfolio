@@ -226,8 +226,8 @@ export default function ProjectClient({ project }: { project: Project }) {
         <div className="lg:col-span-2 flex flex-col gap-10">
           <div className="reveal">
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.4em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.4em] mb-4"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Overview
             </p>
@@ -261,8 +261,8 @@ export default function ProjectClient({ project }: { project: Project }) {
             style={{ background: 'var(--bg-alt)', border: '1px solid rgba(61,92,53,0.1)' }}
           >
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.4em] mb-5"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Deliverables
             </p>
@@ -290,8 +290,8 @@ export default function ProjectClient({ project }: { project: Project }) {
               style={{ background: 'var(--bg-alt)', border: '1px solid rgba(61,92,53,0.1)' }}
             >
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.4em] mb-5"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Visita il progetto
               </p>
@@ -359,8 +359,8 @@ export default function ProjectClient({ project }: { project: Project }) {
         >
           <div className="max-w-6xl mx-auto">
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.45em] mb-10"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.45em] mb-10"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Risultati
             </p>

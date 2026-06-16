@@ -143,8 +143,8 @@ export default function BellunoPage() {
           <div className="relative z-10 flex flex-col justify-end h-full min-h-[100svh] px-8 md:px-20 pb-20 pt-32">
             <div className="max-w-6xl mx-auto w-full">
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Belluno · Dolomiti · Italia
               </p>
@@ -170,14 +170,14 @@ export default function BellunoPage() {
                 <Link
                   href="/contatti"
                   className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                 >
                   Parliamone →
                 </Link>
                 <Link
                   href="/servizi"
                   className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                 >
                   I miei servizi →
                 </Link>
@@ -202,8 +202,8 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 relative" style={{ zIndex: 1 }}>
             <div>
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Chi sono
               </p>
@@ -269,8 +269,8 @@ export default function BellunoPage() {
         >
           <div className="max-w-6xl mx-auto">
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-10"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.5em] mb-10"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Il contesto
             </p>
@@ -308,8 +308,8 @@ export default function BellunoPage() {
           </div>
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Cosa offro
             </p>
@@ -331,8 +331,8 @@ export default function BellunoPage() {
                   style={{ border: '1px solid rgba(61,92,53,0.15)', background: 'var(--bg)' }}
                 >
                   <span
-                    className="font-condensed text-green text-xs uppercase tracking-[0.4em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="font-condensed text-xs uppercase tracking-[0.4em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
@@ -352,7 +352,7 @@ export default function BellunoPage() {
               <Link
                 href="/servizi"
                 className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Tutti i dettagli sui servizi →
               </Link>
@@ -380,8 +380,8 @@ export default function BellunoPage() {
                     {desc}
                   </p>
                   <span
-                    className="font-condensed uppercase text-green text-xs tracking-[0.25em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="font-condensed uppercase text-xs tracking-[0.25em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     Scopri di più →
                   </span>
@@ -406,8 +406,8 @@ export default function BellunoPage() {
           </div>
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Perché lavorare con me
             </p>
@@ -431,7 +431,7 @@ export default function BellunoPage() {
                 >
                   <p
                     className="font-condensed uppercase text-ink text-xs tracking-[0.25em] mb-3"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     <strong>{label}</strong>
                   </p>
@@ -459,8 +459,8 @@ export default function BellunoPage() {
           </div>
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Progetti del territorio
             </p>
@@ -503,8 +503,8 @@ export default function BellunoPage() {
                   style={{ border: '1px solid rgba(61,92,53,0.15)', background: 'var(--bg)' }}
                 >
                   <p
-                    className="font-condensed uppercase text-green text-xs tracking-[0.35em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="font-condensed uppercase text-xs tracking-[0.35em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     {tag}
                   </p>
@@ -518,8 +518,8 @@ export default function BellunoPage() {
                     {desc}
                   </p>
                   <span
-                    className="font-condensed uppercase text-green text-xs tracking-[0.25em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    className="font-condensed uppercase text-xs tracking-[0.25em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     Vedi progetto →
                   </span>
@@ -531,7 +531,7 @@ export default function BellunoPage() {
               <Link
                 href="/lavori"
                 className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
               >
                 Tutti i progetti →
               </Link>
@@ -554,8 +554,8 @@ export default function BellunoPage() {
           </div>
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
-              className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-8"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              className="font-condensed uppercase text-xs tracking-[0.5em] mb-8"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
             >
               Approfondimenti
             </p>
@@ -574,8 +574,8 @@ export default function BellunoPage() {
                 >
                   <div>
                     <p
-                      className="font-condensed uppercase text-green text-xs tracking-[0.3em] mb-2"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                      className="font-condensed uppercase text-xs tracking-[0.3em] mb-2"
+                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                     >
                       {cat}
                     </p>
@@ -588,7 +588,7 @@ export default function BellunoPage() {
                   </div>
                   <span
                     className="font-condensed text-ink-faint text-xs tracking-[0.2em] shrink-0 mt-1 group-hover:text-green transition-colors duration-300"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
                   >
                     Leggi →
                   </span>

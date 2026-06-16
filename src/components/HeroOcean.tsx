@@ -115,7 +115,7 @@ export default function HeroOcean() {
         }}
       >
         <Image
-          src="/boat-sailing.png"
+          src="/boat-sailing-orange.png"
           alt=""
           width={413}
           height={385}
@@ -133,7 +133,7 @@ export default function HeroOcean() {
         <p
           ref={labelRef}
           className="font-condensed uppercase text-xs tracking-[0.55em] mb-12 opacity-0"
-          style={{ color: '#8FB87A', fontFamily: 'var(--font-barlow-condensed)' }}
+          style={{ color: 'var(--orange)', fontFamily: 'var(--font-barlow-condensed)', fontWeight: 'bold' }}
         >
           Brand &amp; Digital Strategist
         </p>
