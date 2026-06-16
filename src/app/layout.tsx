@@ -112,7 +112,7 @@ export default function RootLayout({
                   "name": "Samuele Barchet — Brand & Digital Strategy",
                   "legalName": "Barchet Samuele",
                   "url": "https://www.samuelebarchet.com",
-                  "logo": "https://www.samuelebarchet.com/about/samuele.jpg",
+                  "logo": "https://www.samuelebarchet.com/logo-boat.png",
                   "description": "Consulenza freelance in brand strategy e digital marketing. 8 brand seguiti attivamente in settori diversi: inclusione sociale, e-commerce, no-profit, servizi B2B.",
                   "foundingDate": "2022",
                   "founder": { "@id": "https://www.samuelebarchet.com/#person" },

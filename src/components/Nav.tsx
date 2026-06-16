@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { gsap } from '@/lib/gsap';
 import { cn } from '@/lib/utils';
 
@@ -65,10 +66,23 @@ export default function Nav() {
         {/* Logo */}
         <a
           href="/"
-          className="font-display font-black italic text-ink text-xl tracking-wide select-none hover:text-green transition-colors duration-300"
-          style={{ fontFamily: 'var(--font-playfair)' }}
+          className="flex items-center gap-2.5 select-none hover:opacity-70 transition-opacity duration-300"
+          aria-label="Samuele Barchet"
         >
-          SB<span className="text-green">.</span>
+          <Image
+            src="/logo-boat.png"
+            alt="Samuele Barchet"
+            width={36}
+            height={36}
+            priority
+            className="w-9 h-9 object-contain"
+          />
+          <span
+            className="hidden sm:inline font-display font-black italic text-ink text-lg tracking-wide"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Samuele Barchet
+          </span>
         </a>
 
         {/* Desktop links */}
