@@ -1,13 +1,24 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Lenis from '@studio-freight/lenis';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
-import { setLenis } from '@/lib/lenis';
+import { setLenis, getLenis } from '@/lib/lenis';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    /* Lenis keeps its own internal scroll offset across client-side route
+       changes, so a new page can render already "scrolled" to wherever the
+       previous page left off instead of at the top. */
+    getLenis()?.scrollTo(0, { immediate: true });
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() => {
     /* Skip smooth-scroll on touch devices and for users who prefer reduced
        motion: native scrolling is lighter and avoids the "chasing" feel on

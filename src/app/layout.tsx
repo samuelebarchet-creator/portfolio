@@ -84,24 +84,24 @@ export default function RootLayout({
           src="https://cdn.iubenda.com/iubenda.js"
           strategy="lazyOnload"
         />
-        {/* Google Analytics 4 — loaded only once a Measurement ID is configured, consent gated via Consent Mode v2 above */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              id="ga4-src"
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-              `}
-            </Script>
-          </>
-        )}
+        {/* Google Tag Manager — GA4 and any future tags are configured inside the GTM container, consent gated via Consent Mode v2 above */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5P4VBBQF');
+          `}
+        </Script>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5P4VBBQF"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         {/* JSON-LD — Person + ProfessionalService schema for AI citability */}
         <script
           type="application/ld+json"
