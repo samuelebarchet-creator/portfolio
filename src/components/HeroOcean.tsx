@@ -93,7 +93,7 @@ export default function HeroOcean() {
       className="relative w-full overflow-hidden"
       style={{
         background:
-          'radial-gradient(ellipse at 50% 32%, #122b30 0%, #0a1a1d 48%, #060f11 100%)',
+          'radial-gradient(ellipse at 50% 32%, #0d3028 0%, #091e1a 48%, #050f0d 100%)',
       }}
     >
       {/* Warp shader background */}

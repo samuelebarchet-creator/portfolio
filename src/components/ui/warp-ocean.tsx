@@ -17,7 +17,7 @@ export default function WarpOcean() {
       scale={1}
       rotation={0}
       speed={0.6}
-      colors={['hsl(195, 70%, 8%)', 'hsl(175, 55%, 22%)', 'hsl(185, 60%, 14%)', 'hsl(165, 45%, 30%)']}
+      colors={['hsl(168, 60%, 10%)', 'hsl(160, 55%, 28%)', 'hsl(170, 65%, 18%)', 'hsl(155, 50%, 38%)']}
     />
   );
 }

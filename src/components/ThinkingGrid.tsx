@@ -76,8 +76,8 @@ export default function ThinkingGrid() {
               {/* Category + meta */}
               <div className="flex items-center justify-between">
                 <span
-                  className="font-condensed uppercase text-green text-xs tracking-[0.35em]"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  className="font-condensed uppercase text-xs tracking-[0.35em]"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
                 >
                   {post.category}
                 </span>
