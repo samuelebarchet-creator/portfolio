@@ -150,7 +150,7 @@ export default function HeroOcean() {
             maxWidth: '22ch',
           }}
         >
-          Un mare di soluzioni<br />per il tuo Brand
+          Naviga in un mare<br />di soluzioni per il tuo Brand
         </h1>
 
         {/* Divider */}
