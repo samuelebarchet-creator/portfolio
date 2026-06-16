@@ -42,16 +42,8 @@ export default function About() {
       ref={sectionRef}
       id="about"
       className="w-full py-28 px-8 md:px-20 relative overflow-hidden"
-      style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
+      style={{ borderTop: '1px solid rgba(61,92,53,0.1)', background: 'var(--bg)' }}
     >
-      <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
-        <WarpShadow
-          color="rgba(143, 184, 122, 0.28)"
-          animation={{ scale: 35, speed: 45 }}
-          noise={{ opacity: 0.13, scale: 1 }}
-          sizing="fill"
-        />
-      </div>
 
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="03" label="Chi sono" className="mb-16" />

@@ -9,7 +9,7 @@ import Ornament from '@/components/Ornament';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export default function ThinkingGrid({ preview = false }: { preview?: boolean } = {}) {
-  const shown = preview ? thinkingPosts.slice(0, 3) : thinkingPosts;
+  const shown = preview ? thinkingPosts.slice(0, 4) : thinkingPosts;
   const sectionRef = useRef<HTMLDivElement>(null);
   const gridRef    = useRef<HTMLDivElement>(null);
 
@@ -33,16 +33,8 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       ref={sectionRef}
       id="thinking"
       className="w-full py-28 px-8 md:px-20 relative overflow-hidden"
-      style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
+      style={{ borderTop: '1px solid rgba(61,92,53,0.1)', background: 'var(--bg)' }}
     >
-      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        <WarpShadow
-          color="rgba(61, 92, 53, 0.26)"
-          animation={{ scale: 38, speed: 50 }}
-          noise={{ opacity: 0.13, scale: 1.1 }}
-          sizing="fill"
-        />
-      </div>
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="04" label="Thinking" className="mb-6" />
 
