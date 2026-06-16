@@ -89,11 +89,11 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               </h2>
             </div>
           )}
+          <div className={preview ? 'pb-16' : 'pt-16 pb-16'}>
           {shown.map((service, i) => (
             <div
               key={service.id}
-              className="service-row grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 py-16"
-              style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
+              className="service-row grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16 p-8 md:p-12 mb-6 bg-bg"
             >
               {/* Left — title block */}
               <div className="flex flex-col gap-3">
@@ -176,6 +176,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               </div>
             </div>
           ))}
+          </div>
         </div>
       </section>
 
