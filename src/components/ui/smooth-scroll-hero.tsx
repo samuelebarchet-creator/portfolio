@@ -144,11 +144,13 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
         >
           {heroLabel && (
             <p
-              className="font-condensed uppercase text-white/60 mb-5"
+              className="font-condensed uppercase mb-5"
               style={{
                 fontFamily: 'var(--font-barlow-condensed)',
                 fontSize: 'clamp(0.6rem, 1.2vw, 0.75rem)',
                 letterSpacing: '0.5em',
+                color: 'var(--orange)',
+                fontWeight: 'bold',
               }}
             >
               {heroLabel}

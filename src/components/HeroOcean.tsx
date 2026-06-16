@@ -115,7 +115,7 @@ export default function HeroOcean() {
         }}
       >
         <Image
-          src="/boat-sailing-orange.png"
+          src="/boat-sailing.png"
           alt=""
           width={413}
           height={385}
