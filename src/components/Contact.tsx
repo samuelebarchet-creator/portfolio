@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -59,7 +59,7 @@ export default function Contact() {
       }}
     >
       <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
-        <EtherealShadow
+        <WarpShadow
           color="rgba(61, 92, 53, 0.55)"
           animation={{ scale: 60, speed: 35 }}
           noise={{ opacity: 0.12, scale: 1 }}

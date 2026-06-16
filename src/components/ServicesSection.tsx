@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Link from 'next/link';
 import { services, approachValues } from '@/lib/services';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 function renderText(text: string) {
   return text.split(/(?<=\.)\s+/).flatMap((sentence, si, arr) => {
@@ -60,7 +60,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
         style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
       >
         <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
-          <EtherealShadow
+          <WarpShadow
             color="rgba(61, 92, 53, 0.30)"
             animation={{ scale: 45, speed: 55 }}
             noise={{ opacity: 0.14, scale: 1.2 }}
@@ -72,7 +72,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
           {preview && (
             <div className="pt-24 pb-2">
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-6"
+                className="font-condensed uppercase text-orange text-xs tracking-[0.5em] mb-6"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 Servizi
@@ -98,7 +98,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               {/* Left — title block */}
               <div className="flex flex-col gap-3">
                 <span
-                  className="font-condensed text-green text-xs uppercase tracking-[0.45em]"
+                  className="font-condensed text-orange text-xs uppercase tracking-[0.45em]"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   {String(i + 1).padStart(2, '0')}
@@ -113,7 +113,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                   {service.title}
                 </h2>
                 <p
-                  className="font-condensed text-green uppercase tracking-[0.22em] leading-snug"
+                  className="font-condensed text-orange uppercase tracking-[0.22em] leading-snug"
                   style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem' }}
                 >
                   {service.subtitle}
@@ -153,7 +153,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               {/* Right — deliverables */}
               <div>
                 <p
-                  className="font-condensed uppercase text-green text-xs tracking-[0.4em] mb-5"
+                  className="font-condensed uppercase text-orange text-xs tracking-[0.4em] mb-5"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   Deliverable
@@ -188,7 +188,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
       >
         <div className="max-w-6xl mx-auto">
           <p
-            className="font-condensed uppercase text-green text-xs tracking-[0.5em] mb-12"
+            className="font-condensed uppercase text-orange text-xs tracking-[0.5em] mb-12"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Il mio approccio
@@ -235,7 +235,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                 Vedi tutti i servizi
               </span>
               <span
-                className="font-condensed uppercase text-green text-xs tracking-[0.3em] shrink-0"
+                className="font-condensed uppercase text-orange text-xs tracking-[0.3em] shrink-0"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 Scopri →

@@ -46,16 +46,16 @@ export default function Ornament({ label, index, className, animate = true }: Or
       {/* Left line */}
       <span
         className="flex-1 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(61,92,53,0.25))' }}
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(212,113,58,0.35))' }}
       />
 
       {/* Label */}
       <span
-        className="font-condensed uppercase text-ink-faint text-xs tracking-[0.45em] whitespace-nowrap"
+        className="font-condensed uppercase text-orange text-xs tracking-[0.45em] whitespace-nowrap"
         style={{ fontFamily: 'var(--font-barlow-condensed)' }}
       >
         {index !== undefined && (
-          <span className="text-green-mid mr-2">
+          <span className="text-orange mr-2">
             {String(index).padStart(2, '0')}
           </span>
         )}
@@ -65,7 +65,7 @@ export default function Ornament({ label, index, className, animate = true }: Or
       {/* Right line */}
       <span
         className="flex-1 h-px"
-        style={{ background: 'linear-gradient(90deg, rgba(61,92,53,0.25), transparent)' }}
+        style={{ background: 'linear-gradient(90deg, rgba(212,113,58,0.35), transparent)' }}
       />
     </div>
   );

@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 import { projects } from '@/lib/projects';
 import Ornament from '@/components/Ornament';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +66,7 @@ export default function CollabGrid() {
   return (
     <section ref={sectionRef} id="collaborazioni" className="w-full py-28 px-8 md:px-20 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        <EtherealShadow
+        <WarpShadow
           color="rgba(61, 92, 53, 0.28)"
           animation={{ scale: 50, speed: 40 }}
           noise={{ opacity: 0.12, scale: 1.5 }}

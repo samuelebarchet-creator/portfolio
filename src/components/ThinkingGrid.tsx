@@ -6,7 +6,7 @@ import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { thinkingPosts } from '@/lib/thinking';
 import { formatDate } from '@/lib/utils';
 import Ornament from '@/components/Ornament';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export default function ThinkingGrid() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ export default function ThinkingGrid() {
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-        <EtherealShadow
+        <WarpShadow
           color="rgba(61, 92, 53, 0.26)"
           animation={{ scale: 38, speed: 50 }}
           noise={{ opacity: 0.13, scale: 1.1 }}

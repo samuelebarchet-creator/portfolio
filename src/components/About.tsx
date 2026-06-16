@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
 import Ornament from '@/components/Ornament';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -45,7 +45,7 @@ export default function About() {
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}
     >
       <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
-        <EtherealShadow
+        <WarpShadow
           color="rgba(143, 184, 122, 0.28)"
           animation={{ scale: 35, speed: 45 }}
           noise={{ opacity: 0.13, scale: 1 }}
@@ -147,7 +147,7 @@ export default function About() {
                     {value}
                   </span>
                   <span
-                    className="font-condensed uppercase text-ink-faint tracking-[0.15em]"
+                    className="font-condensed uppercase text-ink-dim tracking-[0.15em]"
                     style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.65rem' }}
                   >
                     {label}

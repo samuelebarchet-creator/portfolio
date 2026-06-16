@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Contact from '@/components/Contact';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export const metadata: Metadata = {
   title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
@@ -192,7 +192,7 @@ export default function BellunoPage() {
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-            <EtherealShadow
+            <WarpShadow
               color="rgba(61, 92, 53, 0.22)"
               animation={{ scale: 45, speed: 55 }}
               noise={{ opacity: 0.12, scale: 1.2 }}
@@ -299,7 +299,7 @@ export default function BellunoPage() {
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-            <EtherealShadow
+            <WarpShadow
               color="rgba(61, 92, 53, 0.22)"
               animation={{ scale: 45, speed: 55 }}
               noise={{ opacity: 0.12, scale: 1.2 }}
@@ -397,7 +397,7 @@ export default function BellunoPage() {
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-            <EtherealShadow
+            <WarpShadow
               color="rgba(61, 92, 53, 0.22)"
               animation={{ scale: 45, speed: 55 }}
               noise={{ opacity: 0.12, scale: 1.2 }}
@@ -450,7 +450,7 @@ export default function BellunoPage() {
           style={{ background: 'var(--bg-alt)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-            <EtherealShadow
+            <WarpShadow
               color="rgba(61, 92, 53, 0.22)"
               animation={{ scale: 45, speed: 55 }}
               noise={{ opacity: 0.12, scale: 1.2 }}
@@ -545,7 +545,7 @@ export default function BellunoPage() {
           style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
-            <EtherealShadow
+            <WarpShadow
               color="rgba(61, 92, 53, 0.22)"
               animation={{ scale: 45, speed: 55 }}
               noise={{ opacity: 0.12, scale: 1.2 }}

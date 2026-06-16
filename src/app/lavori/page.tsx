@@ -4,7 +4,7 @@ import { projects } from '@/lib/projects';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ClientsBar from '@/components/ClientsBar';
-import { EtherealShadow } from '@/components/ui/etheral-shadow';
+import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export const metadata: Metadata = {
   title: 'Progetti di Brand Strategy e Comunicazione — Samuele Barchet',
@@ -78,7 +78,7 @@ export default function LavoriPage() {
       <main className="pb-0 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none hidden md:block" style={{ zIndex: 0 }}>
-        <EtherealShadow
+        <WarpShadow
           color="rgba(61, 92, 53, 0.22)"
           animation={{ scale: 55, speed: 40 }}
           noise={{ opacity: 0.10, scale: 1.4 }}
@@ -126,7 +126,7 @@ export default function LavoriPage() {
               </h2>
 
               <p
-                className="font-condensed uppercase text-green text-xs tracking-[0.25em] mb-4"
+                className="font-condensed uppercase text-orange text-xs tracking-[0.25em] mb-4"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {p.role}
