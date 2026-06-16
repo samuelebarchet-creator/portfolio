@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Hero from '@/components/Hero';
+import HeroOcean from '@/components/HeroOcean';
 
 export const metadata: Metadata = {
   title: 'Samuele Barchet — Brand & Digital Strategist',
@@ -24,7 +24,7 @@ import Contact from '@/components/Contact';
 export default function Page() {
   return (
     <main>
-      <Hero />
+      <HeroOcean />
       <StatsBar />
       <WorkMarquee />
       <ClientsBar />

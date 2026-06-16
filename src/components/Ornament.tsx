@@ -51,11 +51,11 @@ export default function Ornament({ label, index, className, animate = true }: Or
 
       {/* Label */}
       <span
-        className="font-condensed uppercase text-orange text-xs tracking-[0.45em] whitespace-nowrap"
-        style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+        className="font-condensed uppercase text-xs tracking-[0.45em] whitespace-nowrap"
+        style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
       >
         {index !== undefined && (
-          <span className="text-orange mr-2">
+          <span className="mr-2" style={{ color: 'var(--orange)' }}>
             {String(index).padStart(2, '0')}
           </span>
         )}

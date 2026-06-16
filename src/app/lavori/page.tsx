@@ -126,8 +126,8 @@ export default function LavoriPage() {
               </h2>
 
               <p
-                className="font-condensed uppercase text-orange text-xs tracking-[0.25em] mb-4"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.25em] mb-4"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
               >
                 {p.role}
               </p>

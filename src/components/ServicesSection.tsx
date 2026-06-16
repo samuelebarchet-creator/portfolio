@@ -72,8 +72,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
           {preview && (
             <div className="pt-24 pb-2">
               <p
-                className="font-condensed uppercase text-orange text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
               >
                 Servizi
               </p>
@@ -98,8 +98,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               {/* Left — title block */}
               <div className="flex flex-col gap-3">
                 <span
-                  className="font-condensed text-orange text-xs uppercase tracking-[0.45em]"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  className="font-condensed text-xs uppercase tracking-[0.45em]"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
@@ -113,8 +113,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                   {service.title}
                 </h2>
                 <p
-                  className="font-condensed text-orange uppercase tracking-[0.22em] leading-snug"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem' }}
+                  className="font-condensed uppercase tracking-[0.22em] leading-snug"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem', color: 'var(--orange)' }}
                 >
                   {service.subtitle}
                 </p>
@@ -153,8 +153,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               {/* Right — deliverables */}
               <div>
                 <p
-                  className="font-condensed uppercase text-orange text-xs tracking-[0.4em] mb-5"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
                 >
                   Deliverable
                 </p>
@@ -188,8 +188,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
       >
         <div className="max-w-6xl mx-auto">
           <p
-            className="font-condensed uppercase text-orange text-xs tracking-[0.5em] mb-12"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            className="font-condensed uppercase text-xs tracking-[0.5em] mb-12"
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
           >
             Il mio approccio
           </p>
@@ -235,8 +235,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                 Vedi tutti i servizi
               </span>
               <span
-                className="font-condensed uppercase text-orange text-xs tracking-[0.3em] shrink-0"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                className="font-condensed uppercase text-xs tracking-[0.3em] shrink-0"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
               >
                 Scopri →
               </span>
