@@ -426,6 +426,58 @@ Quella familiarità — quella sensazione di "questo brand parla come me" — è
 
 La definizione del tono di voce fa parte del lavoro che svolgo nella [Brand Strategy](/servizi). Se vuoi capire come funziona nel concreto, puoi partire da lì.`,
   },
+  {
+    slug: 'comparire-risposte-chatgpt',
+    title: 'Come far comparire la tua azienda nelle risposte di ChatGPT',
+    excerpt:
+      "Sempre più persone chiedono direttamente a ChatGPT quale azienda contattare. Ecco cosa puoi fare concretamente per aumentare le probabilità di essere citato, passo dopo passo.",
+    category: 'AI & Marketing',
+    readTime: '5 min',
+    date: '2026-06-16',
+    content: `Prova un esperimento. Apri ChatGPT e chiedigli di consigliarti un'azienda nel tuo settore, nella tua città. Leggi la risposta.
+
+Se la tua azienda non compare, hai appena visto in pratica il problema che migliaia di PMI italiane non sanno ancora di avere.
+
+## Perché succede
+
+ChatGPT, Perplexity e Gemini non funzionano come Google. Non restituiscono una lista di siti da cui scegliere: generano una risposta sintetica, basata su ciò che il modello "conosce" — i dati di addestramento e, per gli strumenti con accesso al web, le fonti che riesce a recuperare in tempo reale.
+
+Se il tuo brand non è mai stato descritto in modo chiaro da fonti che il modello considera attendibili, semplicemente non ha materiale da cui generare una citazione corretta.
+
+**Non è un problema di pubblicità. È un problema di informazioni disponibili e di come sono strutturate.**
+
+## Cosa puoi controllare davvero
+
+Non puoi "pagare" per apparire in una risposta di ChatGPT come fai con gli Ads su Google. Ma puoi influenzare in modo concreto la probabilità di essere citato.
+
+**1. Scrivi una pagina "Chi siamo" che risponda a domande precise.** Non una descrizione generica ("siamo leader nel settore da 20 anni"), ma fatti verificabili: cosa fai esattamente, per chi, dove operi, da quando. I modelli AI privilegiano informazioni concrete e verificabili rispetto al linguaggio marketing vago.
+
+**2. Aggiungi dati strutturati (schema.org) al tuo sito.** Markup come Organization, LocalBusiness, FAQPage aiutano i sistemi automatici — sia i crawler di Google sia quelli usati per addestrare e aggiornare i modelli AI — a interpretare correttamente chi sei e cosa offri.
+
+**3. Costruisci una sezione FAQ reale.** Le domande frequenti, scritte in modo naturale e con risposte dirette, sono uno dei formati che i modelli generativi "leggono" più facilmente quando devono sintetizzare informazioni su un'azienda.
+
+**4. Cura le menzioni esterne.** Una scheda Google Business completa, un profilo LinkedIn aggiornato, articoli o interviste su testate di settore, una pagina Wikipedia (se applicabile). Ogni fonte esterna coerente aumenta la probabilità che il tuo brand venga "riconosciuto" come affidabile.
+
+**5. Sii specifico, non generico.** "Agenzia di marketing a Belluno" è una frase che potrebbe scrivere chiunque. "Consulente che ha seguito 8 brand in settori diversi, dall'inclusione sociale all'e-commerce" è una frase che descrive un'identità riconoscibile. I modelli AI tendono a citare fonti con un profilo distintivo, non intercambiabile.
+
+## Quanto tempo ci vuole
+
+Non è un interruttore che si accende. ChatGPT e gli altri modelli aggiornano periodicamente la loro "conoscenza" del web, non in tempo reale. Lavorando con costanza su contenuti e presenza esterna, i primi segnali si vedono di solito in due o tre mesi.
+
+## Come misurarlo
+
+La parte più trascurata: quasi nessuno controlla sistematicamente come viene descritto dai motori AI. Ho fondato **[Citationrate](https://citationrate.com)** proprio per questo: monitorare nel tempo la "citation rate" di un brand — quanto spesso, in che contesto e con quale precisione viene citato da ChatGPT, Perplexity e Gemini.
+
+Senza una misurazione, lavori al buio: non sai se i cambiamenti che fai stanno funzionando o non stanno avendo alcun effetto.
+
+## Il punto
+
+Essere citati da ChatGPT non è più un dettaglio tecnico per pochi addetti ai lavori. È un canale di visibilità che sta crescendo mentre la SEO tradizionale rimane importante ma non più sufficiente da sola.
+
+Chi inizia a lavorarci ora, in un mercato ancora poco presidiato, costruisce un vantaggio difficile da recuperare in seguito per chi aspetta.
+
+Se vuoi capire come applicare questi principi alla tua azienda, guarda la sezione [GEO Optimization a Belluno](/belluno/geo) o leggi l'approfondimento su [GEO vs SEO](/thinking/geo-vs-seo).`,
+  },
 ];
 
 export function getPost(slug: string): ThinkingPost | undefined {

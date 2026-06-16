@@ -357,6 +357,37 @@ export default function BellunoPage() {
                 Tutti i dettagli sui servizi →
               </Link>
             </div>
+
+            <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { title: 'AI Marketing a Belluno', desc: "Contenuti, campagne e automazioni costruiti con l'intelligenza artificiale.", href: '/belluno/ai-marketing' },
+                { title: 'GEO Optimization a Belluno', desc: 'Come diventare citabile da ChatGPT, Perplexity e Gemini.', href: '/belluno/geo' },
+                { title: 'Automazioni AI per PMI', desc: 'Workflow e agenti AI per liberare tempo dai processi ripetitivi.', href: '/belluno/automazioni-ai' },
+              ].map(({ title, desc, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group flex flex-col gap-3 p-6 transition-colors duration-300 hover:bg-bg"
+                  style={{ border: '1px solid rgba(61,92,53,0.15)', background: 'var(--bg)' }}
+                >
+                  <h3
+                    className="font-display font-black italic text-ink leading-tight group-hover:text-green transition-colors duration-300"
+                    style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem' }}
+                  >
+                    {title}
+                  </h3>
+                  <p className="text-ink-faint leading-relaxed text-sm grow" style={{ fontFamily: 'var(--font-barlow)' }}>
+                    {desc}
+                  </p>
+                  <span
+                    className="font-condensed uppercase text-green text-xs tracking-[0.25em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                  >
+                    Scopri di più →
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -530,6 +561,7 @@ export default function BellunoPage() {
             </p>
             <div className="flex flex-col">
               {[
+                { title: 'Come far comparire la tua azienda nelle risposte di ChatGPT', slug: 'comparire-risposte-chatgpt', cat: 'AI & Marketing' },
                 { title: "Come l'AI sta cambiando il comportamento degli utenti nel 2026", slug: 'ai-comportamento-utenti-2026', cat: 'AI & Marketing' },
                 { title: 'GEO vs SEO: differenze e opportunità', slug: 'geo-vs-seo', cat: 'AI & Marketing' },
                 { title: 'La SEO locale vale ancora (anzi, vale di più)', slug: 'local-seo-vale-ancora', cat: 'Digital Marketing' },
