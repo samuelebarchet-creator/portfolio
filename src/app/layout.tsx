@@ -58,6 +58,20 @@ export default function RootLayout({
       className={`${playfair.variable} ${barlow.variable} ${barlowCondensed.variable} h-full`}
     >
       <body className="min-h-full bg-bg text-ink antialiased">
+        {/* Google Consent Mode v2 — default denied, updated by Iubenda once the user consents */}
+        <Script id="consent-mode-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              analytics_storage: 'denied',
+              wait_for_update: 500,
+            });
+          `}
+        </Script>
         {/* Iubenda — cookie banner (id keeps it from re-running on SPA navigation) */}
         <Script
           id="iubenda-cs"
@@ -70,6 +84,24 @@ export default function RootLayout({
           src="https://cdn.iubenda.com/iubenda.js"
           strategy="lazyOnload"
         />
+        {/* Google Analytics 4 — loaded only once a Measurement ID is configured, consent gated via Consent Mode v2 above */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <Script
+              id="ga4-src"
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
         {/* JSON-LD — Person + ProfessionalService schema for AI citability */}
         <script
           type="application/ld+json"
