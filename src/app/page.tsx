@@ -31,7 +31,7 @@ export default function Page() {
       <CollabGrid />
       <ServicesSection preview />
       <About />
-      <ThinkingGrid />
+      <ThinkingGrid preview />
       <Contact />
     </main>
   );

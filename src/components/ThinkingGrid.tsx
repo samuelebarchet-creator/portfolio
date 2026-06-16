@@ -8,7 +8,8 @@ import { formatDate } from '@/lib/utils';
 import Ornament from '@/components/Ornament';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
-export default function ThinkingGrid() {
+export default function ThinkingGrid({ preview = false }: { preview?: boolean } = {}) {
+  const shown = preview ? thinkingPosts.slice(0, 3) : thinkingPosts;
   const sectionRef = useRef<HTMLDivElement>(null);
   const gridRef    = useRef<HTMLDivElement>(null);
 
@@ -67,7 +68,7 @@ export default function ThinkingGrid() {
           ref={gridRef}
           className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10"
         >
-          {thinkingPosts.map((post, i) => (
+          {shown.map((post, i) => (
             <Link
               key={post.slug}
               href={`/thinking/${post.slug}`}
@@ -145,6 +146,29 @@ export default function ThinkingGrid() {
           ))}
         </div>
       </div>
+
+      {preview && (
+        <div className="max-w-6xl mx-auto mt-6 relative" style={{ zIndex: 1 }}>
+          <Link
+            href="/thinking"
+            className="group flex items-center justify-between gap-6 px-8 md:px-12 py-8 md:py-10 transition-colors duration-300 hover:bg-bg-alt"
+            style={{ border: '1px solid rgba(61,92,53,0.25)', background: 'var(--bg)' }}
+          >
+            <span
+              className="font-display font-black italic text-ink group-hover:text-green transition-colors duration-300"
+              style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)' }}
+            >
+              Vedi tutti gli articoli
+            </span>
+            <span
+              className="font-condensed uppercase text-xs tracking-[0.3em] shrink-0"
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+            >
+              Scopri →
+            </span>
+          </Link>
+        </div>
+      )}
     </section>
   );
 }
