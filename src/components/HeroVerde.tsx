@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { gsap } from '@/lib/gsap';
 import { Warp } from '@paper-design/shaders-react';
@@ -12,6 +12,12 @@ export default function HeroVerde() {
   const taglineRef  = useRef<HTMLHeadingElement>(null);
   const nameRef     = useRef<HTMLParagraphElement>(null);
   const ctaRef      = useRef<HTMLDivElement>(null);
+  // Warp disabled on mobile — too heavy for old devices / iOS Safari
+  const [showWarp, setShowWarp] = useState(false);
+
+  useEffect(() => {
+    setShowWarp(window.matchMedia('(min-width: 768px)').matches);
+  }, []);
 
   /* Boat orbit — identical logic to HeroOcean */
   useEffect(() => {
@@ -71,11 +77,25 @@ export default function HeroVerde() {
     const name    = nameRef.current;
     const cta     = ctaRef.current;
     if (!label || !tagline || !name || !cta) return;
-    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+    // Fallback: reveal content if GSAP fails (e.g. iOS Safari throttling)
+    const fallback = setTimeout(() => {
+      [label, tagline, name, cta].forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+    }, 3000);
+
+    const tl = gsap.timeline({
+      defaults: { ease: 'power3.out' },
+      onComplete: () => clearTimeout(fallback),
+    });
     tl.fromTo(label,   { y: -16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 0.4);
     tl.fromTo(tagline, { y: 70,  opacity: 0 }, { y: 0, opacity: 1, duration: 1.0 }, 0.6);
     tl.fromTo(name,    { y: 20,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.3);
     tl.fromTo(cta,     { y: 16,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.55);
+
+    return () => { clearTimeout(fallback); tl.kill(); };
   }, []);
 
   return (
@@ -87,23 +107,25 @@ export default function HeroVerde() {
           'radial-gradient(ellipse at 50% 0%, #1e3d18 0%, #0e200b 50%, #060f04 100%)',
       }}
     >
-      {/* Warp shader — verde brand + accenti arancioni */}
-      <div className="absolute inset-0 pointer-events-none">
-        <Warp
-          style={{ width: '100%', height: '100%' }}
-          proportion={0.44}
-          softness={1}
-          distortion={0.32}
-          swirl={0.68}
-          swirlIterations={10}
-          shape="checks"
-          shapeScale={0.14}
-          scale={1}
-          rotation={0}
-          speed={0.55}
-          colors={['#0d1a09', '#3D5C35', '#6A8A5E', '#C85E28']}
-        />
-      </div>
+      {/* Warp shader — desktop only (mobile gets gradient bg, better perf) */}
+      {showWarp && (
+        <div className="absolute inset-0 pointer-events-none">
+          <Warp
+            style={{ width: '100%', height: '100%' }}
+            proportion={0.44}
+            softness={1}
+            distortion={0.32}
+            swirl={0.68}
+            swirlIterations={10}
+            shape="checks"
+            shapeScale={0.14}
+            scale={1}
+            rotation={0}
+            speed={0.55}
+            colors={['#0d1a09', '#3D5C35', '#6A8A5E', '#C85E28']}
+          />
+        </div>
+      )}
 
       {/* Warm orange radial glow — conferisce l'accento caldo */}
       <div
