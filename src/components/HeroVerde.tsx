@@ -78,24 +78,15 @@ export default function HeroVerde() {
     const cta     = ctaRef.current;
     if (!label || !tagline || !name || !cta) return;
 
-    // Fallback: reveal content if GSAP fails (e.g. iOS Safari throttling)
-    const fallback = setTimeout(() => {
-      [label, tagline, name, cta].forEach(el => {
-        el.style.opacity = '1';
-        el.style.transform = 'none';
-      });
-    }, 3000);
+    // CSS animation handles opacity (reliable on all browsers).
+    // GSAP adds y-slide enhancement; if it fails, text is still visible.
+    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    tl.from(label,   { y: -16, duration: 0.7, clearProps: 'transform' }, 0.4);
+    tl.from(tagline, { y: 70,  duration: 1.0, clearProps: 'transform' }, 0.6);
+    tl.from(name,    { y: 20,  duration: 0.7, clearProps: 'transform' }, 1.3);
+    tl.from(cta,     { y: 16,  duration: 0.7, clearProps: 'transform' }, 1.55);
 
-    const tl = gsap.timeline({
-      defaults: { ease: 'power3.out' },
-      onComplete: () => clearTimeout(fallback),
-    });
-    tl.fromTo(label,   { y: -16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 0.4);
-    tl.fromTo(tagline, { y: 70,  opacity: 0 }, { y: 0, opacity: 1, duration: 1.0 }, 0.6);
-    tl.fromTo(name,    { y: 20,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.3);
-    tl.fromTo(cta,     { y: 16,  opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, 1.55);
-
-    return () => { clearTimeout(fallback); tl.kill(); };
+    return () => { tl.kill(); };
   }, []);
 
   return (
@@ -157,21 +148,27 @@ export default function HeroVerde() {
       >
         <p
           ref={labelRef}
-          className="font-condensed uppercase text-xs tracking-[0.55em] mb-12 opacity-0"
-          style={{ color: 'var(--orange)', fontFamily: 'var(--font-barlow-condensed)', fontWeight: 'bold' }}
+          className="font-condensed uppercase text-xs tracking-[0.55em] mb-12"
+          style={{
+            color: 'var(--orange)',
+            fontFamily: 'var(--font-barlow-condensed)',
+            fontWeight: 'bold',
+            animation: 'hero-fade-up 0.7s ease-out both 0.4s',
+          }}
         >
           Brand &amp; Digital Strategist
         </p>
 
         <h1
           ref={taglineRef}
-          className="font-display font-black italic text-bg leading-[0.95] opacity-0"
+          className="font-display font-black italic text-bg leading-[0.95]"
           style={{
             fontFamily: 'var(--font-playfair)',
             fontSize: 'clamp(2rem, 7.5vw, 8rem)',
             letterSpacing: '-0.03em',
             textShadow: '0 2px 40px rgba(0,0,0,0.6)',
             maxWidth: '22ch',
+            animation: 'hero-fade-up 1.0s ease-out both 0.6s',
           }}
         >
           Naviga in un mare<br />di soluzioni per il tuo Brand
@@ -181,13 +178,21 @@ export default function HeroVerde() {
 
         <p
           ref={nameRef}
-          className="font-condensed uppercase tracking-[0.45em] text-sm opacity-0"
-          style={{ color: 'rgba(245,240,232,0.60)', fontFamily: 'var(--font-barlow-condensed)' }}
+          className="font-condensed uppercase tracking-[0.45em] text-sm"
+          style={{
+            color: 'rgba(245,240,232,0.60)',
+            fontFamily: 'var(--font-barlow-condensed)',
+            animation: 'hero-fade-up 0.7s ease-out both 1.3s',
+          }}
         >
           Samuele Barchet
         </p>
 
-        <div ref={ctaRef} className="flex items-center gap-4 mt-12 opacity-0">
+        <div
+          ref={ctaRef}
+          className="flex items-center gap-4 mt-12"
+          style={{ animation: 'hero-fade-up 0.7s ease-out both 1.55s' }}
+        >
           <a
             href="/#collaborazioni"
             className="inline-flex items-center gap-2 px-7 py-3 font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300"

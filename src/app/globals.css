@@ -83,6 +83,12 @@
 ::selection        { background: var(--green); color: var(--bg); }
 ::-moz-selection   { background: var(--green); color: var(--bg); }
 
+/* ─── Hero entrance keyframe (CSS fallback when GSAP unavailable) ────────── */
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* ─── Marquee keyframes (WorkMarquee) ────────────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }

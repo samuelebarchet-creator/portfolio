@@ -5,13 +5,22 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 
-  /* Speed all animations to near-instant when user prefers reduced motion */
-  gsap.matchMedia().add('(prefers-reduced-motion: reduce)', () => {
-    gsap.globalTimeline.timeScale(100);
-  });
-  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
-    gsap.globalTimeline.timeScale(1);
-  });
+  /* Speed all animations to near-instant when user prefers reduced motion.
+     Wrapped in try-catch: iOS 15/16 Safari has MediaQueryList bugs that can
+     cause gsap.matchMedia() to throw and silently break the module. */
+  try {
+    gsap.matchMedia().add('(prefers-reduced-motion: reduce)', () => {
+      gsap.globalTimeline.timeScale(100);
+    });
+    gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      gsap.globalTimeline.timeScale(1);
+    });
+  } catch (_) {
+    // Fallback: check directly without matchMedia
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      gsap.globalTimeline.timeScale(100);
+    }
+  }
 }
 
 export { gsap, ScrollTrigger };
