@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   return [
-    { url: BASE,                    lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 1.0 },
+    { url: BASE,                    lastModified: new Date('2026-06-20'), changeFrequency: 'monthly', priority: 1.0 },
     { url: `${BASE}/about`,         lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/servizi`,       lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/belluno`,       lastModified: new Date('2026-06-16'), changeFrequency: 'monthly', priority: 0.85 },
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/belluno/automazioni-ai`, lastModified: new Date('2026-06-16'), changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/lavori`,        lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/contatti`,      lastModified: new Date('2026-06-15'), changeFrequency: 'yearly',  priority: 0.7 },
-    { url: `${BASE}/thinking`,      lastModified: new Date('2026-06-15'), changeFrequency: 'weekly',  priority: 0.6 },
+    { url: `${BASE}/thinking`,      lastModified: new Date('2026-06-20'), changeFrequency: 'weekly',  priority: 0.6 },
     ...projectUrls,
     ...thinkingUrls,
   ];

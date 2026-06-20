@@ -12,6 +12,80 @@ export type ThinkingPost = {
 
 export const thinkingPosts: ThinkingPost[] = [
   {
+    slug: 'meta-ads-non-convertono',
+    title: 'Perché le tue campagne Meta non convertono (e non è colpa del budget)',
+    excerpt:
+      'Aumenti il budget, i risultati non cambiano. Aumenti ancora, idem. Il problema quasi mai è quanto spendi — è cosa stai amplificando. Una lettura pratica su dove si rompe la catena.',
+    category: 'Digital Marketing',
+    readTime: '7 min',
+    date: '2026-06-20',
+    content: `Scenario tipico: spendi 500 euro al mese su Meta, i risultati sono deludenti, e la soluzione che ti viene proposta è aumentare il budget. Metti altri 200 euro. I risultati migliorano un po', ma non abbastanza. Metti altri 300. A quel punto stai spendendo mille euro al mese per numeri che dovrebbero costarti la metà.
+
+Il problema non è il budget. Il problema è che il budget stai amplificando qualcosa che non funziona.
+
+## Meta è un amplificatore, non un generatore di domanda
+
+Questo è il malinteso fondamentale. Meta Ads non crea interesse dove non c'è. Porta il tuo messaggio davanti a persone che potrebbero essere interessate — ma se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
+
+L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico — età, interessi, comportamenti — conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce chi risponde, chi clicca, chi compra.
+
+**In pratica: la tua creatività è il tuo targeting.**
+
+Se mostri un'inserzione e risponde un certo tipo di persona, il sistema impara da quel segnale e va a cercare persone simili. Se l'inserzione è generica, attira persone generiche. Se è precisa, attira persone precise.
+
+## Il messaggio che parla a tutti non parla a nessuno
+
+Il primo posto dove guardare quando una campagna non funziona non è il pubblico — è il messaggio.
+
+Prendi la tua inserzione. Leggila come se non sapessi nulla del tuo brand. Risponde a un problema specifico di una persona specifica? O è una dichiarazione su chi sei e cosa fai?
+
+"Siamo un'azienda specializzata in soluzioni innovative per la comunicazione integrata." È un messaggio. Ma non è rivolto a nessuno in particolare. Non risolve nessun problema. Non crea urgenza. Non motiva nessun clic.
+
+Un messaggio efficace parte dal problema del cliente, non dalle caratteristiche del prodotto. "Hai un negozio fisico ma non sai come portare clienti online?" È diretto. È specifico. Parla a qualcuno che si riconosce in quel problema.
+
+Più il messaggio è preciso, più l'algoritmo trova le persone giuste — perché chi risponde è esattamente il tuo cliente ideale.
+
+## Stai ottimizzando per la metrica sbagliata
+
+Secondo errore classico: scegliere l'obiettivo sbagliato al momento della creazione della campagna.
+
+Meta ti chiede cosa vuoi ottenere: traffico, visualizzazioni, lead, acquisti. Molti scelgono traffico perché costa meno e i numeri sembrano migliori. CPM basso, tanti clic, tanta gente sul sito. Poi però nessuno compra, nessuno lascia il contatto, e il problema sembra il sito o l'offerta.
+
+Il problema è a monte. Stai ottimizzando per la metrica sbagliata. Meta porta traffico quando chiedi traffico. Ma chi clicca su un'inserzione ottimizzata per traffico non è necessariamente qualcuno disposto ad acquistare — è qualcuno disposto a cliccare. L'algoritmo sa esattamente cosa stai cercando e lo trova.
+
+**Ottimizza sempre per l'azione che vuoi che le persone facciano.** Se vuoi lead, usa l'obiettivo lead generation con il form nativo di Meta. Se vuoi acquisti, usa conversioni con il pixel configurato correttamente e gli eventi di acquisto tracciati. Costa di più a breve termine, ma il sistema impara a trovare persone che effettivamente agiscono — non solo persone che cliccano.
+
+## Il clic è solo l'inizio
+
+Anche con il messaggio giusto e l'obiettivo corretto, le campagne falliscono se la pagina di destinazione non è allineata con l'inserzione.
+
+Allineamento significa che chi arriva sulla pagina dopo aver cliccato trova esattamente quello che l'inserzione prometteva. Stesso linguaggio, stessa offerta, stesso tono, stessa promessa visiva. Nessun salto logico tra il prima e il dopo.
+
+Se l'inserzione parla di uno sconto del 20% e la pagina non lo menziona immediatamente, hai già perso. Se l'inserzione è visivamente moderna e il sito sembra fermo al 2015, hai già perso. Se la call to action dell'inserzione è "scopri di più" ma la pagina chiede subito i dati di pagamento, hai già perso.
+
+Il percorso dall'inserzione alla conversione deve essere fluido, coerente, senza attrito. Ogni discontinuità si traduce in abbandono — e in soldi spesi per niente.
+
+## Il budget come leva, non come soluzione
+
+Una volta che hai un messaggio preciso, l'obiettivo giusto e una landing page che converte, allora il budget diventa una leva reale. Puoi aumentarlo con ragionevole certezza che i risultati scalino in modo proporzionale.
+
+Ho lavorato su una campagna di lead generation dove il costo per lead era quasi tre volte il benchmark di settore. Non abbiamo aumentato il budget. Abbiamo riscritto il copy, cambiato il formato (da statico a video breve di 15 secondi), allineato la landing page al messaggio dell'inserzione. Il CPL è sceso del 73% in sei settimane — con lo stesso identico budget di partenza.
+
+L'efficienza non viene dai soldi. Viene dalla coerenza tra messaggio, creatività e destinazione.
+
+## Da dove iniziare
+
+Se le tue campagne non performano, prima di toccare il budget fai queste tre cose.
+
+**Rivedi il messaggio.** Chi è la persona specifica che stai cercando di raggiungere? Qual è il problema concreto che stai risolvendo? Il tuo copy parte da lì o parte da te?
+
+**Controlla l'obiettivo di campagna.** Stai ottimizzando per l'azione che vuoi o per una metrica che sembra buona ma non è quella che conta?
+
+**Verifica la coerenza.** Clicca sulla tua inserzione come se fossi un cliente. Cosa trovi dall'altra parte? È quello che ti aspettavi?
+
+Il budget viene dopo. Prima si sistema la macchina.`,
+  },
+  {
     slug: 'ai-comportamento-utenti-2026',
     title: "Come l'AI sta cambiando il comportamento degli utenti nel 2026",
     heroImage: '/thinking/ai-comportamento-utenti-2026.jpg',

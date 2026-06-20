@@ -52,6 +52,7 @@ Samuele Barchet è un Brand & Digital Strategist freelance nato a Belluno nel 20
 
 ## Articoli (Thinking)
 
+- /thinking/meta-ads-non-convertono — Perché le tue campagne Meta non convertono (e non è colpa del budget) (Digital Marketing)
 - /thinking/ai-comportamento-utenti-2026 — Come l'AI sta cambiando il comportamento degli utenti nel 2026 (AI & Marketing)
 - /thinking/geo-vs-seo — GEO vs SEO: differenze e opportunità (GEO & AI Search)
 - /thinking/brand-prima-dei-contenuti — Perché costruisci contenuti prima di avere un brand (Brand Strategy)
