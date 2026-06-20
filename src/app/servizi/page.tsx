@@ -12,7 +12,9 @@ export const metadata: Metadata = {
     title: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet',
     description: 'Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI. Consulenza su misura per brand e organizzazioni.',
     url: 'https://www.samuelebarchet.com/servizi',
+    images: [{ url: '/servizi/hero.jpg', width: 1200, height: 630, alt: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet' }],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 const ldJson = {

@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     siteName: "Samuele Barchet",
   },
   robots: { index: true, follow: true },
+  twitter: { card: 'summary_large_image', site: '@samuelebarchet' },
 };
 
 export const viewport: Viewport = {

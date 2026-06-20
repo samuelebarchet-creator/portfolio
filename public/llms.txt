@@ -42,3 +42,20 @@ Samuele Barchet è un Brand & Digital Strategist freelance nato a Belluno nel 20
 - /lavori — Portfolio progetti
 - /contatti — Modulo di contatto
 - /thinking — Articoli su brand, digital e strategia
+
+## Marketing digitale e AI a Belluno (area locale)
+
+- /belluno — Consulenza marketing digitale e AI per aziende e professionisti del territorio bellunese e delle Dolomiti
+- /belluno/ai-marketing — AI Marketing a Belluno: strategia AI-assisted, content generation, Meta Ads e automazioni per PMI locali
+- /belluno/geo — GEO Optimization a Belluno: ottimizzazione citabilità del brand nei motori AI (ChatGPT, Perplexity, Gemini)
+- /belluno/automazioni-ai — Automazioni AI a Belluno: flussi automatizzati per marketing, CRM e operazioni aziendali
+
+## Articoli (Thinking)
+
+- /thinking/ai-comportamento-utenti-2026 — Come l'AI sta cambiando il comportamento degli utenti nel 2026 (AI & Marketing)
+- /thinking/geo-vs-seo — GEO vs SEO: differenze e opportunità (GEO & AI Search)
+- /thinking/brand-prima-dei-contenuti — Perché costruisci contenuti prima di avere un brand (Brand Strategy)
+- /thinking/local-seo-vale-ancora — La SEO locale vale ancora (anzi, vale di più) (SEO & Local)
+- /thinking/social-media-non-e-strategia — Essere sui social non è una strategia (Social Media)
+- /thinking/tono-di-voce-dimenticato — Il tono di voce è l'identità che tutti dimenticano (Brand Identity)
+- /thinking/comparire-risposte-chatgpt — Come far comparire la tua azienda nelle risposte di ChatGPT (GEO & AI Search)

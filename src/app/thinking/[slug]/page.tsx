@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) return {};
   const url = `https://www.samuelebarchet.com/thinking/${slug}`;
+  const ogImage = post.heroImage ?? '/about/samuele.jpg';
   return {
     title: `${post.title} — Samuele Barchet`,
     description: post.excerpt,
@@ -26,7 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       publishedTime: post.date,
       authors: ['Samuele Barchet'],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
+    twitter: { card: 'summary_large_image', images: [ogImage] },
   };
 }
 
@@ -92,6 +95,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
         url,
         headline: post.title,
         description: post.excerpt,
+        image: post.heroImage ? `https://www.samuelebarchet.com${post.heroImage}` : 'https://www.samuelebarchet.com/about/samuele.jpg',
         datePublished: post.date,
         dateModified: post.date,
         author: { '@type': 'Person', '@id': 'https://www.samuelebarchet.com/#person', name: 'Samuele Barchet' },
