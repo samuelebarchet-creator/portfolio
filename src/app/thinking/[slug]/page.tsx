@@ -41,10 +41,15 @@ const ArrowLeft = () => (
 
 
 function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
-  const tokens = text.split(/(\*\*.*?\*\*|\[[^\]]+\]\([^)]+\))/g);
+  // Order: bold-link first (most specific), then bold, then italic, then plain link
+  const tokens = text.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*.*?\*\*|\*[^*\n]+\*|\[[^\]]+\]\([^)]+\))/g);
   return tokens.map((token, j) => {
+    const boldLink = token.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
+    if (boldLink) return <Link key={`${keyPrefix}-${j}`} href={boldLink[2]} className="font-semibold text-green underline underline-offset-2 hover:no-underline">{boldLink[1]}</Link>;
     const bold = token.match(/^\*\*(.*)\*\*$/);
     if (bold) return <strong key={`${keyPrefix}-${j}`} className="font-semibold text-ink">{bold[1]}</strong>;
+    const italic = token.match(/^\*([^*\n]+)\*$/);
+    if (italic) return <em key={`${keyPrefix}-${j}`}>{italic[1]}</em>;
     const link = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (link) return <Link key={`${keyPrefix}-${j}`} href={link[2]} className="text-green underline underline-offset-2 hover:no-underline">{link[1]}</Link>;
     return token;

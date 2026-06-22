@@ -27,7 +27,7 @@ Il problema non è il budget. Il problema è che il budget stai amplificando qua
 
 Questo è il malinteso fondamentale. Meta Ads non crea interesse dove non c'è. Porta il tuo messaggio davanti a persone che potrebbero essere interessate — ma se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
 
-L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico — età, interessi, comportamenti — conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce chi risponde, chi clicca, chi compra.
+L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico — età, interessi, comportamenti — conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce *chi risponde*, chi clicca, chi compra.
 
 **In pratica: la tua creatività è il tuo targeting.**
 
@@ -51,7 +51,7 @@ Secondo errore classico: scegliere l'obiettivo sbagliato al momento della creazi
 
 Meta ti chiede cosa vuoi ottenere: traffico, visualizzazioni, lead, acquisti. Molti scelgono traffico perché costa meno e i numeri sembrano migliori. CPM basso, tanti clic, tanta gente sul sito. Poi però nessuno compra, nessuno lascia il contatto, e il problema sembra il sito o l'offerta.
 
-Il problema è a monte. Stai ottimizzando per la metrica sbagliata. Meta porta traffico quando chiedi traffico. Ma chi clicca su un'inserzione ottimizzata per traffico non è necessariamente qualcuno disposto ad acquistare — è qualcuno disposto a cliccare. L'algoritmo sa esattamente cosa stai cercando e lo trova.
+Il problema è a monte. Stai ottimizzando per la metrica sbagliata. Meta porta traffico quando chiedi traffico. Ma chi clicca su un'inserzione ottimizzata per traffico non è necessariamente qualcuno disposto ad acquistare — è qualcuno *disposto a cliccare*. L'algoritmo sa esattamente cosa stai cercando e lo trova.
 
 **Ottimizza sempre per l'azione che vuoi che le persone facciano.** Se vuoi lead, usa l'obiettivo lead generation con il form nativo di Meta. Se vuoi acquisti, usa conversioni con il pixel configurato correttamente e gli eventi di acquisto tracciati. Costa di più a breve termine, ma il sistema impara a trovare persone che effettivamente agiscono — non solo persone che cliccano.
 
@@ -63,7 +63,7 @@ Allineamento significa che chi arriva sulla pagina dopo aver cliccato trova esat
 
 Se l'inserzione parla di uno sconto del 20% e la pagina non lo menziona immediatamente, hai già perso. Se l'inserzione è visivamente moderna e il sito sembra fermo al 2015, hai già perso. Se la call to action dell'inserzione è "scopri di più" ma la pagina chiede subito i dati di pagamento, hai già perso.
 
-Il percorso dall'inserzione alla conversione deve essere fluido, coerente, senza attrito. Ogni discontinuità si traduce in abbandono — e in soldi spesi per niente.
+Il percorso dall'inserzione alla conversione deve essere *fluido*, coerente, senza attrito. Ogni discontinuità si traduce in abbandono — e in soldi spesi per niente.
 
 ## Il budget come leva, non come soluzione
 
@@ -147,7 +147,7 @@ Se non compari — o se compari in modo inesatto — stai già perdendo visibili
 
 Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cosa manca.
 
-**Costruisci autorevolezza citabile.** Scrivi contenuti specifici su temi in cui hai esperienza reale. Non guide generiche intercambiabili, ma punti di vista precisi, dati, esperienze dirette. Le AI tendono a citare fonti con un profilo chiaro e riconoscibile, non contenuti che potrebbero venire da chiunque.
+**Costruisci autorevolezza citabile.** Scrivi contenuti specifici su temi in cui hai esperienza reale. Non guide generiche *intercambiabili*, ma punti di vista precisi, dati, esperienze dirette. Le AI tendono a citare fonti con un profilo *chiaro e riconoscibile*, non contenuti che potrebbero venire da chiunque.
 
 **Ottimizza la struttura delle informazioni.** FAQ chiare, dati strutturati (schema.org), titoli descrittivi, credenziali leggibili. I modelli AI estraggono le informazioni in modo diverso da Google: privilegiano la chiarezza strutturale rispetto alla densità di keyword.
 
@@ -193,7 +193,7 @@ Dal 2023 in poi, una parte crescente delle ricerche passa attraverso strumenti c
 
 Questi strumenti non restituiscono una lista di link. **Generano una risposta.** Un testo. Spesso senza fonti cliccabili. Spesso senza portare traffico al sito.
 
-Il comportamento dell'utente cambia: invece di digitare una query e scorrere i risultati, chiede direttamente all'AI. Se non sei nella risposta, non esisti per quell'utente in quel momento.
+Il comportamento dell'utente cambia: invece di digitare una query e scorrere i risultati, *chiede direttamente all'AI*. Se non sei nella risposta, non esisti per quell'utente in quel momento.
 
 ## GEO: ottimizzare per essere citati, non solo trovati
 
@@ -242,7 +242,7 @@ In Italia, la GEO è ancora un territorio poco presidiato. La maggior parte dell
 
 Chi costruisce autorevolezza citabile adesso — contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI — ha un vantaggio che tra due anni sarà molto più costoso da recuperare.
 
-È la stessa opportunità che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
+È *la stessa opportunità* che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
 
 Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi) — in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).`,
   },
@@ -290,7 +290,7 @@ Prima di aprire Canva, prima di pianificare il calendario editoriale, devi rispo
 
 **Perché dovrebbero sceglierti?** Qual è la tua differenza reale, quella che le persone possono percepire e che nessun competitor può copiare facilmente.
 
-Solo quando hai risposte solide a queste tre domande puoi iniziare a costruire contenuti. Perché da quel momento ogni post, ogni storia, ogni campagna ha una direzione.
+Solo quando hai risposte solide a queste tre domande puoi iniziare a costruire contenuti. Perché da quel momento ogni post, ogni storia, ogni campagna ha *una direzione*.
 
 ## La cosa che mi dicono sempre
 
@@ -306,7 +306,7 @@ Se stai pubblicando contenuti senza aver prima definito il tuo brand, non fermar
 
 Dedica del tempo a capire chi sei, a chi parli e perché sei diverso. Poi usa queste risposte come filtro per ogni decisione comunicativa che prendi.
 
-Il contenuto smette di essere un'opinione e diventa una scelta coerente.
+Il contenuto smette di essere un'opinione e diventa *una scelta coerente*.
 
 Se vuoi capire come questo principio si applica in pratica, puoi leggere i [servizi che offro](/servizi) o vedere come ho lavorato su alcuni [progetti reali](/lavori).`,
   },
@@ -338,7 +338,7 @@ I competitor che si aggiornano lentamente stanno spostando tempo e risorse sulla
 
 Nel frattempo, la SEO locale rimane sottovalutata da molti. Chi presidia bene il territorio digitale — profilo Google Business ottimizzato, recensioni aggiornate, NAP coerente ovunque, contenuti localizzati sul sito — ha un vantaggio reale su chi non lo fa.
 
-È uno spazio **meno affollato di quanto sembri**.
+È uno spazio **meno affollato di quanto sembri** — *e lo rimarrà ancora per poco*.
 
 ## Cosa funziona oggi
 
@@ -356,7 +356,7 @@ Dalla mia esperienza, i fattori che fanno davvero la differenza:
 
 L'arrivo degli AI Overview sta portando il traffico qualificato ancora più verso i risultati locali. Se qualcuno fa una ricerca informativa e l'AI risponde, quella persona ha già capito cosa vuole. Quando poi cerca il professionista nella sua città, è già pronto a contattare.
 
-**Il funnel si sta accorciando.** Chi presidia bene la SEO locale intercetta persone più vicine alla decisione d'acquisto.
+**Il funnel si sta accorciando.** Chi presidia bene la SEO locale intercetta persone *più vicine alla decisione d'acquisto*.
 
 ## Il punto
 
@@ -394,7 +394,7 @@ Ho visto aziende con profili Instagram da 10.000 follower che non generano nessu
 
 La differenza non è la dimensione del pubblico. È la chiarezza del messaggio e la coerenza tra chi sei, cosa pubblichi e chi stai cercando di raggiungere.
 
-Senza questa chiarezza pubblichi perché "bisogna essere presenti". Pubblichi quello che ti sembra interessante in quel momento. Cambi registro ogni settimana. Insegui i trend senza capire se sono rilevanti per il tuo brand.
+Senza questa chiarezza pubblichi perché "bisogna essere presenti". Pubblichi quello che ti sembra interessante in quel momento. Cambi registro ogni settimana. Insegui i trend *senza capire se sono rilevanti* per il tuo brand.
 
 Il pubblico non capisce cosa sei. Non si ricorda di te. Non ti segue per un motivo preciso.
 
@@ -422,7 +422,7 @@ Essere "presenti" sui social senza una strategia è un costo, non un investiment
 
 Tutto questo costo, senza un ritorno misurabile, genera frustrazione. E spesso porta a smettere proprio quando si stava iniziando a costruire qualcosa.
 
-La differenza tra presenza e strategia è che la seconda ha un obiettivo chiaro, una misura del successo e una logica che connette ogni singolo contenuto a quell'obiettivo.
+La differenza tra presenza e strategia è che la seconda ha *un obiettivo chiaro*, una misura del successo e una logica che connette ogni singolo contenuto a quell'obiettivo.
 
 ## Cosa fare
 
@@ -452,7 +452,7 @@ Il **tono di voce** è il modo in cui un brand comunica verbalmente: le parole c
 
 È l'equivalente verbale dell'identità visiva. Ed è sistematicamente trascurato.
 
-Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, intercambiabile con qualsiasi competitor. Potrebbe scriverlo chiunque — e spesso è esattamente quello che succede: lo scrive chiunque sia disponibile quel giorno.
+Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, intercambiabile con qualsiasi competitor. Potrebbe scriverlo chiunque — e spesso è esattamente quello che succede: lo scrive *chiunque sia disponibile quel giorno*.
 
 ## Perché il tono di voce è il vero differenziatore
 
@@ -496,7 +496,7 @@ Non serve un lavoro enorme. Inizia con tre cose:
 
 Il tono di voce costruisce fiducia nel tempo. Le persone riconoscono il brand, si abituano al suo modo di parlare, si aspettano una certa esperienza.
 
-Quella familiarità — quella sensazione di "questo brand parla come me" — è uno degli asset più duraturi che puoi costruire. Ed è uno dei pochi che non puoi comprare con un aumento del budget advertising.
+Quella familiarità — quella sensazione di *«questo brand parla come me»* — è uno degli asset più duraturi che puoi costruire. Ed è uno dei pochi che non puoi comprare con un aumento del budget advertising.
 
 La definizione del tono di voce fa parte del lavoro che svolgo nella [Brand Strategy](/servizi). Se vuoi capire come funziona nel concreto, puoi partire da lì.`,
   },
