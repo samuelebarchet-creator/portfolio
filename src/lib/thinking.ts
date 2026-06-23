@@ -43,7 +43,7 @@ Prendi la tua inserzione. Leggila come se non sapessi nulla del tuo brand. Rispo
 
 Un messaggio efficace parte dal problema del cliente, non dalle caratteristiche del prodotto. "Hai un negozio fisico ma non sai come portare clienti online?" È diretto. È specifico. Parla a qualcuno che si riconosce in quel problema.
 
-Più il messaggio è preciso, più l'algoritmo trova le persone giuste — perché chi risponde è esattamente il tuo cliente ideale.
+**Più il messaggio è preciso, più l'algoritmo trova le persone giuste — perché chi risponde è esattamente il tuo cliente ideale.**
 
 ## Stai ottimizzando per la metrica sbagliata
 
@@ -71,7 +71,7 @@ Una volta che hai un messaggio preciso, l'obiettivo giusto e una landing page ch
 
 Ho lavorato su una campagna di lead generation dove il costo per lead era quasi tre volte il benchmark di settore. Non abbiamo aumentato il budget. Abbiamo riscritto il copy, cambiato il formato (da statico a video breve di 15 secondi), allineato la landing page al messaggio dell'inserzione. Il CPL è sceso del 73% in sei settimane — con lo stesso identico budget di partenza.
 
-L'efficienza non viene dai soldi. Viene dalla coerenza tra messaggio, creatività e destinazione.
+**L'efficienza non viene dai soldi. Viene dalla coerenza tra messaggio, creatività e destinazione.**
 
 ## Da dove iniziare
 
@@ -131,7 +131,7 @@ La SEO tradizionale ottimizza per gli algoritmi di ranking di Google: link, auto
 
 La GEO ottimizza per il modo in cui i modelli linguistici selezionano, valutano e citano le fonti quando generano una risposta. Le logiche sono diverse — e spesso opposte.
 
-**Per la SEO conta avere tanti link in entrata. Per la GEO conta essere citato da fonti che i modelli considerano autorevoli.** Non basta un sito tecnicamente ottimizzato: serve una reputazione distribuita, coerente, citabile.
+**Per la SEO conta avere tanti link in entrata. Per la GEO conta essere citato da fonti che i modelli considerano autorevoli.** **Non basta un sito tecnicamente ottimizzato: serve una reputazione distribuita, coerente, citabile.**
 
 ## Il problema concreto delle PMI
 
@@ -240,7 +240,7 @@ La strategia più efficace nel 2026 usa entrambe, con priorità diverse:
 
 In Italia, la GEO è ancora un territorio poco presidiato. La maggior parte delle agenzie e dei professionisti parla ancora solo di SEO.
 
-Chi costruisce autorevolezza citabile adesso — contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI — ha un vantaggio che tra due anni sarà molto più costoso da recuperare.
+**Chi costruisce autorevolezza citabile adesso — contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI — ha un vantaggio che tra due anni sarà molto più costoso da recuperare.**
 
 È *la stessa opportunità* che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
 
@@ -278,7 +278,7 @@ Quando manca un posizionamento chiaro, ogni decisione comunicativa diventa un'op
 
 Nel lungo periodo questo crea confusione. Le persone non capiscono cosa rappresenta il brand, non riescono a ricordarlo, non si fidano.
 
-La **fiducia si costruisce sulla coerenza**. La coerenza si costruisce sulla chiarezza. La chiarezza viene prima dei contenuti.
+**La fiducia si costruisce sulla coerenza. La coerenza si costruisce sulla chiarezza. La chiarezza viene prima dei contenuti.**
 
 ## Il punto di partenza giusto
 
@@ -356,7 +356,7 @@ Dalla mia esperienza, i fattori che fanno davvero la differenza:
 
 L'arrivo degli AI Overview sta portando il traffico qualificato ancora più verso i risultati locali. Se qualcuno fa una ricerca informativa e l'AI risponde, quella persona ha già capito cosa vuole. Quando poi cerca il professionista nella sua città, è già pronto a contattare.
 
-**Il funnel si sta accorciando.** Chi presidia bene la SEO locale intercetta persone *più vicine alla decisione d'acquisto*.
+**Il funnel si sta accorciando. Chi presidia bene la SEO locale intercetta persone più vicine alla decisione d'acquisto.**
 
 ## Il punto
 
@@ -458,7 +458,7 @@ Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, 
 
 Il tuo logo può assomigliare ad altri. I tuoi colori sono scelti da migliaia di brand. Il tuo prodotto può essere replicato.
 
-**Il modo in cui parli è più difficile da copiare.** Perché è una scelta culturale. Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.
+**Il modo in cui parli è più difficile da copiare. Perché è una scelta culturale. Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.** Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.
 
 Pensa ai brand che riconosci anche solo dal testo, senza vedere il logo. Quella riconoscibilità verbale è costruita nel tempo attraverso un tono consistente. Non è un caso. È una scelta.
 

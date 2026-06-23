@@ -45,9 +45,9 @@ function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
   const tokens = text.split(/(\*\*\[[^\]]+\]\([^)]+\)\*\*|\*\*.*?\*\*|\*[^*\n]+\*|\[[^\]]+\]\([^)]+\))/g);
   return tokens.map((token, j) => {
     const boldLink = token.match(/^\*\*\[([^\]]+)\]\(([^)]+)\)\*\*$/);
-    if (boldLink) return <Link key={`${keyPrefix}-${j}`} href={boldLink[2]} className="font-semibold text-green underline underline-offset-2 hover:no-underline">{boldLink[1]}</Link>;
+    if (boldLink) return <Link key={`${keyPrefix}-${j}`} href={boldLink[2]} className="font-bold text-green underline underline-offset-2 hover:no-underline">{boldLink[1]}</Link>;
     const bold = token.match(/^\*\*(.*)\*\*$/);
-    if (bold) return <strong key={`${keyPrefix}-${j}`} className="font-semibold text-ink">{bold[1]}</strong>;
+    if (bold) return <strong key={`${keyPrefix}-${j}`} className="font-bold text-ink">{bold[1]}</strong>;
     const italic = token.match(/^\*([^*\n]+)\*$/);
     if (italic) return <em key={`${keyPrefix}-${j}`}>{italic[1]}</em>;
     const link = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
@@ -68,6 +68,26 @@ function renderContent(content: string) {
           {block.slice(3)}
         </h2>
       );
+    }
+    // Standalone bold block → callout visuale con Playfair italic
+    if (block.startsWith('**') && block.endsWith('**')) {
+      const inner = block.slice(2, -2);
+      if (!inner.includes('**')) {
+        return (
+          <p
+            key={i}
+            className="font-display font-black italic text-ink leading-snug"
+            style={{
+              fontFamily: 'var(--font-playfair)',
+              fontSize: 'clamp(1.1rem, 1.5vw, 1.35rem)',
+              borderLeft: '3px solid rgba(61,92,53,0.45)',
+              paddingLeft: '1.25rem',
+            }}
+          >
+            {inner}
+          </p>
+        );
+      }
     }
     return (
       <p

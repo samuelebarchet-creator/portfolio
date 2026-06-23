@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 const barlow = Barlow({
   variable: "--font-barlow",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const barlowCondensed = Barlow_Condensed({
