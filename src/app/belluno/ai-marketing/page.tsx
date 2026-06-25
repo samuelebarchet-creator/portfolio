@@ -169,7 +169,7 @@ export default function AIMarketingBellunoPage() {
                 L'AI Marketing non significa delegare tutto a un chatbot. Significa usare strumenti di intelligenza artificiale generativa per <strong className="font-semibold text-ink">velocizzare la produzione</strong> di contenuti e campagne, mantenendo strategia e controllo umano su ogni decisione importante.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Per le PMI del territorio — spesso con un team marketing di una o due persone — questo significa fare con risorse limitate quello che prima richiedeva un'agenzia strutturata.
+                Per le PMI del territorio, spesso con un team marketing di una o due persone, questo significa fare con risorse limitate quello che prima richiedeva un'agenzia strutturata.
               </p>
             </div>
           </div>

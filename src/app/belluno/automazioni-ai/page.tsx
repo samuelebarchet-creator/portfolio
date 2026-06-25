@@ -51,7 +51,7 @@ const ldJson = {
         {
           '@type': 'Question',
           name: 'Servono competenze tecniche per usarle?',
-          acceptedAnswer: { '@type': 'Answer', text: 'No. Mi occupo io della parte tecnica — costruzione, test, messa in produzione. Al team resta un\'interfaccia semplice da usare e una formazione su come funziona, per capire cosa succede dietro le quinte.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'No. Mi occupo io della parte tecnica : costruzione, test, messa in produzione. Al team resta un\'interfaccia semplice da usare e una formazione su come funziona, per capire cosa succede dietro le quinte.' },
         },
         {
           '@type': 'Question',
@@ -168,7 +168,7 @@ export default function AutomazioniAIBellunoPage() {
                 Le automazioni AI non sostituiscono le persone. <strong className="font-semibold text-ink">Liberano tempo</strong> da dedicare a ciò che richiede davvero un giudizio umano: relazioni con i clienti, strategia, decisioni.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Costruisco workflow su misura, partendo da un'analisi dei processi esistenti — non template generici che non si adattano a come lavora davvero la tua azienda.
+                Costruisco workflow su misura, partendo da un'analisi dei processi esistenti. Niente template generici che non si adattano a come lavora davvero la tua azienda.
               </p>
             </div>
           </div>
@@ -240,7 +240,7 @@ export default function AutomazioniAIBellunoPage() {
             <div className="flex flex-col" style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}>
               {([
                 { q: 'Cosa intendi per "automazioni AI"?', a: "Workflow che collegano strumenti diversi (email, CRM, social, foglio di calcolo) e usano l'intelligenza artificiale per eseguire compiti ripetitivi senza intervento manuale: rispondere a richieste comuni, smistare contatti, generare prime bozze di contenuti." },
-                { q: 'Servono competenze tecniche per usarle?', a: "No. Mi occupo io della parte tecnica — costruzione, test, messa in produzione. Al team resta un'interfaccia semplice da usare e una formazione su come funziona, per capire cosa succede dietro le quinte." },
+                { q: 'Servono competenze tecniche per usarle?', a: "No. Mi occupo io della parte tecnica : costruzione, test, messa in produzione. Al team resta un'interfaccia semplice da usare e una formazione su come funziona, per capire cosa succede dietro le quinte." },
                 { q: 'Quali processi si possono automatizzare per primi?', a: 'Di solito si parte da quelli più ripetitivi e a basso rischio: risposte automatiche a richieste frequenti, smistamento lead, generazione di prime bozze per contenuti e report periodici.' },
               ]).map(({ q, a }) => (
                 <div

@@ -146,13 +146,13 @@ export default function GeoBellunoPage() {
             </div>
             <div className="flex flex-col gap-5 lg:pt-2">
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Sempre più persone, anche a Belluno, chiedono direttamente a <strong className="font-semibold text-ink">ChatGPT, Perplexity o Gemini</strong> quale azienda contattare per un servizio, un prodotto, una consulenza. L'AI risponde con un testo — non con dieci link blu.
+                Sempre più persone, anche a Belluno, chiedono direttamente a <strong className="font-semibold text-ink">ChatGPT, Perplexity o Gemini</strong> quale azienda contattare per un servizio, un prodotto, una consulenza. L'AI risponde con un testo, non con dieci link blu.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
                 Se la tua azienda non viene citata in quella risposta, semplicemente <strong className="font-semibold text-ink">non esiste</strong> per quella persona, in quel momento.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                La GEO — Generative Engine Optimization — è la disciplina che si occupa esattamente di questo: aumentare la probabilità che i modelli AI citino il tuo brand quando rispondono. Sul territorio bellunese, quasi nessuno se ne occupa ancora.
+                La GEO (Generative Engine Optimization) è la disciplina che si occupa esattamente di questo: aumentare la probabilità che i modelli AI citino il tuo brand quando rispondono. Sul territorio bellunese, quasi nessuno se ne occupa ancora.
               </p>
               <p className="mt-2">
                 <Link href="/thinking/geo-vs-seo" className="text-green underline underline-offset-2 hover:no-underline" style={{ fontFamily: 'var(--font-barlow)' }}>
@@ -191,9 +191,9 @@ export default function GeoBellunoPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: 'Audit di citabilità', body: "Verifico come ChatGPT, Perplexity e Gemini descrivono oggi la tua azienda — se lo fanno — e quali fonti usano per farlo." },
+                { title: 'Audit di citabilità', body: "Verifico come ChatGPT, Perplexity e Gemini descrivono oggi la tua azienda (se lo fanno) e quali fonti usano per farlo." },
                 { title: 'Struttura e contenuti', body: "Lavoro su FAQ, dati strutturati (schema.org) e contenuti specifici che i modelli AI possano leggere, capire e citare correttamente." },
-                { title: 'Presenza esterna e monitoraggio', body: "Costruisco autorevolezza fuori dal tuo sito — menzioni, articoli, LinkedIn — e monitoro i progressi con Citationrate." },
+                { title: 'Presenza esterna e monitoraggio', body: "Costruisco autorevolezza fuori dal tuo sito (menzioni, articoli, LinkedIn) e monitoro i progressi con Citationrate." },
               ].map(({ title, body }, i) => (
                 <div
                   key={title}

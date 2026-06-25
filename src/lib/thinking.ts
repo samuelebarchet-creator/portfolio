@@ -15,7 +15,7 @@ export const thinkingPosts: ThinkingPost[] = [
     slug: 'meta-ads-non-convertono',
     title: 'Perché le tue campagne Meta non convertono (e non è colpa del budget)',
     excerpt:
-      'Aumenti il budget, i risultati non cambiano. Aumenti ancora, idem. Il problema quasi mai è quanto spendi — è cosa stai amplificando. Una lettura pratica su dove si rompe la catena.',
+      'Aumenti il budget, i risultati non cambiano. Aumenti ancora, idem. Il problema quasi mai è quanto spendi: è cosa stai amplificando. Una lettura pratica su dove si rompe la catena.',
     category: 'Digital Marketing',
     readTime: '7 min',
     date: '2026-06-20',
@@ -25,9 +25,9 @@ Il problema non è il budget. Il problema è che il budget stai amplificando qua
 
 ## Meta è un amplificatore, non un generatore di domanda
 
-Questo è il malinteso fondamentale. Meta Ads non crea interesse dove non c'è. Porta il tuo messaggio davanti a persone che potrebbero essere interessate — ma se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
+Questo è il malinteso fondamentale. Meta Ads non crea interesse dove non c'è. Porta il tuo messaggio davanti a persone che potrebbero essere interessate. Se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
 
-L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico — età, interessi, comportamenti — conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce *chi risponde*, chi clicca, chi compra.
+L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico (età, interessi, comportamenti) conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce *chi risponde*, chi clicca, chi compra.
 
 **In pratica: la tua creatività è il tuo targeting.**
 
@@ -35,7 +35,7 @@ Se mostri un'inserzione e risponde un certo tipo di persona, il sistema impara d
 
 ## Il messaggio che parla a tutti non parla a nessuno
 
-Il primo posto dove guardare quando una campagna non funziona non è il pubblico — è il messaggio.
+Il primo posto dove guardare quando una campagna non funziona non è il pubblico: è il messaggio.
 
 Prendi la tua inserzione. Leggila come se non sapessi nulla del tuo brand. Risponde a un problema specifico di una persona specifica? O è una dichiarazione su chi sei e cosa fai?
 
@@ -43,7 +43,7 @@ Prendi la tua inserzione. Leggila come se non sapessi nulla del tuo brand. Rispo
 
 Un messaggio efficace parte dal problema del cliente, non dalle caratteristiche del prodotto. "Hai un negozio fisico ma non sai come portare clienti online?" È diretto. È specifico. Parla a qualcuno che si riconosce in quel problema.
 
-**Più il messaggio è preciso, più l'algoritmo trova le persone giuste — perché chi risponde è esattamente il tuo cliente ideale.**
+**Più il messaggio è preciso, più l'algoritmo trova le persone giuste. Chi risponde è esattamente il tuo cliente ideale.**
 
 ## Stai ottimizzando per la metrica sbagliata
 
@@ -51,9 +51,9 @@ Secondo errore classico: scegliere l'obiettivo sbagliato al momento della creazi
 
 Meta ti chiede cosa vuoi ottenere: traffico, visualizzazioni, lead, acquisti. Molti scelgono traffico perché costa meno e i numeri sembrano migliori. CPM basso, tanti clic, tanta gente sul sito. Poi però nessuno compra, nessuno lascia il contatto, e il problema sembra il sito o l'offerta.
 
-Il problema è a monte. Stai ottimizzando per la metrica sbagliata. Meta porta traffico quando chiedi traffico. Ma chi clicca su un'inserzione ottimizzata per traffico non è necessariamente qualcuno disposto ad acquistare — è qualcuno *disposto a cliccare*. L'algoritmo sa esattamente cosa stai cercando e lo trova.
+Il problema è a monte. Stai ottimizzando per la metrica sbagliata. Meta porta traffico quando chiedi traffico. Ma chi clicca su un'inserzione ottimizzata per traffico non è necessariamente qualcuno disposto ad acquistare: è qualcuno *disposto a cliccare*. L'algoritmo sa esattamente cosa stai cercando e lo trova.
 
-**Ottimizza sempre per l'azione che vuoi che le persone facciano.** Se vuoi lead, usa l'obiettivo lead generation con il form nativo di Meta. Se vuoi acquisti, usa conversioni con il pixel configurato correttamente e gli eventi di acquisto tracciati. Costa di più a breve termine, ma il sistema impara a trovare persone che effettivamente agiscono — non solo persone che cliccano.
+**Ottimizza sempre per l'azione che vuoi che le persone facciano.** Se vuoi lead, usa l'obiettivo lead generation con il form nativo di Meta. Se vuoi acquisti, usa conversioni con il pixel configurato correttamente e gli eventi di acquisto tracciati. Costa di più a breve termine, ma il sistema impara a trovare persone che effettivamente agiscono, non solo persone che cliccano.
 
 ## Il clic è solo l'inizio
 
@@ -63,13 +63,13 @@ Allineamento significa che chi arriva sulla pagina dopo aver cliccato trova esat
 
 Se l'inserzione parla di uno sconto del 20% e la pagina non lo menziona immediatamente, hai già perso. Se l'inserzione è visivamente moderna e il sito sembra fermo al 2015, hai già perso. Se la call to action dell'inserzione è "scopri di più" ma la pagina chiede subito i dati di pagamento, hai già perso.
 
-Il percorso dall'inserzione alla conversione deve essere *fluido*, coerente, senza attrito. Ogni discontinuità si traduce in abbandono — e in soldi spesi per niente.
+Il percorso dall'inserzione alla conversione deve essere *fluido*, coerente, senza attrito. Ogni discontinuità si traduce in abbandono, e in soldi spesi per niente.
 
 ## Il budget come leva, non come soluzione
 
 Una volta che hai un messaggio preciso, l'obiettivo giusto e una landing page che converte, allora il budget diventa una leva reale. Puoi aumentarlo con ragionevole certezza che i risultati scalino in modo proporzionale.
 
-Ho lavorato su una campagna di lead generation dove il costo per lead era quasi tre volte il benchmark di settore. Non abbiamo aumentato il budget. Abbiamo riscritto il copy, cambiato il formato (da statico a video breve di 15 secondi), allineato la landing page al messaggio dell'inserzione. Il CPL è sceso del 73% in sei settimane — con lo stesso identico budget di partenza.
+Ho lavorato su una campagna di lead generation dove il costo per lead era quasi tre volte il benchmark di settore. Non abbiamo aumentato il budget. Abbiamo riscritto il copy, cambiato il formato (da statico a video breve di 15 secondi), allineato la landing page al messaggio dell'inserzione. Il CPL è sceso del 73% in sei settimane, con lo stesso identico budget di partenza.
 
 **L'efficienza non viene dai soldi. Viene dalla coerenza tra messaggio, creatività e destinazione.**
 
@@ -91,7 +91,7 @@ Il budget viene dopo. Prima si sistema la macchina.`,
     heroImage: '/thinking/ai-comportamento-utenti-2026.jpg',
     heroImageMobile: '/thinking/ai-comportamento-utenti-2026-mobile.jpg',
     excerpt:
-      "Nel 2026 le persone non cercano più solo su Google. Cercano su ChatGPT, Perplexity, Gemini. Il modo in cui i brand vengono trovati — o ignorati — sta cambiando in modo strutturale. Ecco cosa sta succedendo e cosa fare.",
+      "Nel 2026 le persone non cercano più solo su Google. Cercano su ChatGPT, Perplexity, Gemini. Il modo in cui i brand vengono trovati (o ignorati) sta cambiando in modo strutturale. Ecco cosa sta succedendo e cosa fare.",
     category: 'AI & Marketing',
     readTime: '6 min',
     date: '2026-06-14',
@@ -123,13 +123,13 @@ Il problema è che la maggior parte dei brand sta ancora ottimizzando per il vec
 
 ## GEO: il nuovo campo da gioco
 
-Si chiama **GEO — Generative Engine Optimization** — ed è la disciplina che si occupa di ottimizzare la presenza di un brand nelle risposte dei motori generativi: ChatGPT, Perplexity, Gemini, Claude, Copilot.
+Si chiama **GEO (Generative Engine Optimization)** ed è la disciplina che si occupa di ottimizzare la presenza di un brand nelle risposte dei motori generativi: ChatGPT, Perplexity, Gemini, Claude, Copilot.
 
 Non è la morte della SEO. È il suo allargamento obbligatorio.
 
 La SEO tradizionale ottimizza per gli algoritmi di ranking di Google: link, autorità di dominio, keyword density, tempo sul sito, Core Web Vitals.
 
-La GEO ottimizza per il modo in cui i modelli linguistici selezionano, valutano e citano le fonti quando generano una risposta. Le logiche sono diverse — e spesso opposte.
+La GEO ottimizza per il modo in cui i modelli linguistici selezionano, valutano e citano le fonti quando generano una risposta. Le logiche sono diverse, spesso opposte.
 
 **Per la SEO conta avere tanti link in entrata. Per la GEO conta essere citato da fonti che i modelli considerano autorevoli.** **Non basta un sito tecnicamente ottimizzato: serve una reputazione distribuita, coerente, citabile.**
 
@@ -141,7 +141,7 @@ Le PMI, i freelance, i professionisti locali? La maggior parte non sa ancora che
 
 Fai una prova concreta: vai su ChatGPT o Perplexity e cerca il tuo nome, il nome della tua azienda, oppure una domanda che i tuoi clienti potrebbero fare per trovarti. Cosa risponde?
 
-Se non compari — o se compari in modo inesatto — stai già perdendo visibilità su una quota crescente di ricerche.
+Se non compari, o se compari in modo inesatto, stai già perdendo visibilità su una quota crescente di ricerche.
 
 ## Cosa fare adesso
 
@@ -151,7 +151,7 @@ Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cos
 
 **Ottimizza la struttura delle informazioni.** FAQ chiare, dati strutturati (schema.org), titoli descrittivi, credenziali leggibili. I modelli AI estraggono le informazioni in modo diverso da Google: privilegiano la chiarezza strutturale rispetto alla densità di keyword.
 
-**Cura la tua presenza esterna.** LinkedIn, menzioni su siti di settore, articoli guest, interviste. La GEO si costruisce anche — e soprattutto — fuori dal tuo sito. Un brand citato da altri è molto più credibile agli occhi dei modelli generativi rispetto a uno che parla solo di sé stesso.
+**Cura la tua presenza esterna.** LinkedIn, menzioni su siti di settore, articoli guest, interviste. La GEO si costruisce soprattutto fuori dal tuo sito. Un brand citato da altri è molto più credibile agli occhi dei modelli generativi rispetto a uno che parla solo di sé stesso.
 
 **Monitora come vieni percepito.** Questa è la parte che quasi nessuno fa: capire sistematicamente come i principali modelli AI descrivono il tuo brand, in quali contesti ti citano, con quale frequenza.
 
@@ -159,17 +159,17 @@ Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cos
 
 Ho fondato **[Citationrate](https://citationrate.com)** nel gennaio 2026 esattamente per questo motivo: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
 
-Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citation rate — la frequenza con cui un brand viene menzionato nelle risposte AI — è diventata una metrica che chi fa marketing non può più ignorare.
+Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citation rate, ovvero la frequenza con cui un brand viene menzionato nelle risposte AI, è diventata una metrica che chi fa marketing non può più ignorare.
 
 Il mercato della GEO è ancora agli inizi in Italia. Chi costruisce autorevolezza citabile adesso ha un vantaggio reale su chi aspetta che il tema diventi mainstream.
 
-Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi) — o dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).`,
+Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi), oppure dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).`,
   },
   {
     slug: 'geo-vs-seo',
     title: 'GEO vs SEO: differenze e opportunità',
     excerpt:
-      'GEO e SEO non sono la stessa cosa. La SEO ti fa trovare su Google. La GEO ti fa citare da ChatGPT, Perplexity e Gemini. Nel 2026, hai bisogno di entrambe — ma non molti lo sanno ancora.',
+      'GEO e SEO non sono la stessa cosa. La SEO ti fa trovare su Google. La GEO ti fa citare da ChatGPT, Perplexity e Gemini. Nel 2026, hai bisogno di entrambe. Non molti lo sanno ancora.',
     category: 'AI & Marketing',
     readTime: '5 min',
     date: '2026-06-15',
@@ -179,7 +179,7 @@ Se stai lavorando sulla visibilità online della tua azienda e non hai ancora se
 
 ## Cosa significa SEO (e cosa non è più sufficiente)
 
-La SEO — Search Engine Optimization — è la disciplina che ottimizza un sito per apparire nei risultati di Google e degli altri motori di ricerca tradizionali.
+La SEO (Search Engine Optimization) è la disciplina che ottimizza un sito per apparire nei risultati di Google e degli altri motori di ricerca tradizionali.
 
 Per trent'anni ha funzionato così: l'utente digita una query → Google restituisce una lista ordinata di link → l'utente clicca sul risultato più rilevante → visita il sito.
 
@@ -218,7 +218,7 @@ I modelli AI selezionano le fonti da citare sulla base di fattori che la SEO tra
 
 **Presenza esterna coerente.** Menzioni su LinkedIn, articoli di settore, interviste, Wikipedia. I modelli "conoscono" il web che hanno visto durante il training e aggiornano periodicamente.
 
-**Chiarezza dell'identità.** Un brand con un profilo definito — chi è, cosa fa, per chi — è più facile da citare correttamente rispetto a uno generico.
+**Chiarezza dell'identità.** Un brand con un profilo definito (chi è, cosa fa, per chi) è più facile da citare correttamente rispetto a uno generico.
 
 **Struttura dei contenuti.** FAQ chiare, dati strutturati (schema.org), definizioni. I modelli preferiscono fonti facili da leggere e sintetizzare.
 
@@ -240,11 +240,11 @@ La strategia più efficace nel 2026 usa entrambe, con priorità diverse:
 
 In Italia, la GEO è ancora un territorio poco presidiato. La maggior parte delle agenzie e dei professionisti parla ancora solo di SEO.
 
-**Chi costruisce autorevolezza citabile adesso — contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI — ha un vantaggio che tra due anni sarà molto più costoso da recuperare.**
+**Chi costruisce autorevolezza citabile adesso (contenuti specifici, presenza esterna coerente, struttura ottimizzata per i modelli AI) ha un vantaggio che tra due anni sarà molto più costoso da recuperare.**
 
 È *la stessa opportunità* che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
 
-Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi) — in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).`,
+Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi), in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).`,
   },
   {
     slug: 'brand-prima-dei-contenuti',
@@ -324,21 +324,21 @@ La risposta dipende da cosa intendi per SEO. Per i business locali, la risposta 
 
 ## Cosa sta cambiando
 
-Google sta inserendo risposte generate dall'AI in cima ai risultati per molte ricerche informative. "Come funziona il metabolismo", "qual è la capitale della Finlandia", "cos'è il marketing mix" — per questi tipi di query l'AI risponde direttamente e molte persone non cliccano oltre.
+Google sta inserendo risposte generate dall'AI in cima ai risultati per molte ricerche informative. "Come funziona il metabolismo", "qual è la capitale della Finlandia", "cos'è il marketing mix": per questi tipi di query l'AI risponde direttamente e molte persone non cliccano oltre.
 
 Per i business locali, questa dinamica cambia poco.
 
 Quando qualcuno cerca "idraulico a Milano" o "ristorante vicino a me" o "fisioterapista Bologna", Google non risponde con un paragrafo generato dall'AI. Risponde con una mappa, con tre schede Google Business, con risultati locali.
 
-Quella sezione — il **Local Pack** — è ancora pienamente umana e ancora pienamente cliccabile.
+Quella sezione, il **Local Pack**, è ancora pienamente umana e ancora pienamente cliccabile.
 
 ## Perché vale di più adesso
 
 I competitor che si aggiornano lentamente stanno spostando tempo e risorse sulla creazione di contenuti generici, convinti che sia l'unico modo per posizionarsi online.
 
-Nel frattempo, la SEO locale rimane sottovalutata da molti. Chi presidia bene il territorio digitale — profilo Google Business ottimizzato, recensioni aggiornate, NAP coerente ovunque, contenuti localizzati sul sito — ha un vantaggio reale su chi non lo fa.
+Nel frattempo, la SEO locale rimane sottovalutata da molti. Chi presidia bene il territorio digitale (profilo Google Business ottimizzato, recensioni aggiornate, NAP coerente ovunque, contenuti localizzati sul sito) ha un vantaggio reale su chi non lo fa.
 
-È uno spazio **meno affollato di quanto sembri** — *e lo rimarrà ancora per poco*.
+È uno spazio **meno affollato di quanto sembri**, *e lo rimarrà ancora per poco*.
 
 ## Cosa funziona oggi
 
@@ -406,7 +406,7 @@ Prima di decidere se aprire TikTok, se postare tre volte a settimana o se invest
 
 Se non hai una risposta chiara a questa domanda, qualsiasi decisione tattica è prematura.
 
-Se invece hai una risposta — "voglio che capiscano che sono il più competente in questo settore" oppure "voglio che si fidino di me prima ancora di contattarmi" — allora puoi scegliere lo strumento giusto, il formato giusto, il tono giusto.
+Se invece hai una risposta ("voglio che capiscano che sono il più competente in questo settore" oppure "voglio che si fidino di me prima ancora di contattarmi") allora puoi scegliere lo strumento giusto, il formato giusto, il tono giusto.
 
 ## Il social giusto non esiste
 
@@ -452,7 +452,7 @@ Il **tono di voce** è il modo in cui un brand comunica verbalmente: le parole c
 
 È l'equivalente verbale dell'identità visiva. Ed è sistematicamente trascurato.
 
-Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, intercambiabile con qualsiasi competitor. Potrebbe scriverlo chiunque — e spesso è esattamente quello che succede: lo scrive *chiunque sia disponibile quel giorno*.
+Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, intercambiabile con qualsiasi competitor. Potrebbe scriverlo chiunque, e spesso è esattamente quello che succede: lo scrive *chiunque sia disponibile quel giorno*.
 
 ## Perché il tono di voce è il vero differenziatore
 
@@ -488,7 +488,7 @@ Non serve un lavoro enorme. Inizia con tre cose:
 
 **Definisci cosa NON sei.** I confini negativi sono spesso più utili di quelli positivi. Se sai che il tuo brand non è mai condiscendente, non usa gergo tecnico inaccessibile e non finge entusiasmo che non ha, hai già eliminato molte scelte sbagliate.
 
-**Scrivi esempi concreti.** Non solo aggettivi — "siamo diretti, caldi, professionali" — ma frasi reali. "Invece di *Si prega di contattare il nostro servizio assistenza* scriviamo *Scrivici, ti rispondiamo entro 24 ore*."
+**Scrivi esempi concreti.** Non solo aggettivi ("siamo diretti, caldi, professionali") ma frasi reali. "Invece di *Si prega di contattare il nostro servizio assistenza* scriviamo *Scrivici, ti rispondiamo entro 24 ore*."
 
 **Testa con chi scrive davvero.** Il documento di tono di voce deve essere usabile da chi produce i contenuti ogni giorno, non solo da chi lo ha scritto.
 
@@ -496,7 +496,7 @@ Non serve un lavoro enorme. Inizia con tre cose:
 
 Il tono di voce costruisce fiducia nel tempo. Le persone riconoscono il brand, si abituano al suo modo di parlare, si aspettano una certa esperienza.
 
-Quella familiarità — quella sensazione di *«questo brand parla come me»* — è uno degli asset più duraturi che puoi costruire. Ed è uno dei pochi che non puoi comprare con un aumento del budget advertising.
+Quella familiarità, quella sensazione di *«questo brand parla come me»*, è uno degli asset più duraturi che puoi costruire. Ed è uno dei pochi che non puoi comprare con un aumento del budget advertising.
 
 La definizione del tono di voce fa parte del lavoro che svolgo nella [Brand Strategy](/servizi). Se vuoi capire come funziona nel concreto, puoi partire da lì.`,
   },
@@ -514,7 +514,7 @@ Se la tua azienda non compare, hai appena visto in pratica il problema che migli
 
 ## Perché succede
 
-ChatGPT, Perplexity e Gemini non funzionano come Google. Non restituiscono una lista di siti da cui scegliere: generano una risposta sintetica, basata su ciò che il modello "conosce" — i dati di addestramento e, per gli strumenti con accesso al web, le fonti che riesce a recuperare in tempo reale.
+ChatGPT, Perplexity e Gemini non funzionano come Google. Non restituiscono una lista di siti da cui scegliere: generano una risposta sintetica, basata su ciò che il modello "conosce". Ossia i dati di addestramento e, per gli strumenti con accesso al web, le fonti che riesce a recuperare in tempo reale.
 
 Se il tuo brand non è mai stato descritto in modo chiaro da fonti che il modello considera attendibili, semplicemente non ha materiale da cui generare una citazione corretta.
 
@@ -526,7 +526,7 @@ Non puoi "pagare" per apparire in una risposta di ChatGPT come fai con gli Ads s
 
 **1. Scrivi una pagina "Chi siamo" che risponda a domande precise.** Non una descrizione generica ("siamo leader nel settore da 20 anni"), ma fatti verificabili: cosa fai esattamente, per chi, dove operi, da quando. I modelli AI privilegiano informazioni concrete e verificabili rispetto al linguaggio marketing vago.
 
-**2. Aggiungi dati strutturati (schema.org) al tuo sito.** Markup come Organization, LocalBusiness, FAQPage aiutano i sistemi automatici — sia i crawler di Google sia quelli usati per addestrare e aggiornare i modelli AI — a interpretare correttamente chi sei e cosa offri.
+**2. Aggiungi dati strutturati (schema.org) al tuo sito.** Markup come Organization, LocalBusiness, FAQPage aiutano i sistemi automatici (sia i crawler di Google sia quelli usati per addestrare e aggiornare i modelli AI) a interpretare correttamente chi sei e cosa offri.
 
 **3. Costruisci una sezione FAQ reale.** Le domande frequenti, scritte in modo naturale e con risposte dirette, sono uno dei formati che i modelli generativi "leggono" più facilmente quando devono sintetizzare informazioni su un'azienda.
 
@@ -540,7 +540,7 @@ Non è un interruttore che si accende. ChatGPT e gli altri modelli aggiornano pe
 
 ## Come misurarlo
 
-La parte più trascurata: quasi nessuno controlla sistematicamente come viene descritto dai motori AI. Ho fondato **[Citationrate](https://citationrate.com)** proprio per questo: monitorare nel tempo la "citation rate" di un brand — quanto spesso, in che contesto e con quale precisione viene citato da ChatGPT, Perplexity e Gemini.
+La parte più trascurata: quasi nessuno controlla sistematicamente come viene descritto dai motori AI. Ho fondato **[Citationrate](https://citationrate.com)** proprio per questo: monitorare nel tempo la "citation rate" di un brand, ovvero quanto spesso, in che contesto e con quale precisione viene citato da ChatGPT, Perplexity e Gemini.
 
 Senza una misurazione, lavori al buio: non sai se i cambiamenti che fai stanno funzionando o non stanno avendo alcun effetto.
 

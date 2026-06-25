@@ -45,7 +45,7 @@ export const services: Service[] = [
     title: 'GEO Optimization',
     subtitle: 'Essere trovati da Google, ChatGPT e i nuovi motori AI',
     description:
-      'La **GEO — Generative Engine Optimization** — ottimizza la presenza di un brand nelle risposte degli strumenti AI: ChatGPT, Perplexity, Gemini, Google AI Overview.\n\nMentre la SEO ti fa trovare su Google, la GEO ti fa **citare e consigliare dalle AI**, dove sempre più persone cercano informazioni e scelgono i brand. Ho fondato **[Citationrate](https://citationrate.com)** per misurare questa visibilità in modo sistematico.',
+      'La **GEO (Generative Engine Optimization)** ottimizza la presenza di un brand nelle risposte degli strumenti AI: ChatGPT, Perplexity, Gemini, Google AI Overview.\n\nMentre la SEO ti fa trovare su Google, la GEO ti fa **citare e consigliare dalle AI**, dove sempre più persone cercano informazioni e scelgono i brand. Ho fondato **[Citationrate](https://citationrate.com)** per misurare questa visibilità in modo sistematico.',
     deliverables: [
       'Audit SEO e GEO',
       'Struttura dati schema.org',

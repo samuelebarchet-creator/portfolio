@@ -63,7 +63,7 @@ const howItWorks = [
   {
     step: '02',
     title: 'Ci confrontiamo',
-    body: 'Rispondo entro 24 ore. Se ha senso procedere, organizziamo una chiamata conoscitiva — gratuita e senza impegno — per capire meglio il contesto e valutare insieme come posso esserti utile.',
+    body: 'Rispondo entro 24 ore. Se ha senso procedere, organizziamo una chiamata conoscitiva, gratuita e senza impegno, per capire meglio il contesto e valutare insieme come posso esserti utile.',
   },
   {
     step: '03',
