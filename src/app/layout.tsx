@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   twitter: { card: 'summary_large_image', site: '@samuelebarchet' },
+  alternates: {
+    types: { 'application/rss+xml': 'https://www.samuelebarchet.com/feed.xml' },
+  },
 };
 
 export const viewport: Viewport = {
