@@ -45,10 +45,26 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     gsap.ticker.add(tick);
     gsap.ticker.lagSmoothing(0);
 
+    /* Lenis intercepts all wheel events globally. Third-party overlays like
+       iubenda cannot scroll with the trackpad unless we mark their containers
+       with data-lenis-prevent so Lenis hands control back to the browser. */
+    const preventLenisOnIubenda = () => {
+      document.querySelectorAll('[id*="iubenda"], [class*="iubenda"]').forEach((el) => {
+        if (!el.hasAttribute('data-lenis-prevent')) {
+          el.setAttribute('data-lenis-prevent', '');
+        }
+      });
+    };
+
+    const domObserver = new MutationObserver(preventLenisOnIubenda);
+    domObserver.observe(document.body, { childList: true, subtree: true });
+    preventLenisOnIubenda();
+
     return () => {
       lenis.destroy();
       setLenis(null);
       gsap.ticker.remove(tick);
+      domObserver.disconnect();
     };
   }, []);
 
