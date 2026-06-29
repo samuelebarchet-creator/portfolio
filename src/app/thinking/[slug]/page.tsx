@@ -293,8 +293,10 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
             Altri articoli
           </p>
           <div className="flex flex-col gap-4">
-            {thinkingPosts
-              .filter((p) => p.slug !== slug)
+            {[
+              ...thinkingPosts.filter((p) => p.slug !== slug && p.category === post.category),
+              ...thinkingPosts.filter((p) => p.slug !== slug && p.category !== post.category),
+            ]
               .slice(0, 3)
               .map((p) => (
                 <Link
