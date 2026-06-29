@@ -111,6 +111,8 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
   if (!post) notFound();
 
   const url = `https://www.samuelebarchet.com/thinking/${slug}`;
+  const wordCount = post.content.split(/\s+/).filter(Boolean).length;
+  const readMinutes = parseInt(post.readTime, 10);
   const ldJson = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -124,9 +126,20 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
         datePublished: post.date,
         dateModified: post.date,
         author: { '@type': 'Person', '@id': 'https://www.samuelebarchet.com/#person', name: 'Samuele Barchet' },
-        publisher: { '@type': 'Person', '@id': 'https://www.samuelebarchet.com/#person' },
-        mainEntityOfPage: url,
-        keywords: post.category,
+        publisher: {
+          '@type': 'Organization',
+          '@id': 'https://www.samuelebarchet.com/#business',
+          name: 'Samuele Barchet',
+          url: 'https://www.samuelebarchet.com',
+          logo: 'https://www.samuelebarchet.com/logo-boat.png',
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        isPartOf: { '@type': 'Blog', '@id': 'https://www.samuelebarchet.com/thinking', name: 'Thinking — Samuele Barchet', url: 'https://www.samuelebarchet.com/thinking' },
+        articleSection: post.category,
+        keywords: [post.category, 'Samuele Barchet', 'Brand Strategy', 'Digital Marketing', 'AI Marketing'],
+        about: { '@type': 'Thing', name: post.category },
+        wordCount,
+        timeRequired: `PT${readMinutes}M`,
         inLanguage: 'it-IT',
       },
       {
