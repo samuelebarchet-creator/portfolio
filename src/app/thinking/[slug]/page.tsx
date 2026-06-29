@@ -190,7 +190,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
         <div className="max-w-3xl mx-auto relative z-10">
           <Link
             href="/thinking"
-            className="inline-flex items-center gap-2 text-bg/50 hover:text-bg transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-12"
+            className="inline-flex items-center gap-2 text-bg/80 hover:text-bg transition-colors duration-300 font-condensed font-bold uppercase text-xs tracking-[0.3em] mb-12"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             <ArrowLeft />
@@ -200,20 +200,20 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           <div className="flex flex-wrap items-center gap-4 mb-6">
             <span
               className="font-condensed uppercase text-xs tracking-[0.4em]"
-              style={{ color: 'var(--green)', fontFamily: 'var(--font-barlow-condensed)' }}
+              style={{ color: 'var(--orange)', fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {post.category}
             </span>
-            <span className="w-px h-3 bg-bg/20" aria-hidden />
+            <span className="w-px h-3 bg-bg/30" aria-hidden />
             <span
-              className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em]"
+              className="font-condensed font-bold uppercase text-bg/80 text-xs tracking-[0.35em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {formatDate(post.date)}
             </span>
-            <span className="w-px h-3 bg-bg/20" aria-hidden />
+            <span className="w-px h-3 bg-bg/30" aria-hidden />
             <span
-              className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em]"
+              className="font-condensed font-bold uppercase text-bg/80 text-xs tracking-[0.35em]"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {post.readTime} di lettura
@@ -232,7 +232,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           </h1>
 
           <p
-            className="mt-6 text-bg/60 leading-relaxed max-w-xl"
+            className="mt-6 text-bg/80 leading-relaxed max-w-xl font-medium"
             style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}
           >
             {post.excerpt}
