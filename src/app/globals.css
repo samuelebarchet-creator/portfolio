@@ -79,15 +79,9 @@
 ::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--green); }
 
-/* iubenda: z-index sopra la navbar (z-50 = 50) + scroll trackpad */
-[id^="iubenda"]::-webkit-scrollbar,
-[class^="iubenda"]::-webkit-scrollbar,
+/* iubenda: scrollbar nativa (no custom 5px) + z-index sopra navbar (z-50) */
 [id*="iubenda"]::-webkit-scrollbar,
 [class*="iubenda"]::-webkit-scrollbar { width: auto; }
-[id^="iubenda"],
-[class^="iubenda"],
-[id*="iubenda"],
-[class*="iubenda"] { -webkit-overflow-scrolling: touch; }
 #iubenda-iframe-popup-overlay,
 #iubenda-iframe-popup,
 .iubenda-iframe-popup,
