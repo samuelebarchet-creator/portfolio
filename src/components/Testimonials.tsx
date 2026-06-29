@@ -61,7 +61,7 @@ export default function Testimonials() {
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)', background: 'var(--bg)' }}
     >
       <div className="max-w-6xl mx-auto">
-        <Ornament index="05" label="Clienti" className="mb-6" />
+        <Ornament index="04" label="Clienti" className="mb-6" />
 
         <div className="mb-14">
           <h2
@@ -73,12 +73,6 @@ export default function Testimonials() {
           >
             Chi ha lavorato<br />con me
           </h2>
-          <p
-            className="mt-4 text-ink-dim text-sm leading-relaxed"
-            style={{ fontFamily: 'var(--font-barlow)', maxWidth: '36ch' }}
-          >
-            Le parole di chi ha scelto di costruire qualcosa di concreto insieme.
-          </p>
         </div>
 
         <div
@@ -90,21 +84,28 @@ export default function Testimonials() {
               key={name}
               className="bg-bg p-8 md:p-10 flex flex-col gap-6"
             >
-              {/* Quote mark */}
+              {/* Quote mark open */}
               <span
-                className="font-display font-black italic text-green/20 leading-none select-none"
+                className="font-display font-black italic text-green/25 leading-none select-none"
                 style={{ fontFamily: 'var(--font-playfair)', fontSize: '5rem', lineHeight: 0.8 }}
                 aria-hidden
               >
-                "
+                &#8220;
               </span>
 
               {/* Quote text */}
               <p
-                className="text-ink leading-[1.75] flex-1"
-                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(0.95rem, 1.1vw, 1.05rem)' }}
+                className="text-ink leading-[1.8] flex-1 font-medium"
+                style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.15vw, 1.1rem)' }}
               >
                 {quote}
+                <span
+                  className="font-display font-black italic text-green/25 ml-1 align-bottom select-none"
+                  style={{ fontFamily: 'var(--font-playfair)', fontSize: '2.5rem', lineHeight: 0 }}
+                  aria-hidden
+                >
+                  &#8221;
+                </span>
               </p>
 
               {/* Author */}

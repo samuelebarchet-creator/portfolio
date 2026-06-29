@@ -60,7 +60,7 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       </div>
 
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
-        <Ornament index="04" label="Thinking" className="mb-6" />
+        <Ornament index="05" label="Thinking" className="mb-6" />
 
         <div className="mb-4">
           <h2
