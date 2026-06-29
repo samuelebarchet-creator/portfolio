@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { thinkingPosts } from '@/lib/thinking';
@@ -8,10 +8,19 @@ import { formatDate } from '@/lib/utils';
 import Ornament from '@/components/Ornament';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
+const ALL = 'Tutti';
+const categories = [ALL, ...Array.from(new Set(thinkingPosts.map((p) => p.category)))];
+
 export default function ThinkingGrid({ preview = false }: { preview?: boolean } = {}) {
-  const shown = preview ? thinkingPosts.slice(0, 4) : thinkingPosts;
+  const [activeCategory, setActiveCategory] = useState(ALL);
   const sectionRef = useRef<HTMLDivElement>(null);
   const gridRef    = useRef<HTMLDivElement>(null);
+
+  const filtered = preview
+    ? thinkingPosts.slice(0, 4)
+    : activeCategory === ALL
+      ? thinkingPosts
+      : thinkingPosts.filter((p) => p.category === activeCategory);
 
   useEffect(() => {
     const grid = gridRef.current;
@@ -27,6 +36,12 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       }
     );
   }, []);
+
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!grid || preview) return;
+    gsap.fromTo(grid.children, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, stagger: 0.06, ease: 'power2.out' });
+  }, [activeCategory, preview]);
 
   return (
     <section
@@ -56,11 +71,35 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
           </p>
         </div>
 
+        {/* Category filter — only on full page */}
+        {!preview && (
+          <div className="flex flex-wrap gap-2 mb-10">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className="font-condensed uppercase text-xs tracking-[0.3em] px-4 py-2 transition-all duration-200"
+                style={{
+                  fontFamily: 'var(--font-barlow-condensed)',
+                  fontWeight: 700,
+                  border: '1px solid',
+                  borderColor: activeCategory === cat ? 'var(--green)' : 'rgba(61,92,53,0.2)',
+                  color: activeCategory === cat ? 'var(--bg)' : 'var(--ink-dim)',
+                  background: activeCategory === cat ? 'var(--green)' : 'transparent',
+                  cursor: 'pointer',
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        )}
+
         <div
           ref={gridRef}
           className="grid grid-cols-1 md:grid-cols-2 gap-px bg-green/10"
         >
-          {shown.map((post, i) => (
+          {filtered.map((post, i) => (
             <Link
               key={post.slug}
               href={`/thinking/${post.slug}`}
