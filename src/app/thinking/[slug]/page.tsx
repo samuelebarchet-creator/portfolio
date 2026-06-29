@@ -92,8 +92,8 @@ function renderContent(content: string) {
     return (
       <p
         key={i}
-        className="text-ink-dim leading-[1.8]"
-        style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.2vw, 1.1rem)' }}
+        className="text-ink leading-[1.85]"
+        style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1.0625rem, 1.3vw, 1.175rem)', fontWeight: 500, lineHeight: 1.85 }}
       >
         {renderInline(block, String(i))}
       </p>
