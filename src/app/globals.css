@@ -79,7 +79,7 @@
 ::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--green); }
 
-/* iubenda modal: ripristina scroll trackpad (custom scrollbar CSS lo disabilita in WebKit) */
+/* iubenda: z-index sopra la navbar (z-50 = 50) + scroll trackpad */
 [id^="iubenda"]::-webkit-scrollbar,
 [class^="iubenda"]::-webkit-scrollbar,
 [id*="iubenda"]::-webkit-scrollbar,
@@ -87,7 +87,11 @@
 [id^="iubenda"],
 [class^="iubenda"],
 [id*="iubenda"],
-[class*="iubenda"] { -webkit-overflow-scrolling: touch; overflow-y: auto; }
+[class*="iubenda"] { -webkit-overflow-scrolling: touch; }
+#iubenda-iframe-popup-overlay,
+#iubenda-iframe-popup,
+.iubenda-iframe-popup,
+#iubenda-cs-banner { z-index: 9999 !important; }
 
 /* ─── Selection ──────────────────────────────────────────────────────────── */
 ::selection        { background: var(--green); color: var(--bg); }
