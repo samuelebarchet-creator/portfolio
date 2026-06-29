@@ -140,8 +140,8 @@ export default function Contact() {
         </a>
 
         <p
-          className="mt-4 font-condensed text-bg/30 text-xs tracking-[0.25em] uppercase"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          className="mt-4 font-condensed text-xs tracking-[0.25em] uppercase font-bold"
+          style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)' }}
         >
           Rispondo entro 24 ore
         </p>
