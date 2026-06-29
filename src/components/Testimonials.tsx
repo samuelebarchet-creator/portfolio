@@ -42,7 +42,7 @@ const QUOTE_STYLE: React.CSSProperties = {
   fontFamily: 'var(--font-playfair)',
   fontSize: '4.5rem',
   lineHeight: 1,
-  color: 'rgba(61,92,53,0.2)',
+  color: 'rgba(212,113,58,0.4)',
   fontWeight: 900,
   fontStyle: 'italic',
   userSelect: 'none',
@@ -130,13 +130,13 @@ export default function Testimonials() {
                 <div>
                   <p
                     className="font-condensed font-bold uppercase text-ink tracking-[0.2em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.85rem' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '1rem' }}
                   >
                     {name}
                   </p>
                   <p
-                    className="font-condensed text-xs tracking-wide mt-1"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontSize: '0.8rem' }}
+                    className="font-condensed tracking-wide mt-1"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontSize: '0.9rem' }}
                   >
                     {role}
                   </p>
