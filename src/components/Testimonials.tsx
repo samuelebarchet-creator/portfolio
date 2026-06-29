@@ -8,7 +8,7 @@ import Ornament from '@/components/Ornament';
 
 const testimonials = [
   {
-    quote: 'Samuele lo conosco da quando era giovane, con tutto ancora da esprimere. L\'ho coinvolto in progetti, sfide, situazioni — credevo in quello che poteva diventare. Poi ha capito che il marketing e la comunicazione erano il suo terreno, e da lì **si è fatto strada da solo**, con le sue competenze e **una mentalità che pochi hanno**.',
+    quote: 'Samuele lo conosco da quando era giovane, con tutto ancora da esprimere. L\'ho coinvolto in progetti, sfide, situazioni. Credevo in quello che poteva diventare. Poi ha capito che il marketing e la comunicazione erano il suo terreno, e da lì **si è fatto strada da solo**, con le sue competenze e **una mentalità che pochi hanno**.',
     name: 'Mattia Cattapan',
     role: 'Presidente Crossabili & Fondatore Sedut SRL',
     photo: '/testimonials/mattia-cattapan.jpg',
