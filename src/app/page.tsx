@@ -18,6 +18,7 @@ import ClientsBar from '@/components/ClientsBar';
 import CollabGrid from '@/components/CollabGrid';
 import ServicesSection from '@/components/ServicesSection';
 import About from '@/components/About';
+import Testimonials from '@/components/Testimonials';
 import ThinkingGrid from '@/components/ThinkingGrid';
 import Contact from '@/components/Contact';
 
@@ -31,6 +32,7 @@ export default function Page() {
       <CollabGrid />
       <ServicesSection preview />
       <About />
+      <Testimonials />
       <ThinkingGrid preview />
       <Contact />
     </main>

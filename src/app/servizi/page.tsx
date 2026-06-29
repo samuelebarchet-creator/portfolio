@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import ServicesSection from '@/components/ServicesSection';
+import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 
 export const metadata: Metadata = {
@@ -146,6 +147,8 @@ export default function ServiziPage() {
       </section>
 
       <ServicesSection />
+
+      <Testimonials />
 
       {/* FAQ */}
       <section
