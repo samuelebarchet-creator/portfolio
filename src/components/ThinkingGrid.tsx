@@ -50,10 +50,19 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       className="w-full py-28 px-8 md:px-20 relative overflow-hidden"
       style={{ borderTop: '1px solid rgba(61,92,53,0.1)', background: 'var(--bg)' }}
     >
+      <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+        <WarpShadow
+          color="rgba(61, 92, 53, 0.18)"
+          animation={{ scale: 50, speed: 60 }}
+          noise={{ opacity: 0.1, scale: 1.2 }}
+          sizing="fill"
+        />
+      </div>
+
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
         <Ornament index="04" label="Thinking" className="mb-6" />
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">
+        <div className="mb-4">
           <h2
             className="font-display font-black italic text-ink leading-tight"
             style={{
@@ -64,8 +73,8 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
             Idee, riflessioni,<br />cose che ho imparato
           </h2>
           <p
-            className="max-w-xs text-ink-dim text-sm leading-relaxed"
-            style={{ fontFamily: 'var(--font-barlow)' }}
+            className="mt-4 text-ink-dim text-sm leading-relaxed"
+            style={{ fontFamily: 'var(--font-barlow)', maxWidth: '36ch' }}
           >
             Brand, digital, strategia. Quello che penso quando smetto di lavorare.
           </p>
