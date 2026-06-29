@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { gsap } from '@/lib/gsap';
 import { cn } from '@/lib/utils';
+import CalButton, { useCalInit } from '@/components/CalButton';
 
 const links = [
   { label: 'Lavori',   href: '/lavori' },
@@ -102,13 +103,12 @@ export default function Nav() {
         </ul>
 
         {/* CTA desktop */}
-        <a
-          href="/contatti"
+        <CalButton
           className="hidden md:inline-flex items-center gap-2 px-5 py-2 font-condensed text-xs uppercase tracking-[0.2em] text-green border border-green hover:bg-green hover:text-bg transition-all duration-300"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Lavoriamo insieme
-        </a>
+        </CalButton>
 
         {/* Hamburger */}
         <button

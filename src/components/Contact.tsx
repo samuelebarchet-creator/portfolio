@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
 import { WarpShadow } from '@/components/ui/warp-shadow';
+import CalButton from '@/components/CalButton';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -129,6 +130,20 @@ export default function Contact() {
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
+
+        {/* Cal.com booking */}
+        <CalButton
+          className="mt-4 group inline-flex items-center gap-4 px-10 py-4 font-condensed uppercase tracking-[0.28em] text-sm transition-colors duration-300"
+          style={{
+            fontFamily: 'var(--font-barlow-condensed)',
+            border: '1px solid var(--orange)',
+            color: 'var(--orange)',
+            background: 'transparent',
+            cursor: 'pointer',
+          }}
+        >
+          Prenota una call →
+        </CalButton>
 
         {/* Phone */}
         <a
