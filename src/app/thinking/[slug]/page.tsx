@@ -5,6 +5,7 @@ import Link from 'next/link';
 import React from 'react';
 import { getPost, thinkingPosts } from '@/lib/thinking';
 import Contact from '@/components/Contact';
+import ArticleHeroBackground from '@/components/ArticleHeroBackground';
 
 export async function generateStaticParams() {
   return thinkingPosts.map((p) => ({ slug: p.slug }));
@@ -160,8 +161,9 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <div
         className="w-full pt-28 pb-20 px-8 md:px-20 relative overflow-hidden"
-        style={{ background: 'var(--ink)' }}
+        style={{ background: 'radial-gradient(ellipse at 50% 0%, #1e3d18 0%, #0e200b 50%, #060f04 100%)' }}
       >
+        <ArticleHeroBackground />
         {post.heroImage && (
           <>
             <Image
@@ -219,9 +221,8 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           </div>
 
           <h1
-            className="font-display font-black italic leading-[0.9]"
+            className="font-display font-black italic text-bg leading-[0.9]"
             style={{
-              color: 'var(--orange)',
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(2.8rem, 7vw, 6rem)',
               letterSpacing: '-0.03em',
