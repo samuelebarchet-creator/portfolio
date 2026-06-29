@@ -219,7 +219,8 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           </div>
 
           <h1
-            className="font-display font-black italic text-bg leading-[0.9]"
+            className="font-display font-black italic leading-[0.9]"
+            style={{ color: 'var(--orange)' }}
             style={{
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(2.8rem, 7vw, 6rem)',
