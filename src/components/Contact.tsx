@@ -136,8 +136,8 @@ export default function Contact() {
           className="mt-4 group inline-flex items-center gap-4 px-10 py-4 font-condensed uppercase tracking-[0.28em] text-sm transition-colors duration-300"
           style={{
             fontFamily: 'var(--font-barlow-condensed)',
-            border: '1px solid var(--orange)',
-            color: 'var(--orange)',
+            border: '1px solid rgba(245,240,232,0.4)',
+            color: 'var(--bg)',
             background: 'transparent',
             cursor: 'pointer',
           }}
