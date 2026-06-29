@@ -21,11 +21,11 @@ export const thinkingPosts: ThinkingPost[] = [
     date: '2026-06-20',
     content: `Scenario tipico: spendi 500 euro al mese su Meta, i risultati sono deludenti, e la soluzione che ti viene proposta è aumentare il budget. Metti altri 200 euro. I risultati migliorano un po', ma non abbastanza. Metti altri 300. A quel punto stai spendendo mille euro al mese per numeri che dovrebbero costarti la metà.
 
-Il problema non è il budget. Il problema è che il budget stai amplificando qualcosa che non funziona.
+**Il problema non è il budget.** Il problema è che il budget stai amplificando qualcosa che non funziona.
 
 ## Meta è un amplificatore, non un generatore di domanda
 
-Questo è il malinteso fondamentale. Meta Ads non crea interesse dove non c'è. Porta il tuo messaggio davanti a persone che potrebbero essere interessate. Se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
+Questo è il malinteso fondamentale. **Meta Ads non crea interesse dove non c'è.** Porta il tuo messaggio davanti a persone che potrebbero essere interessate. Se il messaggio è sbagliato, il targeting è generico o la pagina di destinazione non converte, nessuna spesa pubblicitaria risolve il problema.
 
 L'algoritmo di Meta è diventato molto bravo a trovare le persone giuste. Così bravo che il targeting demografico classico (età, interessi, comportamenti) conta sempre meno rispetto a qualche anno fa. Quello che conta di più è la creatività. Il formato, il copy, il video, la foto. Perché è dalla creatività che l'algoritmo capisce *chi risponde*, chi clicca, chi compra.
 
@@ -35,13 +35,13 @@ Se mostri un'inserzione e risponde un certo tipo di persona, il sistema impara d
 
 ## Il messaggio che parla a tutti non parla a nessuno
 
-Il primo posto dove guardare quando una campagna non funziona non è il pubblico: è il messaggio.
+Il primo posto dove guardare quando una campagna non funziona non è il pubblico: **è il messaggio.**
 
 Prendi la tua inserzione. Leggila come se non sapessi nulla del tuo brand. Risponde a un problema specifico di una persona specifica? O è una dichiarazione su chi sei e cosa fai?
 
 "Siamo un'azienda specializzata in soluzioni innovative per la comunicazione integrata." È un messaggio. Ma non è rivolto a nessuno in particolare. Non risolve nessun problema. Non crea urgenza. Non motiva nessun clic.
 
-Un messaggio efficace parte dal problema del cliente, non dalle caratteristiche del prodotto. "Hai un negozio fisico ma non sai come portare clienti online?" È diretto. È specifico. Parla a qualcuno che si riconosce in quel problema.
+Un messaggio efficace parte dal **problema del cliente**, non dalle caratteristiche del prodotto. "Hai un negozio fisico ma non sai come portare clienti online?" È diretto. È specifico. Parla a qualcuno che si riconosce in quel problema.
 
 **Più il messaggio è preciso, più l'algoritmo trova le persone giuste. Chi risponde è esattamente il tuo cliente ideale.**
 
@@ -258,7 +258,7 @@ Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la 
 
 Il problema non è la frequenza. Non è la qualità delle immagini. Non è l'algoritmo.
 
-Il problema è che stanno costruendo senza fondamenta.
+**Il problema è che stanno costruendo senza fondamenta.**
 
 ## Il sintomo più comune
 
@@ -272,7 +272,7 @@ Il risultato è quello che vedo ogni giorno: post che cambiano tono settimana pe
 
 ## Cosa succede quando costruisci al contrario
 
-Il contenuto senza brand strategy è rumore. Può sembrare attività, ma non produce direzione.
+**Il contenuto senza brand strategy è rumore.** Può sembrare attività, ma non produce direzione.
 
 Quando manca un posizionamento chiaro, ogni decisione comunicativa diventa un'opinione. "Questo post mi piace" sostituisce "questo post è coerente con chi siamo". Il risultato è un'identità che cambia a seconda di chi è in ufficio quel giorno.
 
@@ -390,9 +390,9 @@ Puoi usare uno strumento senza avere una strategia. Il risultato sarà casuale.
 
 ## Cosa succede senza strategia
 
-Ho visto aziende con profili Instagram da 10.000 follower che non generano nessun contatto commerciale. E ho visto profili da 800 follower che portano clienti ogni mese.
+Ho visto aziende con profili Instagram da 10.000 follower che non generano nessun contatto commerciale. E ho visto profili da 800 follower che **portano clienti ogni mese.**
 
-La differenza non è la dimensione del pubblico. È la chiarezza del messaggio e la coerenza tra chi sei, cosa pubblichi e chi stai cercando di raggiungere.
+La differenza non è la dimensione del pubblico. È **la chiarezza del messaggio** e la coerenza tra chi sei, cosa pubblichi e chi stai cercando di raggiungere.
 
 Senza questa chiarezza pubblichi perché "bisogna essere presenti". Pubblichi quello che ti sembra interessante in quel momento. Cambi registro ogni settimana. Insegui i trend *senza capire se sono rilevanti* per il tuo brand.
 
@@ -418,7 +418,7 @@ Dipende completamente da chi stai cercando di raggiungere. TikTok e LinkedIn non
 
 ## Presenza vs. strategia
 
-Essere "presenti" sui social senza una strategia è un costo, non un investimento. Costa tempo per produrre contenuti, costa energie per gestire i commenti, costa attenzione per stare dietro ai cambiamenti degli algoritmi.
+Essere "presenti" sui social senza una strategia è **un costo, non un investimento.** Costa tempo per produrre contenuti, costa energie per gestire i commenti, costa attenzione per stare dietro ai cambiamenti degli algoritmi.
 
 Tutto questo costo, senza un ritorno misurabile, genera frustrazione. E spesso porta a smettere proprio quando si stava iniziando a costruire qualcosa.
 
@@ -452,13 +452,13 @@ Il **tono di voce** è il modo in cui un brand comunica verbalmente: le parole c
 
 È l'equivalente verbale dell'identità visiva. Ed è sistematicamente trascurato.
 
-Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, intercambiabile con qualsiasi competitor. Potrebbe scriverlo chiunque, e spesso è esattamente quello che succede: lo scrive *chiunque sia disponibile quel giorno*.
+Ho visto brand con identità visive impeccabili che usano un linguaggio piatto, generico, **intercambiabile con qualsiasi competitor.** Potrebbe scriverlo chiunque, e spesso è esattamente quello che succede: lo scrive *chiunque sia disponibile quel giorno*.
 
 ## Perché il tono di voce è il vero differenziatore
 
 Il tuo logo può assomigliare ad altri. I tuoi colori sono scelti da migliaia di brand. Il tuo prodotto può essere replicato.
 
-**Il modo in cui parli è più difficile da copiare. Perché è una scelta culturale. Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.** Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.
+**Il modo in cui parli è più difficile da copiare. Perché è una scelta culturale. Riflette chi siete davvero come organizzazione, come pensate, come vi rapportate con il vostro pubblico.**
 
 Pensa ai brand che riconosci anche solo dal testo, senza vedere il logo. Quella riconoscibilità verbale è costruita nel tempo attraverso un tono consistente. Non è un caso. È una scelta.
 
@@ -476,11 +476,11 @@ Non si tratta solo di essere "formali" o "informali". Il tono di voce è un sist
 
 ## L'errore più comune
 
-Il tono di voce viene definito una volta, scritto in un documento e poi ignorato.
+Il tono di voce viene definito una volta, scritto in un documento e poi **ignorato.**
 
 Il problema è che non può essere delegato a un documento. Deve essere interiorizzato da chi scrive i testi, da chi risponde ai commenti, da chi manda le email commerciali.
 
-Un brand che parla con un tono nei post, un altro nelle email e un altro ancora nelle telefonate di vendita non ha un'identità coerente. Ha tre frammenti di identità che si contraddicono.
+Un brand che parla con un tono nei post, un altro nelle email e un altro ancora nelle telefonate di vendita **non ha un'identità coerente.** Ha tre frammenti di identità che si contraddicono.
 
 ## Come iniziare
 
