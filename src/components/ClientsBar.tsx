@@ -13,6 +13,7 @@ const logos = [
   { src: '/logos/vyst.png', alt: 'Vyst', width: 100, height: 28 },
   { src: '/logos/axis.png', alt: 'Axis', width: 348, height: 144 },
   { src: '/logos/crossabili.png', alt: 'Crossabili by Mattia Cattapan', width: 120, height: 150 },
+  { src: '/logos/allfit.png', alt: 'All Fit', width: 565, height: 600 },
 ];
 
 export default function ClientsBar() {

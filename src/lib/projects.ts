@@ -5,6 +5,11 @@ export type ProjectLink = {
   extra?: { label: string; url: string }[];
 };
 
+export type InstagramEmbed = {
+  url: string;
+  caption: string; // usato come aria-label per accessibilità, l'embed IG non porta alt text
+};
+
 export type Project = {
   slug: string;
   year: string;
@@ -19,6 +24,7 @@ export type Project = {
   color: string;
   logoSrc?: string;
   images?: { src: string; alt?: string; width: number; height: number }[];
+  instagramEmbeds?: InstagramEmbed[];
   links?: ProjectLink;
 };
 
@@ -194,6 +200,92 @@ export const projects: Project[] = [
     links: {
       website: 'https://www.vyst.it/',
       instagram: 'https://www.instagram.com/vyst_video/',
+    },
+  },
+  {
+    slug: 'allfit',
+    year: '2026',
+    company: 'All Fit',
+    role: 'Social Media Manager & Referente Comunicazione',
+    description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come unico referente di comunicazione.',
+    metaDescription: 'Social Media Management e comunicazione per All Fit, catena di palestre in provincia di Belluno. Posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH come unico referente di comunicazione.',
+    tag: 'Fitness · Local Business',
+    fullDescription:
+      "All Fit è una catena di palestre della provincia di Belluno (Belluno, Sedico, Trichiana, con un quarto club a Ponte di Piave in fase di lancio). Come **unico referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
+    deliverables: [
+      'Brand positioning e tone of voice',
+      'Sistema visivo dark-first (Bebas Neue / Acumin Pro)',
+      'Produzione contenuti social ricorrenti e rotazione editoriale mensile',
+      'Copywriting e sceneggiatura video strutturata',
+      'Strategia e produzione lancio nuovo club (Ponte di Piave)',
+      'Gestione Meta Ads e YouTube Ads su tre obiettivi (awareness, lead gen, local belonging)',
+      'Monitoraggio dati via Supermetrics (Meta Ads + GA4)',
+      'Materiali OOH: grafica bus e led wall',
+    ],
+    results: [],
+    color: '#F1E116',
+    logoSrc: '/logos/allfit.png',
+    instagramEmbeds: [
+      {
+        url: 'https://www.instagram.com/p/Dc_YbxvMSFJ/',
+        caption: 'Formato talking-head: intervista con il founder di All Fit',
+      },
+      {
+        url: 'https://www.instagram.com/p/DdJyqYFMc4W/',
+        caption: 'Contenuto social a tema estivo per All Fit',
+      },
+      {
+        url: 'https://www.instagram.com/p/DdTgEkrFYUa/',
+        caption: 'Creatività OOH per led wall — campagna All Fit',
+      },
+    ],
+    links: {
+      website: 'https://all-fit.it/',
+      instagram: 'https://www.instagram.com/allfit_official/',
+      facebook: 'https://www.facebook.com/AllFitYourFamily/',
+      extra: [{ label: 'LinkedIn', url: 'https://www.linkedin.com/company/all-fit-srl/' }],
+    },
+  },
+  {
+    slug: '3d-axis',
+    year: '2026',
+    company: '3D Axis',
+    role: 'Social Media & Content Strategist',
+    description: 'Rivenditore italiano di stampanti 3D: strategia social, copywriting e reportistica performance.',
+    metaDescription: 'Social Media e Content Strategy per 3D Axis, rivenditore italiano di stampanti 3D. Gestione Instagram e Facebook, copywriting, pianificazione editoriale B2C/B2B/scuole e report mensili di performance.',
+    tag: 'E-commerce · Retail',
+    fullDescription:
+      "3D Axis è un rivenditore italiano di stampanti 3D con più punti vendita fisici e vendita online su scala nazionale. Mi occupo della gestione end-to-end di Instagram e Facebook: dall'ideazione dei contenuti — spesso a partire da note vocali o appunti informali — fino alla copy finale pronta per la pubblicazione, con un tone of voice preciso: **\"makers before sellers\"**, diretto, caldo, non commerciale. La pianificazione editoriale copre sia il pubblico B2C (maker privati) sia i segmenti B2B e scuole, con un focus dedicato su carta del docente e bonus docenti. Il lavoro include anche il customer care sui social e la reportistica mensile delle performance.",
+    deliverables: [
+      'Strategia social e produzione contenuti Instagram/Facebook',
+      'Copywriting: script video, caption, carousel',
+      'Pianificazione editoriale strutturata (pillar tematici, hook, KPI)',
+      'Content per pubblico B2C, B2B e scuole (carta del docente)',
+      'Customer care social',
+      'Report mensili di performance (breakdown per post, confronti mese su mese)',
+    ],
+    results: [],
+    color: '#FC7825', // arancione brand; alternativa viola #9066A8
+    logoSrc: '/logos/axis.png',
+    instagramEmbeds: [
+      {
+        url: 'https://www.instagram.com/p/DZZHn-eIh4Y/',
+        caption: 'Contenuto Instagram per 3D Axis — stampa 3D e community maker',
+      },
+      {
+        url: 'https://www.instagram.com/p/Dclvg8jjd63/',
+        caption: 'Contenuto Instagram per 3D Axis — stampa 3D e community maker',
+      },
+      {
+        url: 'https://www.instagram.com/p/DcEVnl3iY4T/',
+        caption: 'Contenuto Instagram per 3D Axis — stampa 3D e community maker',
+      },
+    ],
+    links: {
+      website: 'https://3daxis.it/',
+      instagram: 'https://www.instagram.com/3daxis.shop/',
+      facebook: 'https://www.facebook.com/3daxis.shop/',
+      extra: [{ label: 'LinkedIn', url: 'https://it.linkedin.com/company/3daxis' }],
     },
   },
 ];

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import type { Project } from '@/lib/projects';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Contact from '@/components/Contact';
+import InstagramEmbed from '@/components/InstagramEmbed';
 
 /* Parse **bold** markers and break at sentence boundaries */
 function renderText(text: string) {
@@ -37,6 +38,17 @@ const IconFB = () => (
     <path d="M13.5 8a5.5 5.5 0 1 0-6.375 5.438V10H5.5V8h1.625V6.625C7.125 5.012 8.075 4.125 9.538 4.125c.7 0 1.462.125 1.462.125V5.75h-.825c-.813 0-1.05.503-1.05 1.019V8H11l-.281 2H9.125v3.438A5.502 5.502 0 0 0 13.5 8Z" stroke="currentColor" strokeWidth="1.1" strokeLinejoin="round"/>
   </svg>
 );
+
+const IconLinkedIn = () => (
+  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+    <rect x="1.5" y="1.5" width="13" height="13" rx="2" stroke="currentColor" strokeWidth="1.3"/>
+    <path d="M5 7v4.5M5 4.6v.2M8 11.5V7M8 8.8c0-1.1.8-1.8 1.8-1.8S11.5 7.7 11.5 8.8v2.7" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+  </svg>
+);
+
+/* Pick a dedicated icon for known extra links, fall back to the globe */
+const iconForLabel = (label: string) =>
+  /linkedin/i.test(label) ? <IconLinkedIn /> : <IconWeb />;
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -188,8 +200,20 @@ export default function ProjectClient({ project }: { project: Project }) {
         </div>
       </div>
 
-      {/* ══ IMAGE STRIP ═════════════════════════════════════════════════════ */}
-      {project.images && project.images.length > 0 && (
+      {/* ══ INSTAGRAM EMBEDS ════════════════════════════════════════════════ */}
+      {project.instagramEmbeds && project.instagramEmbeds.length > 0 ? (
+        <div className="w-full px-8 md:px-20 py-12">
+          {/* IG embeds are vertical/square: 1 col on mobile, 3 on desktop */}
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            {project.instagramEmbeds.map(({ url, caption }) => (
+              <InstagramEmbed key={url} url={url} caption={caption} />
+            ))}
+          </div>
+        </div>
+      ) : (
+
+      /* ══ IMAGE STRIP ═════════════════════════════════════════════════════ */
+      project.images && project.images.length > 0 && (
         <div
           className="w-full md:overflow-x-auto"
           style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
@@ -215,7 +239,7 @@ export default function ProjectClient({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-      )}
+      ))}
 
       {/* ══ MAIN CONTENT ════════════════════════════════════════════════════ */}
       <div
@@ -341,7 +365,7 @@ export default function ProjectClient({ project }: { project: Project }) {
                     className="flex items-center gap-3 font-condensed text-ink-dim tracking-wide hover:text-ink transition-colors duration-200"
                     style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.95rem' }}
                   >
-                    <span style={{ color: project.color }}><IconWeb /></span>
+                    <span style={{ color: project.color }}>{iconForLabel(label)}</span>
                     {label}
                   </a>
                 ))}
