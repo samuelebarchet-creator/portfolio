@@ -12,6 +12,76 @@ export type ThinkingPost = {
 
 export const thinkingPosts: ThinkingPost[] = [
   {
+    slug: 'marketing-palestra-belluno-caso-allfit',
+    title: 'Come fare marketing per una palestra: il caso All Fit',
+    excerpt:
+      'La maggior parte delle palestre fa marketing come se fosse ancora il 2015: sconti e basta. Il caso All Fit mostra cosa cambia quando posizionamento, tono di voce e contenuti lavorano insieme, anche in un mercato piccolo come quello di Belluno.',
+    category: 'Social Media',
+    readTime: '6 min',
+    date: '2026-09-15',
+    content: `Chi gestisce una palestra, in quasi tutti i casi, fa marketing con due leve: lo sconto sull'iscrizione e il volantino. Funziona, ma ha un limite chiaro: attira chi cerca il prezzo più basso, non chi cerca quella palestra specifica. Con All Fit, catena di palestre tra Belluno, Sedico e Trichiana (con un quarto club in apertura a Ponte di Piave), abbiamo lavorato sul problema opposto: costruire un motivo per scegliere All Fit che non fosse il prezzo.
+
+## Il posizionamento prima del contenuto
+
+Il punto di partenza non è stato "cosa postiamo questa settimana", ma una domanda più scomoda: perché uno dovrebbe iscriversi qui e non nella palestra a 5 minuti di distanza? La risposta che abbiamo costruito insieme alla proprietà è stata **"Accessibile, non low cost"**: un posizionamento che rifiuta sia l'estetica da palestra economica sia quella intimidatoria da bodybuilding hardcore. Prima si decide questo, poi si scrive il resto. Fare il contrario, produrre contenuti e sperare che un'identità emerga da sola, è l'errore più comune che vedo, non solo nel fitness.
+
+Da questo posizionamento sono derivate scelte concrete: un tono di voce anti-scusa e incoraggiante (mai "dai su, puoi farcela" da coach motivazionale, piuttosto diretto e senza fronzoli), e un sistema visivo dark-first con giallo acido, una scelta che distingue immediatamente i contenuti All Fit da qualunque altra palestra della zona che scorra nel feed.
+
+## Chi mostri conta quanto cosa dici
+
+Nel fitness locale, il contenuto che funziona meglio non è quello patinato, è quello riconoscibile. Per All Fit questo si traduce in due formati ricorrenti: talking-head con il founder e interviste agli istruttori. Non sono contenuti "prodotti", sono conversazioni vere con la telecamera in mezzo, ed è esattamente il motivo per cui funzionano meglio di uno spot patinato: chi vive a Belluno o Sedico probabilmente conosce di persona chi parla nel video, o lo incrocerà in palestra. Questo è un vantaggio che un'agenzia esterna, senza rapporto diretto con lo staff, fatica a replicare.
+
+## Il paid media non sostituisce la strategia, la amplifica
+
+Per il lancio del quarto club (Ponte di Piave) abbiamo strutturato le campagne Meta e YouTube su tre obiettivi distinti, non uno generico "fai vedere il post a più gente possibile": local awareness (far sapere che sta aprendo), lead gen pre-apertura (raccogliere contatti prima che apra), local belonging (far sentire la community esistente parte del progetto). **Tre obiettivi diversi richiedono creatività diverse**: usare lo stesso contenuto per tutti e tre è lo spreco di budget più comune che vedo nelle PMI locali. Il monitoraggio via Supermetrics (incrociando Meta Ads e GA4) serve proprio a capire quale dei tre sta effettivamente portando risultati, non solo impressioni.
+
+## Anche l'offline ha bisogno di un concept, non solo di uno spazio
+
+Un dettaglio che spesso si sottovaluta: i materiali OOH (la grafica sul bus della linea Belluno–Trichiana, il led wall) non sono la stessa grafica del post Instagram ingrandita. Un formato che deve essere letto in due secondi dal finestrino di un autobus in movimento richiede un concept diverso: leggibilità immediata, niente fotorealismo che si perde a distanza, un messaggio solo. Trattare l'OOH come "riciclo del contenuto social" è un altro errore frequente.
+
+## Cosa portare via se non gestisci una palestra
+
+Il principio vale oltre il fitness, per qualunque business locale: **decidi prima cosa ti distingue da chi ti sta a due isolati di distanza, poi costruisci contenuti coerenti con quella scelta**, non il contrario. E se il tuo pubblico è locale, le persone che mostri nei contenuti sono un asset di marketing tanto quanto la grafica.
+
+Il progetto completo è nel [case study All Fit](/projects/allfit).`,
+  },
+  {
+    slug: 'social-media-ecommerce-locale-caso-3daxis',
+    title: 'Social media per un e-commerce locale: il caso 3D Axis',
+    excerpt:
+      'Vendere online e avere un negozio fisico allo stesso tempo significa parlare a pubblici diversi con lo stesso account social. Il caso 3D Axis mostra come tenere insieme maker privati, scuole e aziende senza disperdere il messaggio.',
+    category: 'Digital Marketing',
+    readTime: '6 min',
+    date: '2026-09-15',
+    content: `Un rivenditore di stampanti 3D con negozi fisici e vendita online in tutta Italia ha un problema che molti e-commerce locali condividono: il suo pubblico non è uno, sono almeno tre. Ci sono i maker privati che comprano un filamento per un progetto personale, ci sono le scuole che cercano stampanti per la didattica (spesso tramite carta del docente), e ci sono le aziende che valutano un acquisto B2B. Gestire i social di 3D Axis significa parlare a tutti e tre senza che nessuno dei tre si senta ignorato, e senza tre account diversi, che per una PMI è quasi sempre insostenibile.
+
+## Un tono di voce che regge su pubblici diversi
+
+La scelta di fondo per 3D Axis è stata **"makers before sellers"**: diretto, caldo, non commerciale. Non è uno slogan da ufficio marketing, è un filtro pratico che si applica a ogni singolo contenuto: se un post suona come una scheda prodotto, si riscrive. Questo tono funziona proprio perché non è specifico di un pubblico: un maker privato e un insegnante di tecnologia rispondono allo stesso modo a un tono onesto e non patinato, anche se cercano cose diverse.
+
+## Partire da una nota vocale, non da un brief
+
+Un dettaglio operativo che vale la pena raccontare perché è replicabile da chiunque gestisca contenuti per un piccolo team: il processo con 3D Axis parte quasi sempre da un'idea grezza, una nota vocale o un appunto informale di chi lavora in negozio ogni giorno, che poi viene trasformata in copy finale. Chi vive il prodotto e il cliente ogni giorno (il tecnico che fa le riparazioni, chi risponde al telefono) ha spesso l'intuizione migliore per un contenuto, anche se non sa scriverla in forma di post. **Il lavoro di chi gestisce i social, in questi casi, è tradurre quell'intuizione, non inventarne una nuova da zero.**
+
+## Un piano editoriale con pillar, non un calendario di post a caso
+
+Per tenere insieme pubblici diversi senza disperdere il messaggio, la pianificazione segue pillar tematici distinti (contenuto tecnico, storytelling del team, novità prodotto, contenuto educativo per le scuole), ciascuno con hook e obiettivi propri, tracciati in un foglio di lavoro strutturato con numerazione progressiva. Non è burocrazia fine a se stessa: è quello che permette di rispondere alla domanda "abbiamo parlato abbastanza alle scuole questo mese, o solo ai maker privati?" senza doverlo indovinare a occhio scorrendo il profilo.
+
+## Il customer care è comunicazione, non assistenza
+
+Le risposte ai commenti social, informali, dirette, con qualche emoji quando ha senso, mai eccessivamente formali, non sono "gestione ticket": sono contenuto tanto quanto un post. Chiunque legga i commenti sotto un post vede anche come l'azienda risponde, e quella risposta comunica il brand tanto quanto la caption sopra.
+
+## Misurare in modo che il team capisca, non solo chi fa marketing
+
+I report mensili di performance non si fermano ai numeri grezzi dell'export Meta: includono un confronto mese su mese e una sintesi in linguaggio semplice, pensata per chi in azienda non mastica gergo da marketer. **Un report che solo chi l'ha scritto sa leggere è un report che nessuno usa per decidere davvero qualcosa.**
+
+## Cosa portare via se il tuo pubblico è "diviso" tra privati e aziende
+
+Non serve moltiplicare gli account, serve un tono abbastanza onesto da reggere su pubblici diversi e un piano editoriale che tenga traccia consapevolmente di chi stai raggiungendo, non solo di cosa stai pubblicando.
+
+Il progetto completo è nel [case study 3D Axis](/projects/3d-axis).`,
+  },
+  {
     slug: 'meta-ads-non-convertono',
     title: 'Perché le tue campagne Meta non convertono (e non è colpa del budget)',
     excerpt:
