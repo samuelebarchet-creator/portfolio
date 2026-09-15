@@ -77,6 +77,11 @@ const ldJson = {
           "name": "Lavori solo in Italia?",
           "acceptedAnswer": { "@type": "Answer", "text": "Principalmente sì, ma collaboro anche con brand italiani che operano in mercati internazionali. Le sessioni di lavoro si svolgono in italiano, in presenza o da remoto." },
         },
+        {
+          "@type": "Question",
+          "name": "Lavori anche a Milano e Belluno, o solo da remoto?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sono basato tra Milano e Belluno e lavoro sia in presenza con brand e aziende locali, sia da remoto con clienti in tutta Italia." },
+        },
       ],
     },
   ],
@@ -112,7 +117,7 @@ export default function ServiziPage() {
             className="text-ink-dim leading-relaxed"
             style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.15rem)' }}
           >
-            Lavoro con aziende, professionisti e organizzazioni che hanno qualcosa di importante da offrire ma hanno bisogno di una strategia più chiara per comunicarlo.{' '}
+            Lavoro con aziende, professionisti e organizzazioni che hanno qualcosa di importante da offrire ma hanno bisogno di una strategia più chiara per comunicarlo. Opero principalmente tra Milano e Belluno, e da remoto in tutta Italia.{' '}
             <Link href="/about" className="text-green underline underline-offset-2 hover:no-underline">Scopri chi sono</Link> o guarda i{' '}
             <Link href="/lavori" className="text-green underline underline-offset-2 hover:no-underline">lavori realizzati</Link>.
           </p>
@@ -195,6 +200,10 @@ export default function ServiziPage() {
               {
                 q: 'Lavori solo in Italia?',
                 a: "Principalmente sì, ma collaboro anche con brand italiani che operano in mercati internazionali. Le sessioni si svolgono in italiano, in presenza o da remoto.",
+              },
+              {
+                q: 'Lavori anche a Milano e Belluno, o solo da remoto?',
+                a: 'Sono basato tra Milano e Belluno e lavoro sia in presenza con brand e aziende locali, sia da remoto con clienti in tutta Italia.',
               },
             ]).map(({ q, a }) => (
               <div

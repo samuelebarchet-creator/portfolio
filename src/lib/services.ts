@@ -22,7 +22,7 @@ export const services: Service[] = [
       'Tone of voice',
       'Piano di comunicazione strategico',
     ],
-    forWho: 'Brand in fase di lancio, crescita o riposizionamento strategico.',
+    forWho: 'Brand in fase di lancio, crescita o riposizionamento strategico, a Milano, Belluno e in tutta Italia.',
   },
   {
     id: 'ai-marketing',
@@ -38,7 +38,7 @@ export const services: Service[] = [
       'Copywriting',
       'Analytics e reporting mensile',
     ],
-    forWho: 'Aziende che vogliono comunicare meglio e crescere online usando gli strumenti AI in modo strategico.',
+    forWho: 'Aziende che vogliono comunicare meglio e crescere online usando gli strumenti AI in modo strategico, a Milano, Belluno e in tutta Italia.',
   },
   {
     id: 'geo-optimization',
@@ -54,7 +54,7 @@ export const services: Service[] = [
       'llms.txt e AI-readiness',
       'Monitoraggio citation rate',
     ],
-    forWho: 'Brand e aziende che vogliono essere trovati sia su Google che dai nuovi motori di ricerca AI.',
+    forWho: 'Brand e aziende che vogliono essere trovati sia su Google che dai nuovi motori di ricerca AI, a Milano, Belluno e in tutta Italia.',
   },
   {
     id: 'formazione-ai',
@@ -70,7 +70,7 @@ export const services: Service[] = [
       'Consulenza continuativa',
       'Coordinamento fornitori e collaboratori',
     ],
-    forWho: 'PMI, team marketing e professionisti che vogliono adottare l\'AI in modo concreto e misurabile.',
+    forWho: 'PMI, team marketing e professionisti che vogliono adottare l\'AI in modo concreto e misurabile, in aula a Milano e Belluno o da remoto in tutta Italia.',
   },
 ];
 
