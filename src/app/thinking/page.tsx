@@ -12,7 +12,9 @@ export const metadata: Metadata = {
     title: 'Idee su Brand, Digital e Strategia — Samuele Barchet',
     description: 'Articoli e riflessioni su brand, digital e strategia.',
     url: 'https://www.samuelebarchet.com/thinking',
+    images: [{ url: '/thinking/hero.jpg', width: 1728, height: 972, alt: 'Idee su brand, digital e strategia — Samuele Barchet' }],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 const ldJson = {
@@ -50,6 +52,7 @@ export default function ThinkingPage() {
         finalClipPercentage={100}
         heroLabel="Idee & riflessioni"
         heroTitle="Pensieri che vanno a fondo"
+        imageAlt="Ritratto vintage di una donna sorridente coperto da una finestra di dialogo Windows 95: “Vulnerability detected — Warning! You are about to connect deeply”"
       />
 
       <ThinkingGrid />

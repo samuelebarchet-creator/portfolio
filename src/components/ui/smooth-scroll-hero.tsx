@@ -20,6 +20,12 @@ interface SmoothScrollHeroProps {
   mobileTitleLower?: boolean;
   /** Background color behind the image (fills any offset gap above/below) */
   bgColor?: string;
+  /**
+   * Text description of the hero image. The image is a CSS background (the
+   * scroll clip/zoom needs it), so there is no <img alt> to hang it on —
+   * this is exposed to screen readers and crawlers via an sr-only node.
+   */
+  imageAlt?: string;
 }
 
 const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
@@ -187,11 +193,13 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
   mobilePosition,
   mobileTitleLower,
   bgColor,
+  imageAlt,
 }) => (
   <div
     style={{ height: `calc(${scrollHeight}px + 100dvh)` }}
     className="relative w-full max-md:!h-[100dvh]"
   >
+    {imageAlt && <span className="sr-only">{imageAlt}</span>}
     <SmoothScrollHeroBackground
       scrollHeight={scrollHeight}
       desktopImage={desktopImage}

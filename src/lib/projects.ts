@@ -44,11 +44,11 @@ export const projects: Project[] = [
     color: '#C1392B',
     logoSrc: '/logos/braghes.png',
     images: [
-      { src: '/projects/braghes/braghes-1.jpg', alt: "Braghe's – lifestyle shot", width: 1066, height: 1600 },
-      { src: '/projects/braghes/braghes-2.jpg', alt: "Braghe's – dettaglio etichetta", width: 1066, height: 1600 },
-      { src: '/projects/braghes/braghes-3.jpg', alt: "Braghe's – team", width: 1600, height: 1066 },
-      { src: '/projects/braghes/braghes-4.jpg', alt: "Braghe's – modella", width: 1066, height: 1600 },
-      { src: '/projects/braghes/braghes-5.jpg', alt: "Braghe's – outdoor", width: 1600, height: 1066 },
+      { src: '/projects/braghes/braghes-1.jpg', alt: "Uomo in carrozzina con jeans Braghe's, appoggiato al portone di un edificio storico", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-2.jpg', alt: "Dettaglio dell'etichetta rossa Braghe's cucita sui jeans di una persona seduta in carrozzina", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-3.jpg', alt: "Tre persone in carrozzina con t-shirt Braghe's, affiancate in un capannone luminoso", width: 1600, height: 1066 },
+      { src: '/projects/braghes/braghes-4.jpg', alt: "Ragazza in carrozzina che indossa t-shirt Braghe's e jeans, ritratta in interno", width: 1066, height: 1600 },
+      { src: '/projects/braghes/braghes-5.jpg', alt: "Un uomo spinge la carrozzina di una ragazza lungo il viale di un parco; sui jeans di lei l'etichetta rossa Braghe's", width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://braghes.sedutosrl.com/',
@@ -76,10 +76,10 @@ export const projects: Project[] = [
     results: [],
     color: '#3D5C35',
     images: [
-      { src: '/projects/rc/rc-1.jpg', alt: 'RC – atleta in carrozzina', width: 1600, height: 1066 },
-      { src: '/projects/rc/rc-2.jpg', alt: 'RC – meccanico con ricambi', width: 1600, height: 1066 },
-      { src: '/projects/rc/rc-3.jpg', alt: 'RC – cerchi per carrozzina', width: 1600, height: 1066 },
-      { src: '/projects/rc/rc-4.jpg', alt: 'RC – community', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-1.jpg', alt: "Uomo in carrozzina sorridente che porge un componente verso l'obiettivo, davanti a un muro con murale geometrico", width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-2.jpg', alt: 'Meccanico in carrozzina con salopette da lavoro accanto a un carrello porta-attrezzi rosso', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-3.jpg', alt: 'Uomo in carrozzina che regge due cerchi di ricambio per carrozzina, uno per mano, davanti a un murale colorato', width: 1600, height: 1066 },
+      { src: '/projects/rc/rc-4.jpg', alt: 'Tre persone in carrozzina affiancate su un piazzale alberato, ritratte insieme', width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://ricambicarrozzine.it/',
@@ -159,11 +159,11 @@ export const projects: Project[] = [
     color: '#3D5C35',
     logoSrc: '/logos/crossabili.png',
     images: [
-      { src: '/projects/crossabili/crossabili-1.jpg', alt: 'CROSSabili – evento Mask to Ride', width: 1600, height: 1066 },
-      { src: '/projects/crossabili/crossabili-2.jpg', alt: 'CROSSabili – show', width: 1600, height: 1067 },
-      { src: '/projects/crossabili/crossabili-3.jpg', alt: 'CROSSabili – stunt', width: 1600, height: 1066 },
-      { src: '/projects/crossabili/crossabili-4.jpg', alt: 'CROSSabili – esperienza', width: 1600, height: 1067 },
-      { src: '/projects/crossabili/crossabili-5.jpg', alt: 'CROSSabili – action', width: 1600, height: 1066 },
+      { src: '/projects/crossabili/crossabili-1.jpg', alt: 'Pilota in sella a una moto adattata a tre ruote durante un evento CROSSabili', width: 1600, height: 1066 },
+      { src: '/projects/crossabili/crossabili-2.jpg', alt: 'Volontari CROSSabili aiutano un ragazzo a salire su una moto adattata durante una giornata di prove', width: 1600, height: 1067 },
+      { src: '/projects/crossabili/crossabili-3.jpg', alt: 'Stuntman in impennata su una moto davanti al pubblico di un evento CROSSabili', width: 1600, height: 1066 },
+      { src: '/projects/crossabili/crossabili-4.jpg', alt: 'Due motociclisti salutano il pubblico dalla sella durante un evento CROSSabili', width: 1600, height: 1067 },
+      { src: '/projects/crossabili/crossabili-5.jpg', alt: 'Moto adattata in impennata controluce davanti agli spettatori di un evento CROSSabili', width: 1600, height: 1066 },
     ],
     links: {
       website: 'https://www.crossabili.it/',

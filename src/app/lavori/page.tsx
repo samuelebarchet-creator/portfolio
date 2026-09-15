@@ -14,7 +14,9 @@ export const metadata: Metadata = {
     title: 'Progetti di Brand Strategy e Comunicazione — Samuele Barchet',
     description: "Progetti di brand strategy e comunicazione digitale seguiti da Samuele Barchet.",
     url: 'https://www.samuelebarchet.com/lavori',
+    images: [{ url: '/lavori/hero.jpg', width: 1920, height: 1080, alt: 'Progetti di brand strategy e comunicazione — Samuele Barchet' }],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function LavoriPage() {
@@ -71,6 +73,7 @@ export default function LavoriPage() {
         finalClipPercentage={100}
         heroLabel="Lavori"
         heroTitle="Il valore si costruisce a mano"
+        imageAlt="Una persona riversa su una scrivania piena di libri accanto a un vecchio monitor, sopra la scritta “He did everything manually”"
         desktopPosition="center 96px"
         bgColor="#b1b1b2"
       />

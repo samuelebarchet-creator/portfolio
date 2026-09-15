@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet',
     description: 'Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI. Consulenza su misura per brand e organizzazioni.',
     url: 'https://www.samuelebarchet.com/servizi',
-    images: [{ url: '/servizi/hero.jpg', width: 1200, height: 630, alt: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet' }],
+    images: [{ url: '/servizi/hero.jpg', width: 1728, height: 972, alt: 'Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet' }],
   },
   twitter: { card: 'summary_large_image' },
 };
@@ -96,6 +96,7 @@ export default function ServiziPage() {
         finalClipPercentage={100}
         heroLabel="Servizi"
         heroTitle="Dove la strategia mette radici"
+        imageAlt="Una scrivania con computer degli anni ’90 e sedia da ufficio, immersa nel sottobosco di una foresta attraversata dalla luce"
       />
 
       {/* Intro */}

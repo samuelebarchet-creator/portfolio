@@ -1,6 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      // Apex → www. Vercel already does this when www is the Primary domain;
+      // kept here so the canonical host holds on any other host setup too.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'samuelebarchet.com' }],
+        destination: 'https://www.samuelebarchet.com/:path*',
+        statusCode: 301,
+      },
+    ];
+  },
   async headers() {
     return [
       {

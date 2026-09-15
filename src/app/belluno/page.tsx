@@ -118,7 +118,7 @@ export default function BellunoPage() {
         <div className="relative w-full overflow-hidden" style={{ minHeight: '100svh' }}>
           {/* Immagine desktop */}
           <Image
-            src="/belluno/hero-desktop.png"
+            src="/belluno/hero-desktop.jpg"
             alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority
@@ -127,7 +127,7 @@ export default function BellunoPage() {
           />
           {/* Immagine mobile */}
           <Image
-            src="/belluno/hero-mobile.png"
+            src="/belluno/hero-mobile.jpg"
             alt="Alpinisti in salita tra i seracchi delle Dolomiti"
             fill
             priority

@@ -92,6 +92,7 @@ export default function AboutPage() {
         finalClipPercentage={100}
         heroLabel="About"
         heroTitle="Dalle montagne al mondo del digital"
+        imageAlt="Panoramica delle cime dolomitiche sopra la valle bellunese, con boschi in primo piano e nuvole sulle vette"
       />
 
       {/* ── Portrait + identity ────────────────────────────────────────────── */}

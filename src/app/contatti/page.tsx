@@ -12,7 +12,9 @@ export const metadata: Metadata = {
     title: 'Contatti — Samuele Barchet',
     description: 'Contatta Samuele Barchet, Brand & Digital Strategist freelance.',
     url: 'https://www.samuelebarchet.com/contatti',
+    images: [{ url: '/contatti/hero.jpg', width: 1920, height: 1071, alt: 'Contatta Samuele Barchet, Brand & Digital Strategist freelance' }],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 const ldJson = {
@@ -85,6 +87,7 @@ export default function ContattiPage() {
           finalClipPercentage={100}
           heroLabel="Parliamone"
           heroTitle="A un solo squillo di distanza"
+          imageAlt="Una cornetta telefonica verde lime appesa al suo filo a spirale contro un cielo azzurro, accanto alla scritta “Nice!”"
           desktopPosition="center 40%"
           mobileTitleLower
         />
