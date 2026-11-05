@@ -36,6 +36,15 @@ export default function CustomCursor() {
     /* Start offscreen, then follow: dot snaps fast, ring trails for the
        elastic feel (replaces the two framer-motion springs). */
     gsap.set([dot, ring], { x: -100, y: -100 });
+    /* Position stays 0,0 until the mouse moves: hold the rAF loop so the
+       cursor doesn't sit in the top-left corner on load. */
+    let moved = false;
+    const onFirstMove = () => {
+      moved = true;
+      gsap.set(dot, { opacity: 1 });
+      gsap.set(ring, { opacity: 0.7 });
+    };
+    window.addEventListener('mousemove', onFirstMove, { once: true });
     const dotX = gsap.quickTo(dot, 'x', { duration: 0.12, ease: 'power3' });
     const dotY = gsap.quickTo(dot, 'y', { duration: 0.12, ease: 'power3' });
     const ringX = gsap.quickTo(ring, 'x', { duration: 0.5, ease: 'power3' });
@@ -43,11 +52,13 @@ export default function CustomCursor() {
 
     let raf: number;
     const tick = () => {
-      const { x, y } = positionRef.current;
-      dotX(x - DOT_SIZE / 2);
-      dotY(y - DOT_SIZE / 2);
-      ringX(x - RING_SIZE / 2);
-      ringY(y - RING_SIZE / 2);
+      if (moved) {
+        const { x, y } = positionRef.current;
+        dotX(x - DOT_SIZE / 2);
+        dotY(y - DOT_SIZE / 2);
+        ringX(x - RING_SIZE / 2);
+        ringY(y - RING_SIZE / 2);
+      }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
@@ -89,6 +100,7 @@ export default function CustomCursor() {
 
     return () => {
       document.documentElement.style.cursor = '';
+      window.removeEventListener('mousemove', onFirstMove);
       cancelAnimationFrame(raf);
       observer.disconnect();
     };
@@ -101,7 +113,7 @@ export default function CustomCursor() {
       <div
         ref={dotRef}
         className="fixed top-0 left-0 z-[2147483647] pointer-events-none rounded-full"
-        style={{ width: DOT_SIZE, height: DOT_SIZE, background: 'var(--green)' }}
+        style={{ width: DOT_SIZE, height: DOT_SIZE, background: 'var(--green)', opacity: 0 }}
       />
       <div
         ref={ringRef}
@@ -112,7 +124,7 @@ export default function CustomCursor() {
           borderWidth: 1,
           borderStyle: 'solid',
           borderColor: 'rgba(61,92,53,0.5)',
-          opacity: 0.7,
+          opacity: 0,
         }}
       />
     </>

@@ -97,6 +97,25 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ─── Load-time entrances: CSS so they run from the first paint, before hydration ─ */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes nav-enter {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter   { animation: fade-in 0.35s ease-out backwards; }
+.nav-enter    { animation: nav-enter 0.6s ease-out backwards 0.1s; }
+.shader-enter { width: 100%; height: 100%; animation: fade-in 1.2s ease-out backwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter,
+  .nav-enter,
+  .shader-enter { animation: none; }
+}
+
 /* ─── Marquee keyframes (WorkMarquee) ────────────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }

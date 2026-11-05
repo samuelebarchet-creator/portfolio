@@ -1,24 +1,5 @@
-'use client';
-
-import { useEffect, useRef } from 'react';
-import { gsap } from '@/lib/gsap';
-
+/* CSS, not JS: the fade must start with the first paint. A hydration-time
+   animation hides content the visitor is already looking at. */
 export default function Template({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    gsap.set(el, { opacity: 0, y: 14 });
-    gsap.to(el, {
-      opacity: 1,
-      y: 0,
-      duration: 0.45,
-      ease: 'power2.out',
-      clearProps: 'transform,opacity',
-    });
-  }, []);
-
-  return <div ref={ref}>{children}</div>;
+  return <div className="page-enter">{children}</div>;
 }

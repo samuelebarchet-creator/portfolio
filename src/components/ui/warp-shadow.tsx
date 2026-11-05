@@ -72,6 +72,7 @@ export function WarpShadow({
       }}
     >
       {inView && (
+        <div className="shader-enter">
         <Warp
           style={{ width: '100%', height: '100%' }}
           proportion={0.42}
@@ -86,6 +87,7 @@ export function WarpShadow({
           speed={speed}
           colors={['#080D08', '#3D5C35', '#6A8A5E', '#8FB87A']}
         />
+        </div>
       )}
     </div>
   );

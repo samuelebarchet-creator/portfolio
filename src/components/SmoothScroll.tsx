@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Lenis from '@studio-freight/lenis';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
@@ -10,8 +10,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const previousPath = useRef(pathname);
 
   useEffect(() => {
+    /* Route changes only: on load the browser restores the scroll position or
+       jumps to the #hash, and resetting it here would visibly undo that. */
+    if (previousPath.current === pathname) return;
+    previousPath.current = pathname;
+
     /* Lenis keeps its own internal scroll offset across client-side route
        changes, so a new page can render already "scrolled" to wherever the
        previous page left off instead of at the top. */

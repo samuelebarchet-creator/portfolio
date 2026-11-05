@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { gsap } from '@/lib/gsap';
 import { cn } from '@/lib/utils';
 import CalButton, { useCalInit } from '@/components/CalButton';
@@ -15,19 +16,9 @@ const links = [
 ];
 
 export default function Nav() {
-  const navRef  = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen]         = useState(false);
-
-  /* Entrance animation */
-  useEffect(() => {
-    gsap.fromTo(
-      navRef.current,
-      { y: -20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', delay: 0.3 }
-    );
-  }, []);
 
   /* Scroll state */
   useEffect(() => {
@@ -56,8 +47,7 @@ export default function Nav() {
   return (
     <>
       <nav
-        ref={navRef}
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 h-16 transition-all duration-500"
+        className="nav-enter fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 h-16 transition-all duration-500"
         style={{
           background: 'rgba(245,240,232,0.96)',
           borderBottom: scrolled ? '1px solid rgba(61,92,53,0.15)' : '1px solid rgba(61,92,53,0.07)',
@@ -65,7 +55,7 @@ export default function Nav() {
         }}
       >
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="flex items-center gap-2.5 select-none hover:opacity-70 transition-opacity duration-300"
           aria-label="Samuele Barchet"
@@ -84,7 +74,7 @@ export default function Nav() {
           >
             Samuele Barchet
           </span>
-        </a>
+        </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">

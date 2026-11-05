@@ -2,16 +2,12 @@
 
 import { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { gsap } from '@/lib/gsap';
 import { Warp } from '@paper-design/shaders-react';
 
 export default function HeroVerde() {
   const sectionRef  = useRef<HTMLElement>(null);
   const boatRef     = useRef<HTMLDivElement>(null);
-  const labelRef    = useRef<HTMLParagraphElement>(null);
   const taglineRef  = useRef<HTMLHeadingElement>(null);
-  const nameRef     = useRef<HTMLParagraphElement>(null);
-  const ctaRef      = useRef<HTMLDivElement>(null);
   // Warp disabled on mobile — too heavy for old devices / iOS Safari
   const [showWarp, setShowWarp] = useState(false);
 
@@ -40,6 +36,8 @@ export default function HeroVerde() {
     const ro = new ResizeObserver(measure);
     ro.observe(section);
     ro.observe(tagline);
+    // The tagline slides in, so the first measure is offset until it settles
+    tagline.addEventListener('animationend', measure);
 
     const reduced =
       typeof window !== 'undefined' &&
@@ -48,7 +46,11 @@ export default function HeroVerde() {
       boatEl.style.left = `${cx}px`;
       boatEl.style.top  = `${cy - ry}px`;
       boatEl.style.transform = 'translate(-50%, -50%)';
-      return () => ro.disconnect();
+      boatEl.style.opacity = '0.95';
+      return () => {
+        ro.disconnect();
+        tagline.removeEventListener('animationend', measure);
+      };
     }
 
     const ORBIT_SECONDS = 22;
@@ -65,28 +67,14 @@ export default function HeroVerde() {
       boatEl.style.left      = `${x}px`;
       boatEl.style.top       = `${y}px`;
       boatEl.style.transform = `translate(-50%,-50%) translateY(${bob}px) scaleX(${flip}) rotate(${flip * -1.5}deg)`;
+      boatEl.style.opacity   = '0.95';
       raf = requestAnimationFrame(tick);
     }
-    return () => { cancelAnimationFrame(raf); ro.disconnect(); };
-  }, []);
-
-  /* Entrance animations */
-  useEffect(() => {
-    const label   = labelRef.current;
-    const tagline = taglineRef.current;
-    const name    = nameRef.current;
-    const cta     = ctaRef.current;
-    if (!label || !tagline || !name || !cta) return;
-
-    // CSS animation handles opacity (reliable on all browsers).
-    // GSAP adds y-slide enhancement; if it fails, text is still visible.
-    const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    tl.from(label,   { y: -16, duration: 0.7, clearProps: 'transform' }, 0.4);
-    tl.from(tagline, { y: 70,  duration: 1.0, clearProps: 'transform' }, 0.6);
-    tl.from(name,    { y: 20,  duration: 0.7, clearProps: 'transform' }, 1.3);
-    tl.from(cta,     { y: 16,  duration: 0.7, clearProps: 'transform' }, 1.55);
-
-    return () => { tl.kill(); };
+    return () => {
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+      tagline.removeEventListener('animationend', measure);
+    };
   }, []);
 
   return (
@@ -100,7 +88,7 @@ export default function HeroVerde() {
     >
       {/* Warp shader — desktop only (mobile gets gradient bg, better perf) */}
       {showWarp && (
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 pointer-events-none shader-enter">
           <Warp
             style={{ width: '100%', height: '100%' }}
             proportion={0.44}
@@ -135,7 +123,7 @@ export default function HeroVerde() {
           top: 0, left: 0, zIndex: 5,
           width: 'clamp(48px, 5vw, 72px)',
           filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.5))',
-          opacity: 0.95,
+          opacity: 0, // revealed once positioned on its orbit, not at the corner
         }}
       >
         <Image src="/boat-sailing.png" alt="" width={413} height={385} priority className="w-full h-auto" />
@@ -147,7 +135,6 @@ export default function HeroVerde() {
         style={{ zIndex: 10, paddingTop: 'calc(var(--nav-h, 64px) + 5rem)', paddingBottom: '5rem' }}
       >
         <p
-          ref={labelRef}
           className="font-condensed uppercase text-xs tracking-[0.55em] mb-12"
           style={{
             color: 'var(--orange)',
@@ -177,7 +164,6 @@ export default function HeroVerde() {
         <div className="my-9 h-px w-14" style={{ background: 'rgba(212,113,58,0.55)' }} />
 
         <p
-          ref={nameRef}
           className="font-condensed uppercase tracking-[0.45em] text-sm"
           style={{
             color: 'rgba(245,240,232,0.60)',
@@ -189,7 +175,6 @@ export default function HeroVerde() {
         </p>
 
         <div
-          ref={ctaRef}
           className="flex items-center gap-4 mt-12"
           style={{ animation: 'hero-fade-up 0.7s ease-out both 1.55s' }}
         >

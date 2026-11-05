@@ -124,7 +124,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           {/* Back */}
           <Link
             href="/lavori"
-            className="hero-tag inline-flex items-center gap-2 text-bg/50 hover:text-bg transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-12 opacity-0"
+            className="hero-tag opacity-0 inline-flex items-center gap-2 text-bg/50 hover:text-bg transition-colors duration-300 font-condensed uppercase text-xs tracking-[0.3em] mb-12 opacity-0"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             <ArrowLeft />
