@@ -181,6 +181,13 @@ export default function BellunoPage() {
                 >
                   I miei servizi →
                 </Link>
+                <Link
+                  href="/belluno/audit-geo"
+                  className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                >
+                  Audit GEO gratuito →
+                </Link>
               </div>
             </div>
           </div>

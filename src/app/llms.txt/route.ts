@@ -53,6 +53,7 @@ Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il 
 - [Consulenza per il territorio bellunese](${BASE}/belluno): marketing digitale e AI per aziende e professionisti della provincia e delle Dolomiti
 - [AI Marketing a Belluno](${BASE}/belluno/ai-marketing): contenuti, campagne e automazioni con l'AI per PMI locali
 - [GEO Optimization a Belluno](${BASE}/belluno/geo): citabilità del brand in ChatGPT, Perplexity e Gemini
+- [Audit GEO gratuito](${BASE}/belluno/audit-geo): verifica di presenza e accuratezza nei motori AI per aziende della provincia di Belluno
 - [Automazioni AI a Belluno](${BASE}/belluno/automazioni-ai): flussi automatizzati per marketing, CRM e operazioni
 
 ## Articoli (Thinking)

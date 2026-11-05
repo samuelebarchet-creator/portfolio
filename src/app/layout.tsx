@@ -8,6 +8,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
+import LeadTracking from "@/components/LeadTracking";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -222,6 +223,7 @@ Samuele Barchet è disponibile per collaborazioni con aziende e organizzazioni i
 Sito ufficiale: https://www.samuelebarchet.com
 -->` }} />
         <Analytics />
+        <LeadTracking />
         <CustomCursor />
         <ScrollProgress />
         <SmoothScroll>

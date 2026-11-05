@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import SmoothScrollHero from '@/components/ui/smooth-scroll-hero';
 import Contact from '@/components/Contact';
+import LeadForm from '@/components/LeadForm';
 import { about } from '@/lib/about';
 
 export const metadata: Metadata = {
@@ -205,6 +206,19 @@ export default function ContattiPage() {
             >
               Guarda i progetti →
             </Link>
+          </div>
+        </section>
+
+        {/* ── Modulo ─────────────────────────────────────────────────────────── */}
+        <section className="w-full px-8 md:px-20 py-24" style={{ background: 'var(--bg-alt)' }}>
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className="font-display font-black italic text-ink leading-tight mb-10"
+              style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', letterSpacing: '-0.02em' }}
+            >
+              Raccontami il tuo progetto
+            </h2>
+            <LeadForm source="contatti" />
           </div>
         </section>
 

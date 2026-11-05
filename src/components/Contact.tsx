@@ -145,6 +145,17 @@ export default function Contact() {
           Prenota una call →
         </CalButton>
 
+        {/* WhatsApp */}
+        <a
+          href={`https://wa.me/393420269217?text=${encodeURIComponent('Ciao Samuele, ho visto il tuo sito e vorrei parlarti di un progetto.')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 font-condensed text-bg/60 text-sm tracking-[0.25em] uppercase hover:text-bg/90 transition-colors duration-300"
+          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+        >
+          Scrivimi su WhatsApp
+        </a>
+
         {/* Phone */}
         <a
           href={`tel:+393420269217`}
