@@ -207,11 +207,11 @@ export const projects: Project[] = [
     year: '2026',
     company: 'All Fit',
     role: 'Social Media Manager & Referente Comunicazione',
-    description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come unico referente di comunicazione.',
-    metaDescription: 'Social Media Management e comunicazione per All Fit, catena di palestre in provincia di Belluno. Posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH come unico referente di comunicazione.',
+    description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come referente di comunicazione.',
+    metaDescription: 'Social Media Management e comunicazione per All Fit, catena di palestre in provincia di Belluno. Posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH come referente di comunicazione.',
     tag: 'Fitness · Local Business',
     fullDescription:
-      "All Fit è una catena di palestre della provincia di Belluno (Belluno, Sedico, Trichiana, con un quarto club a Ponte di Piave in fase di lancio). Come **unico referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
+      "All Fit è una catena di palestre della provincia di Belluno (Belluno, Sedico, Trichiana, con un quarto club a Ponte di Piave in fase di lancio). Come **referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
     deliverables: [
       'Brand positioning e tone of voice',
       'Sistema visivo dark-first (Bebas Neue / Acumin Pro)',
