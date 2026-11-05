@@ -1,19 +1,13 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { Warp } from '@paper-design/shaders-react';
+import AdaptiveWarp from '@/components/ui/adaptive-warp';
 
 export default function HeroVerde() {
   const sectionRef  = useRef<HTMLElement>(null);
   const boatRef     = useRef<HTMLDivElement>(null);
   const taglineRef  = useRef<HTMLHeadingElement>(null);
-  // Warp disabled on mobile — too heavy for old devices / iOS Safari
-  const [showWarp, setShowWarp] = useState(false);
-
-  useEffect(() => {
-    setShowWarp(window.matchMedia('(min-width: 768px)').matches);
-  }, []);
 
   /* Boat orbit — identical logic to HeroOcean */
   useEffect(() => {
@@ -86,25 +80,21 @@ export default function HeroVerde() {
           'radial-gradient(ellipse at 50% 0%, #1e3d18 0%, #0e200b 50%, #060f04 100%)',
       }}
     >
-      {/* Warp shader — desktop only (mobile gets gradient bg, better perf) */}
-      {showWarp && (
-        <div className="absolute inset-0 pointer-events-none shader-enter">
-          <Warp
-            style={{ width: '100%', height: '100%' }}
-            proportion={0.44}
-            softness={1}
-            distortion={0.32}
-            swirl={0.68}
-            swirlIterations={10}
-            shape="checks"
-            shapeScale={0.14}
-            scale={1}
-            rotation={0}
-            speed={0.55}
-            colors={['#0d1a09', '#3D5C35', '#6A8A5E', '#C85E28']}
-          />
-        </div>
-      )}
+      <div className="absolute inset-0 pointer-events-none">
+        <AdaptiveWarp
+          proportion={0.44}
+          softness={1}
+          distortion={0.32}
+          swirl={0.68}
+          swirlIterations={10}
+          shape="checks"
+          shapeScale={0.14}
+          scale={1}
+          rotation={0}
+          speed={0.55}
+          colors={['#0d1a09', '#3D5C35', '#6A8A5E', '#C85E28']}
+        />
+      </div>
 
       {/* Warm orange radial glow — conferisce l'accento caldo */}
       <div
@@ -143,7 +133,9 @@ export default function HeroVerde() {
             animation: 'hero-fade-up 0.7s ease-out both 0.4s',
           }}
         >
-          Brand &amp; Digital Strategist · Milano e Belluno
+          Brand &amp; Digital Strategist<span className="hidden md:inline"> · </span>
+          <br className="md:hidden" />
+          Milano e Belluno
         </p>
 
         <h1
