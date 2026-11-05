@@ -7,7 +7,7 @@ import { WarpShadow } from '@/components/ui/warp-shadow';
 export const metadata: Metadata = {
   title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
   description:
-    'Consulente di Marketing Digitale e AI a Belluno. Strategia digitale, AI Marketing e GEO Optimization per aziende e professionisti del territorio bellunese e delle Dolomiti.',
+    'Consulente di marketing digitale e AI a Belluno: strategia, AI marketing e GEO Optimization per aziende e professionisti del territorio e delle Dolomiti.',
   alternates: { canonical: 'https://www.samuelebarchet.com/belluno' },
   openGraph: {
     title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',

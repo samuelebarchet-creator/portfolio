@@ -6,7 +6,7 @@ import { WarpShadow } from '@/components/ui/warp-shadow';
 export const metadata: Metadata = {
   title: 'GEO Optimization a Belluno — Essere citati da ChatGPT | Samuele Barchet',
   description:
-    "Esperto GEO (Generative Engine Optimization) e ChatGPT per aziende a Belluno. Ottimizzo la visibilità del tuo brand nelle risposte di ChatGPT, Perplexity e Gemini.",
+    "Consulente GEO (Generative Engine Optimization) a Belluno: rendo il tuo brand più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
   alternates: { canonical: 'https://www.samuelebarchet.com/belluno/geo' },
   openGraph: {
     title: 'GEO Optimization a Belluno — Essere citati da ChatGPT | Samuele Barchet',
@@ -24,7 +24,7 @@ const ldJson = {
       url: 'https://www.samuelebarchet.com/belluno/geo',
       name: 'GEO Optimization a Belluno — Samuele Barchet',
       description:
-        "Esperto GEO (Generative Engine Optimization) e ChatGPT per aziende a Belluno. Ottimizzo la visibilità del tuo brand nelle risposte di ChatGPT, Perplexity e Gemini.",
+        "Consulente GEO (Generative Engine Optimization) a Belluno: rendo il tuo brand più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
       dateModified: '2026-06-16',
       about: [
         { '@type': 'Thing', name: 'GEO Belluno' },

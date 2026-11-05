@@ -17,13 +17,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return {};
   const url = `https://www.samuelebarchet.com/thinking/${slug}`;
   const ogImage = post.heroImage ?? '/about/samuele.jpg';
+  const description = post.metaDescription ?? post.excerpt;
   return {
     title: `${post.title} — Samuele Barchet`,
-    description: post.excerpt,
+    description,
     alternates: { canonical: url },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description,
       url,
       type: 'article',
       publishedTime: post.date,

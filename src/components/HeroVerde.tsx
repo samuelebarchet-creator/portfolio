@@ -156,7 +156,7 @@ export default function HeroVerde() {
             animation: 'hero-fade-up 0.7s ease-out both 0.4s',
           }}
         >
-          Brand &amp; Digital Strategist
+          Brand &amp; Digital Strategist · Milano e Belluno
         </p>
 
         <h1

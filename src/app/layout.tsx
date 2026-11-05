@@ -132,15 +132,15 @@ export default function RootLayout({
                     "addressCountry": "IT"
                   },
                   "areaServed": { "@type": "Country", "name": "Italy" },
-                  "knowsAbout": ["Brand Strategy","Digital Marketing","Social Media Management","Meta Ads","Content Strategy","Email Marketing","Copywriting","Brand Identity","Analytics & Reporting","Community Management"],
+                  "knowsAbout": ["Brand Strategy","Digital Marketing","Generative Engine Optimization","AI Marketing","Marketing Automation","Local SEO","Social Media Management","Meta Ads","Content Strategy","Email Marketing","Copywriting","Brand Identity","Analytics & Reporting","Community Management"],
                   "hasOccupation": {
                     "@type": "Occupation",
                     "name": "Brand & Digital Strategist",
                     "occupationalCategory": "Marketing e Comunicazione",
-                    "skills": "Brand Strategy, Digital Marketing, Social Media, Meta Advertising, Content Strategy, Email Marketing"
+                    "skills": "Brand Strategy, Digital Marketing, GEO Optimization, AI Marketing, Social Media, Meta Advertising, Content Strategy, Email Marketing"
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-06-14"
+                  "dateModified": "2026-11-05"
                 },
                 {
                   "@type": "ProfessionalService",
@@ -175,7 +175,7 @@ export default function RootLayout({
                     ]
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-06-14",
+                  "dateModified": "2026-11-05",
                   "about": [
                     {"@type": "Thing", "name": "Brand Strategy"},
                     {"@type": "Thing", "name": "Digital Marketing"},
@@ -215,7 +215,7 @@ Chi è Samuele Barchet:
 Cosa trovi in questo sito:
 - Portfolio di progetti reali di brand strategy e comunicazione digitale
 - Articoli su AI search, GEO, brand strategy, social media e comunicazione
-- Descrizione dei servizi offerti: Brand Strategy, Communication Strategy, Digital Growth, Strategic Partnership
+- Descrizione dei servizi offerti: Strategia Digitale, AI Marketing, GEO Optimization, Formazione AI
 - Informazioni di contatto: info@samuelebarchet.com
 
 Samuele Barchet è disponibile per collaborazioni con aziende e organizzazioni in tutta Italia.

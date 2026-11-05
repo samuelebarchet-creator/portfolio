@@ -2,6 +2,7 @@ export type ThinkingPost = {
   slug: string;
   title: string;
   excerpt: string;
+  metaDescription?: string;
   category: string;
   readTime: string;
   date: string;
@@ -16,6 +17,7 @@ export const thinkingPosts: ThinkingPost[] = [
     title: 'Come fare marketing per una palestra: il caso All Fit',
     excerpt:
       'La maggior parte delle palestre fa marketing come se fosse ancora il 2015: sconti e basta. Il caso All Fit mostra cosa cambia quando posizionamento, tono di voce e contenuti lavorano insieme, anche in un mercato piccolo come quello di Belluno.',
+    metaDescription: 'Come fare marketing per una palestra oltre gli sconti: posizionamento, tono di voce e contenuti nel caso All Fit, in un mercato piccolo come Belluno.',
     category: 'Social Media',
     readTime: '6 min',
     date: '2026-09-15',
@@ -50,6 +52,7 @@ Il progetto completo è nel [case study All Fit](/projects/allfit).`,
     title: 'Social media per un e-commerce locale: il caso 3D Axis',
     excerpt:
       'Vendere online e avere un negozio fisico allo stesso tempo significa parlare a pubblici diversi con lo stesso account social. Il caso 3D Axis mostra come tenere insieme maker privati, scuole e aziende senza disperdere il messaggio.',
+    metaDescription: 'Social media per un e-commerce con negozio fisico: come parlare a maker, scuole e aziende senza disperdere il messaggio. Il caso 3D Axis.',
     category: 'Digital Marketing',
     readTime: '6 min',
     date: '2026-09-15',
@@ -86,6 +89,7 @@ Il progetto completo è nel [case study 3D Axis](/projects/3d-axis).`,
     title: 'Perché le tue campagne Meta non convertono (e non è colpa del budget)',
     excerpt:
       'Aumenti il budget, i risultati non cambiano. Aumenti ancora, idem. Il problema quasi mai è quanto spendi: è cosa stai amplificando. Una lettura pratica su dove si rompe la catena.',
+    metaDescription: 'Aumenti il budget ma i risultati non cambiano? Il problema quasi mai è quanto spendi, ma cosa amplifichi. Dove si rompe la catena delle campagne Meta.',
     category: 'Digital Marketing',
     readTime: '7 min',
     date: '2026-06-20',
@@ -162,6 +166,7 @@ Il budget viene dopo. Prima si sistema la macchina.`,
     heroImageMobile: '/thinking/ai-comportamento-utenti-2026-mobile.jpg',
     excerpt:
       "Nel 2026 le persone non cercano più solo su Google. Cercano su ChatGPT, Perplexity, Gemini. Il modo in cui i brand vengono trovati (o ignorati) sta cambiando in modo strutturale. Ecco cosa sta succedendo e cosa fare.",
+    metaDescription: 'Le persone non cercano più solo su Google, ma anche su ChatGPT, Perplexity e Gemini. Come cambia il modo in cui i brand vengono trovati e cosa fare.',
     category: 'AI & Marketing',
     readTime: '6 min',
     date: '2026-06-14',
@@ -240,6 +245,7 @@ Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti
     title: 'GEO vs SEO: differenze e opportunità',
     excerpt:
       'GEO e SEO non sono la stessa cosa. La SEO ti fa trovare su Google. La GEO ti fa citare da ChatGPT, Perplexity e Gemini. Nel 2026, hai bisogno di entrambe. Non molti lo sanno ancora.',
+    metaDescription: 'La SEO ti fa trovare su Google, la GEO ti fa citare da ChatGPT, Perplexity e Gemini. Differenze, opportunità e perché oggi servono entrambe.',
     category: 'AI & Marketing',
     readTime: '5 min',
     date: '2026-06-15',
@@ -507,6 +513,7 @@ Vedi come ho affrontato questa sfida per alcuni dei [brand con cui ho lavorato](
     title: "Il tono di voce è l'identità che tutti dimenticano",
     excerpt:
       "Logo, colori, font: il kit base di ogni brand. Ma il modo in cui parli dice chi sei più di qualsiasi elemento visivo. Perché il tono di voce è il vero differenziatore.",
+    metaDescription: 'Logo, colori e font sono il kit base di ogni brand, ma il modo in cui parli dice di più. Perché il tono di voce è il vero differenziatore.',
     category: 'Brand Strategy',
     readTime: '4 min',
     date: '2025-08-30',
@@ -575,6 +582,7 @@ La definizione del tono di voce fa parte del lavoro che svolgo nella [Brand Stra
     title: 'Come far comparire la tua azienda nelle risposte di ChatGPT',
     excerpt:
       "Sempre più persone chiedono direttamente a ChatGPT quale azienda contattare. Ecco cosa puoi fare concretamente per aumentare le probabilità di essere citato, passo dopo passo.",
+    metaDescription: 'Sempre più persone chiedono a ChatGPT quale azienda contattare. Cosa puoi fare, passo dopo passo, per aumentare le probabilità di essere citato.',
     category: 'AI & Marketing',
     readTime: '5 min',
     date: '2026-06-16',

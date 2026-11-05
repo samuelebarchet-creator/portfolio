@@ -13,11 +13,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const url = `https://www.samuelebarchet.com/projects/${slug}`;
   const description = project.metaDescription ?? project.description;
   return {
-    title: `${project.company} — Samuele Barchet`,
+    title: `${project.company}: caso studio — Samuele Barchet`,
     description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${project.company} — Samuele Barchet`,
+      title: `${project.company}: caso studio — Samuele Barchet`,
       description,
       url,
     },

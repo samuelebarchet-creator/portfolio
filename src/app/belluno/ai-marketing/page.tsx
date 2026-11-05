@@ -6,7 +6,7 @@ import { WarpShadow } from '@/components/ui/warp-shadow';
 export const metadata: Metadata = {
   title: 'Consulente AI Marketing a Belluno — Samuele Barchet',
   description:
-    'Consulente AI Marketing a Belluno: contenuti, campagne e automazioni costruiti con l\'intelligenza artificiale per PMI e professionisti del territorio bellunese.',
+    'Consulente AI Marketing a Belluno: contenuti, campagne e automazioni con l\'intelligenza artificiale per PMI e professionisti del territorio.',
   alternates: { canonical: 'https://www.samuelebarchet.com/belluno/ai-marketing' },
   openGraph: {
     title: 'Consulente AI Marketing a Belluno — Samuele Barchet',
@@ -25,7 +25,7 @@ const ldJson = {
       url: 'https://www.samuelebarchet.com/belluno/ai-marketing',
       name: 'Consulente AI Marketing a Belluno — Samuele Barchet',
       description:
-        'Consulente AI Marketing a Belluno: contenuti, campagne e automazioni costruiti con l\'intelligenza artificiale per PMI e professionisti del territorio bellunese.',
+        'Consulente AI Marketing a Belluno: contenuti, campagne e automazioni con l\'intelligenza artificiale per PMI e professionisti del territorio.',
       dateModified: '2026-06-16',
       about: [
         { '@type': 'Thing', name: 'AI Marketing Belluno' },

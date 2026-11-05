@@ -1,3 +1,4 @@
+import { projects } from '@/lib/projects';
 import { thinkingPosts } from '@/lib/thinking';
 
 const BASE = 'https://www.samuelebarchet.com';
@@ -7,6 +8,10 @@ export const dynamic = 'force-static';
 export async function GET() {
   const articles = thinkingPosts
     .map((p) => `- [${p.title}](${BASE}/thinking/${p.slug})`)
+    .join('\n');
+
+  const works = projects
+    .map((p) => `- [${p.company}](${BASE}/projects/${p.slug}): ${p.description}`)
     .join('\n');
 
   const txt = `# Samuele Barchet
@@ -30,6 +35,7 @@ Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il 
 
 - Sito: ${BASE}
 - Email: info@samuelebarchet.com
+- Telefono: +39 342 026 9217
 - LinkedIn: https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/
 - Prenota una call: https://cal.eu/samuele-barchet-2mo12t/30min
 
@@ -42,15 +48,20 @@ Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il 
 - **Formazione AI**: workshop e training per team aziendali
 - **Performance Marketing**: Meta Ads, Google Ads, contenuti organici
 
+## Marketing digitale e AI a Belluno
+
+- [Consulenza per il territorio bellunese](${BASE}/belluno): marketing digitale e AI per aziende e professionisti della provincia e delle Dolomiti
+- [AI Marketing a Belluno](${BASE}/belluno/ai-marketing): contenuti, campagne e automazioni con l'AI per PMI locali
+- [GEO Optimization a Belluno](${BASE}/belluno/geo): citabilità del brand in ChatGPT, Perplexity e Gemini
+- [Automazioni AI a Belluno](${BASE}/belluno/automazioni-ai): flussi automatizzati per marketing, CRM e operazioni
+
 ## Articoli (Thinking)
 
 ${articles}
 
 ## Progetti
 
-- [Braghes](${BASE}/projects/braghes)
-- [RC Ricambi](${BASE}/projects/rc-ricambi)
-- [Programma Formula](${BASE}/projects/programma-formula)
+${works}
 
 ## Informazioni legali
 

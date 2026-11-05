@@ -35,7 +35,7 @@ export const projects: Project[] = [
     company: "Braghe's",
     role: 'Brand Strategist',
     description: 'Brand di abbigliamento accessibile per persone in carrozzina.',
-    metaDescription: "Brand Strategy per Braghe's, marchio di abbigliamento accessibile per persone in carrozzina. Posizionamento, tone of voice e identità di marca. Settore fashion inclusivo.",
+    metaDescription: "Brand Strategy per Braghe's, abbigliamento accessibile per persone in carrozzina: posizionamento, tone of voice e identità di marca nel fashion inclusivo.",
     tag: 'Fashion · Accessibilità',
     fullDescription:
       "Braghe's è un progetto di abbigliamento progettato per rispondere a esigenze concrete di **persone con disabilità motorie**, trasformando un capo funzionale in uno strumento di **autonomia e identità**. Il settore della moda inclusiva è ancora poco presidiato: la maggior parte dei brand ignora questo segmento o lo tratta come un'aggiunta marginale. Braghe's nasce con l'obiettivo opposto: mettere la **disabilità al centro del design**, non come limite ma come punto di partenza creativo. Il lavoro si è concentrato sulla costruzione del brand e del suo linguaggio: definire un **posizionamento coraggioso e non convenzionale**, sviluppare un tono di voce autentico e coerente con la community di riferimento, tradurre esigenze reali in comunicazione di marca riconoscibile. Un progetto dove il **brand diventa veicolo di visibilità e consapevolezza** su un tema che il mainstream fatica ancora ad affrontare con serietà.",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     company: 'RC – Ricambi per Carrozzine',
     role: 'Digital Strategist',
     description: 'E-commerce di componenti per mobilità accessibile.',
-    metaDescription: 'Digital Strategy per RC – Ricambi per Carrozzine: e-commerce specializzato in componenti per mobilità accessibile. Customer journey, funnel di acquisto e comunicazione prodotto.',
+    metaDescription: 'Digital Strategy per RC – Ricambi per Carrozzine, e-commerce per la mobilità accessibile: customer journey, funnel di acquisto e comunicazione prodotto.',
     tag: 'E-commerce · Accessibilità',
     fullDescription:
       "RC è un **e-commerce specializzato nella vendita di ricambi per carrozzine manuali**, con l'obiettivo di rendere componenti tecnici più accessibili, chiari e acquistabili online. Il mercato dei ricambi per mobilità accessibile è frammentato: i prodotti esistono, ma trovarli, confrontarli e acquistarli richiede spesso un percorso complicato che scoraggia l'utente finale. RC nasce per eliminare questa frizione. Il lavoro ha riguardato la dimensione strategica e comunicativa del progetto: analisi approfondita della **customer journey e del funnel di acquisto**, supporto alla definizione del posizionamento **\"Reale Convenienza\"**, ottimizzazione della comunicazione prodotto e delle categorie, semplificazione del linguaggio commerciale per rendere le specifiche tecniche comprensibili anche a chi non è esperto del settore. Un intervento focalizzato su **chiarezza, conversione** e miglioramento concreto dell'esperienza utente lungo tutto il percorso d'acquisto.",
@@ -99,7 +99,7 @@ export const projects: Project[] = [
     company: 'Programma Formula',
     role: 'Social Media Manager & Content Strategist',
     description: "Campagna di raccolta fondi per l'Unità Spinale, CROSSabili × CESVI.",
-    metaDescription: "Content Strategy per Programma Formula: campagna di raccolta fondi per l'Unità Spinale in partnership con CROSSabili, CESVI e Intesa Sanpaolo. Concept, script video e storytelling.",
+    metaDescription: "Content Strategy per Programma Formula, raccolta fondi per l'Unità Spinale con CROSSabili, CESVI e Intesa Sanpaolo: concept, script video e storytelling.",
     tag: 'Social Campaign · Non-profit',
     fullDescription:
       "Formula è una **campagna di comunicazione sociale** nata dalla collaborazione tra CROSSabili e CESVI, con il sostegno di Intesa Sanpaolo, per raccogliere fondi a favore delle unità spinali e dei percorsi di autonomia per persone con disabilità. La sfida comunicativa era duplice: sensibilizzare un pubblico ampio su un tema poco conosciuto e trasformare quella consapevolezza in **azione concreta**: una donazione, una condivisione, un coinvolgimento. Il lavoro si è concentrato sulla costruzione narrativa della campagna: sviluppo del **concept comunicativo**, scrittura degli **script video ufficiali**, definizione del tono emotivo coerente tra tutti i materiali, progettazione del flusso comunicativo multicanale dalla prima impression alla call to action. Un progetto dove la **precisione narrativa** fa la differenza tra una campagna che muove le persone e una che scivola via.",
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     company: 'Citation Rate',
     role: 'SaaS Developer',
     description: 'Sviluppo SaaS: uno dei sistemi interni della suite di controllo.',
-    metaDescription: 'Sviluppo SaaS per Citation Rate, piattaforma per la visibilità dei brand nei sistemi AI. Sviluppo di uno dei sistemi interni della suite di controllo (AVI), con recupero dei dati dal sito citationrate.com.',
+    metaDescription: 'Sviluppo SaaS per Citation Rate, piattaforma per la visibilità dei brand nei sistemi AI: sviluppo di AVI, uno dei sistemi della suite di controllo.',
     tag: 'AI · SaaS · Sviluppo',
     fullDescription:
       "Citation Rate è una **piattaforma SaaS focalizzata sulla visibilità dei brand nei sistemi di intelligenza artificiale** (ChatGPT, Perplexity, Google AI Overview) e nei nuovi ecosistemi di ricerca che stanno ridefinendo come le persone trovano informazioni e scelgono i brand. Il mio contributo è stato sul lato **sviluppo**: ho lavorato alla costruzione di **uno dei due sistemi interni della suite di controllo**, l'**AVI**, il modulo che **recupera e struttura le informazioni dal sito citationrate.com** per alimentare le analisi della piattaforma. Un lavoro tecnico su **raccolta dati, integrazione e affidabilità del sistema**, all'intersezione tra **intelligenza artificiale, dati e prodotto SaaS**.",
@@ -150,7 +150,7 @@ export const projects: Project[] = [
     company: 'CROSSabili',
     role: 'Social Media Manager, Content Strategist & Community Manager (volontario)',
     description: 'Community e organizzazione per inclusione e accessibilità.',
-    metaDescription: 'Content Strategy e Community Management per CROSSabili: organizzazione no-profit per inclusione e accessibilità. Campagne social, narrazione community-driven e comunicazione eventi.',
+    metaDescription: 'Content Strategy e Community Management per CROSSabili, no-profit per inclusione e accessibilità: campagne social, storytelling e comunicazione eventi.',
     tag: 'Non-profit · Community',
     fullDescription:
       "CROSSabili è una **realtà attiva nel mondo dell'inclusione e della disabilità**, con progetti sportivi, eventi sul territorio e un'identità costruita intorno alla partecipazione e alla comunità. La comunicazione di un'organizzazione no-profit ha dinamiche diverse dal mondo commerciale: le persone non seguono per un prodotto, ma per un **senso di appartenenza e una visione condivisa**. Il contributo si è concentrato sulla comunicazione e sullo storytelling: sviluppo di **contenuti per campagne social e iniziative di sensibilizzazione**, adattamento del linguaggio ai diversi formati comunicativi (Instagram, eventi, materiali cartacei), costruzione di una narrazione coerente e **community-driven** capace di coinvolgere sia chi vive la disabilità in prima persona sia chi la incontra per la prima volta. Un lavoro orientato a rendere la comunicazione più **autentica, partecipativa e accessibile** per una comunità che merita visibilità.",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     company: 'All Fit',
     role: 'Social Media Manager & Referente Comunicazione',
     description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come referente di comunicazione.',
-    metaDescription: 'Social Media Management e comunicazione per All Fit, catena di palestre in provincia di Belluno. Posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH come referente di comunicazione.',
+    metaDescription: 'Comunicazione per All Fit, catena di palestre in provincia di Belluno: posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH.',
     tag: 'Fitness · Local Business',
     fullDescription:
       "All Fit è una catena di palestre della provincia di Belluno (Belluno, Sedico, Trichiana, con un quarto club a Ponte di Piave in fase di lancio). Come **referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
@@ -252,7 +252,7 @@ export const projects: Project[] = [
     company: '3D Axis',
     role: 'Social Media & Content Strategist',
     description: 'Rivenditore italiano di stampanti 3D: strategia social, copywriting e reportistica performance.',
-    metaDescription: 'Social Media e Content Strategy per 3D Axis, rivenditore italiano di stampanti 3D. Gestione Instagram e Facebook, copywriting, pianificazione editoriale B2C/B2B/scuole e report mensili di performance.',
+    metaDescription: 'Social e Content Strategy per 3D Axis, rivenditore di stampanti 3D: Instagram e Facebook, copywriting, piano editoriale B2C, B2B e scuole, report mensili.',
     tag: 'E-commerce · Retail',
     fullDescription:
       "3D Axis è un rivenditore italiano di stampanti 3D con più punti vendita fisici e vendita online su scala nazionale. Mi occupo della gestione end-to-end di Instagram e Facebook: dall'ideazione dei contenuti — spesso a partire da note vocali o appunti informali — fino alla copy finale pronta per la pubblicazione, con un tone of voice preciso: **\"makers before sellers\"**, diretto, caldo, non commerciale. La pianificazione editoriale copre sia il pubblico B2C (maker privati) sia i segmenti B2B e scuole, con un focus dedicato su carta del docente e bonus docenti. Il lavoro include anche il customer care sui social e la reportistica mensile delle performance.",

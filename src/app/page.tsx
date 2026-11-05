@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import HeroVerde from '@/components/HeroVerde';
 
 export const metadata: Metadata = {
-  title: 'Samuele Barchet — Brand & Digital Strategist',
-  description: 'Brand & Digital Strategist freelance tra Milano e Belluno. Costruisco identità di marca e strategie digitali misurabili per aziende e organizzazioni in Italia.',
+  title: 'Samuele Barchet — Brand & Digital Strategist a Milano e Belluno',
+  description: 'Brand & Digital Strategist freelance tra Milano e Belluno: identità di marca, strategie digitali misurabili, AI marketing e GEO per aziende in Italia.',
   alternates: { canonical: 'https://www.samuelebarchet.com' },
   openGraph: {
-    title: 'Samuele Barchet — Brand & Digital Strategist',
-    description: 'Brand & Digital Strategist freelance tra Milano e Belluno. Costruisco identità di marca e strategie digitali misurabili per aziende e organizzazioni in Italia.',
+    title: 'Samuele Barchet — Brand & Digital Strategist a Milano e Belluno',
+    description: 'Brand & Digital Strategist freelance tra Milano e Belluno: identità di marca, strategie digitali misurabili, AI marketing e GEO per aziende in Italia.',
     url: 'https://www.samuelebarchet.com',
     images: [{ url: '/about/samuele.jpg', width: 1200, height: 630, alt: 'Samuele Barchet' }],
   },
