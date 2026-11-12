@@ -23,7 +23,7 @@ import Contact from '@/components/Contact';
 
 export default function Page() {
   return (
-    <main>
+    <main data-page="home">
       <HeroVerde />
       <ClientsBar />
       <FeaturedQuote />

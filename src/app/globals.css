@@ -47,6 +47,8 @@
   --orange-light: #E09060;
   /* Terracotta for text: darker on paper (≥4.5:1), lighter on dark surfaces. */
   --orange-text:  #A44F1D;
+  /* Section titles on the home: still orange, ≥3:1 on both paper tones (large text). */
+  --orange-heading: #C2602A;
   --brown:        #6B4226;
   --brown-light:  #9A6B48;
 }
@@ -93,6 +95,14 @@
 /* ─── Dark surfaces (hero, contact, article heroes) ─────────────────────── */
 [data-surface="dark"] {
   --orange-text: var(--orange-light);
+}
+
+/* ─── Home: section titles in terracotta ────────────────────────────────── */
+[data-page="home"] h2 {
+  color: var(--orange-heading);
+}
+[data-page="home"] [data-surface="dark"] h2 {
+  color: var(--orange-light);
 }
 
 /* ─── Keyboard focus — one ring for the whole site ──────────────────────── */
