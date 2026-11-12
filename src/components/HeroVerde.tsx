@@ -158,17 +158,37 @@ export default function HeroVerde() {
         <div className="my-9 h-px w-14" style={{ background: 'rgba(212,113,58,0.55)' }} />
 
         <p
-          className="max-w-[38ch] leading-relaxed"
+          className="flex flex-col items-center gap-3"
           style={{
-            color: 'rgba(245,240,232,0.82)',
-            fontFamily: 'var(--font-barlow)',
-            fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
-            textShadow: '0 1px 12px rgba(0,0,0,0.6)',
-            textWrap: 'balance',
+            textShadow: '0 1px 14px rgba(0,0,0,0.55)',
             animation: 'hero-fade-up 0.7s ease-out both 1.3s',
           }}
         >
-          Strategia di brand per aziende di Belluno e Milano. Prima decidiamo dove andare, poi social, contenuti e advertising. Nell&rsquo;ordine giusto.
+          <span
+            className="block font-display italic text-bg"
+            style={{
+              fontFamily: 'var(--font-playfair)',
+              fontWeight: 400,
+              fontSize: 'clamp(1.3rem, 2vw, 1.75rem)',
+              lineHeight: 1.3,
+              textWrap: 'balance',
+            }}
+          >
+            Strategia di brand per aziende di Belluno e Milano.
+          </span>
+          <span
+            className="block lg:whitespace-nowrap"
+            style={{
+              color: 'rgba(245,240,232,0.78)',
+              fontFamily: 'var(--font-barlow)',
+              fontSize: 'clamp(0.95rem, 1.15vw, 1.08rem)',
+              lineHeight: 1.6,
+              letterSpacing: '0.01em',
+              textWrap: 'balance',
+            }}
+          >
+            Prima decidiamo dove andare, poi social, contenuti e advertising. Nell&rsquo;ordine giusto.
+          </span>
         </p>
 
         <div
