@@ -220,6 +220,7 @@ export const projects: Project[] = [
     role: 'Social Media Manager & Referente Comunicazione',
     focus: 'Posizionamento, tono di voce e lancio di un nuovo club',
     description: 'Palestre tra Belluno e Treviso: strategia, contenuti e paid media come referente di comunicazione.',
+    seoTitle: 'Marketing per palestre a Belluno: il caso All Fit',
     metaDescription: 'Comunicazione per All Fit, catena di palestre tra Belluno e Treviso: posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH.',
     tag: 'Fitness · Local Business',
     fullDescription:

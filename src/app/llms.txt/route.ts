@@ -55,7 +55,11 @@ Founding team & Backend Developer di [Citation Rate](https://www.citationrate.co
 ## Social media e comunicazione a Belluno
 
 - [Social media e comunicazione a Belluno](${BASE}/belluno): social media, comunicazione e marketing digitale per aziende e attività di tutta la provincia (Belluno, Feltre, Valbelluna, Agordino, Cadore, Cortina)
-- [Consulente social media a Belluno](${BASE}/belluno/social-media): strategia, piano editoriale, contenuti e campagne Meta Ads, in gestione completa o in affiancamento
+- [Social media manager a Belluno](${BASE}/belluno/social-media): strategia, piano editoriale, contenuti e campagne Meta Ads, in gestione completa o in affiancamento
+- [Meta Ads a Belluno](${BASE}/belluno/meta-ads): campagne Facebook e Instagram con obiettivi chiari e report mensile
+- [SEO locale a Belluno](${BASE}/belluno/seo-locale): scheda Google Business, sito e contenuti per farsi trovare in provincia
+- [Social media e marketing in Valbelluna](${BASE}/belluno/valbelluna): Sedico, Santa Giustina, Borgo Valbelluna, Limana
+- [Formazione AI per aziende a Belluno](${BASE}/belluno/formazione-ai): workshop pratici su AI e marketing per PMI
 - [AI Marketing a Belluno](${BASE}/belluno/ai-marketing): contenuti, campagne e automazioni con l'AI per PMI locali
 - [GEO Optimization a Belluno](${BASE}/belluno/geo): citabilità del brand in ChatGPT, Perplexity e Gemini
 - [Audit GEO gratuito](${BASE}/belluno/audit-geo): verifica di presenza e accuratezza nei motori AI per aziende della provincia di Belluno

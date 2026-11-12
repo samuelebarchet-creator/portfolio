@@ -4,7 +4,7 @@ import Contact from '@/components/Contact';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
 const URL = 'https://www.samuelebarchet.com/belluno/social-media';
-const TITLE = 'Consulente Social Media a Belluno — Samuele Barchet';
+const TITLE = 'Social Media Manager a Belluno — Samuele Barchet';
 const DESCRIPTION =
   'Consulente social media a Belluno: strategia, piano editoriale, contenuti e campagne Meta Ads per aziende e attività della provincia, gestiti o affiancati.';
 
@@ -128,9 +128,9 @@ export default function SocialMediaBellunoPage() {
             </p>
             <h1
               className="font-display font-black italic text-bg leading-[0.95]"
-              style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 6vw, 5rem)', letterSpacing: '-0.03em', maxWidth: '16ch' }}
+              style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(2.4rem, 6vw, 5rem)', letterSpacing: '-0.03em', maxWidth: '18ch' }}
             >
-              Consulente social media a Belluno
+              Social media manager e consulente social a Belluno
             </h1>
             <p className="mt-8 text-bg/80 leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.15rem)' }}>
               Imposto e gestisco i social delle aziende della provincia partendo da una domanda: cosa volete che la gente pensi di voi? Poi arrivano piano editoriale, contenuti e campagne.

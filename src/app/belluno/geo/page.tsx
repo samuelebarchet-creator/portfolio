@@ -4,12 +4,12 @@ import Contact from '@/components/Contact';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export const metadata: Metadata = {
-  title: 'GEO Optimization a Belluno — Essere citati da ChatGPT | Samuele Barchet',
+  title: 'Farsi citare da ChatGPT: GEO a Belluno e in Veneto',
   description:
-    "Consulente GEO (Generative Engine Optimization) a Belluno: rendo il tuo brand più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
+    "Consulente GEO (Generative Engine Optimization) a Belluno e in Veneto: rendo la tua azienda più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
   alternates: { canonical: 'https://www.samuelebarchet.com/belluno/geo' },
   openGraph: {
-    title: 'GEO Optimization a Belluno — Essere citati da ChatGPT | Samuele Barchet',
+    title: 'Farsi citare da ChatGPT: GEO a Belluno e in Veneto',
     description: 'Esperto GEO e ChatGPT per aziende a Belluno. Ottimizzo la visibilità nelle risposte dei motori AI.',
     url: 'https://www.samuelebarchet.com/belluno/geo',
   },
@@ -22,12 +22,13 @@ const ldJson = {
       '@type': 'WebPage',
       '@id': 'https://www.samuelebarchet.com/belluno/geo',
       url: 'https://www.samuelebarchet.com/belluno/geo',
-      name: 'GEO Optimization a Belluno — Samuele Barchet',
+      name: 'GEO a Belluno e in Veneto — Samuele Barchet',
       description:
-        "Consulente GEO (Generative Engine Optimization) a Belluno: rendo il tuo brand più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
+        "Consulente GEO (Generative Engine Optimization) a Belluno e in Veneto: rendo la tua azienda più citabile nelle risposte di ChatGPT, Perplexity e Gemini.",
       dateModified: '2026-06-16',
       about: [
         { '@type': 'Thing', name: 'GEO Belluno' },
+        { '@type': 'Thing', name: 'Consulente GEO Veneto' },
         { '@type': 'Thing', name: 'Generative Engine Optimization' },
         { '@type': 'Thing', name: 'Esperto ChatGPT per aziende' },
       ],
@@ -87,7 +88,7 @@ export default function GeoBellunoPage() {
                 maxWidth: '20ch',
               }}
             >
-              Generative Engine Optimization (GEO) a Belluno
+              Generative Engine Optimization (GEO) a Belluno e in Veneto
             </h1>
             <p
               className="mt-8 text-bg/70 leading-relaxed max-w-2xl"

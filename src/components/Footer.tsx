@@ -15,8 +15,11 @@ const navLinks = [
 /* Local cluster: the pages that make the site rank across the province. */
 const bellunoLinks = [
   { label: 'Social media e comunicazione', href: '/belluno' },
-  { label: 'Consulente social media', href: '/belluno/social-media' },
-  { label: 'AI marketing', href: '/belluno/ai-marketing' },
+  { label: 'Social media manager', href: '/belluno/social-media' },
+  { label: 'Meta Ads', href: '/belluno/meta-ads' },
+  { label: 'SEO locale', href: '/belluno/seo-locale' },
+  { label: 'Sedico e Valbelluna', href: '/belluno/valbelluna' },
+  { label: 'Formazione AI', href: '/belluno/formazione-ai' },
   { label: 'Farsi citare da ChatGPT', href: '/belluno/geo' },
 ];
 

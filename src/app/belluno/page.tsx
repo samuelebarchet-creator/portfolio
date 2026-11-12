@@ -395,8 +395,11 @@ export default function BellunoPage() {
 
             <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: 'Social media a Belluno', desc: 'Strategia, contenuti e campagne per i social della vostra attività.', href: '/belluno/social-media' },
-                { title: 'AI Marketing a Belluno', desc: "Per chi vuole già usare l'intelligenza artificiale in contenuti e campagne.", href: '/belluno/ai-marketing' },
+                { title: 'Social media a Belluno', desc: 'Strategia, contenuti e gestione dei social della vostra attività.', href: '/belluno/social-media' },
+                { title: 'Meta Ads a Belluno', desc: 'Campagne Facebook e Instagram con obiettivi chiari e report mensile.', href: '/belluno/meta-ads' },
+                { title: 'SEO locale a Belluno', desc: 'Scheda Google, sito e contenuti per farsi trovare in provincia.', href: '/belluno/seo-locale' },
+                { title: 'Sedico e Valbelluna', desc: 'Social e marketing per le attività della valle, con il caso All Fit.', href: '/belluno/valbelluna' },
+                { title: 'Formazione AI per aziende', desc: "Workshop pratici sull'intelligenza artificiale per le PMI.", href: '/belluno/formazione-ai' },
                 { title: 'Farsi citare da ChatGPT', desc: 'GEO: essere tra le attività che ChatGPT, Perplexity e Gemini consigliano.', href: '/belluno/geo' },
               ].map(({ title, desc, href }) => (
                 <Link
