@@ -1,6 +1,6 @@
 'use client';
 
-import { ComponentProps, useEffect, useRef, useState } from 'react';
+import { ComponentProps, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Warp } from '@paper-design/shaders-react';
 
 /* Phones would otherwise render at up to 3x density. On a gradient this soft the
@@ -21,17 +21,38 @@ function prefersStill() {
   return !!connection?.saveData || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
+function hasWebGL() {
+  try {
+    const canvas = document.createElement('canvas');
+    return !!(canvas.getContext('webgl2') || canvas.getContext('webgl'));
+  } catch {
+    return false;
+  }
+}
+
+/* Device facts read once on the client; null during SSR so markup matches. */
+type Env = { mobile: boolean; still: boolean; webgl: boolean };
+let envCache: Env | null = null;
+const readEnv = (): Env => {
+  if (!envCache) {
+    if (prefersStill()) stillForSession = true;
+    envCache = {
+      mobile: !window.matchMedia('(min-width: 768px)').matches,
+      still: stillForSession,
+      webgl: hasWebGL(),
+    };
+  }
+  return envCache;
+};
+const noSubscribe = () => () => {};
+
 export default function AdaptiveWarp({ speed, swirlIterations, ...props }: ComponentProps<typeof Warp>) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
-  const [mobile, setMobile] = useState(false);
-  const [still, setStill] = useState(false);
-
-  useEffect(() => {
-    setMobile(!window.matchMedia('(min-width: 768px)').matches);
-    if (prefersStill()) stillForSession = true;
-    setStill(stillForSession);
-  }, []);
+  const env = useSyncExternalStore(noSubscribe, readEnv, () => null);
+  const mobile = env?.mobile ?? false;
+  const [slow, setSlow] = useState(false);
+  const still = (env?.still ?? false) || slow;
 
   // Only keep the WebGL shader mounted while it is near the viewport
   useEffect(() => {
@@ -62,7 +83,7 @@ export default function AdaptiveWarp({ speed, swirlIterations, ...props }: Compo
         raf = requestAnimationFrame(tick);
       } else if (total / SAMPLE_FRAMES > SLOW_FRAME_MS) {
         stillForSession = true;
-        setStill(true);
+        setSlow(true);
       }
     };
     raf = requestAnimationFrame(tick);
@@ -71,7 +92,8 @@ export default function AdaptiveWarp({ speed, swirlIterations, ...props }: Compo
 
   return (
     <div ref={ref} style={{ width: '100%', height: '100%' }}>
-      {inView && (
+      {/* No WebGL: render nothing; the section's own gradient is the fallback. */}
+      {inView && env?.webgl && (
         <div className="shader-enter">
           <Warp
             {...props}

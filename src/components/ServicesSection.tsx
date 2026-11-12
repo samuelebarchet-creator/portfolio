@@ -5,6 +5,7 @@ import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Link from 'next/link';
 import { services, approachValues } from '@/lib/services';
 import { WarpShadow } from '@/components/ui/warp-shadow';
+import Ornament from '@/components/Ornament';
 
 function renderText(text: string) {
   return text.split(/(?<=\.)\s+/).flatMap((sentence, si, arr) => {
@@ -21,8 +22,11 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
   const sectionRef   = useRef<HTMLDivElement>(null);
   const approachRef  = useRef<HTMLDivElement>(null);
 
-  /* Home shows a teaser (title + first 2 services + CTA); /servizi shows all. */
-  const shown = preview ? services.slice(0, 2) : services;
+  /* Home: strategy in full, the other services as what comes after it; /servizi shows all. */
+  const shown = preview ? services.slice(0, 1) : services;
+  const after = preview ? services.slice(1) : [];
+  /* On the home the section title is the h2, so each service sits one level below. */
+  const TitleTag = preview ? 'h3' : 'h2';
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -70,13 +74,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
 
         <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
           {preview && (
-            <div className="pt-24 pb-2">
-              <p
-                className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
-              >
-                Servizi
-              </p>
+            <div className="pt-24 pb-10">
+              <Ornament index="02" label="Servizi" className="mb-6" />
               <h2
                 className="font-display font-black italic text-ink leading-[0.95]"
                 style={{
@@ -97,13 +96,15 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
             >
               {/* Left — title block */}
               <div className="flex flex-col gap-3">
-                <span
-                  className="font-condensed text-xs uppercase tracking-[0.45em]"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
-                >
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h2
+                {!preview && (
+                  <span
+                    className="font-condensed text-xs uppercase tracking-[0.45em]"
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                )}
+                <TitleTag
                   className="font-display font-black italic text-ink leading-tight"
                   style={{
                     fontFamily: 'var(--font-playfair)',
@@ -111,10 +112,10 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                   }}
                 >
                   {service.title}
-                </h2>
+                </TitleTag>
                 <p
                   className="font-condensed uppercase tracking-[0.22em] leading-snug"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.8rem', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
                   {service.subtitle}
                 </p>
@@ -154,9 +155,9 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               <div>
                 <p
                   className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
-                  Deliverable
+                  Cosa include
                 </p>
                 <ul className="flex flex-col gap-3">
                   {service.deliverables.map((d) => (
@@ -176,11 +177,59 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               </div>
             </div>
           ))}
+          {preview && (
+            <div className="service-row p-8 md:p-12 bg-bg">
+              <p
+                className="font-display font-black italic text-ink leading-tight mb-8"
+                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)' }}
+              >
+                Poi, dove serve
+              </p>
+              <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+                {after.map((service) => (
+                  <li key={service.id} className="flex flex-col gap-2">
+                    <span className="w-6 h-px block bg-green" aria-hidden />
+                    <span
+                      className="font-display font-black italic text-ink leading-snug"
+                      style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem' }}
+                    >
+                      {service.title}
+                    </span>
+                    <span className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
+                      {service.subtitle}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <p className="text-ink-dim" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
+                  Sei a Belluno o in provincia?{' '}
+                  <Link
+                    href="/belluno"
+                    className="text-green underline underline-offset-4 decoration-green/40 hover:decoration-green transition-colors duration-300"
+                  >
+                    Cosa faccio per le aziende del territorio
+                  </Link>
+                </p>
+                <Link
+                  href="/servizi"
+                  className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b border-green/40 hover:border-green pb-1 transition-colors duration-300 self-start sm:self-auto"
+                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                >
+                  Tutti i servizi
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+                </Link>
+              </div>
+            </div>
+          )}
           </div>
         </div>
       </section>
 
-      {/* ── Approach ────────────────────────────────────────────────────────── */}
+      {/* ── Approach (only on /servizi; on the home it would repeat the hero and About) ── */}
+      {!preview && (
       <section
         ref={approachRef}
         className="w-full px-8 md:px-20 py-24"
@@ -189,7 +238,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
         <div className="max-w-6xl mx-auto">
           <p
             className="font-condensed uppercase text-xs tracking-[0.5em] mb-12"
-            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
           >
             Il mio approccio
           </p>
@@ -218,32 +267,8 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
           </div>
         </div>
       </section>
-
-      {/* ── CTA: tutti i servizi (solo home/teaser) ─────────────────────────── */}
-      {preview && (
-        <section className="w-full px-8 md:px-20 pb-24">
-          <div className="max-w-6xl mx-auto">
-            <Link
-              href="/servizi"
-              className="group flex items-center justify-between gap-6 px-8 md:px-12 py-8 md:py-10 transition-colors duration-300 hover:bg-bg-alt"
-              style={{ border: '1px solid rgba(61,92,53,0.25)', background: 'var(--bg)' }}
-            >
-              <span
-                className="font-display font-black italic text-ink group-hover:text-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)' }}
-              >
-                Vedi tutti i servizi
-              </span>
-              <span
-                className="font-condensed uppercase text-xs tracking-[0.3em] shrink-0"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
-              >
-                Scopri →
-              </span>
-            </Link>
-          </div>
-        </section>
       )}
+
     </>
   );
 }

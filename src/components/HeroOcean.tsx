@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { gsap } from '@/lib/gsap';
 import WarpOcean from '@/components/ui/warp-ocean';
@@ -90,6 +91,7 @@ export default function HeroOcean() {
   return (
     <section
       ref={sectionRef}
+      data-surface="dark"
       className="relative w-full overflow-hidden"
       style={{
         background:
@@ -133,7 +135,7 @@ export default function HeroOcean() {
         <p
           ref={labelRef}
           className="font-condensed uppercase text-xs tracking-[0.55em] mb-12 opacity-0"
-          style={{ color: 'var(--orange)', fontFamily: 'var(--font-barlow-condensed)', fontWeight: 'bold' }}
+          style={{ color: 'var(--orange-text)', fontFamily: 'var(--font-barlow-condensed)', fontWeight: 'bold' }}
         >
           Brand &amp; Digital Strategist
         </p>
@@ -173,7 +175,7 @@ export default function HeroOcean() {
 
         {/* CTAs */}
         <div ref={ctaRef} className="flex items-center gap-4 mt-12 opacity-0">
-          <a
+          <Link
             href="/#collaborazioni"
             className="inline-flex items-center gap-2 px-7 py-3 font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300"
             style={{
@@ -188,8 +190,8 @@ export default function HeroOcean() {
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300 underline underline-offset-4"
             style={{
@@ -202,7 +204,7 @@ export default function HeroOcean() {
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.75)')}
           >
             Scrivimi
-          </a>
+          </Link>
         </div>
       </div>
     </section>

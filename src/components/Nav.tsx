@@ -10,8 +10,8 @@ import CalButton, { useCalInit } from '@/components/CalButton';
 const links = [
   { label: 'Lavori',   href: '/lavori' },
   { label: 'Servizi',  href: '/servizi' },
-  { label: 'About',    href: '/about' },
-  { label: 'Thinking', href: '/thinking' },
+  { label: 'Chi sono', href: '/about' },
+  { label: 'Idee',     href: '/thinking' },
   { label: 'Contatti', href: '/contatti' },
 ];
 
@@ -103,7 +103,7 @@ export default function Nav() {
         {/* Hamburger */}
         <button
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col justify-center items-end gap-1.5 w-11 h-11 -mr-2 focus:outline-none"
+          className="md:hidden flex flex-col justify-center items-end gap-1.5 w-11 h-11 -mr-2"
           aria-label={open ? 'Chiudi menu' : 'Apri menu'}
         >
           <span

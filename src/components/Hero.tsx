@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Link from 'next/link';
 import { gsap } from '@/lib/gsap';
 
 /* ─── Green nebula shader ──────────────────────────────────────────────────
@@ -205,6 +206,7 @@ export default function Hero() {
 
   return (
     <section
+      data-surface="dark"
       className="relative w-full overflow-hidden"
       style={{
         background:
@@ -266,7 +268,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <div ref={ctaRef} className="flex items-center gap-4 mt-12 opacity-0">
-          <a
+          <Link
             href="/#collaborazioni"
             className="inline-flex items-center gap-2 px-7 py-3 font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300"
             style={{
@@ -281,8 +283,8 @@ export default function Hero() {
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300 underline underline-offset-4"
             style={{
@@ -295,7 +297,7 @@ export default function Hero() {
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.75)')}
           >
             Scrivimi
-          </a>
+          </Link>
         </div>
       </div>
     </section>

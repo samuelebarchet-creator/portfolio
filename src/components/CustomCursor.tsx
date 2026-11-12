@@ -1,11 +1,18 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useSyncExternalStore } from 'react';
 import { gsap } from '@/lib/gsap';
 import { useMousePositionRef } from '@/components/hooks/use-mouse-position-ref';
 
 const DOT_SIZE = 8;
 const RING_SIZE = 40;
+
+const POINTER_QUERY = '(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)';
+const subscribePointer = (onChange: () => void) => {
+  const mq = window.matchMedia(POINTER_QUERY);
+  mq.addEventListener('change', onChange);
+  return () => mq.removeEventListener('change', onChange);
+};
 
 export default function CustomCursor() {
   const positionRef = useMousePositionRef();
@@ -15,15 +22,11 @@ export default function CustomCursor() {
   /* Only mount the custom cursor for real pointing devices (mouse/trackpad)
      and when motion is allowed. Touch devices keep the native cursor and skip
      the per-frame rAF loop + global `cursor: none` entirely. */
-  const [enabled, setEnabled] = useState(false);
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.matchMedia) return;
-    setEnabled(
-      window.matchMedia(
-        '(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)'
-      ).matches
-    );
-  }, []);
+  const enabled = useSyncExternalStore(
+    subscribePointer,
+    () => window.matchMedia(POINTER_QUERY).matches,
+    () => false,
+  );
 
   useEffect(() => {
     if (typeof window === 'undefined' || !enabled) return;

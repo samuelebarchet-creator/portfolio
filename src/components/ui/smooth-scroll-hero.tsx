@@ -98,6 +98,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
   return (
     <div
       ref={stickyRef}
+      data-surface="dark"
       className="sticky top-0 h-[100dvh] w-full overflow-hidden"
       style={{
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
@@ -155,7 +156,7 @@ const SmoothScrollHeroBackground: React.FC<SmoothScrollHeroProps> = ({
                 fontFamily: 'var(--font-barlow-condensed)',
                 fontSize: 'clamp(0.6rem, 1.2vw, 0.75rem)',
                 letterSpacing: '0.5em',
-                color: 'var(--orange)',
+                color: 'var(--orange-text)',
                 fontWeight: 'bold',
               }}
             >

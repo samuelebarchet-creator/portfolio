@@ -15,6 +15,8 @@ export type Project = {
   year: string;
   company: string;
   role: string;
+  /** Contributo strategico mostrato sulle card (home e /lavori); il ruolo formale resta nella pagina progetto. */
+  focus: string;
   description: string;
   metaDescription?: string;
   tag: string;
@@ -34,6 +36,7 @@ export const projects: Project[] = [
     year: '2024',
     company: "Braghe's",
     role: 'Brand Strategist',
+    focus: 'Posizionamento, tono di voce e identità',
     description: 'Brand di abbigliamento accessibile per persone in carrozzina.',
     metaDescription: "Brand Strategy per Braghe's, abbigliamento accessibile per persone in carrozzina: posizionamento, tone of voice e identità di marca nel fashion inclusivo.",
     tag: 'Fashion · Accessibilità',
@@ -67,6 +70,7 @@ export const projects: Project[] = [
     year: '2025',
     company: 'RC – Ricambi per Carrozzine',
     role: 'Digital Strategist',
+    focus: 'Posizionamento e linguaggio di prodotto',
     description: 'E-commerce di componenti per mobilità accessibile.',
     metaDescription: 'Digital Strategy per RC – Ricambi per Carrozzine, e-commerce per la mobilità accessibile: customer journey, funnel di acquisto e comunicazione prodotto.',
     tag: 'E-commerce · Accessibilità',
@@ -98,6 +102,7 @@ export const projects: Project[] = [
     year: '2025',
     company: 'Programma Formula',
     role: 'Social Media Manager & Content Strategist',
+    focus: 'Concept e tono della campagna',
     description: "Campagna di raccolta fondi per l'Unità Spinale, CROSSabili × CESVI.",
     metaDescription: "Content Strategy per Programma Formula, raccolta fondi per l'Unità Spinale con CROSSabili, CESVI e Intesa Sanpaolo: concept, script video e storytelling.",
     tag: 'Social Campaign · Non-profit',
@@ -124,6 +129,7 @@ export const projects: Project[] = [
     year: '2026',
     company: 'Citation Rate',
     role: 'SaaS Developer',
+    focus: 'Il mio prodotto per misurare la visibilità nelle AI',
     description: 'Sviluppo SaaS: uno dei sistemi interni della suite di controllo.',
     metaDescription: 'Sviluppo SaaS per Citation Rate, piattaforma per la visibilità dei brand nei sistemi AI: sviluppo di AVI, uno dei sistemi della suite di controllo.',
     tag: 'AI · SaaS · Sviluppo',
@@ -149,6 +155,7 @@ export const projects: Project[] = [
     year: '2023',
     company: 'CROSSabili',
     role: 'Social Media Manager, Content Strategist & Community Manager (volontario)',
+    focus: 'Narrazione e voce della community',
     description: 'Community e organizzazione per inclusione e accessibilità.',
     metaDescription: 'Content Strategy e Community Management per CROSSabili, no-profit per inclusione e accessibilità: campagne social, storytelling e comunicazione eventi.',
     tag: 'Non-profit · Community',
@@ -182,6 +189,7 @@ export const projects: Project[] = [
     year: '2025',
     company: 'VYST',
     role: 'Social Media Manager',
+    focus: 'Linea editoriale e posizionamento sui social',
     description: "Gestione e ottimizzazione social per un'azienda di produzione video.",
     metaDescription: 'Social Media Management per VYST, azienda di produzione video. Ottimizzazione dei contenuti per Meta e LinkedIn, gestione della pagina e linea editoriale.',
     tag: 'Social Media · Video Production',
@@ -207,6 +215,7 @@ export const projects: Project[] = [
     year: '2026',
     company: 'All Fit',
     role: 'Social Media Manager & Referente Comunicazione',
+    focus: 'Posizionamento, tono di voce e lancio di un nuovo club',
     description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come referente di comunicazione.',
     metaDescription: 'Comunicazione per All Fit, catena di palestre in provincia di Belluno: posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH.',
     tag: 'Fitness · Local Business',
@@ -251,6 +260,7 @@ export const projects: Project[] = [
     year: '2026',
     company: '3D Axis',
     role: 'Social Media & Content Strategist',
+    focus: 'Strategia editoriale e lettura dei risultati',
     description: 'Rivenditore italiano di stampanti 3D: strategia social, copywriting e reportistica performance.',
     metaDescription: 'Social e Content Strategy per 3D Axis, rivenditore di stampanti 3D: Instagram e Facebook, copywriting, piano editoriale B2C, B2B e scuole, report mensili.',
     tag: 'E-commerce · Retail',

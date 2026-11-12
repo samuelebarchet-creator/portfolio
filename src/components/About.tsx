@@ -1,11 +1,10 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
-import { about } from '@/lib/about';
 import Ornament from '@/components/Ornament';
-import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -121,57 +120,15 @@ export default function About() {
               Il mio lavoro parte sempre da una domanda semplice: perché qualcuno dovrebbe scegliere proprio voi?
             </p>
 
-            {/* Data proof */}
-            <div
-              className="grid grid-cols-3 gap-4 py-5"
-              style={{ borderTop: '1px solid rgba(61,92,53,0.1)', borderBottom: '1px solid rgba(61,92,53,0.1)' }}
-            >
-              {[
-                { value: '7+', label: 'anni nel settore' },
-                { value: '120k+', label: 'copertura organica' },
-                { value: '−73%', label: 'CPL vs benchmark' },
-              ].map(({ value, label }) => (
-                <div key={value} className="flex flex-col gap-1">
-                  <span
-                    className="font-display font-black italic text-green leading-none"
-                    style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)' }}
-                  >
-                    {value}
-                  </span>
-                  <span
-                    className="font-condensed uppercase text-ink-dim tracking-[0.15em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.65rem' }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              ))}
-            </div>
-
             {/* CTA */}
             <div className="pt-2 flex items-center gap-6">
-              <a
+              <Link
                 href="/about"
-                className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
+                className="inline-block pt-2.5 font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 La mia storia →
-              </a>
-              <div className="flex flex-wrap gap-2">
-                {about.skills.slice(0, 4).map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 font-condensed text-xs uppercase tracking-[0.12em] text-ink-dim"
-                    style={{
-                      fontFamily: 'var(--font-barlow-condensed)',
-                      border: '1px solid rgba(61,92,53,0.18)',
-                      background: 'rgba(61,92,53,0.03)',
-                    }}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       </div>
 
       <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
-        <Ornament index="05" label="Thinking" className="mb-6" />
+        <Ornament index="05" label="Idee" className="mb-6" />
 
         <div className="mb-4">
           <h2
@@ -118,7 +118,7 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
               <div className="flex items-center justify-between">
                 <span
                   className="font-condensed uppercase text-xs tracking-[0.35em]"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
                   {post.category}
                 </span>
@@ -188,24 +188,16 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
       </div>
 
       {preview && (
-        <div className="max-w-6xl mx-auto mt-6 relative" style={{ zIndex: 1 }}>
+        <div className="max-w-6xl mx-auto mt-10 flex justify-end relative" style={{ zIndex: 1 }}>
           <Link
             href="/thinking"
-            className="group flex items-center justify-between gap-6 px-8 md:px-12 py-8 md:py-10 transition-colors duration-300 hover:bg-bg-alt"
-            style={{ border: '1px solid rgba(61,92,53,0.25)', background: 'var(--bg)' }}
+            className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b border-green/40 hover:border-green pb-1 transition-colors duration-300"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            <span
-              className="font-display font-black italic text-ink group-hover:text-green transition-colors duration-300"
-              style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 3vw, 2.4rem)' }}
-            >
-              Vedi tutti gli articoli
-            </span>
-            <span
-              className="font-condensed uppercase text-xs tracking-[0.3em] shrink-0"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
-            >
-              Scopri →
-            </span>
+            Tutte le idee
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </Link>
         </div>
       )}

@@ -161,6 +161,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
 
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
       <div
+        data-surface="dark"
         className="w-full pt-28 pb-20 px-8 md:px-20 relative overflow-hidden"
         style={{ background: 'radial-gradient(ellipse at 50% 0%, #1e3d18 0%, #0e200b 50%, #060f04 100%)' }}
       >
@@ -201,7 +202,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           <div className="flex flex-wrap items-center gap-4 mb-6">
             <span
               className="font-condensed uppercase text-xs tracking-[0.4em]"
-              style={{ color: 'var(--orange)', fontFamily: 'var(--font-barlow-condensed)' }}
+              style={{ color: 'var(--orange-text)', fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {post.category}
             </span>
@@ -291,7 +292,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
         >
           <p
             className="font-condensed uppercase text-xs tracking-[0.45em] mb-8"
-            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+            style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
           >
             Altri articoli
           </p>
@@ -311,7 +312,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
                   <div>
                     <p
                       className="font-condensed uppercase text-xs tracking-[0.3em] mb-1"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                     >
                       {p.category}
                     </p>

@@ -74,7 +74,7 @@ export default function GeoBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               <Link href="/belluno" className="hover:underline">Belluno</Link> · GEO Optimization
             </p>
@@ -93,20 +93,20 @@ export default function GeoBellunoPage() {
               className="mt-8 text-bg/70 leading-relaxed max-w-2xl"
               style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.15rem)' }}
             >
-              Sono l'esperto GEO e ChatGPT per aziende a Belluno: ottimizzo la visibilità del tuo brand non solo su Google, ma nelle risposte di ChatGPT, Perplexity e Gemini.
+              Sono l&apos;esperto GEO e ChatGPT per aziende a Belluno: ottimizzo la visibilità del tuo brand non solo su Google, ma nelle risposte di ChatGPT, Perplexity e Gemini.
             </p>
             <div className="mt-10 flex flex-wrap gap-6">
               <Link
                 href="/contatti"
                 className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Parliamone →
               </Link>
               <Link
                 href="/belluno/audit-geo"
                 className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Audit GEO gratuito →
               </Link>
@@ -115,7 +115,7 @@ export default function GeoBellunoPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Scopri Citationrate →
               </a>
@@ -140,7 +140,7 @@ export default function GeoBellunoPage() {
             <div>
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Il problema
               </p>
@@ -153,7 +153,7 @@ export default function GeoBellunoPage() {
             </div>
             <div className="flex flex-col gap-5 lg:pt-2">
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Sempre più persone, anche a Belluno, chiedono direttamente a <strong className="font-semibold text-ink">ChatGPT, Perplexity o Gemini</strong> quale azienda contattare per un servizio, un prodotto, una consulenza. L'AI risponde con un testo, non con dieci link blu.
+                Sempre più persone, anche a Belluno, chiedono direttamente a <strong className="font-semibold text-ink">ChatGPT, Perplexity o Gemini</strong> quale azienda contattare per un servizio, un prodotto, una consulenza. L&apos;AI risponde con un testo, non con dieci link blu.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
                 Se la tua azienda non viene citata in quella risposta, semplicemente <strong className="font-semibold text-ink">non esiste</strong> per quella persona, in quel momento.
@@ -186,7 +186,7 @@ export default function GeoBellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Come lavoro
             </p>
@@ -209,7 +209,7 @@ export default function GeoBellunoPage() {
                 >
                   <span
                     className="font-condensed text-xs uppercase tracking-[0.4em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
@@ -233,14 +233,14 @@ export default function GeoBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               FAQ
             </p>
             <div className="flex flex-col" style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}>
               {([
                 { q: 'Cosa significa GEO (Generative Engine Optimization)?', a: 'È la disciplina che ottimizza la presenza di un brand nelle risposte dei motori generativi come ChatGPT, Perplexity e Gemini, allo stesso modo in cui la SEO ottimizza il posizionamento su Google.' },
-                { q: 'Come faccio a sapere se la mia azienda compare già su ChatGPT?', a: <span>Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso <a href="https://citationrate.com" target="_blank" rel="noopener noreferrer" className="text-green underline underline-offset-2 hover:no-underline">Citationrate</a>, lo strumento che ho fondato per misurare la citation rate dei brand nei motori AI. Trovi anche una guida pratica nell'articolo{' '}<Link href="/thinking/comparire-risposte-chatgpt" className="text-green underline underline-offset-2 hover:no-underline">come far comparire la tua azienda nelle risposte di ChatGPT</Link>.</span> },
+                { q: 'Come faccio a sapere se la mia azienda compare già su ChatGPT?', a: <span>Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso <a href="https://citationrate.com" target="_blank" rel="noopener noreferrer" className="text-green underline underline-offset-2 hover:no-underline">Citationrate</a>, lo strumento che ho fondato per misurare la citation rate dei brand nei motori AI. Trovi anche una guida pratica nell&apos;articolo{' '}<Link href="/thinking/comparire-risposte-chatgpt" className="text-green underline underline-offset-2 hover:no-underline">come far comparire la tua azienda nelle risposte di ChatGPT</Link>.</span> },
                 { q: 'Quanto tempo serve per vedere risultati in GEO?', a: "Più dei mesi serve costanza: i modelli AI aggiornano periodicamente la loro percezione di un brand sulla base di nuove fonti pubbliche. I primi segnali si vedono solitamente in 2-4 mesi di lavoro su contenuti e presenza esterna." },
               ]).map(({ q, a }) => (
                 <div
@@ -258,10 +258,10 @@ export default function GeoBellunoPage() {
               ))}
             </div>
             <div className="mt-12 flex flex-wrap gap-8">
-              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 Marketing a Belluno →
               </Link>
-              <Link href="/belluno/ai-marketing" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno/ai-marketing" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 AI Marketing a Belluno →
               </Link>
             </div>

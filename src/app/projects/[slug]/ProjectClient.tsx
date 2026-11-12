@@ -251,7 +251,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           <div className="reveal">
             <p
               className="font-condensed uppercase text-xs tracking-[0.4em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Overview
             </p>
@@ -272,7 +272,7 @@ export default function ProjectClient({ project }: { project: Project }) {
               className="font-display font-black italic text-ink leading-snug"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.2rem, 2vw, 1.6rem)' }}
             >
-              "{project.description}"
+              &quot;{project.description}&quot;
             </p>
           </blockquote>
         </div>
@@ -286,9 +286,9 @@ export default function ProjectClient({ project }: { project: Project }) {
           >
             <p
               className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
-              Deliverables
+              Cosa ho fatto
             </p>
             <ul className="flex flex-col gap-3">
               {project.deliverables.map((d) => (
@@ -315,7 +315,7 @@ export default function ProjectClient({ project }: { project: Project }) {
             >
               <p
                 className="font-condensed uppercase text-xs tracking-[0.4em] mb-5"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Visita il progetto
               </p>
@@ -384,7 +384,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.45em] mb-10"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Risultati
             </p>

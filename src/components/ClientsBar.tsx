@@ -42,10 +42,10 @@ export default function ClientsBar() {
     >
       <div className="max-w-6xl mx-auto">
         <p
-          className="text-center font-condensed uppercase text-ink-faint text-xs tracking-[0.4em] mb-8"
+          className="text-center font-condensed uppercase text-ink-dim text-xs tracking-[0.4em] mb-8"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          Hanno lavorato con noi
+          Hanno lavorato con me
         </p>
         <LogoCloud logos={logos} />
       </div>

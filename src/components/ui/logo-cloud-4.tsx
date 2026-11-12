@@ -11,43 +11,23 @@ type LogoCloudProps = React.ComponentProps<'div'> & {
   logos: Logo[];
 };
 
+/** Static row of client logos: few enough to show all at once, no conveyor. */
 export function LogoCloud({ logos }: LogoCloudProps) {
-  /* 4× duplication = no visible seam even on wide screens */
-  const track = [...logos, ...logos, ...logos, ...logos];
-
   return (
-    <div
-      className="relative w-full py-6 overflow-hidden"
-      style={{
-        maskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
-        WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
-      }}
-    >
-      <div
-        className="flex items-center w-max"
-        style={{
-          animation: 'marquee 30s linear infinite',
-          willChange: 'transform',
-          gap: '4rem',
-        }}
-      >
-        {track.map((logo, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-center h-10 md:h-12 shrink-0"
-          >
-            <Image
-              alt={logo.alt}
-              className="pointer-events-none select-none h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-              style={{ mixBlendMode: 'darken' }}
-              src={logo.src}
-              width={logo.width}
-              height={logo.height}
-              sizes="200px"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
+    <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 py-2">
+      {logos.map((logo) => (
+        <li key={logo.src} className="flex items-center justify-center h-10 md:h-12">
+          <Image
+            alt={logo.alt}
+            className="select-none h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+            style={{ mixBlendMode: 'darken' }}
+            src={logo.src}
+            width={logo.width}
+            height={logo.height}
+            sizes="160px"
+          />
+        </li>
+      ))}
+    </ul>
   );
 }

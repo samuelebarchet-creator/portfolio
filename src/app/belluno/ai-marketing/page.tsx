@@ -93,7 +93,7 @@ export default function AIMarketingBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               <Link href="/belluno" className="hover:underline">Belluno</Link> · AI Marketing
             </p>
@@ -112,20 +112,20 @@ export default function AIMarketingBellunoPage() {
               className="mt-8 text-bg/70 leading-relaxed max-w-2xl"
               style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.15rem)' }}
             >
-              Porto l'intelligenza artificiale dentro il marketing delle aziende bellunesi: contenuti, campagne e automazioni costruiti più velocemente, senza perdere strategia.
+              Porto l&apos;intelligenza artificiale dentro il marketing delle aziende bellunesi: contenuti, campagne e automazioni costruiti più velocemente, senza perdere strategia.
             </p>
             <div className="mt-10 flex flex-wrap gap-6">
               <Link
                 href="/contatti"
                 className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Parliamone →
               </Link>
               <Link
                 href="/belluno/geo"
                 className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 GEO Optimization →
               </Link>
@@ -150,7 +150,7 @@ export default function AIMarketingBellunoPage() {
             <div>
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Cosa significa
               </p>
@@ -158,7 +158,7 @@ export default function AIMarketingBellunoPage() {
                 className="font-display font-black italic text-ink leading-tight mb-8"
                 style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', letterSpacing: '-0.02em' }}
               >
-                L'AI come moltiplicatore, non come scorciatoia
+                L&apos;AI come moltiplicatore, non come scorciatoia
               </h2>
             </div>
             <div className="flex flex-col gap-5 lg:pt-2">
@@ -166,10 +166,10 @@ export default function AIMarketingBellunoPage() {
                 A Belluno il mercato del marketing digitale è ancora concentrato su <strong className="font-semibold text-ink">siti web, SEO classica e social media</strong>. Sono attività necessarie, ma non bastano più da sole.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                L'AI Marketing non significa delegare tutto a un chatbot. Significa usare strumenti di intelligenza artificiale generativa per <strong className="font-semibold text-ink">velocizzare la produzione</strong> di contenuti e campagne, mantenendo strategia e controllo umano su ogni decisione importante.
+                L&apos;AI Marketing non significa delegare tutto a un chatbot. Significa usare strumenti di intelligenza artificiale generativa per <strong className="font-semibold text-ink">velocizzare la produzione</strong> di contenuti e campagne, mantenendo strategia e controllo umano su ogni decisione importante.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Per le PMI del territorio, spesso con un team marketing di una o due persone, questo significa fare con risorse limitate quello che prima richiedeva un'agenzia strutturata.
+                Per le PMI del territorio, spesso con un team marketing di una o due persone, questo significa fare con risorse limitate quello che prima richiedeva un&apos;agenzia strutturata.
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function AIMarketingBellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Come lo applico
             </p>
@@ -199,7 +199,7 @@ export default function AIMarketingBellunoPage() {
               className="font-display font-black italic text-ink leading-tight mb-14"
               style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', letterSpacing: '-0.02em' }}
             >
-              Quattro aree dove l'AI fa la differenza
+              Quattro aree dove l&apos;AI fa la differenza
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {useCases.map(({ title, body }, i) => (
@@ -210,7 +210,7 @@ export default function AIMarketingBellunoPage() {
                 >
                   <span
                     className="font-condensed text-xs uppercase tracking-[0.4em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
@@ -230,7 +230,7 @@ export default function AIMarketingBellunoPage() {
               <Link
                 href="/servizi"
                 className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Tutti i servizi →
               </Link>
@@ -243,7 +243,7 @@ export default function AIMarketingBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               FAQ
             </p>
@@ -251,7 +251,7 @@ export default function AIMarketingBellunoPage() {
               {([
                 { q: 'Cosa significa "AI Marketing" in pratica?', a: "Significa usare l'intelligenza artificiale come moltiplicatore delle attività di marketing: piani editoriali, prime bozze di contenuti, segmentazione delle campagne, analisi dei dati. La strategia e le decisioni restano umane, l'AI accelera l'esecuzione." },
                 { q: "Ha senso l'AI Marketing per una piccola azienda di Belluno?", a: "Sì, anzi è dove fa più differenza: le PMI hanno meno risorse interne, e l'AI permette di fare con un team piccolo (o con una sola persona) quello che prima richiedeva un'agenzia intera." },
-                { q: 'Che differenza c\'è con una agenzia di marketing tradizionale?', a: <span>Le agenzie tradizionali del territorio lavorano bene su sito, social e Google Ads, ma raramente integrano l'AI generativa nei processi o si occupano di <Link href="/belluno/geo" className="text-green underline underline-offset-2 hover:no-underline">GEO Optimization</Link>. È la parte di competenza che porto in più.</span> },
+                { q: 'Che differenza c\'è con una agenzia di marketing tradizionale?', a: <span>Le agenzie tradizionali del territorio lavorano bene su sito, social e Google Ads, ma raramente integrano l&apos;AI generativa nei processi o si occupano di <Link href="/belluno/geo" className="text-green underline underline-offset-2 hover:no-underline">GEO Optimization</Link>. È la parte di competenza che porto in più.</span> },
               ]).map(({ q, a }) => (
                 <div
                   key={q}
@@ -268,10 +268,10 @@ export default function AIMarketingBellunoPage() {
               ))}
             </div>
             <div className="mt-12 flex flex-wrap gap-8">
-              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 Marketing a Belluno →
               </Link>
-              <Link href="/belluno/automazioni-ai" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno/automazioni-ai" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 Automazioni AI per PMI →
               </Link>
             </div>

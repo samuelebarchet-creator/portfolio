@@ -61,7 +61,7 @@ const ldJson = {
 
 const eyebrow = {
   fontFamily: 'var(--font-barlow-condensed)',
-  color: 'var(--orange)',
+  color: 'var(--orange-text)',
   fontWeight: 'bold',
 } as const;
 const heading = { fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', letterSpacing: '-0.02em' };

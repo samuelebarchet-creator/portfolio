@@ -144,7 +144,7 @@ export default function BellunoPage() {
             <div className="max-w-6xl mx-auto w-full">
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Belluno · Dolomiti · Italia
               </p>
@@ -164,27 +164,27 @@ export default function BellunoPage() {
                 style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.1rem)' }}
               >
                 Aiuto aziende e professionisti del territorio bellunese a costruire una presenza digitale
-                più chiara, più efficace e pronta per l'era dell'AI.
+                più chiara, più efficace e pronta per l&apos;era dell&apos;AI.
               </p>
               <div className="mt-10 flex flex-wrap gap-6">
                 <Link
                   href="/contatti"
                   className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
                   Parliamone →
                 </Link>
                 <Link
                   href="/servizi"
                   className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
                   I miei servizi →
                 </Link>
                 <Link
                   href="/belluno/audit-geo"
                   className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                  style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
                   Audit GEO gratuito →
                 </Link>
@@ -210,7 +210,7 @@ export default function BellunoPage() {
             <div>
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Chi sono
               </p>
@@ -232,7 +232,7 @@ export default function BellunoPage() {
                   Oggi seguo brand e organizzazioni in tutta Italia, ma una parte del mio lavoro è dedicata alle realtà bellunesi: <strong className="font-semibold text-ink">PMI, attività locali, associazioni no-profit</strong> e brand che operano tra le Dolomiti e il Veneto.
                 </p>
                 <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                  Il mio punto di differenza non è essere "l'agenzia locale". È portare al territorio una competenza che qui è ancora rara: <strong className="font-semibold text-ink">AI Marketing e GEO Optimization</strong>: il modo in cui i brand vengono trovati non solo su Google, ma anche da ChatGPT, Perplexity e Gemini.
+                  Il mio punto di differenza non è essere &quot;l&apos;agenzia locale&quot;. È portare al territorio una competenza che qui è ancora rara: <strong className="font-semibold text-ink">AI Marketing e GEO Optimization</strong>: il modo in cui i brand vengono trovati non solo su Google, ma anche da ChatGPT, Perplexity e Gemini.
                 </p>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-10"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Il contesto
             </p>
@@ -289,7 +289,7 @@ export default function BellunoPage() {
                 letterSpacing: '-0.02em',
               }}
             >
-              "Mentre la maggior parte delle agenzie bellunesi parla ancora di social media, il marketing si sta spostando su ChatGPT e Gemini."
+              &quot;Mentre la maggior parte delle agenzie bellunesi parla ancora di social media, il marketing si sta spostando su ChatGPT e Gemini.&quot;
             </blockquote>
             <p
               className="mt-10 text-bg/60 leading-relaxed max-w-2xl"
@@ -316,7 +316,7 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Cosa offro
             </p>
@@ -339,7 +339,7 @@ export default function BellunoPage() {
                 >
                   <span
                     className="font-condensed text-xs uppercase tracking-[0.4em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
@@ -359,7 +359,7 @@ export default function BellunoPage() {
               <Link
                 href="/servizi"
                 className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Tutti i dettagli sui servizi →
               </Link>
@@ -388,7 +388,7 @@ export default function BellunoPage() {
                   </p>
                   <span
                     className="font-condensed uppercase text-xs tracking-[0.25em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     Scopri di più →
                   </span>
@@ -414,7 +414,7 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Perché lavorare con me
             </p>
@@ -427,7 +427,7 @@ export default function BellunoPage() {
                 maxWidth: '22ch',
               }}
             >
-              Non un'agenzia. Un consulente con radici nel territorio.
+              Non un&apos;agenzia. Un consulente con radici nel territorio.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}>
               {reasons.map(({ label, body }) => (
@@ -438,7 +438,7 @@ export default function BellunoPage() {
                 >
                   <p
                     className="font-condensed uppercase text-ink text-xs tracking-[0.25em] mb-3"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     <strong>{label}</strong>
                   </p>
@@ -467,7 +467,7 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Progetti del territorio
             </p>
@@ -511,7 +511,7 @@ export default function BellunoPage() {
                 >
                   <p
                     className="font-condensed uppercase text-xs tracking-[0.35em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     {tag}
                   </p>
@@ -526,7 +526,7 @@ export default function BellunoPage() {
                   </p>
                   <span
                     className="font-condensed uppercase text-xs tracking-[0.25em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     Vedi progetto →
                   </span>
@@ -538,7 +538,7 @@ export default function BellunoPage() {
               <Link
                 href="/lavori"
                 className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Tutti i progetti →
               </Link>
@@ -562,7 +562,7 @@ export default function BellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-8"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Approfondimenti
             </p>
@@ -582,7 +582,7 @@ export default function BellunoPage() {
                   <div>
                     <p
                       className="font-condensed uppercase text-xs tracking-[0.3em] mb-2"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                      style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                     >
                       {cat}
                     </p>
@@ -595,7 +595,7 @@ export default function BellunoPage() {
                   </div>
                   <span
                     className="font-condensed text-ink-faint text-xs tracking-[0.2em] shrink-0 mt-1 group-hover:text-green transition-colors duration-300"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     Leggi →
                   </span>

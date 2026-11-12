@@ -13,12 +13,11 @@ export const metadata: Metadata = {
   },
 };
 import StatsBar from '@/components/StatsBar';
-import WorkMarquee from '@/components/WorkMarquee';
 import ClientsBar from '@/components/ClientsBar';
 import CollabGrid from '@/components/CollabGrid';
 import ServicesSection from '@/components/ServicesSection';
 import About from '@/components/About';
-import Testimonials from '@/components/Testimonials';
+import Testimonials, { FeaturedQuote } from '@/components/Testimonials';
 import ThinkingGrid from '@/components/ThinkingGrid';
 import Contact from '@/components/Contact';
 
@@ -26,13 +25,13 @@ export default function Page() {
   return (
     <main>
       <HeroVerde />
-      <StatsBar />
-      <WorkMarquee />
       <ClientsBar />
-      <CollabGrid />
+      <FeaturedQuote />
+      <CollabGrid featured />
+      <StatsBar />
       <ServicesSection preview />
       <About />
-      <Testimonials />
+      <Testimonials excludeFeatured />
       <ThinkingGrid preview />
       <Contact />
     </main>

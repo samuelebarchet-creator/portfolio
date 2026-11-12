@@ -16,11 +16,12 @@
   /* Ink */
   --color-ink:       #1A1A16;
   --color-ink-dim:   #5A5A52;
-  --color-ink-faint: #9A9A8E;
+  --color-ink-faint: #66665C;
 
   /* Terracotta / accento */
   --color-orange:       #D4713A;
   --color-orange-light: #E09060;
+  --color-orange-text:  var(--orange-text);
   --color-brown:        #6B4226;
   --color-brown-light:  #9A6B48;
 
@@ -41,9 +42,11 @@
   --green-light:  #8FB87A;
   --ink:          #1A1A16;
   --ink-dim:      #5A5A52;
-  --ink-faint:    #9A9A8E;
+  --ink-faint:    #66665C;
   --orange:       #D4713A;
   --orange-light: #E09060;
+  /* Terracotta for text: darker on paper (≥4.5:1), lighter on dark surfaces. */
+  --orange-text:  #A44F1D;
   --brown:        #6B4226;
   --brown-light:  #9A6B48;
 }
@@ -87,6 +90,20 @@
 .iubenda-iframe-popup,
 #iubenda-cs-banner { z-index: 9999 !important; }
 
+/* ─── Dark surfaces (hero, contact, article heroes) ─────────────────────── */
+[data-surface="dark"] {
+  --orange-text: var(--orange-light);
+}
+
+/* ─── Keyboard focus — one ring for the whole site ──────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+[data-surface="dark"] :focus-visible {
+  outline-color: var(--orange-light);
+}
+
 /* ─── Selection ──────────────────────────────────────────────────────────── */
 ::selection        { background: var(--green); color: var(--bg); }
 ::-moz-selection   { background: var(--green); color: var(--bg); }
@@ -114,16 +131,8 @@
   .page-enter,
   .nav-enter,
   .shader-enter { animation: none; }
-}
-
-/* ─── Marquee keyframes (WorkMarquee) ────────────────────────────────────── */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-@keyframes marquee-reverse {
-  from { transform: translateX(-50%); }
-  to   { transform: translateX(0); }
+  /* Hero entrances are inline styles; content shows at rest instead of sliding in. */
+  [style*="hero-fade-up"] { animation: none !important; }
 }
 
 /* ─── Ornament utility ───────────────────────────────────────────────────── */

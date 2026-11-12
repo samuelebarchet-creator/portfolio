@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T17:43:21.105811+00:00",
+  "title": "Design System: Samuele Barchet",
+  "extensions": {
+    "colorMeta": {
+      "carta-crema": {
+        "role": "neutral",
+        "displayName": "Carta Crema",
+        "canonical": "#F5F0E8",
+        "tonalRamp": [
+          "#2F281E",
+          "#564830",
+          "#816840",
+          "#AF894D",
+          "#BDA378",
+          "#CDBDA3",
+          "#DFD7CB",
+          "#F5F3F0"
+        ]
+      },
+      "carta-velina": {
+        "role": "neutral",
+        "displayName": "Carta Velina",
+        "canonical": "#EDE8DC",
+        "tonalRamp": [
+          "#2D291F",
+          "#534A34",
+          "#7B6B46",
+          "#A68E56",
+          "#B7A67F",
+          "#C9BFA7",
+          "#DDD8CD",
+          "#F4F3F0"
+        ]
+      },
+      "lino": {
+        "role": "neutral",
+        "displayName": "Lino",
+        "canonical": "#E8E2D4",
+        "tonalRamp": [
+          "#2D2920",
+          "#524935",
+          "#7A6B48",
+          "#A38D58",
+          "#B5A580",
+          "#C8BEA8",
+          "#DDD8CE",
+          "#F4F3F0"
+        ]
+      },
+      "lino-scuro": {
+        "role": "neutral",
+        "displayName": "Lino Scuro",
+        "canonical": "#E2DDD0",
+        "tonalRamp": [
+          "#2C2921",
+          "#4F4838",
+          "#74694D",
+          "#9B8B60",
+          "#AFA486",
+          "#C4BDAC",
+          "#DBD8CF",
+          "#F4F3F1"
+        ]
+      },
+      "verde-abete": {
+        "role": "primary",
+        "displayName": "Verde Abete",
+        "canonical": "#3D5C35",
+        "tonalRamp": [
+          "#232C20",
+          "#3C5036",
+          "#53774A",
+          "#6A9F5C",
+          "#8DB283",
+          "#B0C6AA",
+          "#D1DCCE",
+          "#F1F4F1"
+        ]
+      },
+      "salvia-sottobosco": {
+        "role": "primary",
+        "displayName": "Salvia di Sottobosco",
+        "canonical": "#6A8A5E",
+        "tonalRamp": [
+          "#242A22",
+          "#3F4D3A",
+          "#597051",
+          "#739566",
+          "#93AB8A",
+          "#B3C2AE",
+          "#D3DAD0",
+          "#F2F3F1"
+        ]
+      },
+      "germoglio": {
+        "role": "primary",
+        "displayName": "Germoglio",
+        "canonical": "#8FB87A",
+        "tonalRamp": [
+          "#242D20",
+          "#3F5235",
+          "#587A47",
+          "#71A458",
+          "#92B580",
+          "#B3C8A8",
+          "#D3DDCE",
+          "#F2F4F0"
+        ]
+      },
+      "inchiostro": {
+        "role": "neutral",
+        "displayName": "Inchiostro",
+        "canonical": "#1A1A16",
+        "tonalRamp": [
+          "#282824",
+          "#47473F",
+          "#67675A",
+          "#888873",
+          "#A2A294",
+          "#BCBCB4",
+          "#D7D7D3",
+          "#F3F3F2"
+        ]
+      },
+      "inchiostro-diluito": {
+        "role": "neutral",
+        "displayName": "Inchiostro Diluito",
+        "canonical": "#5A5A52",
+        "tonalRamp": [
+          "#272725",
+          "#464641",
+          "#64645D",
+          "#838378",
+          "#9F9F97",
+          "#BABAB6",
+          "#D6D6D4",
+          "#F3F3F2"
+        ]
+      },
+      "inchiostro-sbiadito": {
+        "role": "neutral",
+        "displayName": "Inchiostro Sbiadito",
+        "canonical": "#66665C",
+        "tonalRamp": [
+          "#272725",
+          "#464641",
+          "#65655C",
+          "#858577",
+          "#A0A096",
+          "#BBBBB5",
+          "#D7D7D4",
+          "#F3F3F2"
+        ]
+      },
+      "terracotta": {
+        "role": "secondary",
+        "displayName": "Terracotta",
+        "canonical": "#D4713A",
+        "tonalRamp": [
+          "#342218",
+          "#623B24",
+          "#95512C",
+          "#CE672E",
+          "#D38B63",
+          "#D9AE96",
+          "#E5D1C5",
+          "#F6F1EE"
+        ]
+      },
+      "terracotta-chiara": {
+        "role": "secondary",
+        "displayName": "Terracotta Chiara",
+        "canonical": "#E09060",
+        "tonalRamp": [
+          "#352317",
+          "#643B23",
+          "#985329",
+          "#D2692A",
+          "#D68C60",
+          "#DBAF95",
+          "#E6D1C4",
+          "#F6F1EE"
+        ]
+      },
+      "corteccia": {
+        "role": "secondary",
+        "displayName": "Corteccia",
+        "canonical": "#6B4226",
+        "tonalRamp": [
+          "#31241C",
+          "#5A3F2C",
+          "#885939",
+          "#B97342",
+          "#C49371",
+          "#D1B39F",
+          "#E1D3C9",
+          "#F5F2EF"
+        ]
+      },
+      "corteccia-chiara": {
+        "role": "secondary",
+        "displayName": "Corteccia Chiara",
+        "canonical": "#9A6B48",
+        "tonalRamp": [
+          "#2E251E",
+          "#554132",
+          "#7E5C43",
+          "#AB7750",
+          "#BA967B",
+          "#CBB5A5",
+          "#DED4CC",
+          "#F4F2F0"
+        ]
+      },
+      "notte-di-bosco": {
+        "role": "neutral",
+        "displayName": "Notte di Bosco",
+        "canonical": "#080D08",
+        "tonalRamp": [
+          "#212C21",
+          "#384F38",
+          "#4D744D",
+          "#609B60",
+          "#86B086",
+          "#ACC4AC",
+          "#CFDBCF",
+          "#F1F4F1"
+        ]
+      },
+      "radura-notturna": {
+        "role": "neutral",
+        "displayName": "Radura Notturna",
+        "canonical": "#16331A",
+        "tonalRamp": [
+          "#1D2F20",
+          "#305735",
+          "#408149",
+          "#4CAF5A",
+          "#78BE82",
+          "#A3CDA9",
+          "#CBDFCE",
+          "#F0F5F1"
+        ]
+      },
+      "terracotta-inchiostro": {
+        "role": "secondary",
+        "displayName": "Terracotta d'Inchiostro",
+        "canonical": "#A44F1D",
+        "tonalRamp": [
+          "#3A1B0A",
+          "#5A2A10",
+          "#7A3A16",
+          "#A44F1D",
+          "#C0703F",
+          "#D69468",
+          "#E7B898",
+          "#F5DCC9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Solo il claim dell'hero."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titoli di sezione."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nomi clienti, titoli servizi, menu mobile."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragrafi."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Ornamenti e micro-etichette."
+      },
+      "label-action": {
+        "displayName": "Label Action",
+        "purpose": "Pulsanti, nav e link CTA."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hero-text",
+        "value": "0 2px 40px rgba(0,0,0,0.6)",
+        "purpose": "text-shadow del claim sopra lo shader dell'hero."
+      },
+      {
+        "name": "hero-link",
+        "value": "0 1px 8px rgba(0,0,0,0.7)",
+        "purpose": "text-shadow dei link sull'hero."
+      },
+      {
+        "name": "warp-wash",
+        "value": "WarpShadow color rgba(61,92,53,0.22)",
+        "purpose": "Profondità animata dietro le sezioni (shader, non box-shadow)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-reveal",
+        "value": "power3.out (GSAP)",
+        "purpose": "Entrate e reveal allo scroll."
+      },
+      {
+        "name": "reveal",
+        "value": "0.6s–0.7s, y 10–20px, once",
+        "purpose": "Ornamenti, sezioni, hero."
+      },
+      {
+        "name": "color-transition",
+        "value": "300ms ease",
+        "purpose": "Hover di colore, sottolineature, bordi."
+      },
+      {
+        "name": "page-enter",
+        "value": "fade-in 0.35s ease-out",
+        "purpose": "Entrata della pagina."
+      },
+      {
+        "name": "shader-enter",
+        "value": "fade-in 1.2s ease-out",
+        "purpose": "Comparsa degli shader."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "Lenis",
+        "purpose": "Scroll morbido globale."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Azione principale: pieno verde abete con freccia.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Scopri i lavori <svg width=\"14\" height=\"14\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:var(--green,#3D5C35);color:var(--bg,#F5F0E8);font-family:'Barlow Condensed', sans-serif;font-size:.875rem;text-transform:uppercase;letter-spacing:.2em;text-decoration:none;border:0;border-radius:0;transition:background-color .3s}.ds-btn-primary:hover{background:var(--green-mid,#6A8A5E)}.ds-btn-primary:focus-visible{outline:1px solid var(--green,#3D5C35);outline-offset:3px}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "CTA in nav: bordo verde, si riempie in hover.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Parliamone</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;padding:8px 20px;color:var(--green,#3D5C35);border:1px solid var(--green,#3D5C35);background:transparent;font-family:'Barlow Condensed', sans-serif;font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;text-decoration:none;border-radius:0;transition:all .3s}.ds-btn-outline:hover{background:var(--green,#3D5C35);color:var(--bg,#F5F0E8)}.ds-btn-outline:focus-visible{outline:1px solid var(--green,#3D5C35);outline-offset:3px}"
+    },
+    {
+      "name": "Text Link CTA",
+      "kind": "button",
+      "refersTo": null,
+      "description": "CTA secondario testuale e sottolineato.",
+      "html": "<a class=\"ds-link\" href=\"#\">Scrivimi</a>",
+      "css": ".ds-link{font-family:'Barlow Condensed', sans-serif;font-size:.875rem;text-transform:uppercase;letter-spacing:.2em;color:var(--ink-dim,#5A5A52);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--green-mid,#6A8A5E);transition:color .3s}.ds-link:hover{color:var(--ink,#1A1A16)}.ds-link:focus-visible{outline:1px solid var(--green,#3D5C35);outline-offset:3px}"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Campo del lead form: trasparente, filetto verde.",
+      "html": "<label class=\"ds-field\">Nome<input class=\"ds-input\" placeholder=\"Mario Rossi\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;font-family:'Barlow', sans-serif;font-size:.875rem;color:var(--ink,#1A1A16)}.ds-input{width:100%;padding:12px 16px;background:transparent;border:1px solid rgba(61,92,53,.3);border-radius:0;font-family:'Barlow', sans-serif;font-size:1rem;color:var(--ink,#1A1A16);outline:none;transition:border-color .3s}.ds-input:hover{border-color:rgba(61,92,53,.55)}.ds-input:focus-visible{border-color:var(--green,#3D5C35)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Barra fissa: link condensati con sottolineatura che cresce.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">Samuele Barchet</span><ul><li><a href=\"#\">Lavori</a></li><li><a href=\"#\">Servizi</a></li><li><a href=\"#\">About</a></li></ul></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 32px;background:var(--bg,#F5F0E8)}.ds-nav-brand{font-family:'Playfair Display', Georgia, serif;font-weight:900;font-style:italic;font-size:1.125rem;color:var(--ink,#1A1A16)}.ds-nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}.ds-nav a{position:relative;font-family:'Barlow Condensed', sans-serif;font-size:.875rem;text-transform:uppercase;letter-spacing:.18em;color:var(--ink-dim,#5A5A52);text-decoration:none;transition:color .3s}.ds-nav a::after{content:'';position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--green,#3D5C35);transition:width .3s}.ds-nav a:hover{color:var(--ink,#1A1A16)}.ds-nav a:hover::after{width:100%}.ds-nav a:focus-visible{outline:1px solid var(--green,#3D5C35);outline-offset:4px}"
+    },
+    {
+      "name": "Section Ornament",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature: etichetta numerata in terracotta tra due filetti sfumati.",
+      "html": "<div class=\"ds-ornament\"><span class=\"ds-orn-line l\"></span><span class=\"ds-orn-label\"><b>01</b> Lavori selezionati</span><span class=\"ds-orn-line r\"></span></div>",
+      "css": ".ds-ornament{display:flex;align-items:center;gap:12px}.ds-orn-line{flex:1;height:1px}.ds-orn-line.l{background:linear-gradient(90deg,transparent,rgba(212,113,58,.35))}.ds-orn-line.r{background:linear-gradient(90deg,rgba(212,113,58,.35),transparent)}.ds-orn-label{font-family:'Barlow Condensed', sans-serif;font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.45em;color:var(--orange-text,#A44F1D);white-space:nowrap}.ds-orn-label b{margin-right:8px}"
+    },
+    {
+      "name": "Work Card",
+      "kind": "card",
+      "refersTo": "work-card",
+      "description": "Card progetto: crema, filetti da 1px, bordo verde in hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-meta\">2024 · Brand Strategist</span><span class=\"ds-card-title\">Braghe's</span><span class=\"ds-card-desc\">Brand di abbigliamento accessibile per persone in carrozzina.</span></a>",
+      "css": ".ds-card{display:flex;flex-direction:column;gap:6px;max-width:340px;padding:32px;background:var(--bg,#F5F0E8);border:1px solid rgba(61,92,53,.1);border-radius:0;text-decoration:none;transition:border-color .3s}.ds-card:hover,.ds-card:focus-visible{border-color:var(--green,#3D5C35);outline:none}.ds-card-meta{font-family:'Barlow Condensed', sans-serif;font-size:.75rem;text-transform:uppercase;letter-spacing:.3em;color:var(--green-mid,#6A8A5E);margin-bottom:18px}.ds-card-title{font-family:'Playfair Display', Georgia, serif;font-weight:900;font-style:italic;font-size:2rem;line-height:1.25;color:var(--ink,#1A1A16);transition:color .3s}.ds-card:hover .ds-card-title{color:var(--green,#3D5C35)}.ds-card-desc{font-family:'Barlow', sans-serif;font-size:.875rem;line-height:1.6;color:var(--ink-dim,#5A5A52)}"
+    },
+    {
+      "name": "Stat",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Numero in Playfair verde con didascalia condensata.",
+      "html": "<div class=\"ds-stat\"><span class=\"ds-stat-v\">4M+</span><span class=\"ds-stat-l\">Visualizzazioni generate</span></div>",
+      "css": ".ds-stat{display:inline-flex;flex-direction:column;align-items:center;gap:4px;padding:24px 16px;background:var(--bg-alt,#EDE8DC)}.ds-stat-v{font-family:'Playfair Display', Georgia, serif;font-weight:900;font-style:italic;font-size:clamp(48px,5vw,72px);line-height:1;color:var(--green,#3D5C35)}.ds-stat-l{font-family:'Barlow Condensed', sans-serif;font-size:.75rem;text-transform:uppercase;letter-spacing:.25em;color:var(--ink-faint,#9A9A8E)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "L'Atelier nel Bosco",
+    "overview": "**Creative North Star: \"L'Atelier nel Bosco\"**\n\nIl sito è uno studio creativo immerso nel verde. La superficie è calma e stampata: carta crema, inchiostro quasi nero, grandi titoli in Playfair Black Italic ed etichette condensate in maiuscolo, con molta spaziatura, che numerano le sezioni come le tavole di un quaderno. Sotto questa superficie qualcosa si muove: il mare verde e terracotta dell'hero, con la barca che naviga attorno al titolo, e le ombre \"warp\" che scorrono dietro le sezioni sono profondità viva, non decorazione.\n\nL'effetto deve essere **vivo e sorprendente**: shader, entrate GSAP, scroll morbido (Lenis) e cursore custom fanno del sito stesso una prova di competenza. Lo stupore però resta dentro una griglia sobria: angoli vivi, separatori di un pixel, nessuna ombra sulle superfici. La sorpresa sta nel *materiale*, non nel caos della composizione.\n\nIl sito non deve mai sembrare un **template da freelance**: niente foto profilo in un cerchio, niente sezioni a icone in griglia, niente layout da tema WordPress.",
+    "keyCharacteristics": [
+      "Carta crema calda al posto del bianco; inchiostro `#1A1A16` al posto del nero.",
+      "Playfair Display 900 *sempre in corsivo* per ogni titolo, dal display ai nomi delle card.",
+      "Barlow Condensed in maiuscolo con tracking ampio (0.2em–0.55em) per etichette, navigazione e pulsanti.",
+      "Ornamenti numerati in terracotta (`── 01 · Lavori selezionati ──`) che aprono le sezioni.",
+      "Profondità fatta di luce verde in movimento (WebGL), mai di ombre.",
+      "Angoli vivi ovunque; il cerchio è riservato ai punti degli elenchi."
+    ],
+    "rules": [
+      {
+        "name": "La Regola della Terracotta Sola",
+        "body": "La terracotta è l'unico colore caldo in scena: numera le sezioni e accende l'hero. Sui fondi notturni dell'hero è il colore dell'azione (CTA pieno, sottolineature, divisore); sulla carta le azioni sono sempre verde abete. Nessun secondo accento caldo.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola della Carta",
+        "body": "Nessuna superficie è bianca pura né nera pura. Il chiaro è crema, lo scuro è inchiostro o notte di bosco.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola del Contrasto Minimo",
+        "body": "Il testo in terracotta usa sempre `var(--orange-text)`: sulla carta vale Terracotta d'Inchiostro (`terracotta-inchiostro`, 5.0:1); dentro `[data-surface=\"dark\"]` diventa Terracotta Chiara (≥4.8:1). `var(--orange)` resta per fondi, filetti e decorazioni. La salvia (3.4:1) non si usa per il testo.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola del Corsivo Nero",
+        "body": "Ogni titolo è Playfair 900 *italic*. Un titolo in tondo o in peso medio rompe il sistema.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola del Maiuscolo Spaziato",
+        "body": "Il Barlow Condensed compare solo in maiuscolo con tracking ≥ 0.15em; il Barlow normale non va mai in maiuscolo.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola della Luce, non dell'Ombra",
+        "body": "La profondità si fa con la luce verde che si muove dietro la carta, mai sollevando le card con le ombre.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regola dello Shader Responsabile",
+        "body": "Ogni shader ha sotto un gradiente radiale statico come fallback. `AdaptiveWarp` sotto i 768px riduce iterazioni e pixel, e si ferma con `prefers-reduced-motion` o con Save-Data. Ogni nuovo effetto WebGL segue le stesse regole.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usare Playfair Display 900 italic per ogni titolo, Barlow per il testo e Barlow Condensed maiuscolo spaziato per etichette e azioni.",
+      "**Do** aprire ogni sezione principale con un Ornamento numerato in terracotta.",
+      "**Do** alternare sezioni crema (`#F5F0E8`) e velina (`#EDE8DC`) e separare le card con filetti di 1px, non con ombre.",
+      "**Do** colorare tutte le azioni (pulsanti, link attivi, hover) in verde abete `#3D5C35`.",
+      "**Do** dare profondità con `WarpShadow` o con lo shader, seguendo la Regola dello Shader Responsabile (prima un fallback statico, con mobile e reduced motion gestiti).",
+      "**Do** usare per il testo da leggere solo inchiostro o inchiostro diluito (≥ 4.5:1)."
+    ],
+    "donts": [
+      "**Don't** farlo sembrare un template da freelance: niente foto profilo in un cerchio, niente griglie di icone per i servizi, niente layout da tema WordPress.",
+      "**Don't** arrotondare angoli o aggiungere `box-shadow` a card, pulsanti o input.",
+      "**Don't** usare bianco puro (`#FFFFFF`) o nero puro come superficie.",
+      "**Don't** usare la terracotta per pulsanti o link sulla carta (è l'accento d'azione solo sui fondi notturni dell'hero), né introdurre un secondo accento caldo.",
+      "**Don't** usare terracotta, salvia o inchiostro sbiadito per paragrafi o testo informativo lungo.",
+      "**Don't** mettere titoli in Playfair tondo o in peso medio, o il Barlow Condensed in minuscolo."
+    ]
+  }
+}

@@ -7,7 +7,7 @@ import { trackLead } from '@/lib/track';
 const PRIVACY_URL = 'https://www.iubenda.com/privacy-policy/60384143';
 
 const labelClass = 'flex flex-col gap-2 text-ink text-sm';
-const inputClass = 'w-full bg-transparent px-4 py-3 text-ink outline-none focus:border-green';
+const inputClass = 'w-full bg-transparent px-4 py-3 text-ink focus:border-green';
 const inputStyle = { border: '1px solid rgba(61,92,53,0.3)', fontFamily: 'var(--font-barlow)', fontSize: '1rem' };
 
 interface LeadFormProps {

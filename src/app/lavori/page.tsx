@@ -130,9 +130,9 @@ export default function LavoriPage() {
 
               <p
                 className="font-condensed uppercase text-xs tracking-[0.25em] mb-4"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--green)', fontWeight: 'bold' }}
               >
-                {p.role}
+                {p.focus}
               </p>
 
               <p

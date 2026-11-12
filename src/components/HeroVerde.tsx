@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import AdaptiveWarp from '@/components/ui/adaptive-warp';
 
@@ -74,6 +75,7 @@ export default function HeroVerde() {
   return (
     <section
       ref={sectionRef}
+      data-surface="dark"
       className="relative w-full overflow-hidden"
       style={{
         background:
@@ -127,15 +129,15 @@ export default function HeroVerde() {
         <p
           className="font-condensed uppercase text-xs tracking-[0.55em] mb-12"
           style={{
-            color: 'var(--orange)',
+            color: 'var(--orange-text)',
             fontFamily: 'var(--font-barlow-condensed)',
             fontWeight: 'bold',
             animation: 'hero-fade-up 0.7s ease-out both 0.4s',
           }}
         >
-          Brand &amp; Digital Strategist<span className="hidden md:inline"> · </span>
+          Samuele Barchet<span className="hidden md:inline"> · </span>
           <br className="md:hidden" />
-          Milano e Belluno
+          Brand &amp; Digital Strategist
         </p>
 
         <h1
@@ -150,30 +152,33 @@ export default function HeroVerde() {
             animation: 'hero-fade-up 1.0s ease-out both 0.6s',
           }}
         >
-          Naviga in un mare<br />di soluzioni per il tuo Brand
+          Prima la rotta,<br />poi il vento.
         </h1>
 
         <div className="my-9 h-px w-14" style={{ background: 'rgba(212,113,58,0.55)' }} />
 
         <p
-          className="font-condensed uppercase tracking-[0.45em] text-sm"
+          className="max-w-[38ch] leading-relaxed"
           style={{
-            color: 'rgba(245,240,232,0.60)',
-            fontFamily: 'var(--font-barlow-condensed)',
+            color: 'rgba(245,240,232,0.82)',
+            fontFamily: 'var(--font-barlow)',
+            fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
+            textShadow: '0 1px 12px rgba(0,0,0,0.6)',
+            textWrap: 'balance',
             animation: 'hero-fade-up 0.7s ease-out both 1.3s',
           }}
         >
-          Samuele Barchet
+          Strategia di brand per aziende di Belluno e Milano. Prima decidiamo dove andare, poi social, contenuti e advertising. Nell&rsquo;ordine giusto.
         </p>
 
         <div
           className="flex items-center gap-4 mt-12"
           style={{ animation: 'hero-fade-up 0.7s ease-out both 1.55s' }}
         >
-          <a
+          <Link
             href="/#collaborazioni"
             className="inline-flex items-center gap-2 px-7 py-3 font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300"
-            style={{ fontFamily: 'var(--font-barlow-condensed)', background: 'var(--orange)', color: 'var(--bg)' }}
+            style={{ fontFamily: 'var(--font-barlow-condensed)', background: 'var(--orange)', color: 'var(--ink)', fontWeight: 600 }}
             onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--orange-light)')}
             onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--orange)')}
           >
@@ -181,8 +186,8 @@ export default function HeroVerde() {
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="font-condensed uppercase text-sm tracking-[0.2em] transition-colors duration-300 underline underline-offset-4"
             style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'rgba(245,240,232,0.75)', textDecorationColor: 'rgba(212,113,58,0.55)', textShadow: '0 1px 8px rgba(0,0,0,0.7)' }}
@@ -190,7 +195,7 @@ export default function HeroVerde() {
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(245,240,232,0.75)')}
           >
             Scrivimi
-          </a>
+          </Link>
         </div>
       </div>
     </section>

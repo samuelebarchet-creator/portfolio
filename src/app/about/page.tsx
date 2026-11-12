@@ -90,7 +90,7 @@ export default function AboutPage() {
         mobileImage="/about/mountains-mobile.jpg"
         initialClipPercentage={0}
         finalClipPercentage={100}
-        heroLabel="About"
+        heroLabel="Chi sono"
         heroTitle="Dalle montagne al mondo del digital"
         imageAlt="Panoramica delle cime dolomitiche sopra la valle bellunese, con boschi in primo piano e nuvole sulle vette"
       />
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 className="font-display font-black italic text-ink leading-snug"
                 style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.1rem, 2vw, 1.4rem)' }}
               >
-                "{philosophy[0]}"
+                &quot;{philosophy[0]}&quot;
               </p>
             </blockquote>
           </div>
@@ -233,7 +233,7 @@ export default function AboutPage() {
                   className="font-display font-black italic text-ink leading-snug"
                   style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.1rem' }}
                 >
-                  "{philosophy[1]}"
+                  &quot;{philosophy[1]}&quot;
                 </p>
               </div>
 

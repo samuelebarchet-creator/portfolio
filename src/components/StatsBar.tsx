@@ -4,7 +4,13 @@ import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import { about } from '@/lib/about';
 
-const stats = about.stats;
+/* The home's single numbers moment (About no longer repeats them). */
+const stats = [
+  about.stats[0],                                   // 7+ anni nel settore
+  about.stats[1],                                   // 20+ progetti realizzati
+  about.stats[3],                                   // 4M+ visualizzazioni generate
+  { value: '−73%', label: 'Costo per lead vs benchmark' },
+];
 
 export default function StatsBar() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -36,15 +42,10 @@ export default function StatsBar() {
       style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}
     >
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0">
-        {stats.map((stat, i) => (
+        {stats.map((stat) => (
           <div
             key={stat.label}
-            className="stat-item flex flex-col items-center py-6 px-4 gap-1"
-            style={
-              i < stats.length - 1
-                ? { borderRight: '1px solid rgba(61,92,53,0.1)' }
-                : undefined
-            }
+            className="stat-item flex flex-col items-center py-6 px-4 gap-1 border-green/10 [&:nth-child(odd)]:border-r md:border-r md:last:border-r-0"
           >
             <div
               className="font-display font-black italic text-green leading-none"
@@ -56,7 +57,7 @@ export default function StatsBar() {
               {stat.value}
             </div>
             <p
-              className="font-condensed uppercase text-ink-faint text-xs tracking-[0.25em] mt-1 text-center"
+              className="font-condensed uppercase text-ink-dim text-xs tracking-[0.25em] mt-1 text-center"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {stat.label}

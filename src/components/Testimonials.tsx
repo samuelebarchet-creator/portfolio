@@ -6,6 +6,9 @@ import React from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 import Ornament from '@/components/Ornament';
 
+/** The quote shown right under the home hero; the full section then shows the others. */
+const FEATURED = 'Alessandro Pellizzer';
+
 const testimonials = [
   {
     quote: 'Samuele lo conosco da quando era giovane, con tutto ancora da esprimere. L\'ho coinvolto in progetti, sfide, situazioni. Credevo in quello che poteva diventare. Poi ha capito che il marketing e la comunicazione erano il suo terreno, e da lì **si è fatto strada da solo**, con le sue competenze e **una mentalità che pochi hanno**.',
@@ -48,7 +51,8 @@ const QUOTE_STYLE: React.CSSProperties = {
   userSelect: 'none',
 };
 
-export default function Testimonials() {
+export default function Testimonials({ excludeFeatured = false }: { excludeFeatured?: boolean } = {}) {
+  const shown = excludeFeatured ? testimonials.filter((t) => t.name !== FEATURED) : testimonials;
   const cardsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -86,8 +90,8 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map(({ quote, name, role, photo, objectPosition }) => (
+        <div ref={cardsRef} className={`grid grid-cols-1 gap-6 ${shown.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
+          {shown.map(({ quote, name, role, photo, objectPosition }) => (
             <div
               key={name}
               className="bg-bg flex flex-col gap-5 p-8 md:p-10"
@@ -115,7 +119,7 @@ export default function Testimonials() {
                 style={{ borderTop: '1px solid rgba(61,92,53,0.08)' }}
               >
                 <div
-                  className="relative w-16 h-16 rounded-full overflow-hidden shrink-0"
+                  className="relative w-16 h-16 overflow-hidden shrink-0"
                   style={{ border: '2px solid rgba(61,92,53,0.2)' }}
                 >
                   <Image
@@ -136,7 +140,7 @@ export default function Testimonials() {
                   </p>
                   <p
                     className="font-condensed tracking-wide mt-1"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontSize: '0.9rem' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--green)', fontSize: '0.9rem' }}
                   >
                     {role}
                   </p>
@@ -146,6 +150,58 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
+    </section>
+  );
+}
+
+/** One client voice, large, directly under the hero: proof before any self-description. */
+export function FeaturedQuote() {
+  const t = testimonials.find((x) => x.name === FEATURED)!;
+  return (
+    <section
+      aria-label={`Testimonianza di ${t.name}`}
+      className="w-full px-8 md:px-20 pb-24 pt-4"
+      style={{ background: 'var(--bg)' }}
+    >
+      <figure className="max-w-4xl mx-auto flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
+        <span
+          aria-hidden
+          className="hidden md:block shrink-0"
+          style={{ ...QUOTE_STYLE, fontSize: '7rem', lineHeight: 0.8, color: 'var(--orange-text)' }}
+        >
+          &ldquo;
+        </span>
+        <div className="flex flex-col gap-8">
+          <blockquote
+            className="font-display italic text-ink"
+            style={{
+              fontFamily: 'var(--font-playfair)',
+              fontWeight: 400,
+              fontSize: 'clamp(1.35rem, 2.4vw, 2rem)',
+              lineHeight: 1.4,
+              textWrap: 'pretty',
+            }}
+          >
+            {renderQuote(t.quote)}
+          </blockquote>
+          <figcaption className="flex items-center gap-4">
+            <div className="relative w-14 h-14 overflow-hidden shrink-0" style={{ border: '1px solid rgba(61,92,53,0.2)' }}>
+              <Image src={t.photo} alt="" fill className="object-cover" style={{ objectPosition: t.objectPosition }} sizes="56px" />
+            </div>
+            <div>
+              <p
+                className="font-condensed font-bold uppercase text-ink tracking-[0.2em]"
+                style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '1rem' }}
+              >
+                {t.name}
+              </p>
+              <p className="font-condensed tracking-wide mt-1 text-green" style={{ fontFamily: 'var(--font-barlow-condensed)', fontSize: '0.9rem' }}>
+                {t.role}
+              </p>
+            </div>
+          </figcaption>
+        </div>
+      </figure>
     </section>
   );
 }

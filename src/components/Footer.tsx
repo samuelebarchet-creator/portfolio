@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { gsap, ScrollTrigger } from '@/lib/gsap';
 
 const navLinks = [
   { label: 'Lavori',   href: '/lavori' },
   { label: 'Servizi',  href: '/servizi' },
-  { label: 'About',    href: '/about' },
-  { label: 'Thinking', href: '/thinking' },
+  { label: 'Chi sono', href: '/about' },
+  { label: 'Idee',     href: '/thinking' },
   { label: 'Contatti', href: '/contatti' },
 ];
 
@@ -58,13 +59,13 @@ export default function Footer() {
         >
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <a
+            <Link
               href="/"
               className="font-display font-black italic text-ink text-3xl leading-none hover:text-green transition-colors duration-300 w-fit"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               SB<span className="text-green">.</span>
-            </a>
+            </Link>
             <p
               className="font-condensed text-ink-dim text-xs uppercase tracking-[0.3em] leading-relaxed"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -74,7 +75,7 @@ export default function Footer() {
             </p>
             <a
               href="mailto:info@samuelebarchet.com"
-              className="font-condensed text-green text-xs tracking-[0.15em] hover:text-green-mid transition-colors duration-300 w-fit"
+              className="inline-block py-1.5 font-condensed text-green text-xs tracking-[0.15em] hover:text-green-mid transition-colors duration-300 w-fit"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               info@samuelebarchet.com
@@ -82,7 +83,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
             <p
               className="font-condensed text-ink-faint uppercase text-xs tracking-[0.4em] mb-2"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -93,7 +94,7 @@ export default function Footer() {
               <a
                 key={label}
                 href={href}
-                className="font-condensed text-ink-dim text-sm uppercase tracking-[0.18em] hover:text-ink transition-colors duration-300 w-fit"
+                className="inline-block py-1 font-condensed text-ink-dim text-sm uppercase tracking-[0.18em] hover:text-ink transition-colors duration-300 w-fit"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {label}
@@ -102,7 +103,7 @@ export default function Footer() {
           </div>
 
           {/* Social */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
             <p
               className="font-condensed text-ink-faint uppercase text-xs tracking-[0.4em] mb-2"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -114,7 +115,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="flex items-center gap-2.5 text-ink-dim hover:text-ink transition-colors duration-300 group w-fit"
+                className="flex items-center gap-2.5 py-1 text-ink-dim hover:text-ink transition-colors duration-300 group w-fit"
               >
                 <span className="text-green-mid group-hover:text-green transition-colors duration-300">
                   {icon}

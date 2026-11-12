@@ -92,7 +92,7 @@ export default function AutomazioniAIBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               <Link href="/belluno" className="hover:underline">Belluno</Link> · Automazioni AI
             </p>
@@ -117,14 +117,14 @@ export default function AutomazioniAIBellunoPage() {
               <Link
                 href="/contatti"
                 className="font-condensed uppercase text-bg text-xs tracking-[0.35em] border-b border-bg/50 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Parliamone →
               </Link>
               <Link
                 href="/belluno/ai-marketing"
                 className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 AI Marketing →
               </Link>
@@ -149,7 +149,7 @@ export default function AutomazioniAIBellunoPage() {
             <div>
               <p
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
                 Perché serve
               </p>
@@ -168,7 +168,7 @@ export default function AutomazioniAIBellunoPage() {
                 Le automazioni AI non sostituiscono le persone. <strong className="font-semibold text-ink">Liberano tempo</strong> da dedicare a ciò che richiede davvero un giudizio umano: relazioni con i clienti, strategia, decisioni.
               </p>
               <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                Costruisco workflow su misura, partendo da un'analisi dei processi esistenti. Niente template generici che non si adattano a come lavora davvero la tua azienda.
+                Costruisco workflow su misura, partendo da un&apos;analisi dei processi esistenti. Niente template generici che non si adattano a come lavora davvero la tua azienda.
               </p>
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function AutomazioniAIBellunoPage() {
           <div className="max-w-6xl mx-auto relative" style={{ zIndex: 1 }}>
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-4"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               Cosa automatizzo
             </p>
@@ -209,7 +209,7 @@ export default function AutomazioniAIBellunoPage() {
                 >
                   <span
                     className="font-condensed text-xs uppercase tracking-[0.4em]"
-                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+                    style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
@@ -233,7 +233,7 @@ export default function AutomazioniAIBellunoPage() {
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
-              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}
+              style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
             >
               FAQ
             </p>
@@ -258,10 +258,10 @@ export default function AutomazioniAIBellunoPage() {
               ))}
             </div>
             <div className="mt-12 flex flex-wrap gap-8">
-              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 Marketing a Belluno →
               </Link>
-              <Link href="/belluno/geo" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange)', fontWeight: 'bold' }}>
+              <Link href="/belluno/geo" className="font-condensed uppercase text-ink text-xs tracking-[0.35em] border-b border-ink pb-0.5 hover:text-green hover:border-green transition-colors duration-300" style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}>
                 GEO Optimization →
               </Link>
             </div>
