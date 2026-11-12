@@ -7,13 +7,15 @@ import { LogoCloud } from '@/components/ui/logo-cloud-4';
 
 gsap.registerPlugin(ScrollTrigger);
 
+/* Transparent, single-ink versions of each client's own logo (sourced from their sites).
+   displayHeight balances optical weight: wide wordmarks sit lower, compact marks taller. */
 const logos = [
-  { src: '/logos/ricambi.jpg', alt: 'Ricambi Carrozzine', width: 543, height: 566 },
-  { src: '/logos/braghes.png', alt: "Braghe's", width: 150, height: 143 },
-  { src: '/logos/vyst.png', alt: 'Vyst', width: 100, height: 28 },
-  { src: '/logos/axis.png', alt: 'Axis', width: 348, height: 144 },
-  { src: '/logos/crossabili.png', alt: 'Crossabili by Mattia Cattapan', width: 120, height: 150 },
-  { src: '/logos/allfit.png', alt: 'All Fit', width: 565, height: 600 },
+  { src: '/logos/clienti/ricambi-carrozzine.png', alt: "Ricambi per Carrozzine", width: 691, height: 200, displayHeight: 36 },
+  { src: '/logos/clienti/braghes-wordmark.png', alt: "Braghe's", width: 1386, height: 200, displayHeight: 30 },
+  { src: '/logos/clienti/vyst.png', alt: "Vyst", width: 755, height: 200, displayHeight: 28 },
+  { src: '/logos/clienti/3d-axis.png', alt: "3D Axis", width: 714, height: 200, displayHeight: 35 },
+  { src: '/logos/clienti/crossabili.png', alt: "CROSSabili", width: 506, height: 200, displayHeight: 42 },
+  { src: '/logos/clienti/allfit.png', alt: "All Fit", width: 188, height: 200, displayHeight: 56 },
 ];
 
 export default function ClientsBar() {

@@ -174,7 +174,7 @@ export default function HeroVerde() {
               textWrap: 'balance',
             }}
           >
-            Strategia di brand per aziende di Belluno e Milano.
+            Strategia di brand per aziende tra Belluno e Milano.
           </span>
           <span
             className="block lg:whitespace-nowrap"
