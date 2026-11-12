@@ -148,7 +148,7 @@ Una palette da bosco su carta: verdi di conifera e sottobosco, terracotta come u
 - **Notte di Bosco** / **Radura Notturna** (`notte-di-bosco`, `radura-notturna`): il fondo dell'hero, una sfumatura radiale da `radura-notturna` al centro verso `notte-di-bosco` ai bordi; anche il `themeColor` del browser.
 
 ### Named Rules
-**La Regola della Terracotta Sola.** La terracotta è l'unico colore caldo in scena: numera le sezioni e accende l'hero. Sui fondi notturni dell'hero è il colore dell'azione (CTA pieno, sottolineature, divisore); sulla carta le azioni sono sempre verde abete. Nessun secondo accento caldo. Nella home i titoli di sezione (H2) sono in Terracotta Viva (`terracotta-viva`, 3.7:1 su crema, solo per testo grande), e in Terracotta Chiara sulle superfici scure; i titoli delle card restano in inchiostro.
+**La Regola della Terracotta Sola.** La terracotta è l'unico colore caldo in scena: numera le sezioni e accende l'hero. Sui fondi notturni dell'hero è il colore dell'azione (CTA pieno, sottolineature, divisore); sulla carta le azioni sono sempre verde abete. Nessun secondo accento caldo. Nella home la terracotta entra come segno, non come colore dei titoli: un trattino di 48×3px sotto ogni H2 di sezione, i numeri della barra in Terracotta Viva (`terracotta-viva`, ≥3:1 su crema, solo per testo grande), i punti degli elenchi, le frecce delle card, le sottolineature dei link testuali e le virgolette delle testimonianze. I titoli restano in inchiostro.
 
 **La Regola della Carta.** Nessuna superficie è bianca pura né nera pura. Il chiaro è crema, lo scuro è inchiostro o notte di bosco.
 

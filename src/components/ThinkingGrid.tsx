@@ -191,7 +191,7 @@ export default function ThinkingGrid({ preview = false }: { preview?: boolean } 
         <div className="max-w-6xl mx-auto mt-10 flex justify-end relative" style={{ zIndex: 1 }}>
           <Link
             href="/thinking"
-            className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b border-green/40 hover:border-green pb-1 transition-colors duration-300"
+            className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b-2 border-orange/60 hover:border-orange pb-1 transition-colors duration-300"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Tutte le idee

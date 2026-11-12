@@ -76,6 +76,7 @@ export default function About() {
 
             {/* Claim */}
             <h2
+              data-no-rule
               className="font-display font-black italic text-ink leading-tight"
               style={{
                 fontFamily: 'var(--font-playfair)',
@@ -87,8 +88,8 @@ export default function About() {
             </h2>
 
             <div
-              className="h-px w-12"
-              style={{ background: 'var(--green)' }}
+              className="h-[3px] w-12"
+              style={{ background: 'var(--orange)' }}
             />
 
             {/* Opening paragraph */}

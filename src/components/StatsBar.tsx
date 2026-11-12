@@ -48,8 +48,9 @@ export default function StatsBar() {
             className="stat-item flex flex-col items-center py-6 px-4 gap-1 border-green/10 [&:nth-child(odd)]:border-r md:border-r md:last:border-r-0"
           >
             <div
-              className="font-display font-black italic text-green leading-none"
+              className="font-display font-black italic leading-none"
               style={{
+                color: 'var(--orange-heading)',
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(2.8rem, 4.5vw, 4.5rem)',
               }}

@@ -167,7 +167,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                       style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}
                     >
                       <span
-                        className="mt-[6px] w-1 h-1 rounded-full bg-green shrink-0"
+                        className="mt-[6px] w-1.5 h-1.5 rounded-full bg-orange shrink-0"
                         aria-hidden
                       />
                       {d}
@@ -188,7 +188,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
               <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
                 {after.map((service) => (
                   <li key={service.id} className="flex flex-col gap-2">
-                    <span className="w-6 h-px block bg-green" aria-hidden />
+                    <span className="w-6 h-[2px] block bg-orange" aria-hidden />
                     <span
                       className="font-display font-black italic text-ink leading-snug"
                       style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.3rem' }}
@@ -213,7 +213,7 @@ export default function ServicesSection({ preview = false }: { preview?: boolean
                 </p>
                 <Link
                   href="/servizi"
-                  className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b border-green/40 hover:border-green pb-1 transition-colors duration-300 self-start sm:self-auto"
+                  className="group inline-flex items-center gap-3 font-condensed uppercase text-sm tracking-[0.2em] text-green border-b-2 border-orange/60 hover:border-orange pb-1 transition-colors duration-300 self-start sm:self-auto"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                 >
                   Tutti i servizi

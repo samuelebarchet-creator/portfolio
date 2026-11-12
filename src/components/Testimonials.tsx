@@ -45,7 +45,7 @@ const QUOTE_STYLE: React.CSSProperties = {
   fontFamily: 'var(--font-playfair)',
   fontSize: '4.5rem',
   lineHeight: 1,
-  color: 'rgba(212,113,58,0.4)',
+  color: 'rgba(212,113,58,0.8)',
   fontWeight: 900,
   fontStyle: 'italic',
   userSelect: 'none',
