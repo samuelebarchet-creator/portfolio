@@ -12,6 +12,14 @@ const navLinks = [
   { label: 'Contatti', href: '/contatti' },
 ];
 
+/* Local cluster: the pages that make the site rank across the province. */
+const bellunoLinks = [
+  { label: 'Social media e comunicazione', href: '/belluno' },
+  { label: 'Consulente social media', href: '/belluno/social-media' },
+  { label: 'AI marketing', href: '/belluno/ai-marketing' },
+  { label: 'Farsi citare da ChatGPT', href: '/belluno/geo' },
+];
+
 const socials = [
   {
     label: 'LinkedIn',
@@ -54,7 +62,7 @@ export default function Footer() {
 
         {/* Top row */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-12"
           style={{ borderBottom: '1px solid rgba(61,92,53,0.08)' }}
         >
           {/* Brand */}
@@ -99,6 +107,26 @@ export default function Footer() {
               >
                 {label}
               </a>
+            ))}
+          </div>
+
+          {/* Belluno */}
+          <div className="flex flex-col gap-1">
+            <p
+              className="font-condensed text-ink-faint uppercase text-xs tracking-[0.4em] mb-2"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              A Belluno
+            </p>
+            {bellunoLinks.map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="inline-block py-1 text-ink-dim text-sm hover:text-ink transition-colors duration-300 w-fit"
+                style={{ fontFamily: 'var(--font-barlow)' }}
+              >
+                {label}
+              </Link>
             ))}
           </div>
 

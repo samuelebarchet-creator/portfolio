@@ -110,6 +110,7 @@ export default function ProjectClient({ project }: { project: Project }) {
       {/* ══ HERO — dark, editorial ══════════════════════════════════════════ */}
       <div
         ref={heroRef}
+        data-surface="dark"
         className="relative w-full pt-28 pb-20 px-8 md:px-20 overflow-hidden"
         style={{ background: 'var(--ink)' }}
       >

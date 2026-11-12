@@ -5,18 +5,38 @@ import Contact from '@/components/Contact';
 import { WarpShadow } from '@/components/ui/warp-shadow';
 
 export const metadata: Metadata = {
-  title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
+  title: 'Social Media e Marketing Digitale a Belluno — Samuele Barchet',
   description:
-    'Consulente di marketing digitale e AI a Belluno: strategia, AI marketing e GEO Optimization per aziende e professionisti del territorio e delle Dolomiti.',
+    'Social media, comunicazione e marketing digitale a Belluno: strategia, contenuti e campagne per aziende e attività della provincia, dalle Dolomiti a Feltre.',
   alternates: { canonical: 'https://www.samuelebarchet.com/belluno' },
   openGraph: {
-    title: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
+    title: 'Social Media e Marketing Digitale a Belluno — Samuele Barchet',
     description:
-      'Consulente di Marketing Digitale e AI a Belluno. Strategia digitale, AI Marketing e GEO Optimization per aziende del territorio.',
+      'Social media e comunicazione per le aziende della provincia di Belluno: prima la strategia, poi contenuti e campagne.',
     url: 'https://www.samuelebarchet.com/belluno',
     images: [{ url: '/belluno/hero.jpg', width: 1200, height: 630, alt: 'AI Marketing a Belluno — Dolomiti' }],
   },
 };
+
+const TOWNS = [
+  'Belluno', 'Feltre', 'Ponte nelle Alpi', 'Sedico', 'Santa Giustina', 'Alpago',
+  'Longarone', 'Agordo', 'Pieve di Cadore', 'Auronzo di Cadore', "Cortina d'Ampezzo", 'Borgo Valbelluna',
+];
+
+const FAQS = [
+  {
+    q: 'Vi occupate solo di social media?',
+    a: 'Il centro sono social e comunicazione: strategia, tono di voce, contenuti e campagne Meta Ads. Intorno ci sono sito, SEO locale e, per chi vuole guardare avanti, l’intelligenza artificiale applicata al marketing.',
+  },
+  {
+    q: 'Lavori in presenza in provincia di Belluno?',
+    a: 'Sì: per le sessioni strategiche posso venire di persona in tutta la provincia, il lavoro operativo si fa anche da remoto.',
+  },
+  {
+    q: 'Che cosa c’entra l’AI con una piccola attività locale?',
+    a: 'Oggi poco, domani molto: sempre più persone chiedono a ChatGPT o a Gemini quale attività scegliere. Costruire adesso una comunicazione chiara e coerente è anche il modo per farsi trovare lì.',
+  },
+];
 
 const ldJson = {
   '@context': 'https://schema.org',
@@ -25,13 +45,14 @@ const ldJson = {
       '@type': 'WebPage',
       '@id': 'https://www.samuelebarchet.com/belluno',
       url: 'https://www.samuelebarchet.com/belluno',
-      name: 'Marketing Digitale e AI a Belluno — Samuele Barchet',
+      name: 'Social Media e Marketing Digitale a Belluno — Samuele Barchet',
       description:
-        'Consulente di Marketing Digitale, AI Marketing e GEO Optimization a Belluno. Strategie digitali per aziende e professionisti del territorio bellunese.',
-      dateModified: '2026-06-15',
+        'Social media, comunicazione e marketing digitale per aziende e attività della provincia di Belluno, con le basi per l’AI.',
+      dateModified: '2026-11-12',
       about: [
+        { '@type': 'Thing', name: 'Social Media Belluno' },
         { '@type': 'Thing', name: 'Marketing Digitale Belluno' },
-        { '@type': 'Thing', name: 'AI Marketing Belluno' },
+        { '@type': 'Thing', name: 'Comunicazione aziendale Belluno' },
         { '@type': 'Thing', name: 'Consulente Marketing Belluno' },
       ],
       author: { '@id': 'https://www.samuelebarchet.com/#person' },
@@ -39,7 +60,7 @@ const ldJson = {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.samuelebarchet.com' },
-          { '@type': 'ListItem', position: 2, name: 'Marketing Digitale a Belluno', item: 'https://www.samuelebarchet.com/belluno' },
+          { '@type': 'ListItem', position: 2, name: 'Social media e comunicazione a Belluno', item: 'https://www.samuelebarchet.com/belluno' },
         ],
       },
     },
@@ -58,34 +79,36 @@ const ldJson = {
       },
       geo: { '@type': 'GeoCoordinates', latitude: 46.1399, longitude: 12.2174 },
       areaServed: [
-        { '@type': 'City', name: 'Belluno' },
-        { '@type': 'City', name: 'Feltre' },
-        { '@type': 'City', name: "Cortina d'Ampezzo" },
+        ...TOWNS.map((name) => ({ '@type': 'City', name })),
         { '@type': 'AdministrativeArea', name: 'Provincia di Belluno' },
         { '@type': 'Country', name: 'Italy' },
       ],
-      serviceType: ['Marketing Digitale', 'AI Marketing', 'GEO Optimization', 'Strategia Digitale'],
+      serviceType: ['Social Media Management', 'Comunicazione aziendale', 'Marketing Digitale', 'Meta Ads', 'Strategia Digitale', 'AI Marketing'],
       founder: { '@id': 'https://www.samuelebarchet.com/#person' },
-    },
+    },,
+    {
+      '@type': 'FAQPage',
+      mainEntity: FAQS.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+    }
   ],
 };
 
 const services = [
   {
-    title: 'Strategia Digitale',
-    body: 'Posizionamento, messaging e piano di comunicazione costruito sulle esigenze reali del tuo business. Prima di qualsiasi strumento, serve una direzione chiara.',
+    title: 'Social media',
+    body: 'Strategia, piano editoriale, contenuti e gestione dei profili, oppure affiancamento di chi in azienda se ne occupa. Facebook, Instagram e LinkedIn.',
   },
   {
-    title: 'AI Marketing',
-    body: "Contenuti, campagne e crescita con l'intelligenza artificiale. Dal piano editoriale ai Meta Ads, con l'AI come moltiplicatore delle attività.",
+    title: 'Comunicazione e tono di voce',
+    body: 'Chi siete, a chi parlate e come. Posizionamento, messaggi e modo di parlare, da usare ovunque: social, sito, volantini, insegne.',
   },
   {
-    title: 'GEO Optimization',
-    body: 'Ottimizzazione per essere trovati su Google e citati da ChatGPT, Perplexity e Gemini. La nuova frontiera della visibilità online.',
+    title: 'Campagne Meta Ads',
+    body: 'Facebook e Instagram a pagamento con obiettivi chiari: farsi conoscere, raccogliere contatti, rafforzare il legame con chi vive nella zona.',
   },
   {
-    title: 'Formazione AI per aziende',
-    body: "Workshop pratici e consulenza continuativa per adottare l'AI nei processi di marketing. Competenze interne reali, non dipendenza da strumenti che non si capiscono.",
+    title: 'Presenza online e SEO locale',
+    body: 'Sito, scheda Google e contenuti pensati per farsi trovare da chi cerca un’attività come la vostra in provincia.',
   },
 ];
 
@@ -99,8 +122,12 @@ const reasons = [
     body: 'Quando parli con me, lavori con me. Nessun account manager. Sei sempre in contatto diretto con chi fa il lavoro.',
   },
   {
-    label: 'Specializzato in AI e GEO',
-    body: "Mentre la maggior parte delle agenzie locali si occupa ancora di siti web e social, io porto al territorio una competenza ancora rara: l'AI applicata al marketing.",
+    label: 'Prima la strategia, poi i post',
+    body: 'Non parto dal calendario dei contenuti ma da cosa volete comunicare. È la differenza tra esserci sui social e usarli davvero.',
+  },
+  {
+    label: 'Già pronto per l’AI',
+    body: 'Quando sarà il momento di usare l’intelligenza artificiale nel marketing, non dovrete cambiare consulente: è una competenza che porto già oggi.',
   },
   {
     label: 'Lavoro da remoto e in presenza',
@@ -115,7 +142,7 @@ export default function BellunoPage() {
       <main>
 
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
-        <div className="relative w-full overflow-hidden" style={{ minHeight: '100svh' }}>
+        <div data-surface="dark" className="relative w-full overflow-hidden" style={{ minHeight: '100svh' }}>
           {/* Immagine desktop */}
           <Image
             src="/belluno/hero-desktop.jpg"
@@ -146,7 +173,7 @@ export default function BellunoPage() {
                 className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"
                 style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
               >
-                Belluno · Dolomiti · Italia
+                Belluno · Feltre · Dolomiti
               </p>
               <h1
                 className="font-display font-black italic text-bg leading-[1.0]"
@@ -157,14 +184,14 @@ export default function BellunoPage() {
                   maxWidth: '13ch',
                 }}
               >
-                Marketing Digitale e AI a Belluno
+                Social media e comunicazione a Belluno
               </h1>
               <p
                 className="mt-8 text-bg/70 leading-relaxed max-w-xl"
                 style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(1rem, 1.3vw, 1.1rem)' }}
               >
-                Aiuto aziende e professionisti del territorio bellunese a costruire una presenza digitale
-                più chiara, più efficace e pronta per l&apos;era dell&apos;AI.
+                Aiuto aziende e attività della provincia di Belluno a comunicare in modo chiaro sui social e online:
+                prima la strategia, poi contenuti e campagne. Nell&apos;ordine giusto.
               </p>
               <div className="mt-10 flex flex-wrap gap-6">
                 <Link
@@ -182,11 +209,11 @@ export default function BellunoPage() {
                   I miei servizi →
                 </Link>
                 <Link
-                  href="/belluno/audit-geo"
+                  href="/belluno/social-media"
                   className="font-condensed uppercase text-bg/50 text-xs tracking-[0.35em] border-b border-bg/25 pb-0.5 hover:text-green hover:border-green transition-colors duration-300"
                   style={{ fontFamily: 'var(--font-barlow-condensed)', color: 'var(--orange-text)', fontWeight: 'bold' }}
                 >
-                  Audit GEO gratuito →
+                  Social media a Belluno →
                 </Link>
               </div>
             </div>
@@ -222,7 +249,7 @@ export default function BellunoPage() {
                   letterSpacing: '-0.02em',
                 }}
               >
-                Un consulente del territorio,<br />con uno sguardo sul futuro del marketing
+                Un consulente del territorio,<br />per la comunicazione di oggi e di domani
               </h2>
               <div className="flex flex-col gap-5">
                 <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
@@ -232,7 +259,7 @@ export default function BellunoPage() {
                   Oggi seguo brand e organizzazioni in tutta Italia, ma una parte del mio lavoro è dedicata alle realtà bellunesi: <strong className="font-semibold text-ink">PMI, attività locali, associazioni no-profit</strong> e brand che operano tra le Dolomiti e il Veneto.
                 </p>
                 <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                  Il mio punto di differenza non è essere &quot;l&apos;agenzia locale&quot;. È portare al territorio una competenza che qui è ancora rara: <strong className="font-semibold text-ink">AI Marketing e GEO Optimization</strong>: il modo in cui i brand vengono trovati non solo su Google, ma anche da ChatGPT, Perplexity e Gemini.
+                  Il mio punto di differenza non è essere &quot;l&apos;agenzia locale&quot;. È partire da <strong className="font-semibold text-ink">strategia e tono di voce</strong> prima di aprire il calendario dei post, e guardare già avanti: a come l&apos;intelligenza artificiale cambierà il modo in cui i clienti cercano e scelgono un&apos;attività.
                 </p>
               </div>
             </div>
@@ -271,6 +298,7 @@ export default function BellunoPage() {
 
         {/* ── Pull quote — ink background ───────────────────────────────────── */}
         <section
+          data-surface="dark"
           className="w-full px-8 md:px-20 py-24"
           style={{ background: 'var(--ink)' }}
         >
@@ -289,7 +317,7 @@ export default function BellunoPage() {
                 letterSpacing: '-0.02em',
               }}
             >
-              &quot;Mentre la maggior parte delle agenzie bellunesi parla ancora di social media, il marketing si sta spostando su ChatGPT e Gemini.&quot;
+              &quot;Le aziende bellunesi valgono più di quanto riescano a raccontare. Il problema non è essere sui social: è non sapere cosa dire.&quot;
             </blockquote>
             <p
               className="mt-10 text-bg/60 leading-relaxed max-w-2xl"
@@ -367,9 +395,9 @@ export default function BellunoPage() {
 
             <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { title: 'AI Marketing a Belluno', desc: "Contenuti, campagne e automazioni costruiti con l'intelligenza artificiale.", href: '/belluno/ai-marketing' },
-                { title: 'GEO Optimization a Belluno', desc: 'Come diventare citabile da ChatGPT, Perplexity e Gemini.', href: '/belluno/geo' },
-                { title: 'Automazioni AI per PMI', desc: 'Workflow e agenti AI per liberare tempo dai processi ripetitivi.', href: '/belluno/automazioni-ai' },
+                { title: 'Social media a Belluno', desc: 'Strategia, contenuti e campagne per i social della vostra attività.', href: '/belluno/social-media' },
+                { title: 'AI Marketing a Belluno', desc: "Per chi vuole già usare l'intelligenza artificiale in contenuti e campagne.", href: '/belluno/ai-marketing' },
+                { title: 'Farsi citare da ChatGPT', desc: 'GEO: essere tra le attività che ChatGPT, Perplexity e Gemini consigliano.', href: '/belluno/geo' },
               ].map(({ title, desc, href }) => (
                 <Link
                   key={href}
@@ -482,8 +510,14 @@ export default function BellunoPage() {
               Alcune realtà con cui ho lavorato
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
+                {
+                  name: 'All Fit',
+                  tag: 'Fitness · Provincia di Belluno',
+                  desc: 'Palestre in provincia di Belluno: posizionamento, tono di voce, contenuti social e video, campagne Meta e YouTube Ads.',
+                  slug: 'allfit',
+                },
                 {
                   name: "Braghe's",
                   tag: 'Fashion · Accessibilità',
@@ -546,6 +580,50 @@ export default function BellunoPage() {
           </div>
         </section>
 
+        {/* ── Dove lavoro + FAQ ─────────────────────────────────────────────── */}
+        <section className="w-full px-8 md:px-20 py-24" style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+            <div>
+              <h2
+                className="font-display font-black italic text-ink leading-tight mb-6"
+                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', letterSpacing: '-0.02em' }}
+              >
+                In tutta la provincia di Belluno
+              </h2>
+              <p className="text-ink-dim leading-relaxed mb-8" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
+                Lavoro con aziende e attività di tutto il bellunese, dalla Valbelluna al Cadore. Le sessioni strategiche si fanno di persona, il lavoro di ogni giorno anche da remoto.
+              </p>
+              <ul className="flex flex-wrap gap-x-5 gap-y-2">
+                {TOWNS.map((town) => (
+                  <li key={town} className="text-ink" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
+                    {town}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h2
+                className="font-display font-black italic text-ink leading-tight mb-6"
+                style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.8rem, 3vw, 2.6rem)', letterSpacing: '-0.02em' }}
+              >
+                Domande frequenti
+              </h2>
+              <div className="flex flex-col" style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}>
+                {FAQS.map(({ q, a }) => (
+                  <div key={q} className="py-6" style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}>
+                    <h3 className="font-display font-black italic text-ink leading-snug mb-2" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.15rem' }}>
+                      {q}
+                    </h3>
+                    <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '0.98rem' }}>
+                      {a}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── Approfondimenti ───────────────────────────────────────────────── */}
         <section
           className="relative w-full px-8 md:px-20 py-20 overflow-hidden"
@@ -568,10 +646,11 @@ export default function BellunoPage() {
             </p>
             <div className="flex flex-col">
               {[
-                { title: 'Come far comparire la tua azienda nelle risposte di ChatGPT', slug: 'comparire-risposte-chatgpt', cat: 'AI & Marketing' },
-                { title: "Come l'AI sta cambiando il comportamento degli utenti nel 2026", slug: 'ai-comportamento-utenti-2026', cat: 'AI & Marketing' },
-                { title: 'GEO vs SEO: differenze e opportunità', slug: 'geo-vs-seo', cat: 'AI & Marketing' },
+                { title: 'Come fare marketing per una palestra: il caso All Fit', slug: 'marketing-palestra-belluno-caso-allfit', cat: 'Caso del territorio' },
+                { title: 'Essere sui social non è una strategia', slug: 'social-media-non-e-strategia', cat: 'Social media' },
+                { title: "Il tono di voce è l'identità che tutti dimenticano", slug: 'tono-di-voce-dimenticato', cat: 'Comunicazione' },
                 { title: 'La SEO locale vale ancora (anzi, vale di più)', slug: 'local-seo-vale-ancora', cat: 'Digital Marketing' },
+                { title: 'Come far comparire la tua azienda nelle risposte di ChatGPT', slug: 'comparire-risposte-chatgpt', cat: 'AI, per domani' },
               ].map(({ title, slug, cat }) => (
                 <Link
                   key={slug}

@@ -19,6 +19,8 @@ export type Project = {
   focus: string;
   description: string;
   metaDescription?: string;
+  /** Overrides the default "<company>: caso studio" title when the page ranks for the client's own name. */
+  seoTitle?: string;
   tag: string;
   fullDescription: string;
   deliverables: string[];
@@ -191,7 +193,8 @@ export const projects: Project[] = [
     role: 'Social Media Manager',
     focus: 'Linea editoriale e posizionamento sui social',
     description: "Gestione e ottimizzazione social per un'azienda di produzione video.",
-    metaDescription: 'Social Media Management per VYST, azienda di produzione video. Ottimizzazione dei contenuti per Meta e LinkedIn, gestione della pagina e linea editoriale.',
+    seoTitle: 'VYST: i social di una casa di produzione video — caso studio',
+    metaDescription: 'Come ho gestito i social di VYST, casa di produzione video: linea editoriale, pagine Meta e LinkedIn e video adattati a ogni formato. Il caso studio.',
     tag: 'Social Media · Video Production',
     fullDescription:
       "VYST è un'**azienda di produzione video**. Ho preso in mano la gestione della loro presenza social con un obiettivo preciso: **ottimizzare i contenuti per Meta e LinkedIn**. Il lavoro si è concentrato sull'adattare formati e linguaggio ai due canali (più immediato e visivo su Meta, più professionale e B2B su LinkedIn), sulla costruzione di una **linea editoriale coerente** e sulla valorizzazione della qualità produttiva in contenuti pensati per la fruizione social. Un lavoro di **social media management** orientato a tradurre il valore dei video in presenza, riconoscibilità e **crescita organica** sui canali giusti.",

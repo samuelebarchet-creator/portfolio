@@ -88,7 +88,7 @@ export default function AutomazioniAIBellunoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <main>
         {/* ── Hero — testo su ink ──────────────────────────────────────────── */}
-        <section className="w-full px-8 md:px-20 pt-40 pb-24" style={{ background: 'var(--ink)' }}>
+        <section data-surface="dark" className="w-full px-8 md:px-20 pt-40 pb-24" style={{ background: 'var(--ink)' }}>
           <div className="max-w-6xl mx-auto">
             <p
               className="font-condensed uppercase text-xs tracking-[0.5em] mb-6"

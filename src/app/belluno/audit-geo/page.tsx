@@ -72,7 +72,7 @@ export default function AuditGeoPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <main>
-        <section className="w-full px-8 md:px-20 pt-40 pb-24" style={{ background: 'var(--ink)' }}>
+        <section data-surface="dark" className="w-full px-8 md:px-20 pt-40 pb-24" style={{ background: 'var(--ink)' }}>
           <div className="max-w-6xl mx-auto">
             <p className="font-condensed uppercase text-xs tracking-[0.5em] mb-6" style={eyebrow}>
               <Link href="/belluno" className="hover:underline">Belluno</Link> · Audit GEO

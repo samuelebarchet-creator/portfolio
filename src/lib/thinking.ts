@@ -45,7 +45,7 @@ Un dettaglio che spesso si sottovaluta: i materiali OOH (la grafica sul bus dell
 
 Il principio vale oltre il fitness, per qualunque business locale: **decidi prima cosa ti distingue da chi ti sta a due isolati di distanza, poi costruisci contenuti coerenti con quella scelta**, non il contrario. E se il tuo pubblico è locale, le persone che mostri nei contenuti sono un asset di marketing tanto quanto la grafica.
 
-Il progetto completo è nel [case study All Fit](/projects/allfit).`,
+Il progetto completo è nel [case study All Fit](/projects/allfit). Se hai un'attività nel bellunese e vuoi impostare i social con la stessa logica, ecco come lavoro sui [social media a Belluno](/belluno/social-media).`,
   },
   {
     slug: 'social-media-ecommerce-locale-caso-3daxis',
@@ -82,7 +82,7 @@ I report mensili di performance non si fermano ai numeri grezzi dell'export Meta
 
 Non serve moltiplicare gli account, serve un tono abbastanza onesto da reggere su pubblici diversi e un piano editoriale che tenga traccia consapevolmente di chi stai raggiungendo, non solo di cosa stai pubblicando.
 
-Il progetto completo è nel [case study 3D Axis](/projects/3d-axis).`,
+Il progetto completo è nel [case study 3D Axis](/projects/3d-axis). Per un'attività del bellunese il punto di partenza è lo stesso: [social media a Belluno](/belluno/social-media).`,
   },
   {
     slug: 'meta-ads-non-convertono',
@@ -440,7 +440,7 @@ Non sto dicendo che la SEO locale sia semplice o che funzioni senza lavoro costa
 
 Se hai un business locale e non hai ancora ottimizzato la tua presenza su Google, stai lasciando traffico qualificato ai competitor.
 
-Vuoi capire come integrare la SEO locale in una strategia di comunicazione più ampia? Trovi il mio approccio nella sezione [servizi](/servizi).`,
+Vuoi capire come integrare la SEO locale in una strategia di comunicazione più ampia? Trovi il mio approccio nella sezione [servizi](/servizi) e, per le attività della provincia, nella pagina [marketing digitale a Belluno](/belluno).`,
   },
   {
     slug: 'social-media-non-e-strategia',
@@ -506,7 +506,7 @@ Non ti dico di smettere di pubblicare. Ti dico di fermarti un momento prima di f
 
 Se le risposte cambiano ogni settimana, hai un problema di strategia, non di contenuti.
 
-Vedi come ho affrontato questa sfida per alcuni dei [brand con cui ho lavorato](/lavori).`,
+Vedi come ho affrontato questa sfida per alcuni dei [brand con cui ho lavorato](/lavori). Se hai un'attività in provincia, qui trovi come lavoro come [consulente social media a Belluno](/belluno/social-media).`,
   },
   {
     slug: 'tono-di-voce-dimenticato',

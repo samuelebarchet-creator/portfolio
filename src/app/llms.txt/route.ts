@@ -48,9 +48,10 @@ Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il 
 - **Formazione AI**: workshop e training per team aziendali
 - **Performance Marketing**: Meta Ads, Google Ads, contenuti organici
 
-## Marketing digitale e AI a Belluno
+## Social media e comunicazione a Belluno
 
-- [Consulenza per il territorio bellunese](${BASE}/belluno): marketing digitale e AI per aziende e professionisti della provincia e delle Dolomiti
+- [Social media e comunicazione a Belluno](${BASE}/belluno): social media, comunicazione e marketing digitale per aziende e attività di tutta la provincia (Belluno, Feltre, Valbelluna, Agordino, Cadore, Cortina)
+- [Consulente social media a Belluno](${BASE}/belluno/social-media): strategia, piano editoriale, contenuti e campagne Meta Ads, in gestione completa o in affiancamento
 - [AI Marketing a Belluno](${BASE}/belluno/ai-marketing): contenuti, campagne e automazioni con l'AI per PMI locali
 - [GEO Optimization a Belluno](${BASE}/belluno/geo): citabilità del brand in ChatGPT, Perplexity e Gemini
 - [Audit GEO gratuito](${BASE}/belluno/audit-geo): verifica di presenza e accuratezza nei motori AI per aziende della provincia di Belluno
