@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/about`,         lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/servizi`,       lastModified: new Date('2026-09-15'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/belluno`,       lastModified: new Date('2026-11-12'), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/milano`,        lastModified: new Date('2026-11-12'), changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/belluno/social-media`, lastModified: new Date('2026-11-12'), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/belluno/ai-marketing`,   lastModified: new Date('2026-11-05'), changeFrequency: 'monthly', priority: 0.75 },
     { url: `${BASE}/belluno/geo`,            lastModified: new Date('2026-11-05'), changeFrequency: 'monthly', priority: 0.75 },

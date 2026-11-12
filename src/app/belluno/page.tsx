@@ -266,9 +266,9 @@ export default function BellunoPage() {
 
             <div className="flex flex-col justify-center gap-0 lg:pt-4">
               {[
-                { value: '8', label: 'Brand seguiti attivamente in settori diversi' },
-                { value: '2022', label: 'Anno di inizio attività freelance' },
-                { value: 'GEO', label: 'Fondatore di Citationrate.com' },
+                { value: '8', label: 'Brand seguiti in settori diversi' },
+                { value: '2023', label: 'Anno di inizio attività freelance' },
+                { value: 'GEO', label: 'Founding team di Citation Rate' },
               ].map(({ value, label }, i) => (
                 <div
                   key={label}
@@ -514,8 +514,8 @@ export default function BellunoPage() {
               {[
                 {
                   name: 'All Fit',
-                  tag: 'Fitness · Provincia di Belluno',
-                  desc: 'Palestre in provincia di Belluno: posizionamento, tono di voce, contenuti social e video, campagne Meta e YouTube Ads.',
+                  tag: 'Fitness · Belluno e Treviso',
+                  desc: 'Palestre a Belluno, Sedico e Trichiana (più Ponte di Piave, TV): posizionamento, tono di voce, contenuti social e video, campagne Meta e YouTube Ads.',
                   slug: 'allfit',
                 },
                 {
@@ -532,8 +532,8 @@ export default function BellunoPage() {
                 },
                 {
                   name: 'CROSSabili',
-                  tag: 'No-profit · Comunicazione sociale',
-                  desc: 'Associazione per la mobilità accessibile nelle aree montane. Brand strategy e comunicazione per un progetto di inclusione nelle Dolomiti.',
+                  tag: 'No-profit · Community',
+                  desc: 'Community e organizzazione per inclusione e accessibilità: campagne social, storytelling e comunicazione degli eventi.',
                   slug: 'crossabili',
                 },
               ].map(({ name, tag, desc, slug }) => (

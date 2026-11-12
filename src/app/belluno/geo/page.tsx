@@ -52,7 +52,7 @@ const ldJson = {
         {
           '@type': 'Question',
           name: 'Come faccio a sapere se la mia azienda compare già su ChatGPT?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso Citationrate, lo strumento che ho fondato per misurare la citation rate dei brand nei motori AI.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso Citation Rate, lo strumento del cui founding team faccio parte, pensato per misurare la citation rate dei brand nei motori AI.' },
         },
         {
           '@type': 'Question',
@@ -240,7 +240,7 @@ export default function GeoBellunoPage() {
             <div className="flex flex-col" style={{ borderTop: '1px solid rgba(61,92,53,0.1)' }}>
               {([
                 { q: 'Cosa significa GEO (Generative Engine Optimization)?', a: 'È la disciplina che ottimizza la presenza di un brand nelle risposte dei motori generativi come ChatGPT, Perplexity e Gemini, allo stesso modo in cui la SEO ottimizza il posizionamento su Google.' },
-                { q: 'Come faccio a sapere se la mia azienda compare già su ChatGPT?', a: <span>Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso <a href="https://citationrate.com" target="_blank" rel="noopener noreferrer" className="text-green underline underline-offset-2 hover:no-underline">Citationrate</a>, lo strumento che ho fondato per misurare la citation rate dei brand nei motori AI. Trovi anche una guida pratica nell&apos;articolo{' '}<Link href="/thinking/comparire-risposte-chatgpt" className="text-green underline underline-offset-2 hover:no-underline">come far comparire la tua azienda nelle risposte di ChatGPT</Link>.</span> },
+                { q: 'Come faccio a sapere se la mia azienda compare già su ChatGPT?', a: <span>Basta chiedere direttamente a ChatGPT o Perplexity il nome della tua azienda o una domanda che farebbe un tuo cliente. Per un monitoraggio sistematico uso <a href="https://citationrate.com" target="_blank" rel="noopener noreferrer" className="text-green underline underline-offset-2 hover:no-underline">Citation Rate</a>, lo strumento del cui founding team faccio parte, pensato per misurare la citation rate dei brand nei motori AI. Trovi anche una guida pratica nell&apos;articolo{' '}<Link href="/thinking/comparire-risposte-chatgpt" className="text-green underline underline-offset-2 hover:no-underline">come far comparire la tua azienda nelle risposte di ChatGPT</Link>.</span> },
                 { q: 'Quanto tempo serve per vedere risultati in GEO?', a: "Più dei mesi serve costanza: i modelli AI aggiornano periodicamente la loro percezione di un brand sulla base di nuove fonti pubbliche. I primi segnali si vedono solitamente in 2-4 mesi di lavoro su contenuti e presenza esterna." },
               ]).map(({ q, a }) => (
                 <div

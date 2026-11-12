@@ -126,7 +126,7 @@ export default function ServiziPage() {
         {/* KPI row */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-0 max-w-2xl" style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}>
           {[
-            { value: '8', label: 'Brand seguiti attivamente in settori diversi' },
+            { value: '8', label: 'Brand seguiti in settori diversi' },
             { value: '120k+', label: 'Copertura organica su singolo contenuto' },
             { value: '−73%', label: 'CPL vs benchmark su campagne di acquisizione' },
           ].map(({ value, label }, i) => (

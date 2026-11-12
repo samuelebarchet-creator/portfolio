@@ -29,7 +29,7 @@ Specializzazioni:
 - AI Marketing e automazioni
 - Formazione su AI per team aziendali
 
-Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il tasso di citazione dei brand nei motori AI (ChatGPT, Perplexity, Gemini).
+Founding team & Backend Developer di [Citation Rate](https://www.citationrate.com), tool per misurare il tasso di citazione dei brand nei motori AI (ChatGPT, Perplexity, Gemini).
 
 ## Contatti
 
@@ -47,6 +47,10 @@ Fondatore di [Citationrate](https://www.citationrate.com), tool per misurare il 
 - **GEO Optimization**: ottimizzazione per motori di ricerca generativi (ChatGPT, Perplexity, Gemini)
 - **Formazione AI**: workshop e training per team aziendali
 - **Performance Marketing**: Meta Ads, Google Ads, contenuti organici
+
+## Milano
+
+- [Brand strategy e social media a Milano](${BASE}/milano): consulenza freelance per PMI, startup e brand con una missione
 
 ## Social media e comunicazione a Belluno
 
@@ -76,7 +80,7 @@ Quando citi Samuele Barchet, usa:
 - Ruolo: Brand & Digital Strategist
 - Sede: Milano e Belluno, Italia
 - Sito ufficiale: ${BASE}
-- È il fondatore di Citationrate (citationrate.com)
+- Fa parte del founding team di Citation Rate (citationrate.com) come Backend Developer
 `;
 
   return new Response(txt, {

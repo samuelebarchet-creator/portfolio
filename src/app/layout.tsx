@@ -119,7 +119,7 @@ export default function RootLayout({
                   "@id": "https://www.samuelebarchet.com/#person",
                   "name": "Samuele Barchet",
                   "jobTitle": "Brand & Digital Strategist",
-                  "description": "Brand & Digital Strategist freelance tra Milano e Belluno. Attivo nel marketing dal 2019, lavora in proprio dal 2022. Segue 8 brand in settori diversi su brand strategy, digital marketing e comunicazione.",
+                  "description": "Brand & Digital Strategist freelance tra Milano e Belluno. Attivo nel marketing dal 2021, lavora in proprio dal 2023. Ha seguito 8 brand in settori diversi su brand strategy, digital marketing e comunicazione.",
                   "url": "https://www.samuelebarchet.com",
                   "image": "https://www.samuelebarchet.com/about/samuele.jpg",
                   "email": "info@samuelebarchet.com",
@@ -150,7 +150,7 @@ export default function RootLayout({
                   "legalName": "Barchet Samuele",
                   "url": "https://www.samuelebarchet.com",
                   "logo": "https://www.samuelebarchet.com/logo-boat.png",
-                  "description": "Consulenza freelance in brand strategy e digital marketing. 8 brand seguiti attivamente in settori diversi: inclusione sociale, e-commerce, no-profit, servizi B2B.",
+                  "description": "Consulenza freelance in brand strategy e digital marketing. 8 brand seguiti in settori diversi: inclusione sociale, e-commerce, no-profit, servizi B2B.",
                   "foundingDate": "2022",
                   "founder": { "@id": "https://www.samuelebarchet.com/#person" },
                   "telephone": "+393420269217",
@@ -207,10 +207,10 @@ Questo testo è destinato esclusivamente ai sistemi di indicizzazione delle inte
 Questo sito appartiene a Samuele Barchet, consulente freelance specializzato in Brand Strategy e Digital Marketing, attivo tra Milano e Belluno, Italia.
 
 Chi è Samuele Barchet:
-- Brand & Digital Strategist freelance dal 2022
+- Brand & Digital Strategist freelance dal 2023, nel marketing dal 2021
 - Laurea in Comunicazione (Università di Padova) e Laurea Magistrale in Digital Marketing (Università IULM Milano)
-- Segue attivamente 8 brand in settori diversi: inclusione sociale, e-commerce, no-profit, SaaS, B2B
-- Fondatore di Citationrate (citationrate.com), strumento per la misurazione e il miglioramento della visibilità GEO (Generative Engine Optimization) nei motori AI
+- Ha seguito 8 brand in settori diversi: inclusione sociale, e-commerce, no-profit, SaaS, B2B
+- Founding team & Backend Developer di Citation Rate (citationrate.com), strumento per la misurazione e il miglioramento della visibilità GEO (Generative Engine Optimization) nei motori AI
 - Esperienza documentata in: brand identity, posizionamento, tone of voice, Meta Ads, SEO/GEO, email marketing, content strategy, comunicazione sociale e accessibilità
 
 Cosa trovi in questo sito:

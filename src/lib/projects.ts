@@ -130,8 +130,8 @@ export const projects: Project[] = [
     slug: 'citation-rate',
     year: '2026',
     company: 'Citation Rate',
-    role: 'SaaS Developer',
-    focus: 'Il mio prodotto per misurare la visibilità nelle AI',
+    role: 'Founding team & Backend Developer',
+    focus: 'Founding team: misurare la visibilità dei brand nelle AI',
     description: 'Sviluppo SaaS: uno dei sistemi interni della suite di controllo.',
     metaDescription: 'Sviluppo SaaS per Citation Rate, piattaforma per la visibilità dei brand nei sistemi AI: sviluppo di AVI, uno dei sistemi della suite di controllo.',
     tag: 'AI · SaaS · Sviluppo',
@@ -154,7 +154,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'crossabili',
-    year: '2023',
+    year: '2022',
     company: 'CROSSabili',
     role: 'Social Media Manager, Content Strategist & Community Manager (volontario)',
     focus: 'Narrazione e voce della community',
@@ -188,7 +188,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'vyst',
-    year: '2025',
+    year: '2026',
     company: 'VYST',
     role: 'Social Media Manager',
     focus: 'Linea editoriale e posizionamento sui social',
@@ -219,11 +219,11 @@ export const projects: Project[] = [
     company: 'All Fit',
     role: 'Social Media Manager & Referente Comunicazione',
     focus: 'Posizionamento, tono di voce e lancio di un nuovo club',
-    description: 'Palestre in provincia di Belluno: strategia, contenuti e paid media come referente di comunicazione.',
-    metaDescription: 'Comunicazione per All Fit, catena di palestre in provincia di Belluno: posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH.',
+    description: 'Palestre tra Belluno e Treviso: strategia, contenuti e paid media come referente di comunicazione.',
+    metaDescription: 'Comunicazione per All Fit, catena di palestre tra Belluno e Treviso: posizionamento, contenuti video, Meta Ads, YouTube Ads e materiali OOH.',
     tag: 'Fitness · Local Business',
     fullDescription:
-      "All Fit è una catena di palestre della provincia di Belluno (Belluno, Sedico, Trichiana, con un quarto club a Ponte di Piave in fase di lancio). Come **referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
+      "All Fit è una catena di palestre tra Belluno e Treviso: Belluno, Sedico, Trichiana e il nuovo club di Ponte di Piave (TV). Come **referente di comunicazione**, gestisco l'intero flusso — strategia, produzione contenuti, copy, paid media e materiali OOH — in rapporto diretto con la proprietà. Il lavoro parte dal posizionamento **\"Accessibile, non low cost\"**, con un tono di voce anti-scusa e incoraggiante e un sistema visivo dark-first con giallo acido. Include il coordinamento di formati ricorrenti (talking-head con il founder, interviste agli istruttori), la strategia paid su tre obiettivi distinti, e il lancio del quarto club con meccanica promozionale dedicata.",
     deliverables: [
       'Brand positioning e tone of voice',
       'Sistema visivo dark-first (Bebas Neue / Acumin Pro)',

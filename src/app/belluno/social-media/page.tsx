@@ -220,11 +220,11 @@ export default function SocialMediaBellunoPage() {
               Social media fatti qui
             </h2>
             <p className="text-ink-dim leading-relaxed max-w-2xl mb-14" style={body}>
-              Per <strong className="font-semibold text-ink">All Fit</strong>, palestre in provincia di Belluno, curo come referente della comunicazione posizionamento, tono di voce, contenuti social ricorrenti e video, più campagne Meta e YouTube Ads su tre obiettivi: farsi conoscere, raccogliere contatti e rafforzare il legame con il territorio.
+              Per <strong className="font-semibold text-ink">All Fit</strong>, palestre a Belluno, Sedico e Trichiana (più un club a Ponte di Piave, nel trevigiano), curo come referente della comunicazione posizionamento, tono di voce, contenuti social ricorrenti e video, più campagne Meta e YouTube Ads su tre obiettivi: farsi conoscere, raccogliere contatti e rafforzare il legame con il territorio.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'All Fit', tag: 'Fitness · Belluno', desc: 'Contenuti ricorrenti, video e campagne Meta e YouTube Ads per palestre della provincia.', href: '/projects/allfit' },
+                { name: 'All Fit', tag: 'Fitness · Belluno', desc: 'Contenuti ricorrenti, video e campagne Meta e YouTube Ads per palestre tra Belluno e Treviso.', href: '/projects/allfit' },
                 { name: 'VYST', tag: 'Social media · Video', desc: 'Gestione delle pagine Meta e LinkedIn, linea editoriale e formati video per i social.', href: '/projects/vyst' },
                 { name: '3D Axis', tag: 'Social · E-commerce', desc: 'Strategia Instagram e Facebook, copywriting, piano editoriale e report mensili.', href: '/projects/3d-axis' },
               ].map(({ name, tag, desc, href }) => (

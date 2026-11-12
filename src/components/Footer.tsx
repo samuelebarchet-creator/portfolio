@@ -79,7 +79,7 @@ export default function Footer() {
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               Brand &amp; Digital Strategist<br />
-              Milano · Belluno, Italia
+              <Link href="/milano" className="hover:text-ink transition-colors duration-300">Milano</Link> · <Link href="/belluno" className="hover:text-ink transition-colors duration-300">Belluno</Link>, Italia
             </p>
             <a
               href="mailto:info@samuelebarchet.com"

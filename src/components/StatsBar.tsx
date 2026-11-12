@@ -6,7 +6,7 @@ import { about } from '@/lib/about';
 
 /* The home's single numbers moment (About no longer repeats them). */
 const stats = [
-  about.stats[0],                                   // 7+ anni nel settore
+  about.stats[0],                                   // 5 anni nel marketing (dal 2021)
   about.stats[1],                                   // 20+ progetti realizzati
   about.stats[3],                                   // 4M+ visualizzazioni generate
   { value: '−73%', label: 'Costo per lead vs benchmark' },

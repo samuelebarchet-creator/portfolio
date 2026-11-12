@@ -8,7 +8,7 @@ import AdaptiveWarp from '@/components/ui/adaptive-warp';
 export default function HeroVerde() {
   const sectionRef  = useRef<HTMLElement>(null);
   const boatRef     = useRef<HTMLDivElement>(null);
-  const taglineRef  = useRef<HTMLHeadingElement>(null);
+  const taglineRef  = useRef<HTMLParagraphElement>(null);
 
   /* Boat orbit — identical logic to HeroOcean */
   useEffect(() => {
@@ -140,7 +140,7 @@ export default function HeroVerde() {
           Brand &amp; Digital Strategist
         </p>
 
-        <h1
+        <p
           ref={taglineRef}
           className="font-display font-black italic text-bg leading-[0.95]"
           style={{
@@ -153,18 +153,18 @@ export default function HeroVerde() {
           }}
         >
           Prima la rotta,<br />poi il vento.
-        </h1>
+        </p>
 
         <div className="my-9 h-px w-14" style={{ background: 'rgba(212,113,58,0.55)' }} />
 
-        <p
+        <div
           className="flex flex-col items-center gap-3"
           style={{
             textShadow: '0 1px 14px rgba(0,0,0,0.55)',
             animation: 'hero-fade-up 0.7s ease-out both 1.3s',
           }}
         >
-          <span
+          <h1
             className="block font-display italic text-bg"
             style={{
               fontFamily: 'var(--font-playfair)',
@@ -174,8 +174,8 @@ export default function HeroVerde() {
               textWrap: 'balance',
             }}
           >
-            Strategia di brand per aziende tra Belluno e Milano.
-          </span>
+            Strategia di brand e social media per aziende tra Belluno e Milano.
+          </h1>
           <span
             className="block lg:whitespace-nowrap"
             style={{
@@ -189,7 +189,7 @@ export default function HeroVerde() {
           >
             Prima decidiamo dove andare, poi social, contenuti e advertising. Nell&rsquo;ordine giusto.
           </span>
-        </p>
+        </div>
 
         <div
           className="flex items-center gap-4 mt-12"

@@ -232,7 +232,7 @@ Non serve rivoluzionare tutto dall'oggi al domani. Serve capire dove si è e cos
 
 ## Citationrate: lavorare su questo dall'interno
 
-Ho fondato **[Citationrate](https://citationrate.com)** nel gennaio 2026 esattamente per questo motivo: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
+È il motivo per cui da gennaio 2026 faccio parte del founding team di **[Citation Rate](https://citationrate.com)**: dare alle aziende uno strumento concreto per misurare e migliorare la propria visibilità nei motori generativi.
 
 Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citation rate, ovvero la frequenza con cui un brand viene menzionato nelle risposte AI, è diventata una metrica che chi fa marketing non può più ignorare.
 
@@ -618,7 +618,7 @@ Non è un interruttore che si accende. ChatGPT e gli altri modelli aggiornano pe
 
 ## Come misurarlo
 
-La parte più trascurata: quasi nessuno controlla sistematicamente come viene descritto dai motori AI. Ho fondato **[Citationrate](https://citationrate.com)** proprio per questo: monitorare nel tempo la "citation rate" di un brand, ovvero quanto spesso, in che contesto e con quale precisione viene citato da ChatGPT, Perplexity e Gemini.
+La parte più trascurata: quasi nessuno controlla sistematicamente come viene descritto dai motori AI. Per questo faccio parte del founding team di **[Citation Rate](https://citationrate.com)**, nato proprio per monitorare nel tempo la "citation rate" di un brand, ovvero quanto spesso, in che contesto e con quale precisione viene citato da ChatGPT, Perplexity e Gemini.
 
 Senza una misurazione, lavori al buio: non sai se i cambiamenti che fai stanno funzionando o non stanno avendo alcun effetto.
 
