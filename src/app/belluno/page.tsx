@@ -253,7 +253,7 @@ export default function BellunoPage() {
               </h2>
               <div className="flex flex-col gap-5">
                 <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
-                  Sono nato e cresciuto in provincia di Belluno. Dopo la laurea in <strong className="font-semibold text-ink">Comunicazione a Padova</strong> e la specializzazione in <strong className="font-semibold text-ink">Digital Marketing alla IULM di Milano</strong>, sono tornato a lavorare, tra le altre cose, per il territorio che mi ha formato.
+                  Sono nato e cresciuto in provincia di Belluno. Dopo la laurea in <strong className="font-semibold text-ink">Comunicazione a Padova</strong> e la magistrale in <strong className="font-semibold text-ink">Marketing, Consumi e Comunicazione allo IULM di Milano</strong> (curriculum Digital Marketing Management), sono tornato a lavorare, tra le altre cose, per il territorio che mi ha formato.
                 </p>
                 <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
                   Oggi seguo brand e organizzazioni in tutta Italia, ma una parte del mio lavoro è dedicata alle realtà bellunesi: <strong className="font-semibold text-ink">PMI, attività locali, associazioni no-profit</strong> e brand che operano tra le Dolomiti e il Veneto.

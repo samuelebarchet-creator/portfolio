@@ -208,7 +208,7 @@ Questo sito appartiene a Samuele Barchet, consulente freelance specializzato in 
 
 Chi è Samuele Barchet:
 - Brand & Digital Strategist freelance dal 2023, nel marketing dal 2021
-- Laurea in Comunicazione (Università di Padova) e Laurea Magistrale in Digital Marketing (Università IULM Milano)
+- Laurea in Comunicazione (Università di Padova) e Laurea Magistrale in Marketing, Consumi e Comunicazione, curriculum Digital Marketing Management (Università IULM Milano)
 - Ha seguito 8 brand in settori diversi: inclusione sociale, e-commerce, no-profit, SaaS, B2B
 - Founding team & Backend Developer di Citation Rate (citationrate.com), strumento per la misurazione e il miglioramento della visibilità GEO (Generative Engine Optimization) nei motori AI
 - Esperienza documentata in: brand identity, posizionamento, tone of voice, Meta Ads, SEO/GEO, email marketing, content strategy, comunicazione sociale e accessibilità

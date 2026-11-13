@@ -130,7 +130,7 @@ export default function MilanoPage() {
                 A Milano non mancano le agenzie. Quello che spesso manca è qualcuno che si sieda con voi e vi aiuti a decidere <strong className="font-semibold text-ink">cosa dire, prima di come dirlo</strong>.
               </p>
               <p className="text-ink-dim leading-relaxed" style={body}>
-                Ho studiato comunicazione a Padova e digital marketing allo IULM di Milano. Oggi lavoro in proprio: quando mi scrivete, lavorate con me, senza passaggi intermedi.
+                Mi sono laureato in Comunicazione a Padova e poi allo IULM di Milano, con la magistrale in Marketing, Consumi e Comunicazione (curriculum Digital Marketing Management). Oggi lavoro in proprio: quando mi scrivete, lavorate con me, senza passaggi intermedi.
               </p>
               <p className="text-ink-dim leading-relaxed" style={body}>
                 Il metodo è sempre lo stesso: <strong className="font-semibold text-ink">strategia e tono di voce prima, poi contenuti e campagne</strong>, misurati ogni mese.

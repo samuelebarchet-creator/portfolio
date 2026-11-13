@@ -35,7 +35,7 @@ const ldJson = {
     "birthPlace": { "@type": "Place", "name": "Belluno, Italia" },
     "alumniOf": [
       { "@type": "EducationalOrganization", "name": "Università di Padova", "description": "Laurea in Comunicazione" },
-      { "@type": "EducationalOrganization", "name": "Università IULM Milano", "description": "Laurea Magistrale in Digital Marketing" }
+      { "@type": "EducationalOrganization", "name": "Università IULM Milano", "description": "Laurea Magistrale in Marketing, Consumi e Comunicazione, curriculum Digital Marketing Management" }
     ],
     "knowsAbout": ["Brand Strategy", "Digital Marketing", "Social Media", "Meta Ads", "Content Strategy", "Email Marketing", "Copywriting"],
     "image": "https://www.samuelebarchet.com/about/samuele.jpg",
@@ -61,7 +61,7 @@ const bioChapters: { label: string; paragraphs: ReactNode[] }[] = [
     paragraphs: [
       <>Dopo il liceo ho scelto di dedicare un anno al <B>servizio civile</B>, lavorando a stretto contatto con <B>persone con disabilità</B>.<br />È stata un&apos;esperienza che mi ha permesso di avvicinarmi al mondo delle associazioni, dell&apos;organizzazione di eventi e della <B>comunicazione sociale</B>, scoprendo quanto le parole e le storie possano avere un impatto concreto sulla vita delle persone.</>,
       <>Per dare una base più solida a questa passione mi sono iscritto all&apos;<B>Università di Padova</B>, dove mi sono laureato in <B>Comunicazione</B> con una tesi dedicata alla gestione del brand.<br />Parallelamente ho iniziato a lavorare come <B>freelance</B>, trasformando ogni progetto in un&apos;occasione per mettere in pratica ciò che studiavo.</>,
-      <>Successivamente mi sono trasferito a <B>Milano</B> per frequentare la laurea magistrale in <B>Digital Marketing</B> presso l&apos;<B>Università IULM</B>.<br />Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell&apos;<B>intelligenza artificiale</B> applicata al marketing.</>,
+      <>Successivamente mi sono trasferito a <B>Milano</B> per la laurea magistrale in <B>Marketing, Consumi e Comunicazione</B> all&apos;<B>Università IULM</B>, con il curriculum in <B>Digital Marketing Management</B>.<br />Qui ho approfondito il rapporto tra dati, strategia e comportamento degli utenti, avvicinandomi sempre di più al mondo dell&apos;<B>intelligenza artificiale</B> applicata al marketing.</>,
     ],
   },
   {
