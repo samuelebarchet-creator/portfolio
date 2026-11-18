@@ -55,6 +55,7 @@ const ldJson = {
         { '@type': 'Thing', name: 'Comunicazione aziendale Belluno' },
         { '@type': 'Thing', name: 'Consulente Marketing Belluno' },
       ],
+      mentions: ['All Fit', "Braghe's", 'RC Ricambi per Carrozzine', 'CROSSabili', 'Feltre', "Cortina d'Ampezzo", 'Valbelluna', 'Cadore', 'ChatGPT'].map((name) => ({ '@type': 'Thing', name })),
       author: { '@id': 'https://www.samuelebarchet.com/#person' },
       breadcrumb: {
         '@type': 'BreadcrumbList',

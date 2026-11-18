@@ -24,7 +24,7 @@ const ldJson = {
     {
       "@type": "WebPage",
       "@id": "https://www.samuelebarchet.com/servizi",
-      "name": "Servizi — Samuele Barchet",
+      "name": "Strategia Digitale, AI Marketing e GEO Optimization — Samuele Barchet",
       "url": "https://www.samuelebarchet.com/servizi",
       "description": "Strategia Digitale, AI Marketing, GEO Optimization e Formazione AI per aziende. Consulenza su misura per brand e organizzazioni in Italia.",
       "dateModified": "2026-06-15",

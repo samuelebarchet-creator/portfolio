@@ -45,7 +45,7 @@ export default function Nav() {
   const close = () => setOpen(false);
 
   return (
-    <>
+    <header>
       <nav
         className="nav-enter fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-20 h-16 transition-all duration-500"
         style={{
@@ -162,6 +162,6 @@ export default function Nav() {
           </div>
         </div>
       )}
-    </>
+    </header>
   );
 }

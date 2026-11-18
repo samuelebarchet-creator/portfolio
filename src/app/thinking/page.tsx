@@ -22,7 +22,7 @@ const ldJson = {
   "@type": "Blog",
   "@id": "https://www.samuelebarchet.com/thinking",
   "url": "https://www.samuelebarchet.com/thinking",
-  "name": "Thinking — Samuele Barchet",
+  "name": "Idee su Brand, Digital e Strategia — Samuele Barchet",
   "description": "Articoli e riflessioni su brand strategy, digital marketing e comunicazione.",
   "author": { "@type": "Person", "@id": "https://www.samuelebarchet.com/#person" },
   "blogPost": thinkingPosts.map((p) => ({

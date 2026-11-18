@@ -54,6 +54,7 @@ const ldJson = {
         { '@type': 'Thing', name: 'Consulente Social Media Belluno' },
         { '@type': 'Thing', name: 'Comunicazione aziendale Belluno' },
       ],
+      mentions: ['Facebook', 'Instagram', 'LinkedIn', 'Meta Ads', 'All Fit', 'VYST', '3D Axis', 'ChatGPT'].map((name) => ({ '@type': 'Thing', name })),
       author: { '@id': 'https://www.samuelebarchet.com/#person' },
       breadcrumb: {
         '@type': 'BreadcrumbList',
@@ -192,22 +193,39 @@ export default function SocialMediaBellunoPage() {
             </div>
 
             <h3 className="mt-20 font-display font-black italic text-ink leading-tight mb-8" style={{ fontFamily: 'var(--font-playfair)', fontSize: 'clamp(1.5rem, 2.5vw, 2rem)' }}>
-              Due modi di lavorare insieme
+              Gestione completa vs affiancamento: confronto
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}>
-              {[
-                { t: 'Gestione completa', d: 'Mi occupo io di strategia, contenuti, pubblicazione e campagne. Voi approvate e mi raccontate cosa succede in azienda.' },
-                { t: 'Affiancamento', d: 'Imposto strategia e piano editoriale, poi affianco chi in azienda gestisce i social, con formazione e revisioni periodiche, finché non è autonomo.' },
-              ].map(({ t, d }) => (
-                <div key={t} className="py-8 md:pr-10" style={{ borderBottom: '1px solid rgba(61,92,53,0.12)' }}>
-                  <p className="font-display font-black italic text-ink mb-2" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.25rem' }}>
-                    {t}
-                  </p>
-                  <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
-                    {d}
-                  </p>
-                </div>
-              ))}
+            <p className="text-ink-dim leading-relaxed max-w-2xl mb-8" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
+              Due modi di lavorare insieme, con vantaggi diversi: la scelta dipende da quanto tempo e da quante persone avete in azienda.
+            </p>
+            <div className="overflow-x-auto" style={{ borderTop: '1px solid rgba(61,92,53,0.15)' }}>
+              <table className="w-full text-left" style={{ fontFamily: 'var(--font-barlow)', borderCollapse: 'collapse' }}>
+                <caption className="sr-only">Confronto tra gestione completa e affiancamento dei social media</caption>
+                <thead>
+                  <tr style={{ borderBottom: '1px solid rgba(61,92,53,0.15)' }}>
+                    <th scope="col" className="py-4 pr-6 font-condensed uppercase text-xs tracking-[0.2em] text-ink-dim" style={{ fontFamily: 'var(--font-barlow-condensed)', fontWeight: 500 }}>Aspetto</th>
+                    <th scope="col" className="py-4 pr-6 font-display italic text-ink" style={{ fontFamily: 'var(--font-playfair)', fontWeight: 900, fontSize: '1.15rem' }}>Gestione completa</th>
+                    <th scope="col" className="py-4 font-display italic text-ink" style={{ fontFamily: 'var(--font-playfair)', fontWeight: 900, fontSize: '1.15rem' }}>Affiancamento</th>
+                  </tr>
+                </thead>
+                <tbody className="text-ink-dim" style={{ fontSize: '0.98rem' }}>
+                  {[
+                    ['Strategia e tono di voce', 'La imposto io con voi', 'La imposto io con voi'],
+                    ['Piano editoriale', 'Lo scrivo io ogni mese', 'Lo scrivo io, poi lo scrivete voi con la mia revisione'],
+                    ['Contenuti e pubblicazione', 'Li preparo e pubblico io, voi approvate', 'Li prepara chi in azienda gestisce i social'],
+                    ['Campagne Meta Ads', 'Le gestisco io', 'Le imposto io, poi le seguiamo insieme'],
+                    ['Report mensile', 'Sì', 'Sì, con indicazioni su cosa migliorare'],
+                    ['Formazione del team', 'Non serve', 'Inclusa, finché il team non è autonomo'],
+                    ['Adatto a', 'Chi non ha tempo o persone dedicate', 'Chi ha già qualcuno in azienda che pubblica'],
+                  ].map(([aspect, full, side]) => (
+                    <tr key={aspect} style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}>
+                      <th scope="row" className="py-4 pr-3 sm:pr-6 text-ink font-semibold align-top" style={{ fontWeight: 600 }}>{aspect}</th>
+                      <td className="py-4 pr-3 sm:pr-6 align-top leading-relaxed">{full}</td>
+                      <td className="py-4 align-top leading-relaxed">{side}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>

@@ -44,6 +44,7 @@ const ldJson = {
         { '@type': 'Thing', name: 'Brand Strategist Milano' },
         { '@type': 'Thing', name: 'Social Media Milano' },
       ],
+      mentions: ['Università IULM', "Braghe's", 'RC Ricambi per Carrozzine', 'VYST', '3D Axis', 'Meta Ads'].map((name) => ({ '@type': 'Thing', name })),
       author: { '@id': 'https://www.samuelebarchet.com/#person' },
       breadcrumb: {
         '@type': 'BreadcrumbList',

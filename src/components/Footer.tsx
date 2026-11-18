@@ -200,6 +200,20 @@ export default function Footer() {
             >
               Cookie Policy
             </a>
+            <a
+              href="/feed.xml"
+              className="inline-block py-1 font-condensed text-ink-faint text-xs uppercase tracking-[0.25em] hover:text-ink transition-colors duration-300"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              RSS
+            </a>
+            <a
+              href="/llms.txt"
+              className="inline-block py-1 font-condensed text-ink-faint text-xs uppercase tracking-[0.25em] hover:text-ink transition-colors duration-300"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              llms.txt
+            </a>
           </div>
 
           <div className="flex items-center gap-2">

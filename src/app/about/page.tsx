@@ -24,7 +24,7 @@ const ldJson = {
   "@type": "ProfilePage",
   "@id": "https://www.samuelebarchet.com/about",
   "url": "https://www.samuelebarchet.com/about",
-  "name": "About — Samuele Barchet",
+  "name": "Samuele Barchet — Brand & Digital Strategist Freelance",
   "dateModified": "2026-06-14",
   "mainEntity": {
     "@type": "Person",

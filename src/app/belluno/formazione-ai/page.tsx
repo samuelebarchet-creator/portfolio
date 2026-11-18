@@ -9,6 +9,7 @@ const content: LocalServiceContent = {
   breadcrumb: 'Formazione AI per aziende a Belluno',
   serviceType: ['Formazione aziendale', 'Formazione intelligenza artificiale', 'Workshop AI e marketing'],
   about: ['Formazione AI aziende Belluno', 'Corso intelligenza artificiale PMI Belluno', 'Workshop AI marketing'],
+  mentions: ['Intelligenza artificiale generativa', 'ChatGPT', 'Gemini', 'Fondi interprofessionali', 'Provincia di Belluno'],
   eyebrow: 'Formazione AI',
   h1: 'Formazione AI per aziende a Belluno',
   lead:

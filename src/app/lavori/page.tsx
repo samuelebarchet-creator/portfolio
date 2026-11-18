@@ -26,7 +26,7 @@ export default function LavoriPage() {
       {
         "@type": "CollectionPage",
         "@id": "https://www.samuelebarchet.com/lavori",
-        "name": "Lavori — Samuele Barchet",
+        "name": "Progetti di Brand Strategy e Comunicazione — Samuele Barchet",
         "url": "https://www.samuelebarchet.com/lavori",
         "description": "Progetti di brand strategy e comunicazione digitale: Braghe's, Programma Formula, RC Ricambi, Citation Rate, Crossabili, Vyst.",
         "dateModified": "2026-06-12",

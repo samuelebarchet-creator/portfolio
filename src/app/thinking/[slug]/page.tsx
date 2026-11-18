@@ -71,6 +71,17 @@ function renderContent(content: string) {
         </h2>
       );
     }
+    // Bulleted list: every line starts with "- "
+    const lines = block.split('\n');
+    if (lines.every((l) => l.startsWith('- '))) {
+      return (
+        <ul key={i} className="flex flex-col gap-3 pl-5 list-disc marker:text-orange text-ink-dim leading-[1.7]" style={{ fontFamily: 'var(--font-barlow)', fontSize: 'clamp(0.95rem, 1.1vw, 1.05rem)' }}>
+          {lines.map((l, k) => (
+            <li key={k}>{renderInline(l.slice(2), `${i}-${k}`)}</li>
+          ))}
+        </ul>
+      );
+    }
     // Standalone bold block → callout visuale con Playfair italic
     if (block.startsWith('**') && block.endsWith('**')) {
       const inner = block.slice(2, -2);
@@ -136,7 +147,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
           logo: 'https://www.samuelebarchet.com/logo-boat.png',
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-        isPartOf: { '@type': 'Blog', '@id': 'https://www.samuelebarchet.com/thinking', name: 'Thinking — Samuele Barchet', url: 'https://www.samuelebarchet.com/thinking' },
+        isPartOf: { '@type': 'Blog', '@id': 'https://www.samuelebarchet.com/thinking', name: 'Idee su Brand, Digital e Strategia — Samuele Barchet', url: 'https://www.samuelebarchet.com/thinking' },
         articleSection: post.category,
         keywords: [post.category, 'Samuele Barchet', 'Brand Strategy', 'Digital Marketing', 'AI Marketing'],
         about: { '@type': 'Thing', name: post.category },
@@ -148,7 +159,7 @@ export default async function ThinkingPostPage({ params }: { params: Promise<{ s
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.samuelebarchet.com' },
-          { '@type': 'ListItem', position: 2, name: 'Thinking', item: 'https://www.samuelebarchet.com/thinking' },
+          { '@type': 'ListItem', position: 2, name: 'Idee', item: 'https://www.samuelebarchet.com/thinking' },
           { '@type': 'ListItem', position: 3, name: post.title, item: url },
         ],
       },

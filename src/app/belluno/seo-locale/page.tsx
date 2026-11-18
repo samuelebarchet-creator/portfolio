@@ -10,6 +10,7 @@ const content: LocalServiceContent = {
   breadcrumb: 'SEO locale a Belluno',
   serviceType: ['SEO locale', 'Google Business Profile', 'Ottimizzazione sito web'],
   about: ['SEO locale Belluno', 'Posizionamento su Google Belluno', 'Google Business Profile Belluno'],
+  mentions: ['Google Business Profile', 'Google Search Console', 'Recensioni Google', 'ChatGPT', 'Provincia di Belluno'],
   eyebrow: 'SEO locale',
   h1: 'SEO locale a Belluno',
   lead:
@@ -39,6 +40,18 @@ const content: LocalServiceContent = {
       { title: 'Coerenza ovunque', body: 'Stesso nome, indirizzo e telefono su sito, scheda Google, social e directory. Le incoerenze confondono Google e i clienti.' },
     ],
     note: <>Lavoro con Google Search Console e i dati reali delle vostre ricerche: si parte da dove siete oggi, non da promesse di &quot;primo posto su Google&quot;.</>,
+  },
+  steps: {
+    h2: 'Come impostare la scheda Google Business in 6 passi',
+    intro: 'È il primo lavoro che faccio con ogni attività locale, e potete iniziarlo anche da soli. Bastano un’ora e un telefono.',
+    list: [
+      { title: 'Rivendicate la scheda', body: 'Cercate la vostra attività su Google Maps: se esiste già, rivendicatela; se no, createla da business.google.com e completate la verifica.' },
+      { title: 'Scegliete la categoria principale giusta', body: 'Una sola, la più precisa possibile (per esempio "Palestra" o "Consulente di marketing"). Le categorie secondarie servono per gli altri servizi.' },
+      { title: 'Compilate nome, zona e contatti', body: 'Usate il nome reale dell’attività, senza parole chiave aggiunte, e lo stesso telefono e lo stesso indirizzo che avete sul sito.' },
+      { title: 'Aggiungete servizi e descrizione', body: 'Elencate i servizi con le parole che usano i clienti e scrivete una descrizione chiara di cosa fate e dove.' },
+      { title: 'Caricate foto vere', body: 'Esterno, interno, persone al lavoro: almeno 5–10 foto. Le schede con foto ricevono più richieste di indicazioni e più clic.' },
+      { title: 'Chiedete e rispondete alle recensioni', body: 'Mandate il link "Chiedi recensioni" ai clienti soddisfatti e rispondete a ogni recensione, anche a quelle negative.' },
+    ],
   },
   aside: {
     h2: 'E domani anche su ChatGPT',

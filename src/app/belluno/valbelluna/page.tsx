@@ -10,6 +10,7 @@ const content: LocalServiceContent = {
   breadcrumb: 'Social media e marketing in Valbelluna',
   serviceType: ['Social Media Management', 'Comunicazione aziendale', 'Meta Ads'],
   about: ['Social media manager Sedico', 'Marketing Valbelluna', 'Consulente marketing Sedico', 'Comunicazione Borgo Valbelluna'],
+  mentions: ['Sedico', 'Santa Giustina', 'Borgo Valbelluna', 'Limana', 'Trichiana', 'All Fit', 'Valbelluna'],
   eyebrow: 'Valbelluna',
   h1: 'Social media e marketing in Valbelluna',
   lead:

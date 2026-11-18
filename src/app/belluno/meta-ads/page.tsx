@@ -10,6 +10,7 @@ const content: LocalServiceContent = {
   breadcrumb: 'Meta Ads a Belluno',
   serviceType: ['Meta Ads', 'Facebook Ads', 'Instagram Ads', 'Advertising locale'],
   about: ['Meta Ads Belluno', 'Facebook Ads Belluno', 'Instagram Ads Belluno', 'Pubblicità sui social Belluno'],
+  mentions: ['Meta Platforms', 'Facebook', 'Instagram', 'YouTube Ads', 'All Fit', 'Provincia di Belluno'],
   eyebrow: 'Meta Ads',
   h1: 'Campagne Meta Ads a Belluno',
   lead:

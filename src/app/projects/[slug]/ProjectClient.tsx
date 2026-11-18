@@ -106,7 +106,7 @@ export default function ProjectClient({ project }: { project: Project }) {
   }, []);
 
   return (
-    <>
+    <main>
       {/* ══ HERO — dark, editorial ══════════════════════════════════════════ */}
       <div
         ref={heroRef}
@@ -423,6 +423,6 @@ export default function ProjectClient({ project }: { project: Project }) {
 
       {/* ══ CONTACT ═════════════════════════════════════════════════════════ */}
       <Contact />
-    </>
+    </main>
   );
 }

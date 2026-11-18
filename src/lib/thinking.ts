@@ -238,7 +238,14 @@ Il nome dice tutto: non basta essere online, bisogna essere *citati*. La citatio
 
 Il mercato della GEO è ancora agli inizi in Italia. Chi costruisce autorevolezza citabile adesso ha un vantaggio reale su chi aspetta che il tema diventi mainstream.
 
-Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi), oppure dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).`,
+Se vuoi capire come integrare la GEO nella tua strategia di comunicazione, parti dalla sezione [servizi](/servizi), oppure dai un'occhiata a come ho applicato questi principi nei [progetti che ho seguito](/lavori).
+
+## Fonti
+
+- [Report sulle funzionalità di AI generativa in Search Console](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports), Google Search Central Blog, giugno 2026
+- [AI features and your website](https://developers.google.com/search/docs/appearance/ai-features), Google Search Central
+- [Modello linguistico di grandi dimensioni](https://it.wikipedia.org/wiki/Modello_linguistico_di_grandi_dimensioni), Wikipedia
+- [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735), Aggarwal et al. (arXiv, 2023)`,
   },
   {
     slug: 'geo-vs-seo',
@@ -320,7 +327,14 @@ In Italia, la GEO è ancora un territorio poco presidiato. La maggior parte dell
 
 È *la stessa opportunità* che esisteva con la SEO nei primi anni 2000. Tranne che il ciclo si sta accorciando.
 
-Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi), in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).`,
+Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la sezione [servizi](/servizi), in particolare la voce GEO Optimization. Oppure leggi come ho [applicato questi principi sui progetti seguiti](/lavori).
+
+## Fonti
+
+- [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735), Aggarwal et al., Princeton University e IIT Delhi (arXiv, 2023): lo studio che ha introdotto il termine
+- [Generative engine optimization](https://en.wikipedia.org/wiki/Generative_engine_optimization), Wikipedia
+- [AI features and your website](https://developers.google.com/search/docs/appearance/ai-features), Google Search Central
+- [Introduzione ai dati strutturati](https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data), Google Search Central`,
   },
   {
     slug: 'brand-prima-dei-contenuti',
@@ -628,7 +642,15 @@ Essere citati da ChatGPT non è più un dettaglio tecnico per pochi addetti ai l
 
 Chi inizia a lavorarci ora, in un mercato ancora poco presidiato, costruisce un vantaggio difficile da recuperare in seguito per chi aspetta.
 
-Se vuoi capire come applicare questi principi alla tua azienda, guarda la sezione [GEO Optimization a Belluno](/belluno/geo) o leggi l'approfondimento su [GEO vs SEO](/thinking/geo-vs-seo).`,
+Se vuoi capire come applicare questi principi alla tua azienda, guarda la sezione [GEO Optimization a Belluno](/belluno/geo) o leggi l'approfondimento su [GEO vs SEO](/thinking/geo-vs-seo).
+
+## Fonti
+
+- [Overview of OpenAI crawlers](https://platform.openai.com/docs/bots), documentazione OpenAI su GPTBot e OAI-SearchBot
+- [AI features and your website](https://developers.google.com/search/docs/appearance/ai-features), Google Search Central
+- [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735), Aggarwal et al. (arXiv, 2023)
+- [Schema.org](https://schema.org/), il vocabolario dei dati strutturati
+- [IndexNow](https://www.indexnow.org/), il protocollo per segnalare subito le pagine nuove a Bing e agli altri motori`,
   },
 ];
 

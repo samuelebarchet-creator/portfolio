@@ -140,18 +140,34 @@ export default function RootLayout({
                     "occupationalCategory": "Marketing e Comunicazione",
                     "skills": "Brand Strategy, Digital Marketing, GEO Optimization, AI Marketing, Social Media, Meta Advertising, Content Strategy, Email Marketing"
                   },
+                  "alumniOf": [
+                    { "@type": "CollegeOrUniversity", "name": "Università degli Studi di Padova" },
+                    { "@type": "CollegeOrUniversity", "name": "Università IULM" }
+                  ],
+                  "hasCredential": [
+                    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Laurea in Comunicazione", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Università degli Studi di Padova" } },
+                    { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Laurea Magistrale in Marketing, Consumi e Comunicazione — curriculum Digital Marketing Management", "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Università IULM" } }
+                  ],
+                  "memberOf": {
+                    "@type": "Organization",
+                    "name": "Citation Rate",
+                    "url": "https://www.citationrate.com",
+                    "description": "Founding team & Backend Developer"
+                  },
+                  "worksFor": { "@id": "https://www.samuelebarchet.com/#business" },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-11-05"
+                  "dateModified": "2026-11-18"
                 },
                 {
                   "@type": "ProfessionalService",
                   "@id": "https://www.samuelebarchet.com/#business",
-                  "name": "Samuele Barchet — Brand & Digital Strategy",
+                  "name": "Samuele Barchet",
+                  "alternateName": "Samuele Barchet — Brand & Digital Strategy",
                   "legalName": "Barchet Samuele",
                   "url": "https://www.samuelebarchet.com",
                   "logo": "https://www.samuelebarchet.com/logo-boat.png",
-                  "description": "Consulenza freelance in brand strategy e digital marketing. 8 brand seguiti in settori diversi: inclusione sociale, e-commerce, no-profit, servizi B2B.",
-                  "foundingDate": "2022",
+                  "description": "Consulenza freelance in brand strategy, social media e comunicazione per aziende tra Belluno e Milano. 8 brand seguiti in settori diversi: inclusione sociale, e-commerce, no-profit, fitness, servizi B2B.",
+                  "foundingDate": "2023",
                   "founder": { "@id": "https://www.samuelebarchet.com/#person" },
                   "telephone": "+393420269217",
                   "email": "info@samuelebarchet.com",
@@ -163,12 +179,14 @@ export default function RootLayout({
                     "postalCode": "32036",
                     "addressCountry": "IT"
                   },
-                  "areaServed": { "@type": "Country", "name": "Italy" },
-                  "serviceType": ["Strategia Digitale","AI Marketing","GEO Optimization","Formazione AI"],
+                  "serviceType": ["Brand Strategy","Social Media Management","Meta Ads","Comunicazione aziendale","SEO locale","AI Marketing","GEO Optimization","Formazione AI"],
+                  "areaServed": [{ "@type": "AdministrativeArea", "name": "Provincia di Belluno" }, { "@type": "City", "name": "Milano" }, { "@type": "Country", "name": "Italy" }],
                   "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Servizi di Strategia Digitale e AI Marketing",
                     "itemListElement": [
+                      { "@type": "Offer", "name": "Call conoscitiva gratuita di 30 minuti", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://www.samuelebarchet.com/contatti", "itemOffered": { "@type": "Service", "name": "Call conoscitiva", "description": "Prima call di 30 minuti, gratuita e senza impegno, per capire a che punto è il brand e se e come posso aiutare." } },
+                      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social media e Meta Ads", "description": "Strategia, piano editoriale, contenuti e campagne Facebook e Instagram, in gestione completa o in affiancamento.", "areaServed": "Italia" } },
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategia Digitale", "description": "Brand positioning, messaging framework, tone of voice e piano di comunicazione strategico.", "areaServed": "Italia" } },
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Marketing", "description": "Content strategy AI-assisted, campagne Meta Ads, email marketing e automazioni.", "areaServed": "Italia" } },
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GEO Optimization", "description": "Generative Engine Optimization: ottimizzazione della citabilità del brand in ChatGPT, Perplexity, Gemini e Google AI Overview.", "areaServed": "Italia" } },
@@ -176,7 +194,7 @@ export default function RootLayout({
                     ]
                   },
                   "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
-                  "dateModified": "2026-11-05",
+                  "dateModified": "2026-11-18",
                   "about": [
                     {"@type": "Thing", "name": "Brand Strategy"},
                     {"@type": "Thing", "name": "Digital Marketing"},
@@ -226,6 +244,9 @@ Sito ufficiale: https://www.samuelebarchet.com
         <LeadTracking />
         <CustomCursor />
         <ScrollProgress />
+        {/* Machine-readable exports (RSS + llms.txt); React hoists these into <head> */}
+        <link rel="alternate" type="application/rss+xml" title="Idee — Samuele Barchet" href="https://www.samuelebarchet.com/feed.xml" />
+        <link rel="alternate" type="text/markdown" title="llms.txt" href="https://www.samuelebarchet.com/llms.txt" />
         <SmoothScroll>
           <Nav />
           {children}

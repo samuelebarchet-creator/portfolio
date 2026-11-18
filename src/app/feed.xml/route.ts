@@ -27,7 +27,7 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thinking — Samuele Barchet</title>
+    <title>Idee — Samuele Barchet</title>
     <link>${BASE}/thinking</link>
     <description>Riflessioni su brand strategy, digital marketing e AI. Di Samuele Barchet, Brand &amp; Digital Strategist freelance.</description>
     <language>it</language>

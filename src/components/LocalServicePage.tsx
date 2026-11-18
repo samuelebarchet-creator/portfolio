@@ -19,12 +19,16 @@ export type LocalServiceContent = {
   breadcrumb: string;
   serviceType: string[];
   about: string[];
+  /** Entities the page names explicitly (schema.org mentions). */
+  mentions?: string[];
   eyebrow: string;
   h1: string;
   lead: string;
   secondaryCta?: { label: string; href: string };
   intro: { h2: string; paragraphs: ReactNode[] };
   items: { h2: string; list: Item[]; note?: ReactNode };
+  /** Numbered how-to (each step starts with an action verb). */
+  steps?: { h2: string; intro?: ReactNode; list: { title: string; body: string }[] };
   proof?: { h2: string; body: ReactNode; cards: CaseCard[] };
   aside?: { h2: string; body: ReactNode; links: { label: string; href: string }[] };
   faqs: Faq[];
@@ -44,6 +48,7 @@ export function buildLocalServiceLd(c: LocalServiceContent) {
         description: c.description,
         dateModified: '2026-11-12',
         about: c.about.map((name) => ({ '@type': 'Thing', name })),
+        ...(c.mentions ? { mentions: c.mentions.map((name) => ({ '@type': 'Thing', name })) } : {}),
         author: { '@id': `${BASE}/#person` },
         breadcrumb: {
           '@type': 'BreadcrumbList',
@@ -159,6 +164,41 @@ export default function LocalServicePage({ content: c }: { content: LocalService
             )}
           </div>
         </section>
+
+        {/* Steps */}
+        {c.steps && (
+          <section className="w-full px-8 md:px-20 py-24" style={{ borderBottom: '1px solid rgba(61,92,53,0.1)' }}>
+            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
+              <div>
+                <h2 className="font-display font-black italic text-ink leading-tight mb-6" style={h2}>
+                  {c.steps.h2}
+                </h2>
+                {c.steps.intro && (
+                  <p className="text-ink-dim leading-relaxed" style={body}>
+                    {c.steps.intro}
+                  </p>
+                )}
+              </div>
+              <ol className="flex flex-col" style={{ borderTop: '1px solid rgba(61,92,53,0.12)' }}>
+                {c.steps.list.map(({ title, body: text }, i) => (
+                  <li key={title} className="grid grid-cols-[2.5rem_1fr] gap-4 py-6" style={{ borderBottom: '1px solid rgba(61,92,53,0.12)' }}>
+                    <span className="font-display font-black italic leading-none" style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.8rem', color: 'var(--orange-heading)' }} aria-hidden>
+                      {i + 1}
+                    </span>
+                    <div>
+                      <p className="text-ink font-semibold mb-1" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1.05rem' }}>
+                        {title}
+                      </p>
+                      <p className="text-ink-dim leading-relaxed" style={{ fontFamily: 'var(--font-barlow)', fontSize: '1rem' }}>
+                        {text}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </section>
+        )}
 
         {/* Proof */}
         {c.proof && (
