@@ -5,13 +5,14 @@ import type { NextConfig } from "next";
    violations, switch the header key to 'Content-Security-Policy'. */
 const CSP = [
   "default-src 'self'",
-  // Inline scripts: consent default, GTM bootstrap, JSON-LD. GTM/GA/Iubenda/Cal/Vercel loaders.
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://va.vercel-scripts.com https://connect.facebook.net https://www.instagram.com",
-  "style-src 'self' 'unsafe-inline' https://*.iubenda.com https://cal.eu https://*.cal.eu",
+  // Inline scripts: consent default, GTM bootstrap, JSON-LD. 'unsafe-eval' is needed by a third-party
+  // script (seen in production, 2026-11-19). Cal.com embed loads from app.eu.cal.com.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://*.cal.com https://va.vercel-scripts.com https://connect.facebook.net https://www.instagram.com",
+  "style-src 'self' 'unsafe-inline' https://*.iubenda.com https://cal.eu https://*.cal.eu https://*.cal.com",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data: https://*.iubenda.com",
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://vitals.vercel-insights.com https://*.facebook.com",
-  "frame-src 'self' https://www.googletagmanager.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://www.instagram.com https://www.youtube.com https://www.facebook.com",
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://*.cal.com https://vitals.vercel-insights.com https://*.facebook.com",
+  "frame-src 'self' https://www.googletagmanager.com https://*.iubenda.com https://cal.eu https://*.cal.eu https://*.cal.com https://www.instagram.com https://www.youtube.com https://www.facebook.com",
   "media-src 'self' blob: https:",
   "worker-src 'self' blob:",
   "object-src 'none'",
