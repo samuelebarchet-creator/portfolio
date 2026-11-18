@@ -193,7 +193,12 @@ export default function RootLayout({
                       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formazione AI per aziende", "description": "Workshop pratici, formazione team e consulenza continuativa per adottare l'AI nei processi di marketing.", "areaServed": "Italia" } }
                     ]
                   },
-                  "sameAs": ["https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/"],
+                  "sameAs": [
+                    "https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/",
+                    "https://www.google.com/search?kgmid=/g/11z_gkjlf9",
+                    "https://share.google/sm25s24Rkq3Er80Jb"
+                  ],
+                  "hasMap": "https://share.google/sm25s24Rkq3Er80Jb",
                   "dateModified": "2026-11-18",
                   "about": [
                     {"@type": "Thing", "name": "Brand Strategy"},

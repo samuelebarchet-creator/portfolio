@@ -182,6 +182,7 @@ export default function Contact() {
               { label: 'WhatsApp', href: `https://wa.me/393420269217?text=${encodeURIComponent('Ciao Samuele, ho visto il tuo sito e vorrei parlarti di un progetto.')}`, external: true },
               { label: about.phone, href: 'tel:+393420269217', external: false },
               { label: 'LinkedIn', href: 'https://www.linkedin.com/in/samuele-barchet-3ba80a1ba/', external: true },
+              { label: 'Recensioni su Google', href: 'https://share.google/sm25s24Rkq3Er80Jb', external: true },
             ].map(({ label, href, external }) => (
               <li key={label}>
                 <a
