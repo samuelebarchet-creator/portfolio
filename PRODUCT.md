@@ -8,7 +8,7 @@ web
 
 ## Users
 
-Primario: titolari e responsabili di **PMI locali** (Belluno, Veneto, Milano) che cercano un partner marketing esterno di cui potersi fidare. Arrivano di solito già con un nome in mente (passaparola, LinkedIn, Instagram, Citationrate, ricerca locale tipo "marketing Belluno") e usano il sito per verificare che Samuele sia serio, competente e la persona giusta prima di scrivergli.
+Primario: titolari e responsabili di **PMI locali di Belluno e del Veneto** (mercato confermato il 2026-11-18; Milano resta una sede, non un mercato da presidiare) che cercano un partner marketing esterno di cui potersi fidare. Arrivano di solito già con un nome in mente (passaparola, LinkedIn, Instagram, Citationrate, ricerca locale tipo "marketing Belluno") e usano il sito per verificare che Samuele sia serio, competente e la persona giusta prima di scrivergli.
 
 Secondari (presenti nel copy, non prioritari): brand in lancio o riposizionamento, team che vogliono formazione AI.
 
@@ -21,6 +21,8 @@ Successo = chi ha già sentito parlare di Samuele esce dal sito con fiducia conf
 ## Positioning
 
 **Brand strategist prima di tutto.** Posizionamento, identità e tono di voce vengono prima di qualsiasi strumento ("strategia prima, poi social, advertising e contenuti, nell'ordine giusto"). AI marketing, GEO e formazione sono strumenti e servizi a valle della strategia, non il titolo. Avere fondato Citationrate è una prova di competenza, non l'identità del sito.
+
+Confermato il 2026-11-18 (dopo un confronto con una proposta GEO-first): il posizionamento resta brand strategist + social e comunicazione per il territorio. La GEO/AI Visibility è una competenza reale (Citation Rate, tesi magistrale su GEO/AI) da usare come prova di competenza e servizio aggiuntivo, non come identità principale.
 
 Elemento non copiabile: radici reali nel territorio (Belluno / Milano) e casi concreti in settori con una missione, come l'abbigliamento inclusivo (Braghe's, RC Ricambi per Carrozzine, CROSSabili).
 
