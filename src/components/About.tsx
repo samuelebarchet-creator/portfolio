@@ -109,7 +109,7 @@ export default function About() {
             >
               Ho trascorso un anno in <strong className="font-semibold text-ink">servizio civile</strong> a stretto contatto
               con persone con disabilità, poi mi sono laureato a <strong className="font-semibold text-ink">Padova in Comunicazione</strong>{' '}
-              e ho conseguito la magistrale in <strong className="font-semibold text-ink">Marketing, Consumi e Comunicazione allo IULM di Milano</strong>, con il curriculum Digital Marketing Management.
+              e ho conseguito la magistrale in <strong className="font-semibold text-ink">Marketing, Consumi e Comunicazione allo IULM di Milano</strong>, con il curriculum Digital Marketing Management e una <Link href="/tesi" className="text-green underline underline-offset-2 hover:no-underline">tesi su come l&apos;IA cambia la visibilità dei brand</Link>.
             </p>
 
             <p

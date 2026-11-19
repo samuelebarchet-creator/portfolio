@@ -331,6 +331,7 @@ Se vuoi capire come integrare SEO e GEO nella tua strategia digitale, guarda la 
 
 ## Fonti
 
+- [Da Search a Recommendation: come l'IA ridisegna il percorso d'acquisto del consumatore e le logiche di posizionamento delle imprese](/tesi), la mia tesi di laurea magistrale (Università IULM, 2026)
 - [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735), Aggarwal et al., Princeton University e IIT Delhi (arXiv, 2023): lo studio che ha introdotto il termine
 - [Generative engine optimization](https://en.wikipedia.org/wiki/Generative_engine_optimization), Wikipedia
 - [AI features and your website](https://developers.google.com/search/docs/appearance/ai-features), Google Search Central

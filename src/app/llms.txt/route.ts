@@ -48,6 +48,10 @@ Founding team & Backend Developer di [Citation Rate](https://www.citationrate.co
 - **Formazione AI**: workshop e training per team aziendali
 - **Performance Marketing**: Meta Ads, Google Ads, contenuti organici
 
+## Ricerca
+
+- [Tesi: Da Search a Recommendation](${BASE}/tesi): tesi di laurea magistrale IULM (9 novembre 2026) su come l'IA generativa cambia il percorso d'acquisto e la visibilità dei brand, dalla SEO alla GEO, e sul problema di misurarla
+
 ## Milano
 
 - [Brand strategy e social media a Milano](${BASE}/milano): consulenza freelance per PMI, startup e brand con una missione
